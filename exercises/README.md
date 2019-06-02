@@ -17,7 +17,7 @@ Vi förutsätter att du kan enkel programmering i Python med variabler, tilldeln
 I listan nedan ser du våra uppdrag, och vad du lär dig i dem.
 
 |Uppdrag|Beskrivning|Python-begrepp|
-|----------------------------------|
+|-------|-----------|--------------|
 |[Väderdata](weatherdata/README.md)|Beräkna ...|filer, matplotlib, ...|
 |Torkan|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, ...|
 |...|...|...|
