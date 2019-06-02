@@ -6,6 +6,7 @@ Programmeringsövningar med satellitdata för högstadium och gymnasium.
 
 # För utvecklare
 
+* Projektbeskrivning, uppdragsideer, etc. finns på [Google Drive](https://drive.google.com/drive/folders/1svwmHStMxmkm5pGE-U4PO6GWMpGCyXYH)
 * Lägg alla (stora) datafiler i följande sido-repo: https://github.com/lunduniversity/schoolprog-satellite-data
 * Skapa issues för att dokumentera utvecklingen och ange aktuell issue för varje commit
 * Filstruktur för varje uppdrag:
