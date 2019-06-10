@@ -44,36 +44,30 @@ Svar
 <summary markdown="span">
 Tips 1:
 </summary>
-<ol>
+<p>
 Vi kan t.ex. använda ```data = data.split("\n")``` för att dela upp datan.
-</ol>
+</p>
 </details>
 
 <details>
 <summary markdown="span">
 Minns du hur man plottar en graf?
 </summary>
-<ol>
-```plt.plot(data)```
-</ol>
+<p><code>plt.plot(data)<code/></p>
 </details>
 
 Vi börjar med att kolla på ett mindre exempel för att se hur inläsning från fil fungerar.
 
-## 1. Inläsning från fil
-
-Tidigare har vi testat på att mata in data till programmet genom consolen. När man vill skicka in mycket information till ett program kan det vara lättare att låta programmet läsa från en fil.
+## 2. Inläsning av mer data
 
 
+Nu har vi testat hur man kan läsa in en fil själv från grunden. Det kanske verkade krånligt och det skulle inte varit så jobbigt att manuellt skriva in 30 värden. Men när mängden data växer är det en klar fördel att använda inläsning av filer.
 
+Innan kollade vi på medeltemperaturen från varje dag under en månad i Lund, men nu ska vi istället studera medeltemperaturen från varje dag under 56 år. Här blir det ganska jobbigt att läsa in datan själv jämfört med föut, så det har vi hjälpt till med här.
 
+I filen ```api.py``` finns det några funktioner som är användbara för att lösa den här uppgiften. För att kunna använda funktionerna från denna fil kan man importera dessa genom att skriva ```import api```.
 
-Datan har hämtats från SMHIs öppna databas, men den är redan nedladdad åt dig.
-
-I filen ```api.py``` finns det några funktioner som är användbara för att lösa den här uppgiften.
-
-Det finns en funktion som heter ```get_station_data```, denna funktion öppnar och läser en komprimerad fil med väderdata.
-Datan returneras i en ```dict```, som använder väderstationsnamn som nycklar.
+Det finns en funktion som heter ```get_station_data```, denna funktion öppnar och läser en komprimerad fil med väderdata. ```get_station_data``` läser in data från flera olika stationer, så för att organisera detta används en ```dict``` som är kort för dictionary. En ```dict``` funkar likt en lista, men istället för index använder man nycklar för att komma åt elementen. I vårt fall används väderstationsnamn som nycklar.
 
 För att skriva ut vilka väderstationer som finns kan ni skriva följande:
 
@@ -82,6 +76,17 @@ import api
 data = api.get_station_data()
 print(data.keys())
 ```
+Programmet skriver ut olika städer.
+
+**Uppdrag:** Varför skrivs dessa städer ut? Vad gör ```data.keys()```?
+
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>Dessa är städerna där temperaturen är mätt. ```data.keys()``` returnerar en lista med alla nycklar som används. </p>
+</details>
 
 Om ni lägger till följnade
 ```python
