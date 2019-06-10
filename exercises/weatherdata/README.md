@@ -70,7 +70,7 @@ data = [float(x) for x in data2]
 <summary markdown="span">
 Svar
 </summary>
-<<<<<<< HEAD
+
 <p>Typen blir fortfarande ```'list'``` men innehåller nu floats istället. Om vi printar ut listerna kan vi se en liten skillnad då strängar representeras med apostrofer före och efter.</p>
 </details>
 
@@ -84,8 +84,9 @@ Svar
 Har du glömt hur man plottar en graf?
 </summary>
 <p>
-<pre>code>plt.plot(data)</code>
-<code>plt.savefig(data.png)</code>
+<pre><code>
+plt.plot(data)
+plt.savefig(data.png)</code>
 </pre>
 </p>
 </details>
@@ -119,12 +120,44 @@ Svar
 <p>Dessa är städerna där temperaturen är mätt. ```data.keys()``` returnerar en lista med alla nycklar som används. </p>
 </details>
 
-Om ni lägger till följnade
+För att undersöka hur datan ser ut kan det vara bra att printa ut en del av den. Om man kör följande kod:
 ```python
 lund = data['Lund']
 print(lund[:10])
 ```
-Hamnar Lunds data i variabeln `lund` och ni printar de `10` första datapunkterna för Lund.
+Hamnar Lunds data i listan `lund` och de `10` första datapunkterna printas för Lund. Här används något som kallas <i>list slicing</i>. Skriver man `lund[:10]` betyder det att man tar med allt till och med det tionde elementet. Skulle man däremot skrivit `lund[10:]` tar man det elfte elementet och alla som kommer efteråt. För mer information om <i>list slicing</i> kan man läsa en tutorial [här](https://www.programiz.com/python-programming/methods/built-in/slice).
+
+**Uppdrag:** Vad betyder betyder datan som skrivs ut?
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>De tre första talen i varje element anger datumet på formatet `yyyy mm dd`. Det sista talet är medeltemperaturen för den dagen. </p>
+</details>
+
+Nu ska vi äntligen börja plotta datan vi har läst in. För detta behöver vi en lista som innehåller alla temperaturer från listan `lund`.
+
+**Uppdrag:** Skapa en lista `temps` som innehåller alla temperaturer från `lund`.
+
+<details>
+<summary markdown="span">
+Tips
+</summary>
+<p>Loopa igenom `lund` med en `for`-loop. `lund[0][3]` ger medeltemperaturen den första januari 1961.</p>
+</details>
+
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>temps = []
+for day in lund:
+  temps.append(day[3])
+</code>
+</pre>
+</p>
+</details>
 
 # Uppgifter
 - Skapa två listor `time` och `temp` som innehåller tiden repsektive temperatur för varje datapunkt.
