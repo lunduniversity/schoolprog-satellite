@@ -56,13 +56,7 @@ data = data.split("\n")
 <summary markdown="span">
 Svar
 </summary>
-<<<<<<< HEAD
 <p>Typen blir ```'list'``` men innehåller strängar.</p>
-=======
-<p>
-Vi kan t.ex. använda ```data = data.split("\n")``` för att dela upp datan.
-</p>
->>>>>>> 309c174305035d27e2b885839527f55ea252b779
 </details>
 
 För att vårt program ska kunna plotta värdena behöver vi göra om vår text till tal, eller mer specifikt floats (decimaltal). Detta kan vi göra genom att använda listcomprehension som vi tidigare kollat på. Stycket nedan gör om alla strängar till floats
@@ -83,14 +77,7 @@ Svar
 
 
 **Uppdrag:** Vår data är nu redo att plottas! Vad visar diagrammet?
-=======
-<p><code>plt.plot(data)<code/></p>
-</details>
 
-Vi börjar med att kolla på ett mindre exempel för att se hur inläsning från fil fungerar.
-
-## 2. Inläsning av mer data
->>>>>>> 309c174305035d27e2b885839527f55ea252b779
 
 <details>
 <summary markdown="span">
@@ -103,11 +90,9 @@ Har du glömt hur man plottar en graf?
 </p>
 </details>
 
-<<<<<<< HEAD
-## 2.
-=======
+
+## 2. Inläsning av mer data
 Nu har vi testat hur man kan läsa in en fil själv från grunden. Det kanske verkade krånligt och det skulle inte varit så jobbigt att manuellt skriva in 30 värden. Men när mängden data växer är det en klar fördel att använda inläsning av filer.
->>>>>>> 309c174305035d27e2b885839527f55ea252b779
 
 Innan kollade vi på medeltemperaturen från varje dag under en månad i Lund, men nu ska vi istället studera medeltemperaturen från varje dag under 56 år. Här blir det ganska jobbigt att läsa in datan själv jämfört med föut, så det har vi hjälpt till med här.
 
