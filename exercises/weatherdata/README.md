@@ -56,7 +56,13 @@ data = data.split("\n")
 <summary markdown="span">
 Svar
 </summary>
+<<<<<<< HEAD
 <p>Typen blir ```'list'``` men innehåller strängar.</p>
+=======
+<p>
+Vi kan t.ex. använda ```data = data.split("\n")``` för att dela upp datan.
+</p>
+>>>>>>> 309c174305035d27e2b885839527f55ea252b779
 </details>
 
 För att vårt program ska kunna plotta värdena behöver vi göra om vår text till tal, eller mer specifikt floats (decimaltal). Detta kan vi göra genom att använda listcomprehension som vi tidigare kollat på. Stycket nedan gör om alla strängar till floats
@@ -70,34 +76,44 @@ data = [float(x) for x in data2]
 <summary markdown="span">
 Svar
 </summary>
+<<<<<<< HEAD
 <p>Typen blir fortfarande ```'list'``` men innehåller nu floats istället. Om vi printar ut listerna kan vi se en liten skillnad då strängar representeras med apostrofer före och efter.</p>
 </details>
 
 
 
 **Uppdrag:** Vår data är nu redo att plottas! Vad visar diagrammet?
+=======
+<p><code>plt.plot(data)<code/></p>
+</details>
+
+Vi börjar med att kolla på ett mindre exempel för att se hur inläsning från fil fungerar.
+
+## 2. Inläsning av mer data
+>>>>>>> 309c174305035d27e2b885839527f55ea252b779
 
 <details>
 <summary markdown="span">
 Har du glömt hur man plottar en graf?
 </summary>
 <p>
-<pre>
-<code>plt.plot(data)</code>
+<pre>code>plt.plot(data)</code>
 <code>plt.savefig(data.png)</code>
 </pre>
 </p>
 </details>
 
+<<<<<<< HEAD
 ## 2.
+=======
+Nu har vi testat hur man kan läsa in en fil själv från grunden. Det kanske verkade krånligt och det skulle inte varit så jobbigt att manuellt skriva in 30 värden. Men när mängden data växer är det en klar fördel att använda inläsning av filer.
+>>>>>>> 309c174305035d27e2b885839527f55ea252b779
 
+Innan kollade vi på medeltemperaturen från varje dag under en månad i Lund, men nu ska vi istället studera medeltemperaturen från varje dag under 56 år. Här blir det ganska jobbigt att läsa in datan själv jämfört med föut, så det har vi hjälpt till med här.
 
-Datan har hämtats från SMHIs öppna databas, men den är redan nedladdad åt dig.
+I filen ```api.py``` finns det några funktioner som är användbara för att lösa den här uppgiften. För att kunna använda funktionerna från denna fil kan man importera dessa genom att skriva ```import api```.
 
-I filen ```api.py``` finns det några funktioner som är användbara för att lösa den här uppgiften.
-
-Det finns en funktion som heter ```get_station_data```, denna funktion öppnar och läser en komprimerad fil med väderdata.
-Datan returneras i en ```dict```, som använder väderstationsnamn som nycklar.
+Det finns en funktion som heter ```get_station_data```, denna funktion öppnar och läser en komprimerad fil med väderdata. ```get_station_data``` läser in data från flera olika stationer, så för att organisera detta används en ```dict``` som är kort för dictionary. En ```dict``` funkar likt en lista, men istället för index använder man nycklar för att komma åt elementen. I vårt fall används väderstationsnamn som nycklar.
 
 För att skriva ut vilka väderstationer som finns kan ni skriva följande:
 
@@ -106,6 +122,17 @@ import api
 data = api.get_station_data()
 print(data.keys())
 ```
+Programmet skriver ut olika städer.
+
+**Uppdrag:** Varför skrivs dessa städer ut? Vad gör ```data.keys()```?
+
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>Dessa är städerna där temperaturen är mätt. ```data.keys()``` returnerar en lista med alla nycklar som används. </p>
+</details>
 
 Om ni lägger till följnade
 ```python
