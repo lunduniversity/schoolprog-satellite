@@ -41,7 +41,7 @@ def calc_ndvi(save_name, dir_name, red_num):
         
         RED_red = reduce_array(red_num, RED.astype(float))
         NIR_red = reduce_array(red_num, NIR.astype(float))
-        np.savez(save_name + ".npz", RED_red, NIR_red, red=RED_red, nir=NIR_red)
+        np.savez(save_name + ".npz", red=RED_red, nir=NIR_red)
         
 
 
