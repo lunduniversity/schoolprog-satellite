@@ -28,16 +28,14 @@ def calc_ndvi(save_name, dir_name, red_num):
         with np.load(save_name + ".npz", "r") as data:
             RED_red = data["red"]
             NIR_red = data["nir"]
-        #plt.imshow(NIR_red)
-        #plt.savefig("NIR_red.png")
 
     except FileNotFoundError:
         sds = gdal.Open(dir_name + "/MTD_MSIL1C.xml", gdal.GA_ReadOnly).GetSubDatasets()
         data = gdal.Open(sds[0][0]).ReadAsArray()
         RED = data[2]
         NIR = data[3]
-        RED = RED[3500:5500, 8000:10000]
-        NIR = NIR[3500:5500, 8000:10000]
+#        RED = RED[3500:5500, 8000:10000]
+#        NIR = NIR[3500:5500, 8000:10000]
         
         RED_red = reduce_array(red_num, RED.astype(float))
         NIR_red = reduce_array(red_num, NIR.astype(float))
@@ -46,20 +44,18 @@ def calc_ndvi(save_name, dir_name, red_num):
 
 
     ndvi = (NIR_red.astype(float) - RED_red.astype(float))/(NIR_red.astype(float) + RED_red.astype(float))
-    fig = plt.figure(figsize=(10,10))
+    plt.figure(figsize=(10,10))
     plt.pcolormesh(ndvi, cmap='PiYG')
     plt.ylim(ndvi.shape[0], 0)
     plt.clim(-1, 1)
     plt.colorbar(label="NDVI")
     plt.savefig(save_name + "ndvi.png")
 
-def calc_ndvi_folder(folder_name, save_folder):
+def calc_ndvi_folder(folder_name, save_folder, red_number):
     for path in os.listdir(folder_name):
         calc_ndvi(save_folder + "/" + path + "_computed", folder_name + "/" + path, red_number)
 
 
-red_number = 3
-
-calc_ndvi_folder("same_pic_bokskog", "bokskogen_bra")
+calc_ndvi_folder("same_pic_bokskog", "bokskogen_bra", 3)
 
 
