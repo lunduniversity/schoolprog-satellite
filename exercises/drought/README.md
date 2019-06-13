@@ -6,7 +6,7 @@ För att kunna jämföra bilderna ni senare kommer generera med något mer verkl
 
 ![En färgbild över bokskogen.](tci_hd.png)
 
-Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till datan som används i denna uppgift!
+Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till datan som används i denna uppgift! Om ni inte vill använda repl.it finns kan man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 
 ## 1. Växtligheten 2015
@@ -188,7 +188,4 @@ plot_ndvi("bokskogen/data_18.npz", "bok18.png")
 <p>
 Torkan 2018 hade sin påverkan på växtligheten. Om du kollar på åkrarna ser du att växtligheten inte är i närheten av de tidigare åren. Det ser ut som att många bönder blev tvugna att skörda de grödor som klarade sig mycket tidigare på grund av torkan. Man kan även se på själva skogen att växtligheten har sjunkit då den inte framstår som lika grön.
 </details>
-
-
-
 
