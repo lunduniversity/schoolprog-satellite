@@ -2,7 +2,7 @@
 # Hur påverkades Bokskogen av torkan 2018?
 I denna uppgift studerar vi [Bokskogen](https://sv.wikipedia.org/wiki/Torups_rekreationsomr%C3%A5de) i centrala Skåne och dess närliggande områdes växtlighet med hjälp av satellitbilder. Bilderna är alla tagna under första halvan av augusti, men från tre olika år. Kan vi se någon skillnad efter en sommar med torka? Vi kommer också använda teori om NDVI (Normalized Difference Vegetation Index) som är ett mått på hur mycket levande växtlighet det finns. För att läsa mer om NDVI och hur man beräknar det, se [denna länk](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale).
 
-För att kunna jämföra bilderna ni senare kommer generera med något mer verklighetsförankrat visar vi här en färgbild på området vi kommer undersöka senare:
+För att kunna jämföra bilderna ni senare kommer generera med något mer verklighetsförankrat visar vi här en färgbild från 2017 på området vi kommer undersöka senare:
 
 ![En färgbild över bokskogen.](tci_hd.png)
 
