@@ -175,8 +175,8 @@ Lösning
     values = 0
     for i in range(1,13):
         if((year,i) in co2_dict):
-        total += co2_dict[(year,i)]
-        values += 1
+            total += co2_dict[(year,i)]
+            values += 1
     return total/values</pre>
 </p>
 </details>
