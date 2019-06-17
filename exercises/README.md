@@ -18,8 +18,10 @@ I listan nedan ser du våra uppdrag, och vad du lär dig i dem.
 
 |Uppdrag|Beskrivning|Python-begrepp|
 |-------|-----------|--------------|
-|[Väderdata](weatherdata/README.md)|Beräkna ...|filer, matplotlib, ...|
-|Torkan|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, ...|
+|[Väderdata](weatherdata/README.md)|Hur har temperaturen förändrats de senaste 50 åren? Vi undersöker data från SMHI|filer, matplotlib, ...|
+|[Keelingkurvan](co2/README.md)|Undersök hur koldioxid nivån har förändrats sedan 50-talet|filer, matplotlib|
+|[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|
+|[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|
 |...|...|...|
 
 ## Programmeringsplattform
