@@ -15,6 +15,7 @@ Programmeringsövningar med satellitdata för högstadium och gymnasium.
     * små datafiler, t.ex. upp till några kilobyte,
     * script för att extrahera data
     * lösningar
+* Filerna `requirements.txt` och `postBuild` är config-filer för [binder](https://gke.mybinder.org/) som används i Väderdata 2.
 
 # License
 * Copyright &copy; 2019. Dept. of Computer Science at Lund University, Lund, Sweden.

@@ -1,0 +1,4 @@
+numpy==1.16.*
+matplotlib==3.*
+bokeh==1.2.0
+ipywidgets==6.0.0
