@@ -1,0 +1,281 @@
+växthusgas	sektor	år	Totala utsläpp av växthusgaser
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1990	74921.1
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1991	75267.7
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1992	74894.6
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1993	75510.6
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1994	78557.0
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1995	78300.6
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1996	82157.7
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1997	78137.6
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1998	79290.8
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	1999	76523.7
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2000	75281.8
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2001	75478.6
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2002	75594.0
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2003	77406.9
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2004	77719.1
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2005	75293.4
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2006	75821.4
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2007	74631.9
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2008	72155.4
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2009	67850.0
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2010	73236.5
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2011	68483.3
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2012	64928.3
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2013	63176.7
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2014	62075.5
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2015	61836.7
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2016	62342.2
+Totala Växthusgaser (kt CO2-ekv.)	NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)	2017	63292.5
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1990	3166.2
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1991	2973.3
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1992	3357.8
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1993	3378.7
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1994	3577.1
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1995	3402.2
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1996	3395.5
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1997	3516.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1998	3644.8
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	1999	3516.2
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2000	3373.4
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2001	3382.8
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2002	3511.3
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2003	3548.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2004	3575.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2005	3709.0
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2006	3679.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2007	3588.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2008	3637.1
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2009	3565.0
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2010	3702.4
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2011	3690.8
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2012	3654.7
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2013	3603.9
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2014	3467.5
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2015	3513.3
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2016	3314.5
+Totala Växthusgaser (kt CO2-ekv.)	ARBETSMASKINER, TOTALT	2017	3351.0
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1990	3742.3
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1991	3807.8
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1992	3819.8
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1993	3699.0
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1994	3568.0
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1995	3561.9
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1996	3535.5
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1997	3501.1
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1998	3448.4
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	1999	3317.7
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2000	3222.4
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2001	3171.7
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2002	2997.8
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2003	2832.1
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2004	2811.3
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2005	2673.5
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2006	2584.0
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2007	2406.0
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2008	2143.1
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2009	2053.2
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2010	1924.2
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2011	1832.7
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2012	1693.5
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2013	1608.5
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2014	1494.3
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2015	1400.3
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2016	1318.3
+Totala Växthusgaser (kt CO2-ekv.)	AVFALL, TOTALT	2017	1253.4
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1990	6484.4
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1991	7509.1
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1992	7997.2
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1993	7883.2
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1994	8499.2
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1995	7573.6
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1996	11665.4
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1997	7148.2
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1998	7981.5
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	1999	6241.0
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2000	4957.1
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2001	5808.4
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2002	6849.6
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2003	7838.1
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2004	6837.7
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2005	5952.3
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2006	6019.5
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2007	5850.6
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2008	5495.6
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2009	6679.0
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2010	8663.4
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2011	6421.9
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2012	5824.5
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2013	5662.7
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2014	4511.7
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2015	4580.8
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2016	4786.6
+Totala Växthusgaser (kt CO2-ekv.)	EL OCH FJÄRRVÄRME, TOTALT	2017	4413.0
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1990	20711.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1991	20491.7
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1992	19043.4
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1993	20259.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1994	21514.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1995	22309.4
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1996	22352.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1997	22307.0
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1998	22069.0
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	1999	21067.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2000	21481.9
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2001	22240.0
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2002	22056.6
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2003	21655.0
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2004	21836.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2005	21083.8
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2006	21638.9
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2007	20793.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2008	20060.3
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2009	15690.7
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2010	19277.8
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2011	18102.4
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2012	17386.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2013	16533.7
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2014	16727.2
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2015	16499.5
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2016	16877.2
+Totala Växthusgaser (kt CO2-ekv.)	INDUSTRI, TOTALT	2017	17202.5
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1990	19673.7
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1991	19690.4
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1992	20591.6
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1993	19474.2
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1994	19897.5
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1995	19969.0
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1996	19629.3
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1997	19686.0
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1998	19729.9
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	1999	20070.9
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2000	19866.8
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2001	19905.7
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2002	20377.7
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2003	20605.7
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2004	20887.8
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2005	20998.4
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2006	20887.8
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2007	21157.5
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2008	20550.1
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2009	20246.1
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2010	20296.0
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2011	19875.1
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2012	18623.3
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2013	18164.1
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2014	17791.4
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2015	17857.4
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2016	17054.3
+Totala Växthusgaser (kt CO2-ekv.)	INRIKES TRANSPORTER, TOTALT	2017	16590.1
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1990	3617.4
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1991	3785.8
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1992	3971.6
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1993	4318.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1994	4986.0
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1995	5013.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1996	5263.9
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1997	6000.4
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1998	6794.5
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	1999	6892.5
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2000	6799.2
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2001	6624.8
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2002	5802.8
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2003	7195.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2004	8399.9
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2005	8706.2
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2006	9285.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2007	9696.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2008	9588.9
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2009	9509.5
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2010	8954.3
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2011	8276.0
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2012	8055.7
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2013	7810.4
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2014	8243.9
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2015	8376.1
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2016	9399.4
+Totala Växthusgaser (kt CO2-ekv.)	UTRIKES TRANSPORTER, TOTALT	2017	10632.2
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1990	7658.3
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1991	7396.3
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1992	7277.7
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1993	7671.0
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1994	7703.0
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1995	7912.2
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1996	7620.8
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1997	7861.4
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1998	7562.9
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	1999	7605.5
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2000	7774.0
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2001	7258.0
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2002	7363.4
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2003	7318.4
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2004	7083.1
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2005	7052.2
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2006	7242.6
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2007	6893.2
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2008	6967.7
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2009	6694.5
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2010	6820.4
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2011	7136.1
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2012	6660.6
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2013	6888.6
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2014	6988.8
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2015	6860.1
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2016	6870.5
+Totala Växthusgaser (kt CO2-ekv.)	JORDBRUK, TOTALT	2017	7186.7
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1990	565.1
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1991	506.8
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1992	489.9
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1993	516.1
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1994	501.7
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1995	633.4
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1996	704.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1997	935.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1998	1001.3
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	1999	1223.1
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2000	1338.7
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2001	1444.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2002	1527.3
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2003	1593.4
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2004	1755.8
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2005	1761.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2006	1740.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2007	1727.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2008	1773.2
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2009	1723.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2010	1739.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2011	1654.8
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2012	1700.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2013	1692.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2014	1712.4
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2015	1686.1
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2016	1709.0
+Totala Växthusgaser (kt CO2-ekv.)	LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT	2017	1694.1
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1990	9302.2
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1991	9106.5
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1992	8345.6
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1993	8310.6
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1994	8310.0
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1995	7925.5
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1996	7990.6
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1997	7181.3
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1998	7058.6
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	1999	6589.3
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2000	6468.4
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2001	5642.9
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2002	5107.5
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2003	4820.0
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2004	4531.2
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2005	3356.7
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2006	2743.4
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2007	2518.6
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2008	1939.4
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2009	1689.1
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2010	1859.1
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2011	1493.5
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2012	1329.4
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2013	1212.7
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2014	1138.3
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2015	1063.1
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2016	1012.5
+Totala Växthusgaser (kt CO2-ekv.)	UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT	2017	969.4
