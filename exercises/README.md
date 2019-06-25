@@ -18,10 +18,12 @@ I listan nedan ser du våra uppdrag, och vad du lär dig i dem.
 
 |Uppdrag|Beskrivning|Python-begrepp|
 |-------|-----------|--------------|
-|[Väderdata](weatherdata/README.md)|Hur har temperaturen förändrats de senaste 50 åren? Vi undersöker data från SMHI|filer, matplotlib, ...|
+|[Väderdata](weatherdata/README.md)|Hur har temperaturen förändrats de senaste 50 åren? Vi undersöker data från SMHI|filer, matplotlib|
+|[Väderdata 2](weatherdata2/README.md)|Fortsättning på Väderdata. Vi plottar interaktiva grafer med hjälp av biblioteket Bokeh|filer, bokeh, binder|
 |[Keelingkurvan](co2/README.md)|Undersök hur koldioxid nivån har förändrats sedan 50-talet|filer, matplotlib|
 |[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|
 |[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|
+|[Torkan 2](drought2/README.md)|Forsättning av Torkan. Vi undersöker fler mått på torka| numpy arrayer, matplotlib|
 |...|...|...|
 
 ## Programmeringsplattform
