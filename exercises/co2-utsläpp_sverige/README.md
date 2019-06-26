@@ -5,5 +5,5 @@ I denna uppgiften lär man sig att plotta stapeldiagram, samt förbättrar kunks
 Källa: Statistiska Centralbyrån. Datan som används i uppgiften är hämtad under Creative Commons Erkännande 4.0 Internationell [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.sv).
 
 # Datafiler
-- `data.txt` innehåller utsläppt för olika sektorer i Sverige
+- `data.txt` innehåller utsläppt för olika sektorer i Sverige.
 - `data.zip` är den zippade versionen av `data.txt`.
