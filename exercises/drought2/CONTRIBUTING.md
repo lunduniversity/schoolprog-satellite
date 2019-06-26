@@ -1,0 +1,2 @@
+# Torkan 2 - för utvecklare
+Datan hämtades på samma sätt som beskrivs i [förra uppgiften](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/CONTRIBUTING.md) men de separata banden B04, B08, B8A och B11 plockas ut. Dessa har zippats och laddats upp på drive för att sedan hämtas in i notebooken enligt beskrivning [här](https://drive.google.com/open?id=1RGRenDZF21R9jMUQrBMA1gLkSPOtS9VC).
