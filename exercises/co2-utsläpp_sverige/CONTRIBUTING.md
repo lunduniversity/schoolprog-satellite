@@ -1,4 +1,4 @@
-# CO2-utsläppt i Sverige för utvecklare
+# CO2-utsläpp i Sverige för utvecklare
 Datan som finns i `data.txt` och `data.zip` hämtades från SCB:s statistikdatabas under Miljo/Utsläpp och upptag av växthusgaser/Totala utsläppt och upptag av växthusgaser efter växthusgas och sektor. År 1990 - 2017. Länk till sidan finns [här](http://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__MI__MI0107/TotaltUtslappN/).
 
 Alternativen som valdes var:
