@@ -103,3 +103,45 @@ a = np.array([30,60,90])
 np.sin(a) # == array([0.5, 0.8660254, 1.0])
 ```
 Finns väldigt många matematiska funktioner som används på liknande sätt, [se här.](https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.math.html)
+
+## Matplotlib.pyplot
+Det finns otroligt många funktioner i `matplotlib` och vi kommer inte kunna täcka allt här. För ytterligare information: se dessa [tutorials](https://matplotlib.org/3.1.0/tutorials/index.html).
+
+### Allämnt om figurer
+Du kan modifiera din figur på många sätt.
+```python
+plt.figure(figsize(10, 10)) # Skapar ny figure av storlek 10*10 inches
+plt.ylim(0, 10) # Gör så att plotfönstret är mellan 0 och 10 på yaxeln
+plt.xlim(0, 10) # Gör motsvarande för x-axeln
+plt.xlabel("x-axel (s)") # Sätter text på x-axeln
+plt.ylabel("y-axeln (m)") # Sätter text på y-axeln
+plt.title("Min fina graf") # Sätter en titel   
+plt.grid(True) # Gör så att man får ett rutnär i plotten
+plt.show() # Visar plotten
+plt.savefig("min_graf.png") # Sparar plotten till min_graf.png
+```
+
+### Plotta linjer
+Oftast vill vi bara plotta linjer genom punkter vi anger. 
+```python
+plt.plot(x1, y1, color="red", linewidth=0.5) # Plottar en röd linje med bredd 0.5. x1 och y1 kan vara listor eller np-arrayer av rank 1.
+plt.plot(x2, y2, color="blue", linewidth=0.7) # Gör samma som ovan fast en tjockare blå linje
+plt.legend(["linje 1", "linje 2"]) #Sätter en legend 
+```
+### Plotta stapeldiagram
+Om man vill plotta ett stapeldiagram kan man använda `plt.bar()`.
+
+```python
+bar = plt.bar(x=x, height=heights, width=width, bottom=bottoms) # Lägger till ett antal staplar. Informationen sparas i bar
+plt.legend(bar[0], "mina staplar") # Lägger till en legend
+```
+
+### Plotta bilder
+Om du har en array av rank 2 du vill plotta kan du använda `plt.imshow()`.
+
+```python
+plt.imshow(picture, cmap='PiYG') # Plottar arrayen picture som en bild med colormap 'PiYG'
+plt.clim(-1.0, 1.0) # Sätter ändpunkterna för colormappen
+plt.colorbar(label='min färgskala') # Skapar en colorbar med en label
+```
+
