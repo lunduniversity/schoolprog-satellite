@@ -28,26 +28,23 @@ for measure in raw_data:
 
 years = [i for i in range(1990, 2018)]
 y = data_by_category['NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)']
-
+plt.figure(figsize=(10,10))
+plt.grid(True)
 plt.plot(years, y)
 plt.ylim(0, 110000)
 
+categories = list(data_by_category.keys())
+categories = categories[1:]
+
 bars = []
-width=0.5
-
-def plot_bars():
-    categories = list(data_by_category.keys())
-    categories = categories[1:]
-    bottoms = np.zeros(28)
-    for category in categories:
-        bars.append(plt.bar(years, data_by_category[category], width, bottom=bottoms))
-        bottoms = np.array(data_by_category[category]) + bottoms
-
-    
-
-plot_bars()
-plt.legend(tuple(list(map(lambda x:x[0], bars))[::-1]), tuple(list(data_by_category.keys())[1:][::-1]))
-
+bottoms = np.zeros(28)
+plt.figure(figsize=(15,10))
+for category in categories:
+    bar = plt.bar(years, data_by_category[category], 0.5, bottom=bottoms)
+    bars.append(bar)
+    bottoms = np.array(data_by_category[category]) + bottoms
+plt.grid(True)
+plt.ylim(0, 110000)
+plt.legend(tuple(map(lambda x:x[0], bars))[::-1], tuple(categories[::-1]))
 plt.show()
 #print(data_by_category.keys())
-
