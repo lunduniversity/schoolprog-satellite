@@ -6,7 +6,7 @@ För att kunna jämföra bilderna ni senare kommer generera med något mer verkl
 
 ![En färgbild över bokskogen.](tci_hd.png)
 
-Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till datan som används i denna uppgift! Om ni inte vill använda repl.it finns kan man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
+Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till datan som används i denna uppgift. Uppgiften kan också köras i colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1sJLN6_QD1VdIORMaONaQpjT7OzYqgdWS). Man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 
 ## 1. Växtligheten 2015
