@@ -24,7 +24,7 @@ I listan nedan ser du våra uppdrag, och vad du lär dig i dem.
 |[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|
 |[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|
 |[Torkan 2](drought2/README.md)|Forsättning av Torkan. Vi undersöker fler mått på torka| numpy arrayer, matplotlib|
-|[CO2-utsläpp i Sverige](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/co2-utsl%C3%A4pp_sverige/co2-sweden.ipynb)|Undersök hur utsläppen för olika sektorer i Sverige ser ut med hjälp av ett stapeldiagram|filer, matplotlib, numpy|
+|[CO2-utsläpp i Sverige](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/co2-utsl%C3%A4pp_sverige/README.md)|Undersök hur utsläppen för olika sektorer i Sverige ser ut med hjälp av ett stapeldiagram|filer, matplotlib, numpy|
 |[CO2-utsläpp per capita](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/co2_per_capita)|Undersök hur utsläppen per capita har förändrats i Sverige sen 1990.|filer, matplotlib, numpy|
 |...|...|...|
 
