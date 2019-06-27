@@ -3,7 +3,7 @@ I denna uppgift kommer vi kolla på biblioteket NumPy. Centralt i NumPy är arra
 
 Om man har kommit väldigt långt i matten och läst lite linjär algebra kan man säga att NumPy behandlar matriser och vektorer effektivt.
 
-Denna uppgift kan till exempel köras på [repl.it](https://repl.it/languages/python3).
+Denna uppgift kan köras på [repl.it](https://repl.it/languages/python3) eller colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1ZVFKnbELw_2D8vc1VpC2-ZX9aYNGV6gV)
 
 
 ## 1. Din första NumPy array
