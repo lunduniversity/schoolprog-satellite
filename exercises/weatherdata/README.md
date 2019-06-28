@@ -1,23 +1,8 @@
----
-layout: page
-title: Väderdata
-permalink: /exercises/weatherdata/
-toc: true
-type: exercise
-tags:
- - medel
- - plottning
- - list comprehension
- - input/output
- - inläsning från fil
----
-
-Använd riktig väderdata för att analysera hur temperaturen förändrats i Sverige de senaste 50 åren
-==========================================================================================================
+# Väderdata
 
 I den här uppgiften kommer vi använda python för att analysera data som är jobbig att räkna på för hand. Vi kommer att kolla på hur man kan använda data från filer i sitt program.
 
-För att komma igång behöver du gå till [Repl.it](https://repl.it/@TeodorBucht1729/WeatherData) där vi har förberett datafiler och några förskrivna funktioner. Om du inte vill använda Repl.it kan du ladda ner filerna från [GitHub](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/weatherdata) istället.
+För att komma igång kan du antingen du gå till [Repl.it](https://repl.it/@TeodorBucht1729/WeatherData) där vi har förberett datafiler och några förskrivna funktioner eller köra den på colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1aMR-_LyHoG2C3DWY_y6_u_1CXlq7_MR8). Du kan också ladda ner filerna från [GitHub](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/weatherdata) istället.
 
 Vi börjar med att kolla på ett mindre exempel för att se hur inläsning från fil fungerar.
 
