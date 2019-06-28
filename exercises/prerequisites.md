@@ -1,6 +1,7 @@
 # Förkunskaper för uppdragen
 
-Förstår du vad detta program skriver ut? I så fall har du lagom förkunskaper.
+## Innan du börjar med uppdragen
+Förstår du hur detta program fungerar och vad det skriver ut? I så fall har du lagom förkunskaper.
 
 ```python
 import matplotlib.pyplot as plt
@@ -34,3 +35,18 @@ Om du aldrig har programmerat tidigare, eller vill repetera lite, så kan du kö
 *  [Kvadrera talet](https://lunduniversity.github.io/schoolprog/exercises/square-the-number). Du lär dig lite om input, output, strängar och andra typer av värden.
 *  [Avlusning](https://lunduniversity.github.io/schoolprog/exercises/debugging). Lite grunder om felsökning vilket är mycket viktigt när man programmerar.
 *  [Plotta funktioner](https://lunduniversity.github.io/schoolprog/exercises/plot/). Du lär dig grunder om plottning.
+
+## Svårighetsordning för uppdragen
+Många av uppdragen bygger på varandra och vissa uppdrag förutsätter att ni har lärt er begrepp från tidigare uppdrag. Ordningen vi rekommenderar är därför:
+
+1. Väderdata
+2. Keelingkurvan
+3. Introduktion NumPy
+4. Torkan
+5. Torkan 2
+6. Väderdata 2
+7. CO2-utsläpp i Sverige
+8. CO2-utsläpp per capita
+
+Notera att detta bara är en rekommendation och att ni kan göra dem i en annorlunda ordning.
+
