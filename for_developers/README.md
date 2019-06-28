@@ -1,7 +1,7 @@
 # För utvecklare
 
 ## Uppdatera notebooks
-Orginalfilerna för notebooksen finns på Google Colab/Drive. De ligger i 2019-Rymden/Colabs/Uppdrag. Vi har än sålänge uppdaterat notebooksen i Google Colab, sedan laddat ned som .ipynb och pushat till GitHub. Det kan finnas möjlighet att göra detta smidigare då det finns ett menyval i Google Colab som heter "Save a copy to GitHub". Detta kräver dock att man requestar tillåtelse från LundUniversitys GitHub. Skulle eventuellt vara värt att testa då vi just nu måste uppdatera GitHub manuellt. 
+Orginalfilerna för notebooksen finns på Google Colab/Drive. De ligger i 2019-Rymden/Colabs/Uppdrag. Vi har än sålänge uppdaterat notebooksen i Google Colab, sedan laddat ned som .ipynb och pushat till GitHub. Det kan finnas möjlighet att göra detta smidigare då det finns ett menyval i Google Colab som heter "Save a copy to GitHub". Detta kräver dock att man requestar tillåtelse från LundUniversitys GitHub. Skulle eventuellt vara värt att testa då vi just nu måste uppdatera GitHub manuellt. Vi har testat att spara colabs till egna repon, och det var väldigt smidigt, dock måste man ange hela sökvägen varje gång man ska sparar till GitHub. 
 
 Vad som sparas mellan sessioner på google colab: Koden i rutorna, outputten från rutorna och allt i textrutorna. Men filer, pythonvariabler, installerade bibliotek etc. sparas inte och måste laddas in igen. Då eleverna ska göra uppgiften vill vi inte ha tidigare outputs sparade. Ta därför bort alla outputs i orginalfilen. Man kan lägga till en keyboard shortcut för att ta bort alla outputs under Tools.
 
