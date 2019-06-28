@@ -17,6 +17,8 @@ Vissa uppgifter har hela uppgiftsbeskrivningar i Markdown format i motsvarande R
 
 ## Binder
 
+Guide till binder finns [ħär](https://mybinder.readthedocs.io/en/latest/introduction.html).
+
 ### Hämta länk
 Binderlänker hämtas från [deras hemsida](https://gke.mybinder.org/). Där kopierar man in länken till repot. Man kan också ange om man direkt vill öppna en fil med länken, detta har vi gjort för uppgiften som använder binder, så när man klickar på binderlänken öppnar man direkt uppgiften.
 
