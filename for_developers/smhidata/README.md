@@ -32,19 +32,26 @@ Det finns lite python-kod som wrappar SMHIs api och som dels filtrerar ut inform
 * funktionen `get_stations()` hämtar en fil med alla stationer (id och namn) som mäter dygnsmedeltemperatur, och omvandlar till en Python-lista.
 * funktionen `get_data(id)` hämtar temperaturdata för en viss station, och returnerar som en sorterad Python-lista med år, månad, dag och temp.
 
-### Test-program `test.py`
+### Test-program `test_smhi_api.py`
 
 Test-programmet använder wrapper-api:et och skriver ut exempel.
 
-* Test-programmet test.py laddar ner stations-info och skriver ut stations-id och namn, samt laddar sedan ner temperaturerna för en av stationerna (Lund), och printar ut.
+* Test-programmet `test_smhi_api.py` laddar ner stations-info och skriver ut stations-id och namn, samt laddar sedan ner temperaturerna för en av stationerna (Lund), och printar ut.
 * Observera att vissa datum kan fattas i serierna. T.ex. om mätutrustningen varit ur funktion.
-* Provkör med kommandot `python test.py`
+* Provkör med kommandot `python test_smhi_api.py`
 
 Man kan jämföra med rådata-filerna i `cache`-katalogen, t.ex. om man vill titta på meta-informationen för datan.
 
 ### Hämta all data med `fetchdata.py`
 
-Det finns ett program `fetchdata.py` som hämtar alla stationsdata. Data filtreras sedan ut för de stationer som har minst 20.000 datapunkter och som börjar på år 1961 (vilket många stationer gör). Resultatet blir en utskrift med all data för alla sådana stationer, och är tänkt att pipas till en fil. Formatet är för varje station: en rad med id och namn på stationen, följt av en rad per datapunkt med y, m, d, t.
+Det finns ett program `fetchdata.py` som hämtar alla stationsdata. I programmet finns konstanter som anger:
+* Vilket startår och slutår som skall användas
+* Hur många datapunkter som får saknas i detta intervall.
+
+Data filtreras sedan ut för de stationer som uppfyller dessa villkor. Resultatet blir en utskrift med all data för alla sådana stationer, och är tänkt att pipas till en fil. Formatet är för varje station: en rad med id och namn på stationen, följt av en rad per datapunkt med y, m, d, t. En blankrad mellan stationerna.
 
 * Kör med `python fetchdata.py > result.txt`
-* Obs! Det tar en liten stund att köra detta, för det innebär att över 800 stationer laddas ner (och cachas i `cache`-katalogen). Ett mindre antal av stationerna kommer med i output, baserat på villkoren ovan.
+* Obs! Det tar en liten stund att köra detta första gången, för det innebär att över 800 stationer laddas ner (och cachas i `cache`-katalogen). Ett mindre antal av stationerna kommer med i output, baserat på villkoren ovan.
+
+### Läs in data som sparats i textfil
+Antag att du kört `fetchdata` ovan och sparat resultatet i textfilen result.txt. Du kan då läsa in datan till ett Python dictionary med biblioteket `readdata.py`. Se filen `testread.py` för ett exempel.
