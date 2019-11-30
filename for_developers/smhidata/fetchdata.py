@@ -4,13 +4,21 @@ from collections import defaultdict
 start_year = 1961
 end_year = 2018
 margin = 100 # Allowed missed data points
-min_no_of_data_points = (end_year - start_year + 1)*365.25 - 100
+min_no_of_data_points = (end_year - start_year + 1)*365.25 - 200
 stations = get_stations()
 all_lines = [] # Text lines to output
 num_saved_stations = 0
 for i, name in stations:
     sys.stderr.write(str(i) + "; " + name + '\n')
     data = list(get_data(i))
+    if len(data)>1:
+        sys.stderr.write("First data point: " + str(data[0]) + "\n")
+        sys.stderr.write("Last data point: " + str(data[-1]) + "\n")
+        sys.stderr.write("Number of data points: " + str(len(data)) + "\n")
+        (y1, m1, d1), t1 = data[0]
+        (y2, m2, d2), t2 = data[-1]
+        datapoints_per_year = len(data)//(y2-y1+1)
+        sys.stderr.write("Average data points per year: " + str(datapoints_per_year) + "\n")
 
     # Skip stations with too few data points overall
     if len(data) < min_no_of_data_points: continue

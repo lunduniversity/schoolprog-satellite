@@ -3,7 +3,7 @@ from readdata import *
 #stations = get_station_list("file.txt")
 #print(stations)
 
-station_data = get_station_data("result18.txt")
+station_data = get_station_data("result21.txt")
 for station in list(station_data.keys()):
     datapoints = station_data[station]
     length = len(datapoints)
