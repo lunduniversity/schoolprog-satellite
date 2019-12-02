@@ -1,4 +1,4 @@
-# Skolprogrammering: satellitdata-uppdrag
+# Skolprogrammering: miljödata-uppdrag
 
 Välkommen till programmeringens värld!
 
@@ -10,17 +10,28 @@ Vi hoppas du tycker uppdragen är roliga och intressanta, och får en insikt i h
 
 ## Vad behöver du kunna?
 
-Vi förutsätter att du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper.
+Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så behöver du kunna enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper.
 
 ## Våra uppdrag
 
-I listan nedan ser du våra uppdrag, och vad du lär dig i dem.
+Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. De använder repl.it som Python-plattform.
+
+|Uppdrag|Miljödata|Programmering|
+|-------|-----------|--------------|
+|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi undersöker temperaturdata från SMHI|grundläggande om listor, grundläggande om plottning, filer|
+|Väderdata B (TBA)|...|...|
+|[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
+|Keelingkurvan B (TBA)|...|grundläggande om dictionaries|
+
+## Inspirationsuppdrag
+
+Följande uppdrag kan användas som inspiration. En del av dem täcker samma områden som ovan, men de går betydligt snabbare fram, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dem också. En del av dem kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder.
 
 |Uppdrag|Beskrivning|Python-begrepp|Google Colab/Binder|
 |-------|-----------|--------------|------------|
 |[Väderdata](weatherdata/README.md)|Hur har temperaturen förändrats de senaste 50 åren? Vi undersöker data från SMHI|filer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1aMR-_LyHoG2C3DWY_y6_u_1CXlq7_MR8)|
 |[Väderdata 2](weatherdata2/README.md)|Fortsättning på Väderdata. Vi plottar interaktiva grafer med hjälp av biblioteket Bokeh|filer, bokeh, binder|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1Go3iOSQWsPa2RcHdr_Kz35rcoRVwoMKN) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lunduniversity/schoolprog-satellite/master?filepath=exercises%2Fweatherdata2%2FWeatherdata_2.ipynb)|
-|[Keelingkurvan](co2/README.md)|Undersök hur koldioxid nivån har förändrats sedan 50-talet|filer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1HDGOcSsCcui3sHJ0NxtcqbiEZdxV7qHZ)|
+|[Keelingkurvan](co2/README.md)|Undersök hur koldioxidnivån har förändrats sedan 50-talet|filer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1HDGOcSsCcui3sHJ0NxtcqbiEZdxV7qHZ)|
 |[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1ZVFKnbELw_2D8vc1VpC2-ZX9aYNGV6gV)|
 |[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1sJLN6_QD1VdIORMaONaQpjT7OzYqgdWS)|
 |[Torkan 2](drought2/README.md)|Forsättning av Torkan. Vi undersöker fler mått på torka| numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1zgCiM7sZ9Adu0AhzkXPXNv-iOSp3XsHJ)|
