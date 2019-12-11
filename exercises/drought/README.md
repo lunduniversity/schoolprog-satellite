@@ -1,15 +1,104 @@
 
 # Hur påverkades Bokskogen av torkan 2018?
-I denna uppgift studerar vi [Bokskogen](https://sv.wikipedia.org/wiki/Torups_rekreationsomr%C3%A5de) i centrala Skåne och dess närliggande områdes växtlighet med hjälp av satellitbilder. Bilderna är alla tagna under första halvan av augusti, men från tre olika år. Kan vi se någon skillnad efter en sommar med torka? Vi kommer också använda teori om NDVI (Normalized Difference Vegetation Index) som är ett mått på hur mycket levande växtlighet det finns. För att läsa mer om NDVI och hur man beräknar det, se [denna länk](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale).
-
-För att kunna jämföra bilderna ni senare kommer generera med något mer verklighetsförankrat visar vi här en färgbild från 2017 på området vi kommer undersöka senare:
+I denna uppgift ska vi se hur växtlighet kan undersökas med hjälp av satellitbilder. Vi ska titta på bilder över [Bokskogen](https://sv.wikipedia.org/wiki/Torups_rekreationsomr%C3%A5de), ett naturområde i Skåne. Bilderna är alla tagna under första halvan av augusti, men från tre olika år. Frågan är, kommer vi att kunna se någon skillnad efter en sommar med torka? Här en färgbild från 2017 på området vi kommer undersöka senare:
 
 ![En färgbild över bokskogen.](tci_hd.png)
 
-Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till datan som används i denna uppgift. Uppgiften kan också köras i colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1sJLN6_QD1VdIORMaONaQpjT7OzYqgdWS). Man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
+Det kan vara svårt att se om en gran mår bra eller dåligt med blotta ögat. Men vi kommer att använda oss av fler färger än de ögat kan se för att undersöka hur växtligheten mår.
+
+## 1. Om satellitbilder
+
+### 1.1 Pixlar och band
+
+En satellitbild består av *pixlar* i ett rutmönster, som vi kan illustrera så här:
+
+    o o o
+    o o o
+    o o o
+    o o o
+
+Varje pixel motsvarar en yta på t.ex. 10 x 10 meter på jorden. Så ovanstående pixlar skulle motsvara ett område som är 30 m brett och 40 m långt. En riktig satellitbild är förstås mycket större, med många fler pixlar.
+
+Varje pixel har information om ljusintensiteten för flera olika färger, som rött, grönt eller blått. Men också om färger utanför det synliga spektret, som till exempel *infrarött*.
+
+För satellitbilder kallar vi färgerna för *band*. Det står egentligen för *frekvensband*, alltså ett frekvensområde. Färgen röd motsvarar till exempel frekvensområdet 405-480 THz (1 TeraHertz är tusen miljarder svängningar per sekund). Infrarött har en lägre frekvens, som vi inte kan se.
+
+Satellitbilden innehåller information om de olika banden för varje pixel. Till exempel kan vi representera det röda bandet med en två-dimensionell numpy-array, med ett värde för varje pixel:
+
+    [[1186 1178 1126]
+     [1318 1210 1322]
+     [1342 1309 1400]
+     [1376 1333 1405]]
+
+**Uppdrag:** Provkör python-koden nedan som skapar numpy-arrayen för detta röda band:
+
+```python
+import numpy as np
+
+red = np.array([
+  [1186, 1178, 1126],
+  [1318, 1210, 1322],
+  [1342, 1309, 1400],
+  [1376, 1333, 1405]])
+
+print(a)
+```
+
+### 1.2 NDVI - Normalized Difference Vegetation Index
+
+Växtlighet innehåller *klorofyll*, som spelar en avgörande roll i fotosyntesen, och också ger växterna deras gröna färg. Att växterna ser gröna ut beror på att de reflekterar grönt ljus. Rött ljus, däremot, absorberas. Det visar sig att frisk vegetation också reflekterar *NIR* (nära-infrarött ljus). Om en pixel har högt värde i NIR-bandet, men lågt värde i röda bandet är det stor sannolikhet att pixeln motsvarar frisk vegetation.
+
+För pixlarna ovan ser NIR ut så här:
+
+    [[2953 3105 3239]
+     [2109 2298 2062]
+     [2260 1911 1546]
+     [2348 1875 1222]]
 
 
-## 1. Växtligheten 2015
+För att bedöma vilka pixlar som innehåller frisk vegetation används *NDVI* - Normalized Difference Vegetation Index, som beräknas enligt formeln nedan:
+
+
+           NIR - Red
+    NDVI = ---------
+           NIR + Red
+
+Formeln ger alltid ett värde mellan -1 och 1. Höga värden på mellan 0.3-0.8 pekar på frisk vegetation, medan lägre värden pekar på antingen något annat än vegetation, eller vegetation som är uttorkad. Vattensamlingar ger ofta ett negativt NDVI-värde.
+
+**Uppdrag:** Skriv Pythonkod för att beräkna NDVI för övre vänstra pixeln. Motsvarar pixeln frisk vegetation?
+
+*Tips* Här är ett kodskelett du kan använda:
+
+```python
+ndvi = (2953 - ...)/(... - ...)
+print(ndvi)
+```
+
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>ndvi = (2953 - 1186)/(2953+1186)
+print(ndvi)
+</code></pre>
+</p>
+</details>
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+Resultatet är cirka 0.43 vilket indikerar frisk vegetation.
+</p>
+</details>
+
+För att läsa mer om NDVI se https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale eller https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php
+
+
+## 2. Växtligheten 2015
+
+Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Uppgiften kan också köras i colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1sJLN6_QD1VdIORMaONaQpjT7OzYqgdWS). Man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 Vi börjar med att kolla på sensommaren 2015. I mappen Bokskogen ligger det tre filer som alla heter `data_1X.npz`. Detta är numpy-arrays som innehåller ett heltal för varje pixel, som tillsammans kan skapa en bild. Vi ska börja med att kolla på `data_15.npz`. Skriv följande kod för att ladda in alla nödvändiga paket och npz-filen:
 
@@ -19,9 +108,9 @@ import matplotlib.pyplot as plt
 
 bands15 = np.load('bokskogen/data_15.npz')
 ```
-Vår `bands15` variabel fungerar nu ungefär som en `dict` och innehåller data för både det röda och det nära infraröda bandet. För att plocka ut något från `bands15` måste vi använda nycklar som vi gjort i tidigare uppgifter med `dict`.
+Vår `bands15` variabel fungerar nu ungefär som en nyckel-värdetabell (dictionary) och innehåller data för både det röda och det nära infraröda bandet. För att plocka ut något från `bands15` måste vi använda nycklar på liknande sätt som vi gjort i tidigare uppgifter med nyckel-värdetabeller.
 
-**Uppdrag:** Kan du själv ta reda på vad nycklarna till `bands15` är? 
+**Uppdrag:** Kan du själv ta reda på vad nycklarna till `bands15` är?
 
 <details>
 <summary markdown="span">
@@ -40,21 +129,21 @@ Svar
 
 För att lättare kunna använda datan vill vi nu skapa var sin variabel för de båda banden.
 
-**Uppdrag:** Skapa variablerna `red15` och `nir15` med hjälp av `bands15`. 
+**Uppdrag:** Skapa variablerna `red15` och `nir15` med hjälp av `bands15`.
 
 
 <details>
 <summary markdown="span">
 Svar
 </summary>
-<p><pre>red15 = bands15['red']
-nir15 = bands15['nir']</pre>
+<p><pre><code>red15 = bands15['red']
+nir15 = bands15['nir']</code></pre>
 </p>
 </details>
 
 Vi har nu delat upp datan för de båda banden var för sig. För att få en känsla av vad det faktiskt är för data vi har att göra med skulle vi kunna testa plotta dem.
 
-**Uppdrag:** Plotta en eller båda variablerna vi precis skapade. Vad visar plotten? 
+**Uppdrag:** Plotta en eller båda variablerna vi precis skapade. Vad visar plotten?
 
 <details>
 <summary markdown="span">
@@ -102,7 +191,7 @@ Svar
 </p>
 </details>
 
-Vi skulle nu kunna plotta bilden som innan, men för att göra det tydligare använder vi några speciella inställningar. Skriv koden nedan: 
+Vi skulle nu kunna plotta bilden som innan, men för att göra det tydligare använder vi några speciella inställningar. Skriv koden nedan:
 
 ```python
 plt.figure(figsize=(10,10))
@@ -137,22 +226,22 @@ Svar
 Svar
 </summary>
 <p>
-En grön åker tyder på att det finns växtlighet där, medan en vitare åker tyder på att det finns låg växtlighet och att åkern troligtvis är skördad. 
+En grön åker tyder på att det finns växtlighet där, medan en vitare åker tyder på att det finns låg växtlighet och att åkern troligtvis är skördad.
 </p>
 </details>
 
 
-## 2. Jämför växtlighet
-För att kunna jämföra åren måste vi nu egentligen göra samma sak för 2017 och 2018. Vi skulle kunna skriva ungefär samma kod som vi precis skrivit ytterligare två gånger, men detta är inte särskilt effektivt eftersom vi i princip skriver samma sak tre gånger med ett fåtal utbytta ord. För ändamål som dessa är därför funktioner väldigt användbara. 
+## 3. Jämför växtlighet
+För att kunna jämföra åren måste vi nu egentligen göra samma sak för 2017 och 2018. Vi skulle kunna skriva ungefär samma kod som vi precis skrivit ytterligare två gånger, men detta är inte särskilt effektivt eftersom vi i princip skriver samma sak tre gånger med ett fåtal utbytta ord. För ändamål som dessa är därför funktioner väldigt användbara.
 
-**Uppdrag:** Skriv en funktion `plot_ndvi(file_name, save_name)` som tar in en sträng `file_name`, som är namnet på `.npz`-filen du vill läsa in datan från, och en sträng `save_name`, som blir namnet på den bild som plottas. Bilden som plottas ska vara baserad på NDVI med liknande inställningar som innan. 
+**Uppdrag:** Skriv en funktion `plot_ndvi(file_name, save_name)` som tar in en sträng `file_name`, som är namnet på `.npz`-filen du vill läsa in datan från, och en sträng `save_name`, som blir namnet på den bild som plottas. Bilden som plottas ska vara baserad på NDVI med liknande inställningar som innan.
 
 <details>
 <summary markdown="span">
 Tips
 </summary>
 <p>
-Du kan återanvända väldigt stor del av den kod du redan skrivit. 
+Du kan återanvända väldigt stor del av den kod du redan skrivit.
 </p>
 </details>
 
@@ -191,4 +280,3 @@ Torkan 2018 hade sin påverkan på växtligheten. Om du kollar på åkrarna ser 
 
 ## Fortsättningsuppgifter
 - Modifiera funktionen `plot_ndvi()` så att du kan ange en titel för figuren och plotta figurerna igen fast med beskrivande titlar.
-
