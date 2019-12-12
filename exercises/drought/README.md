@@ -41,7 +41,7 @@ red = np.array([
   [1342, 1309, 1400],
   [1376, 1333, 1405]])
 
-print(a)
+print(red)
 ```
 
 ### 1.2 NDVI - Normalized Difference Vegetation Index
