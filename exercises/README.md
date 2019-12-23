@@ -22,7 +22,7 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 |Väderdata B (TBA)|...|...|
 |[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
 |Keelingkurvan B (TBA)|...|grundläggande om nyckel-värdetabeller|
-|[CO2 i Sverige A](co2-utsläpp_sverige/co2_A_replit.md) (draft)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | läsa fil över internet, nyckel-värdetabeller|
+|[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md) (draft)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | läsa fil över internet, nyckel-värdetabeller|
 
 ## Inspirationsuppdrag
 
@@ -36,7 +36,7 @@ Följande uppdrag kan användas som inspiration. En del av dem täcker samma omr
 |[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/numpy_intro/Introduktion_NumPy.ipynb)|
 |[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/Bokskogen.ipynb)|
 |[Torkan 2](drought2/README.md)|Forsättning av Torkan. Vi undersöker fler mått på torka| numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought2/Torkan_2.ipynb)|
-|[CO2-utsläpp i Sverige](co2-utsl%C3%A4pp_sverige/README.md)|Undersök hur utsläppen för olika sektorer i Sverige ser ut med hjälp av ett stapeldiagram|filer, matplotlib, numpy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1O0jo_UZKRtsbmUEFk1eIho8L99KKCbPe)|
+|[CO2-utsläpp i Sverige](co2_emission_sweden/README.md)|Undersök hur utsläppen för olika sektorer i Sverige ser ut med hjälp av ett stapeldiagram|filer, matplotlib, numpy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1O0jo_UZKRtsbmUEFk1eIho8L99KKCbPe)|
 |[CO2-utsläpp per capita](co2_per_capita/README.md)|Undersök hur utsläppen per capita har förändrats i Sverige sen 1990.|filer, matplotlib, numpy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2_per_capita/co2_sweden_per_capita.ipynb)|
 
 ## Programmeringsplattform

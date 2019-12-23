@@ -10,7 +10,7 @@ För att programmera, gå till [(https://repl.it/languages/python3](https://repl
 ## 1. Titta på datafilen
 
 Vi skall använda oss av en modifierad datafil från SCB som vi lagt här:
-[https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2-utsläpp_sverige/data.txt](https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2-utsläpp_sverige/data.txt)
+[https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt](https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt)
 
 ### 1.1 Surfa till datafilen
 
@@ -145,7 +145,7 @@ Du kan ta bort (eller kommentera bort) din tidigare kod. Nu ska vi läsa in file
 
 ```python
 import requests
-response = requests.get("https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2-utsläpp_sverige/data.txt")
+response = requests.get("https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt")
 data = response.text
 print(data)
 ```
