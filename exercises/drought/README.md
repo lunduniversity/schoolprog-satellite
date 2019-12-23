@@ -70,7 +70,7 @@ Formeln ger alltid ett värde mellan -1 och 1. Höga värden på mellan 0.3-0.8 
 *Tips* Här är ett kodskelett du kan använda:
 
 ```python
-ndvi = (2953 - ...)/(... - ...)
+ndvi = (2953 - ...)/(... + ...)
 print(ndvi)
 ```
 
