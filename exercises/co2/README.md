@@ -1,19 +1,19 @@
 # Keelingkurvan
 I denna uppgift kommer vi utforska Keelingkurvan som beskriver koldioxidhalten i atmosfären. Mätningarna har utförts på Hawaii i ett laboratorium som befinner sig på vulkanen Mauna Loa sedan 1958. Observationerna på Mauna Loa var de första att tyda på att koldioxidhalten ökar i vår atmosfär.
 
-För att enklast köra igång kan man gå till [repl.it](https://repl.it/@TeodorBucht1729/Keelingkurvan) där vi förberett datan. Uppgiften kan också köras på Colab på följande länk: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1HDGOcSsCcui3sHJ0NxtcqbiEZdxV7qHZ). Om man vill kan man också ladda ned den från [GitHub](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/co2).
+För att enklast köra igång kan man gå till [repl.it](https://repl.it/@TeodorBucht1729/Keelingkurvan) där vi förberett datan. Uppgiften kan också köras på Colab på följande länk: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2/Keelingkurvan.ipynb). Om man vill kan man också ladda ned den från [GitHub](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/co2).
 
 ## 1. Inläsning och plottning av data
-Givet är en `.txt` fil som ni själva kan öppna och kolla på. Denna fil innehåller all data ni kommer behöva. Om ni kollar på filen ser ni att den består av 7 kolumner. De första två kolumnerna innehåller året och månaden för mätningen. Den tredje kolumnen innehåller året på decimalform, vilket är smidigt för att få rätt tidsskala på x-axeln. Den fjärde kolumnen innehåller det uppmätta medelvärdet för den månaden mätt i ppm CO2-molekyler i torkad luft. ppm står för points per million så värdena beskriver hur många CO2-molekyler per miljon luftmolekyler det finns i luften. Den observanta läsaren kanske här ser att vissa av dessa värden är -99.99. Detta beror på att mätvärdena för denna månaden inte blev tillräckligt bra. För att lösa detta problem har värden *interpolerats* med hjälp av resterande uppmätta värden. Detta innebär i princip att man räknar ut vad värdet borde ha varit om det förändras regelbundet. Vi kommer främst att använda de färdiginterpolerade värdena som finns i den femte kolumnen. I den sjätte kolumnen finns värden som beskriver en trend. 
+Givet är en `.txt` fil som ni själva kan öppna och kolla på. Denna fil innehåller all data ni kommer behöva. Om ni kollar på filen ser ni att den består av 7 kolumner. De första två kolumnerna innehåller året och månaden för mätningen. Den tredje kolumnen innehåller året på decimalform, vilket är smidigt för att få rätt tidsskala på x-axeln. Den fjärde kolumnen innehåller det uppmätta medelvärdet för den månaden mätt i ppm CO2-molekyler i torkad luft. ppm står för points per million så värdena beskriver hur många CO2-molekyler per miljon luftmolekyler det finns i luften. Den observanta läsaren kanske här ser att vissa av dessa värden är -99.99. Detta beror på att mätvärdena för denna månaden inte blev tillräckligt bra. För att lösa detta problem har värden *interpolerats* med hjälp av resterande uppmätta värden. Detta innebär i princip att man räknar ut vad värdet borde ha varit om det förändras regelbundet. Vi kommer främst att använda de färdiginterpolerade värdena som finns i den femte kolumnen. I den sjätte kolumnen finns värden som beskriver en trend.
 
-**Uppdrag:** Läs in åren på decimalform i en lista `years` och de interpolerade CO2-värdena i en lista `co2`. 
+**Uppdrag:** Läs in åren på decimalform i en lista `years` och de interpolerade CO2-värdena i en lista `co2`.
 
 <details>
 <summary markdown="span">
 Tips
 </summary>
 <p>
-Använd <code>with open("data.txt", "r") as f:</code> och <code>data=f.read()</code> för att få hela filen som en sträng. Används sedan <code>data.split("\n")</code> för att dela upp filen vid varje rad. 
+Använd <code>with open("data.txt", "r") as f:</code> och <code>data=f.read()</code> för att få hela filen som en sträng. Används sedan <code>data.split("\n")</code> för att dela upp filen vid varje rad.
 </p>
 </details>
 
@@ -33,7 +33,7 @@ for line in data:
 
 Nu vill vi givetvis visualisera datan för att se hur keelingkurvan faktiskt ser ut.
 
-**Uppdrag:** Kör följande kod och variera olika plotparametrar för att förstå vad de gör. 
+**Uppdrag:** Kör följande kod och variera olika plotparametrar för att förstå vad de gör.
 ```python
 import matplotlib.pyplot as plt
 plt.plot(years, co2, color="red", linestyle="solid", marker="o", markersize=1.5, linewidth=0.5)
@@ -41,7 +41,7 @@ plt.savefig("keeling.png")
 ```
 För ytterligare parametrar och information om de vi använder kan man läsa [här](https://matplotlib.org/2.1.1/api/_as_gen/matplotlib.pyplot.plot.html).
 
-Vi vill gärna se trenden i samma plot. 
+Vi vill gärna se trenden i samma plot.
 
 **Uppdrag:** Läs in värdena från den sjätte kolumnen och spara dem i listan `trend` som du ska plotta i samma graf. Denna linje ska vara blå.
 
@@ -85,13 +85,13 @@ plt.legend(["CO2", "Trend"])
 plt.grid(True)
 plt.savefig("keeling.png")
 ```
-**Uppdrag:** Lek runt lite med de olika parametrarna och se hur grafen ändras för att förstå vad de har för innebörd. 
+**Uppdrag:** Lek runt lite med de olika parametrarna och se hur grafen ändras för att förstå vad de har för innebörd.
 
 De flesta metoderna är ganska självförklarande men vi listar ändå lite korta förklaringar här.
-- `plt.xlabel()` tar en sträng och sätter texten på x-axeln till detta. 
+- `plt.xlabel()` tar en sträng och sätter texten på x-axeln till detta.
 - `plt.ylabel()` funkar likadant fast för y-axeln.
-- `plt.title()` sätter en titel för hela grafen. 
-- `plt.legend()` lägger till en liten ruta som beskriver de olika linjerna. Den tar en lista av strängar, en sträng för varje linje. 
+- `plt.title()` sätter en titel för hela grafen.
+- `plt.legend()` lägger till en liten ruta som beskriver de olika linjerna. Den tar en lista av strängar, en sträng för varje linje.
 - `plt.grid()` avgör om grafen ska ha något rutnät eller inte.
 
 Alla dessa metoderna går att variera ytterligare efter användarens önskan och det finns många fler valbara parametrar än vad vi skriver om här. För att lära sig mer kan man läsa på [här](https://matplotlib.org/3.1.0/api/_as_gen/matplotlib.pyplot.html#module-matplotlib.pyplot).
@@ -100,7 +100,7 @@ Alla dessa metoderna går att variera ytterligare efter användarens önskan och
 ## 2. Förenkla datanvändningen med hjälp av dict
 Om vi lättare vill kunna kolla på ett specifikt år eller månad skulle vi kunna lagra vår data i en `dict` istället. Vi skulle då kunna använda ett år och månad som nyckel för att lättare kunna plocka ut värden för ett motsvarande datum.
 
-**Uppdrag:** Skapa en `dict` med tuplar `(year, month)` som nycklar för ett smotsvarande mätvärde. `year` och `month` kan båda var heltal där `month` representeras av talen 1 till 12. 
+**Uppdrag:** Skapa en `dict` med tuplar `(year, month)` som nycklar för ett smotsvarande mätvärde. `year` och `month` kan båda var heltal där `month` representeras av talen 1 till 12.
 <details>
 <summary markdown="span">
 Tips
@@ -127,7 +127,7 @@ for line in data:
 
 ## 3. Medelvärde för varje år
 
-Vi vill nu använda vår `dict` för att räkna ut ett medelvärde för varje år. För att göra detta kan vi skapa en funktion `avg_year(year)` som tar in ett heltal `year` och returnerar ett genomsnittligt värde för hela året. 
+Vi vill nu använda vår `dict` för att räkna ut ett medelvärde för varje år. För att göra detta kan vi skapa en funktion `avg_year(year)` som tar in ett heltal `year` och returnerar ett genomsnittligt värde för hela året.
 
 **Uppdrag:** Skriv funktionen `avg_year(year)`.
 
@@ -165,7 +165,7 @@ Tips
 <p>För att kolla om det finns ett värde kopplat till en viss nyckel kan du skriva: <code>(year, month) in co2_dict</code>, vilket kommer returnera <code>True</code> om det finns och annars <code>False</code>.
 </p>
 </details>
-    
+
 <details>
 <summary markdown="span">
 Lösning
@@ -181,7 +181,7 @@ Lösning
 </p>
 </details>
 
-Vi kan nu ta fram en lista som inehåller medelvärde för åren 1958 till 2019 med hjälp av vår nya metod. 
+Vi kan nu ta fram en lista som inehåller medelvärde för åren 1958 till 2019 med hjälp av vår nya metod.
 
 **Uppdrag:** Skapa listan `mean_year` med hjälp av funktionen `avg_year(year)`.
 
@@ -224,7 +224,7 @@ Svar
 <summary markdown="span">
 Svar
 </summary>
-<p><code>mean_year</code> har bara ett värde per år medan <code>trend</code> har tolv. Detta gör att <code>mean_year</code> blir lite missvisande då hela årsgenomsnittet kommer hamna på motsvarande plats för januari i <code>trend</code>. Med andra ord blir hela grafen förskjuten ett halvår åt vänster. 
+<p><code>mean_year</code> har bara ett värde per år medan <code>trend</code> har tolv. Detta gör att <code>mean_year</code> blir lite missvisande då hela årsgenomsnittet kommer hamna på motsvarande plats för januari i <code>trend</code>. Med andra ord blir hela grafen förskjuten ett halvår åt vänster.
 </p>
 </details>
 
@@ -245,7 +245,7 @@ plt.savefig("year_mean.png")
 </pre></p>
 </details>
 
-## 4. Hur ser ökningen ut? 
+## 4. Hur ser ökningen ut?
 
 Genom att studera kurvorna kan vi ganska enkelt dra slutsatsen att koldioxidhalten i atmosfären har ökat sedan 1958. En intressant detalj kan vara att kolla på om själva ökningen ökar eller minskar för varje år (detta motsvarar andraderivatan som du kanske känner igen från matten). De senaste åren har man pratat väldigt mycket om att vi måste bromsa våra koldioxidutsläpp (växthuseffekten). Vad visar våra siffror? Kan vi se att ökningen har börjat bromsa in?
 
@@ -268,7 +268,7 @@ for i in range(1958,2018):
     mean_diff.append(diff)</pre>(Då medelvärdet för 2019 inte är baserat på alla månader kommer ökningen inte motsvara den faktiskt ökningen och vi väljer därför att inte ta med den.)</p>
 </details>
 
-**Uppdrag:** Plotta `mean_diff`. Hur ser ökningen ut? Har vi börjat bromsa in ökningen? 
+**Uppdrag:** Plotta `mean_diff`. Hur ser ökningen ut? Har vi börjat bromsa in ökningen?
 
 <details>
 <summary markdown="span">
@@ -294,7 +294,7 @@ Om man zoomar in och kollar närmre på keelingkurvan ser man att den svänger v
 Tips
 </summary>
 <p>
-Det blir lättare att plotta ett specifikt år om du använder en <code>dict</code> för trenden också. 
+Det blir lättare att plotta ett specifikt år om du använder en <code>dict</code> för trenden också.
 </p>
 </details>
 
@@ -328,7 +328,7 @@ plot_co2_year(2018)
 Svar
 </summary>
 <p>
-Vi ser att koldioxidnivåerna ökar mycket under vintern/våren och minskar mycket under sommar/höst. Detta kan förklaras med att växterna absorberar en hel del koldioxid under sommaren och hösten, medans växterna dör eller temporärt slutar ta upp koldioxid under vintern/våren. 
+Vi ser att koldioxidnivåerna ökar mycket under vintern/våren och minskar mycket under sommar/höst. Detta kan förklaras med att växterna absorberar en hel del koldioxid under sommaren och hösten, medans växterna dör eller temporärt slutar ta upp koldioxid under vintern/våren.
 </p>
 </details>
 
@@ -336,4 +336,3 @@ Vi ser att koldioxidnivåerna ökar mycket under vintern/våren och minskar myck
 
 - Som vi beskrivit i början var vissa mätpunkter för dåliga för att vara med i datan. Till exempel saknas ett månadsmedelvärde från april 1984. Använd datan i den fjärde kolumnen för att själva interpolera ett värde för april 1984. Kolla hur nära du kommer värdet i femte kolumnen.
 - Försök att själv ta fram en egen trend likt den sjätte kolumnen i datan. Jämför sedan din trend med trenden som ges i sjätte kolumnen.
-

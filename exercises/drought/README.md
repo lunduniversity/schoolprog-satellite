@@ -98,7 +98,7 @@ För att läsa mer om NDVI se https://en.wikipedia.org/wiki/Normalized_differenc
 
 ## 2. Växtligheten 2015
 
-Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Uppgiften kan också köras i colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/open?id=1sJLN6_QD1VdIORMaONaQpjT7OzYqgdWS). Man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
+Klicka på följande [repl.it](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Uppgiften kan också köras i colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/Bokskogen.ipynb). Man även ladda ner datan från [GitHub](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 Vi börjar med att kolla på sensommaren 2015. I mappen Bokskogen ligger det tre filer som alla heter `data_1X.npz`. Detta är numpy-arrays som innehåller ett heltal för varje pixel, som tillsammans kan skapa en bild. Vi ska börja med att kolla på `data_15.npz`. Skriv följande kod för att ladda in alla nödvändiga paket och npz-filen:
 
