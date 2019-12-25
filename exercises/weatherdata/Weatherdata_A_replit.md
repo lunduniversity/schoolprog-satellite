@@ -229,7 +229,7 @@ Fler detaljer
 <p>
 <ul>
    <li> plt.savefig() sparar plotten som en bild som du kan hitta under Files på vänster sida av repl.it. Repl.it visar även bilden automatiskt när den sparas. I andra miljöer kan man vara tvungen att använda plt.show() för att bilden ska synas
-  
+
 </ul>
 </p>
 </details>
@@ -243,7 +243,7 @@ Till exempel är följande anrop felaktigt
 
 eftersom listan av x-värden är kortare än temperaturlistan `ts`.
 
-**Uppdrag:** 
+**Uppdrag:**
 *  Provkör det felaktiga anropet ovan för att se att du får ett felmeddelande.
 *  Felmeddelandet innehåller mycket information, men längst ner hittar du en förklaring av felet (`ValueError: ...`). Kan du förstå förklaringen?
 *  Kan du ändra koden så att du blir av med felmeddelandet?
@@ -296,8 +296,8 @@ Detaljer om valfria och namngivna parametrar
 </summary>
 <p>
   Format-parametern är ett exempel på en <i>valfri</i> parameter. Den har ett standardvärde som används om man inte anger parametern. Standardvärdet för format-parametern är "b-" (blå linje).
-  
-  Parametern "label=..." är ett exempel på en <i>namngiven</i> parameter. Namngivna parametrar måste komma i slutet på anropet (efter icke-namngivna) och ordningen mellan dem spelar ingen roll. De är praktiska att använda när en funktion har väldigt många valfria parametrar (vilket plot har). 
+
+  Parametern "label=..." är ett exempel på en <i>namngiven</i> parameter. Namngivna parametrar måste komma i slutet på anropet (efter icke-namngivna) och ordningen mellan dem spelar ingen roll. De är praktiska att använda när en funktion har väldigt många valfria parametrar (vilket plot har).
 </p>
 </details>
 
@@ -313,7 +313,7 @@ Detaljer om valfria och namngivna parametrar
 Tips
 </summary>
 <p>
-Arbeta i små steg: gör en sak i taget och provkör koden efter varje steg så du ser att det blir rätt. 
+Arbeta i små steg: gör en sak i taget och provkör koden efter varje steg så du ser att det blir rätt.
   <ul>
     <li> Anropa <code>plt.plot(...)</code> så att dagarna hamnar på x-axeln och regnmängderna på y-axeln.
     <li> Lägg till "o-" som parameter till "plot" för att få prickar för värdena.
@@ -331,7 +331,7 @@ Om du gjort rätt så bör ditt diagram se ut något i följande stil
 Diagram
 </summary>
 <p>
-<img src="https://drive.google.com/uc?id=1rfC3NUK9Sp16J-Pe-PFYL7J9Z_vfMhhr"
+<img src="regn.png" height="300">
 height="300">
 </p>
 </details>
@@ -414,9 +414,9 @@ print(data)
 
 Som du ser i utskriften så får vi en lista av många små strängar efter att vi har gjort `data.split("\n")`. Därefter omvandlar vi strängarna till tal i form av floats. Om du kollar noggrant så ser du att formatet skiljer sig åt på de två utskrifterna.
 
-För att kunna plotta våra värden behöver vi även en lista med datumen för månaden juli. 
+För att kunna plotta våra värden behöver vi även en lista med datumen för månaden juli.
 
-**Uppdrag**: Skapa en lista med hjälp av `range()` som innehåller värdena 1 till 31. 
+**Uppdrag**: Skapa en lista med hjälp av `range()` som innehåller värdena 1 till 31.
 <details>
 <summary markdown="span">
 Lösning
@@ -427,7 +427,7 @@ Här är ett exempel på hur vi kan göra:
 </pre></code></p>
 </details>
 
-Nu har vi allt vi behöver för att kunna plotta våra temperaturer. 
+Nu har vi allt vi behöver för att kunna plotta våra temperaturer.
 
 **Uppdrag**: Plotta temperaturerna med tillhörande datum på samma sätt som i tidigare avsnitt.
 
@@ -445,7 +445,7 @@ plt.savefig("2016.png")
 </details>
 
 \
-På samma sätt skulle vi nu kunna ta fram motsvarande värde för 2017 och 2018 och jämföra alla 3. 
+På samma sätt skulle vi nu kunna ta fram motsvarande värde för 2017 och 2018 och jämföra alla 3.
 
 **Uppdrag**: Testa kopiera koden från tidigare uppgifter för att på samma sätt skapa `data2017` och `data2018`.
 
@@ -482,14 +482,14 @@ plt.savefig("allajuli.png")
 </pre></code></p>
 </details>
 
-Vilket år hade den högsta uppmätta medeltemperaturen för en dag? Skulle man kunna ta reda på de högsta repspektive minsta värden för varje år med hjälp av programmering? 
+Vilket år hade den högsta uppmätta medeltemperaturen för en dag? Skulle man kunna ta reda på de högsta repspektive minsta värden för varje år med hjälp av programmering?
 
 ***Extra Uppdrag:*** Använd funktionerna `max()` och `min()` för att bestämma störtsa respektive minsta värde för samtliga år.
 
 ## 4 Quiz
 
 ### Fråga 1
-Vilka av dessa är en lista i python? 
+Vilka av dessa är en lista i python?
 *   `[0, 1, 7]`
 *   `(0, 1, 7)`
 *   `{0, 1, 7}`
@@ -644,4 +644,3 @@ Svar
 <code>["hej", "på", "dig"]</code>
 </p>
 </details>
-
