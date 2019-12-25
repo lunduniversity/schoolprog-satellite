@@ -26,7 +26,7 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 
 ## Inspirationsuppdrag
 
-Följande uppdrag kan användas som inspiration. En del av dem täcker samma områden som ovan, men de går betydligt snabbare fram, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dem också. En del av dem kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder.
+Följande uppdrag kan användas som inspiration. En del av dem täcker samma områden som ovan, men de går betydligt snabbare fram, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dem också. En del av dem kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder. Om du kör på Google Colab behöver du vara inloggad på Google för att kunna köra koden.
 
 |Uppdrag|Beskrivning|Python-begrepp|Google Colab/Binder|
 |-------|-----------|--------------|------------|

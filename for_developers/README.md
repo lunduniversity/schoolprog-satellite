@@ -1,7 +1,31 @@
 # För utvecklare
 
 ## Uppdatera notebooks
-Orginalfilerna för notebooksen finns på Google Colab/Drive. De ligger i 2019-Rymden/Colabs/Uppdrag. Vi har än sålänge uppdaterat notebooksen i Google Colab, sedan laddat ned som .ipynb och pushat till GitHub. Det kan finnas möjlighet att göra detta smidigare då det finns ett menyval i Google Colab som heter "Save a copy to GitHub". Detta kräver dock att man requestar tillåtelse från LundUniversitys GitHub. Skulle eventuellt vara värt att testa då vi just nu måste uppdatera GitHub manuellt. Vi har testat att spara colabs till egna repon, och det var väldigt smidigt, dock måste man ange hela sökvägen varje gång man ska sparar till GitHub. 
+Från början låg originalfilerna för Colab Jupyter notebooks på Google Colab/Drive, i 2019-Rymden/Colabs/Uppdrag. Filerna kopierades manuellt till GitHub.
+
+Sedan december 2019 ligger i stället originalen på GitHub. OAuth access har lagts till så att man kan spara direkt till GitHub via Colab-kommandot `File -> Save a copy to GitHub`.
+
+Det är dock viktigt att man öppnar Jupyter-filen via rätt länk för att detta ska funka:
+
+Om t.ex. en Jupyter-fil finns på följande url i github:
+```
+                      https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/Bokskogen.ipynb
+```
+så ska man surfa till följande länk för att automatiskt öppna en kopia i colab:
+```
+https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/Bokskogen.ipynb
+```
+Dvs man byter helt enkelt prefixet från
+
+```
+https://github.com/
+```
+till
+```
+https://colab.research.google.com/github/
+```
+
+Alla colab-länkar i `exercises/README.md` är fixade på detta sätt. Det gör att användarna direkt får en editerbar kopia av filen, och slipper också göra "open in playground" som tidigare.
 
 Vad som sparas mellan sessioner på google colab: Koden i rutorna, outputten från rutorna och allt i textrutorna. Men filer, pythonvariabler, installerade bibliotek etc. sparas inte och måste laddas in igen. Då eleverna ska göra uppgiften vill vi inte ha tidigare outputs sparade. Ta därför bort alla outputs i orginalfilen. Man kan lägga till en keyboard shortcut för att ta bort alla outputs under Tools.
 
@@ -33,12 +57,13 @@ I `postBuild` finns kommandon som körs av binder innan man kommer in. Här finn
 ## Hur elever skulle köra uppgifter
 
 ### Google colab
-När en elev klickar på en Google Colab länk kommer notebooken öppnas i View only läge då de saknar write access. De behöver då antingen klicka "Open in playground mode" eller "Save a copy to Drive" för att kunna redigera och skriva kod. "Save a copy to Drive" kan vara att föredra då de direkt får en kopia till sin Drive som automatiskt sparar allt de gör. Om notebooken öppnas i playground mode måste man själv komma ihåg att spara till sin Drive om man vill behålla sin kod. Om man försöker stänge fönstret får man dock upp en fråga om man vill spara.
+
+När en elev klickar på en Google Colab länk kommer en kopia av notebooken öppnas i editerbart och körbart läge. Man kan dock inte spara något om man inte gör "Save a copy to Drive".
 
 Om en elev vill fortsätta på en sparad uppgift finns den i en map med namnet "Colab Notebooks" på sin Drive om man inte själv angett något annat. All kod är sparad men "Runtime" är återställd så man blir eventuellt tvungen att köra de kodblock man skapat sedan tidigare om uppgiften bygger vidare på tidigare kodrutor.
 
+*Obs!* Det hände för någon på vattenhallen att de fick felmeddelande 400 när de klickade på en gammal colab-länk (som gick direkt till google drive). Problemet verkade vara att de inte var inloggade på Google. Med de nya länkarna så verkar man inte få det problemet. Men man måste logga in för att kunna köra koden. 
 
-**OBS:** Om man har edit-access till colabs och klickar på view-länkarna som finns i uppgifterna kommer man att ändra i orginalnotebooken. Var alltså försiktig med att testa uppgifterna genom att klicka på de länkarna. Alternativen för testning är att öppna i playground eller att skapa en kopia.
 
 ### Repl.it
 
