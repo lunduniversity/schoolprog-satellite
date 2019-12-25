@@ -332,7 +332,6 @@ Diagram
 </summary>
 <p>
 <img src="regn.png" height="300">
-height="300">
 </p>
 </details>
 
