@@ -19,7 +19,7 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 |Uppdrag|Miljödata|Programmering|
 |-------|-----------|--------------|
 |[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi undersöker temperaturdata från SMHI|grundläggande om listor, grundläggande om plottning, filer|
-|Väderdata B (TBA)|...|...|
+|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi fortsätter med temperaturdata från SMHI|grundläggande om filer|
 |[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
 |Keelingkurvan B (TBA)|...|grundläggande om nyckel-värdetabeller|
 |[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md) (draft)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | läsa fil över internet, nyckel-värdetabeller|
