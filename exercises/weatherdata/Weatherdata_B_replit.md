@@ -1,78 +1,279 @@
 # Väderdata från SMHI. Del B.
-I detta uppdrag ska vi undersöka temperaturdata från SMHI.
-
-## 1 Filer
+I detta uppdrag fortsätter vi att undersöka temperaturdata från SMHI.
 
 Nu när vi kan lite om listor och plottning kan vi snart plotta riktig data från SMHI.
 
-Den här uppgiften är tänkt att köras på följande repl.it-projekt: [https://repl.it/@OscarWiklund96/Vaderdata-A](https://repl.it/@OscarWiklund96/Vaderdata-A). Gå till denna länk så skapas en kopia av projektet för dig. I detta projekt finns filer som uppgiften använder sig av.
+I uppgiften kommer vi att lära oss hur man läser in data från filer.
 
+## 1 Filer
 
+### 1.1 Titta på filerna
 
-Vi behöver först lära oss hur man läser in data från filer.
+Gå till följande exempel på repl.it där vi förberett datafiler från SMHI: https://repl.it/@OscarWiklund96/Vaderdata-A
 
-Filerna vi ska använda finns tillgängliga om du använde länken till repl.it i början av uppgiften. (Ska synas under "Files" på vänster sida i form av `lund_juli_2016.txt`, `lund_juli_2017.txt` och `lund_juli_2018.txt`) Du kan klicka på filerna för att se hur de ser ut. De består en medeltemperatur per rad, totalt 31 rader som motsvarar datumen för månaden juli.
+Filerna syns till vänster i fönstret, under *Files*. Det finns tre filer: `lund_juli_2016.txt`, `lund_juli_2017.txt` och `lund_juli_2018.txt`.
 
-### 1.1 Läs in från fil
+Filerna visar medeltemperaturer i Lund under varje dag i juli för tre olika år. Värdena är *dygnsmedeltemperaturer*, alltså medeltemperaturen över hela dygnet, inklusive både natt och dag. Du kan klicka på filerna för att se hur de ser ut. Varje fil har 31 rader - en för varje dag i juli. På varje rad står medeltemperaturen för den dagen.
 
-Vi börjar med att läsa in innehållet från filen `lund_juli_2016.txt` till en variabel `data`. Testa köra följande kod.
+**Uppdrag 1.1 a** Titta på filerna. Vilken var medeltemperaturen den 14 juli 2016, 2017 respektive 2018?
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<ul>
+  <li>14 juli 2016: 16.0 grader
+  <li>14 juli 2017: 15.2 grader
+  <li>14 juli 2018: 19.2 grader.
+</ul>
+</p>
+</details>
+
+### 1.2 Värm upp med lite listor
+
+Först behöver vi lära oss lite mer om listor. Vi har tidigare sett hur man kan skapa en lista direkt, så här:
 
 ```python
-with open("lund_juli_2016.txt", "r") as f:
-  data = f.read()
+lst = ["hej", "på", "dej"]
+```
+
+**Uppdrag 1.2 a** Nu ska vi i stället skapa listan genom att lägga till ett element i taget med hjälp av funktionen `append`. (*Append* betyder att man lägger till sist i listan.) Provkör följande kod:
+
+```python
+lst = []          # Skapa en tom lista
+lst.append("hej") # Lägg till "hej" sist
+lst.append("på")  # Lägg till "på" sist
+lst.append("dej") # Lägg till "dej" sist
+print(lst)        # Skriv ut listan
+```
+
+**Uppdrag 1.2 b** Skapa en egen lista `lst2` på liknande sätt med något annat innehåll som du själv hittar på.
+
+
+### 1.3 Läs in från fil
+
+Vi vill nu läsa in varje fil till en lista med temperaturvärden.
+
+Vi börjar med att experimentera lite. Vi kan se en fil som en lista av rader, där varje rad består av en sekvens av tecken som avslutas med ett *newline*-tecken (skrivs `\n`).
+
+**Uppdrag 1.3 a** Vi läser in filen `lund_juli_2016.txt` och lägger varje rad i en lista `data`. Testa att köra följande kod.
+
+```python
+f = open("lund_juli_2016.txt", "r")
+data = []
+for line in f:
+  data.append(line)
 print(data)  
 ```
 
-Programmet läste först in all information från filen för att sedan skriva ut det igen. Man kan säga att vi öppnar vår fil `lund_juli_2016.txt` och kallar filen `f`. Vi öppnar den i <i>read</i>-läge, där av `"r"` i koden. Därefter läser vi från filen med metoden `read()` och sparar detta i vår variabel `data`.
+Observera att:
+* Första raden öppnar filen med `open`. Filen öppnas för *läsning* med parametern `r` (read) eftersom vi bara ska läsa från filen, och inte skriva till den.
+* Vi kan loopa över raderna i filen med en for-sats.
+* Vi skapar listan genom att börja med att göra en tom lista och sedan `append`:a varje rad till listan inuti loopen.
 
-Kan vi kombinera inläsning från fil med plottning av grafer med hjälp av `matplotlib`? Vi kan inte plotta direkt eftersom formatet på vår data inte matchar det `plt.plot()` vill ha, en lista av tal. Vi måste därför utföra lite typomvandling på vår data först. Funktionen `read()` som vi använder för att läsa in datan från filen sparar allt innehåll som en enda lång sträng. Vi kan dela upp en sträng till flera genom att anropa ```split()```. Vi kan till exempel välja ett dela upp vår sträng vid varje radbrytning med ```data.split("\n")```. Vår data kommer då vara lagrad som en lista av mindre strängar istället.
+Vad blev resultatet? Vi fick en lista med textsträngar, inklusive *newline*-tecknet (`\n`).
 
-För att göra det enklare kan du kopiera och köra kodstycket nedan.
+### 1.4 Gör om textsträngar till float
+
+Vi vill ju egentligen ha en lista av decimaltal (*floats*) och inte en lista av textsträngar.
+
+**Uppdrag 1.4 a** Prova att göra om en textsträng till en float med följande kod:
+
 ```python
-data = data.split("\n")
-print("Lista i form av många strängar:")
-print(data)
-data = [float(i) for i in data]
-print("Lista i form av floats:")
-print(data)
+a = "1.2"       # Definiera en sträng
+b = float(a)    # Gör om den till en float
+c = b*2         # Multiplicera med 2
+print(c)        # Skriv ut resultatet
 ```
 
-Som du ser i utskriften så får vi en lista av många små strängar efter att vi har gjort `data.split("\n")`. Därefter omvandlar vi strängarna till tal i form av floats. Om du kollar noggrant så ser du att formatet skiljer sig åt på de två utskrifterna.
+**Uppdrag 1.4 b** Det går bra att strängen a innehåller blanka och newlines före och efter talet. Prova att ändra strängen t.ex. till `"\n 1.2  \n  "`
 
-För att kunna plotta våra värden behöver vi även en lista med datumen för månaden juli.
+**Uppdrag 1.4 c** Vad händer om man gör `float` på något som *inte* är ett decimaltal? Prova att ändra strängen t.ex. till `"hej"` eller `"1.2 hej"`. Vilket fel får du?
 
-**Uppdrag 1.1 a**: Skapa en lista med hjälp av `range()` som innehåller värdena 1 till 31.
 <details>
 <summary markdown="span">
 Lösning
 </summary>
 <p>
-Här är ett exempel på hur vi kan göra:
-<pre><code>datum = list(range(1, 32))
-</pre></code></p>
+Man får ett fel <code>ValueError: could not convert string to float</code></p>
 </details>
 
-Nu har vi allt vi behöver för att kunna plotta våra temperaturer.
+### 1.5 Läs in filen till en lista av floats
 
-**Uppdrag 1.1 b**: Plotta temperaturerna med tillhörande datum på samma sätt som i tidigare avsnitt.
+Nu vet du både hur man läser in filer och hur man omvandlar strängar till floats.
+
+**Uppdrag 1.5 a** Skriv kod som läser in filen `lund_juli_2016.txt` till en lista `data2016` som innehåller temperaturerna för 2016 som floats.
+
+*Tips!* Använd liknande kod som tidigare, men gör `float` på strängen innan du `append`-ar den till listan. Skriv ut `data2016` så att du ser att resultatet blir rätt.
+
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>f = open("lund_juli_2016.txt", "r")
+data2016 = []
+for line in f:
+  data2016.append(float(line))
+print(data2016)</code></pre>
+</p>
+</details>
+
+\
+**Uppdrag 1.5 b** Lägg till liknande kod som skapar motsvarande listor `data2017` och `data2018`.
+
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>f = open("lund_juli_2017.txt", "r")
+data2017 = []
+for line in f:
+  data2017.append(float(line))
+print(data2017)
+</code></pre><pre><code>f = open("lund_juli_2018.txt", "r")
+data2018 = []
+for line in f:
+  data2018.append(float(line))
+print(data2018)
+</code></pre>
+</p>
+</details>
+
+
+
+## 2 Refaktorisering
+
+Vi har nu tre nästan likadana kodstycken för att skapa listorna `data2016`, `data2017` och `data2018`. Sådan repetitiv kod vill man gärna undvika, och i stället skriva på ett elegantare sätt.
+
+Att förbättra sin kod utan att förändra resultatet kallas att man *refaktoriserar* koden.
+
+### 2.1 Läs in med en funktion
+
+I detta fall kan vi refaktorisera koden genom att skapa en egen *funktion* och därmed få både tydligare och kortare kod.
+
+**Uppgift 2.1 a** Nedan definieras en funktion `double` som dubblerar ett värde. Efter definitionen kan vi anropa vår nya funktion med olika argument. Provkör koden nedan:
+
+```python
+def double(x):     # Definiera funktionen double
+  y = x + x
+  return y
+
+a = double(3)      # Anropa funktionen med några
+b = double(4)      # olika argument
+c = double(5)
+
+print(a, b, c)     # och skriv sedan ut resultaten
+```
+
+Observera att:
+* Funktionen har en parameter `x` som kan användas inuti funktionen
+* Funktionen har en lokal variabel `y` som bara är giltig inuti funktionen
+* Fuktionen returnerar ett värde (`y`).
+* Koden inuti funktionen är *indenterad* med ett par blanka. Det är så Python vet vilken kod som hör till funktionen.
+* Anropen av funktionen är *inte* indenterade. De hör ju inte till funktionens definition.
+
+När vi ska införa en funktion är det bra att först tänka igenom hur vi skulle vilja anropa den. Det hade varit trevligt om vi hade haft en funktion `read_temps` som vi kunde anropa så här för att få listorna:
+
+```python
+data2016 = read_temps("lund_juli_2016.txt")
+data2017 = read_temps("lund_juli_2017.txt")
+data2018 = read_temps("lund_juli_2018.txt")
+```
+
+**Uppdrag 2.1 b** Skriv kod som definierar funktionen `read_temps`.
+
+*Tips!* Här är ett kodskelett du kan använda:
+
+```python
+def read_temps(filename):
+  f = ...
+  data = []
+  for ...
+    ...
+  return data
+```
+
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>def read_temps(filename):
+  f = open(filename, "r")
+  data = []
+  for line in f:
+    data.append(float(line))
+  return data
+</code></pre>
+</p>
+</details>
+
+\
+**Uppdrag 2.1 c** Lägg till anropen (nedanför funktionsdefinitionen) och skriv ut listorna så att du kan se att du får samma resultat som tidigare.
+
+### 2.2 Städa upp i koden
+
+**Uppdrag 2.2 a** Städa upp din kod så att du tar bort eller kommenterar bort kod som inte behövs i fortsättningen. Det du behöver i fortsättningen är `data2016` `data2017` och `data2018`.
+
+## 3 Skapa x-värden med `range`
+
+För att kunna plotta våra värden behöver vi en lista med datumen för månaden juli, dvs [1, 2, ..., 31]. Vi kan skapa en sådan lista med hjälp av att funktionerna `range` och `list`.
+
+
+**Uppdrag 3 a** Prova först att skapa en lista [0, 1, 2, 3] genom att köra följande kodsnutt:
+
+```python
+lst = list(range(4))
+print(lst)
+```
+Observera:
+* `range(n)` står för ett intervall från 0 till n-1
+* Intervallet börjar alltså på 0 och `n` är det första värdet *efter* intervallet.
+* anropet `list(...)` gör om range:en till en lista.
+
+**Uppdrag 3 b** Om vi har två argument till `range` kan vi ange även start-punkten, så att vi kan börja på något annat än 0. Prova att köra följande kodsnutt. Vilken lista blir det?
+
+```python
+lst = list(range(1, 4))
+print(lst)
+```
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>Det blir <code>[1, 2, 3]
+</code>
+</p>
+</details>
+
+Observera:
+* Med `range(a, b)` får vi ett intervall som börjar på `a` och där `b` är det första värdet *efter* intervallet.
+
+**Uppdrag 3 c** Nu vet du hur range fungerar och hur du skapar en lista från en range. Lägg nu till kod som skapar en lista `days` med datumen för juli, dvs [1, 2, ..., 31].
 
 <details>
 <summary markdown="span">
 Lösning
 </summary>
 <p>
-Här är ett exempel på hur vi kan göra:
-<pre><code>plt.plot(datum,data)
-plt.xlabel("datum")
-plt.ylabel("medeltemperatur")
-plt.savefig("2016.png")
+<pre><code>days = list(range(1, 32))
 </pre></code></p>
 </details>
 
 \
-På samma sätt skulle vi nu kunna ta fram motsvarande värde för 2017 och 2018 och jämföra alla 3.
+Nu har vi allt vi behöver för att kunna plotta våra temperaturer.
 
-**Uppdrag 1.1 c**: Testa kopiera koden från tidigare uppgifter för att på samma sätt skapa `data2017` och `data2018`.
+## 4 Plotta temperaturer
+
+Nu har vi både x-värden (`days`) och y-värden (`data2016`, `data2017` och `data2018`) så att vi kan plotta temperaturkurvor.
+
+**Uppdrag 4 a**: Plotta temperaturerna för juli 2016.
+
+Här är lite tips om du glömt detaljer om plottning.
+* Du behöver importera plot-biblioteket
+* Du behöver anropa `plot`-funktionen
+* Du behöver anropa `savefig`-funktionen för att spara och visa diagrammet.
 
 <details>
 <summary markdown="span">
@@ -80,80 +281,244 @@ Lösning
 </summary>
 <p>
 Här är ett exempel på hur vi kan göra:
-<pre><code>with open("lund_juli_2017.txt", "r") as f:
-  data2017 = f.read()
-data2017 = data2017.split("\n")
-data2017 = [float(i) for i in data2017]
-with open("lund_juli_2018.txt", "r") as f:
-  data2018 = f.read()
-data2018 = data2018.split("\n")
-data2018 = [float(i) for i in data2018]
+<pre><code>import matplotlib.pyplot as plt
+plt.plot(days, data2016)
+plt.xlabel("dag i juli")
+plt.ylabel("medeltemperatur")
+plt.savefig("juli.png")
 </pre></code></p>
 </details>
 
-**Uppdrag 1.1 d**: Plotta nu graferna i samma fönster. Du kan använda parametern label för att göra det tydiligare vilken linje som tillhör vilket år. Exempel: `plt.plot(datum,data,label="2016")`.
+\
+**Uppdrag 4 b**: Lägg till lämpliga etiketter på x- och y-axeln, om du inte redan har gjort det. (Använd funktionerna `xlabel` och `ylabel`.)
+
+
+**Uppdrag 4 c**: Ändra plotten så att du även plottar temperaturerna för juli 2017 och juli 2018.
+Använd olika färger för kurvorna. Lägg till en etikett på varje kurva (med parametern `label`) så att man ser vilken kurva som är vilken.
+
+*Tips!* Ett typiskt plot-anrop skulle kunna vara
+\
+ `plt.plot(days, data2020, "ro-", label="2020")`
+\
+Glöm inte att anropa funktionen `legend` för att få ut beskrivningen av vilken kurva som är vilken.
+
 
 <details>
 <summary markdown="span">
 Lösning
 </summary>
 <p>
-Här är ett exempel på hur vi kan göra:
-<pre><code>plt.plot(datum,data, label="2016")
-plt.plot(datum,data2017, label="2017")
-plt.plot(datum,data2018, label="2018")
+<pre><code>import matplotlib.pyplot as plt
+plt.plot(days, data2016, "bo-", label="2016")
+plt.plot(days, data2017, "ro-", label="2017")
+plt.plot(days, data2018, "go-", label="2018")
+plt.xlabel("dag i juli")
+plt.ylabel("medeltemperatur")
 plt.legend()
-plt.savefig("allajuli.png")
+plt.savefig("juli.png")
 </pre></code></p>
 </details>
 
-Vilket år hade den högsta uppmätta medeltemperaturen för en dag? Skulle man kunna ta reda på de högsta repspektive minsta värden för varje år med hjälp av programmering?
+\
+**Uppdrag 4 d** Titta på kurvorna och fundera på hur de skiljer sig åt. Var det varmt eller kallt dessa somrar? Tänk på att värdet för varje dag motsvarar medeltemperaturen för *hela det dygnet* (både dag och natt). Vilket år var varmast? Vilket år var kallast? Kommer du ihåg vad du gjorde de olika somrarna och hur vädret var?
 
-***Extra Uppdrag:*** Använd funktionerna `max()` och `min()` för att bestämma störtsa respektive minsta värde för samtliga år.
+En tidningsrubrik i augusti 2018 var "Värmeböljan 2018 saknar motsvarighet i historien". Här kan du läsa om vad SMHI skriver om olika år och årstider, inklusive de tre somrarna: https://www.smhi.se/klimat/klimatet-da-och-nu/arets-vader
 
-## 2 Quiz
+## 5 Jämför åren (extrauppgift)
+
+Vilket år hade den högsta uppmätta medeltemperaturen för en dag? Skulle man kunna ta reda på de högsta respektive lägsta värdena för varje år med hjälp av programmering?
+
+Du kan beräkna högsta värdet i en lista med funktionen `max`.
+
+**Uppdrag 5 a** Prova hur `max` fungerar genom att provköra följande kod:
+
+```python
+data = [1, 17, 43, 8]
+maxval = max(data)
+print(maxval)
+```
+
+**Uppdrag 5 b** Använd funktionen `max` för att ta reda på högsta dygnsmedeltemperaturen i juli under 2016, 2017 och 2018. Stämmer värdena med vad du kan se i ditt diagram?
+
+**Uppdrag 5 c** Gör motsvarande sak för att ta reda på lägsta dygnsmedeltemperaturen. Du kan använda funktionen `min` för detta.
+
+**Uppdrag 5 d** Räkna ut medelvärdena för juli för de tre åren (använd `sum` och `len` som i tidigare uppgifter). Hur mycket skiljer sig medelvärdena för de olika åren?
+
+
+## 6 Quiz
 
 ### Fråga 1
 
-Vilken rad kod öppnar filen `text.txt` i läsläge?
+Vilken rad kod skapar en tom lista?
 
-* `with open("text.txt", "r") as f:`
-* `with open("text.txt", "w") as f:`
-* `read("text.txt") as f:`
+* `lista = []`
+* `lista = [0]`
+* `lista = [" "]`
 
 <details>
 <summary markdown="span">
 Svar
 </summary>
 <p>
-<code>with open("text.txt", "r") as f:</code>
+<code>lista = []</code>
 </p>
 </details>
 
 ### Fråga 2
-Följande kod:
-```python
-with open("text.txt", "r") as f:
-    data = f.read()
-print(data)
-```
 
-skriver ut:
-```python
-hej
-på
-dig
-```
-Vad skrivs nu ut av följande stycke?
-```python
-print(data.split("\n"))
-```
+Vilken rad kod lägger till elementet `7` till listan `lista`?
+
+* `lista = lista + 7`
+* `lista.append(7)`
+* `lista.add(7)`
 
 <details>
 <summary markdown="span">
 Svar
 </summary>
 <p>
-<code>["hej", "på", "dig"]</code>
+<code>lista.append(7)</code>
+</p>
+</details>
+
+### Fråga 3
+
+Vilken rad kod öppnar filen `text.txt` i läsläge?
+
+* `f = open("text.txt", "r")`
+* `f = open("text.txt", "w")`
+* `f = open("text.txt", "l")`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>f = open("text.txt", "r")</code>
+</p>
+</details>
+
+### Fråga 4
+
+Vad skall man skriva för att omvandla strängen `"4.2"` till ett decimaltal?
+
+* `round("4.2")`
+* `string("4.2")`
+* `float("4.2")`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>float("4.2")</code>
+</p>
+</details>
+
+### Fråga 5
+
+Vilket fel får vi om vi anropar `float("Gott nytt år")`
+
+* `ValueError: could not convert string to float`
+* `ValueError: could not convert float to string`
+* `ValueError: could not convert string to value`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>ValueError: could not convert string to float</code>
+</p>
+</details>
+
+### Fråga 6
+
+Vad skriver följande program ut?
+
+```python
+def f(x):
+  return x+1
+print(f(0)+f(1))
+```
+
+* `1`
+* `2`
+* `3`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>3
+</p>
+</details>
+
+### Fråga 7
+
+Vad betyder det att man refaktoriserar ett program?
+
+* Man förbättrar koden, men utan att ändra vad den räknar ut.
+* Man förbättrar koden genom att lägga till fler uträkningar.
+* Man förbättrar koden genom att rätta alla fel.
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>Man förbättrar koden, men utan att ändra vad den räknar ut.
+</p>
+</details>
+
+### Fråga 8
+
+Vad skriver följande program ut?
+
+```python
+print(list(range(3, 6)))
+```
+
+* [3, 4, 5]
+* [3, 4, 5, 6]
+* [3, 4, 5, 6, 7, 8]
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p><code>[3, 4, 5]</code>
+</p>
+</details>
+
+### Fråga 9
+
+Vilken av följande somrar var varmast i Sverige?
+
+
+* 2016
+* 2017
+* 2018
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>2018
+</p>
+</details>
+
+### Fråga 10
+
+Vad skriver följande program ut?
+
+```python
+print(max([1, 15, 14, 33, 22]))
+```
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p><code>33</code>
 </p>
 </details>
