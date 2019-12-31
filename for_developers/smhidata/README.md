@@ -55,3 +55,10 @@ Data filtreras sedan ut för de stationer som uppfyller dessa villkor. Resultate
 
 ### Läs in data som sparats i textfil
 Antag att du kört `fetchdata` ovan och sparat resultatet i textfilen result.txt. Du kan då läsa in datan till ett Python dictionary med biblioteket `readdata.py`. Se filen `testread.py` för ett exempel.
+
+### Generera filer för juli 2016, 2017, 2018
+Scriptet `fetch-july-data.py` genererar en katalog `julydir` med temperatur-värden för de orter som har fullständig data (alla 31 dagarna) för alla tre åren 2016, 2017, 2018.
+
+Varje fil har stationsnamn, stationsid, och år i filnamnet. Filen innehåller en rad per dag, med dygnsmedeltemperaturvärdet för den dagen.
+
+Filerna sparas i repot lunduniversity-satellite-data.
