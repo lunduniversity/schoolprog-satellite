@@ -159,6 +159,7 @@ Några saker att notera:
 * Separatorn kommer inte själv med i listan.
 * Separatorn kan bestå av flera tecken. Prova t.ex. med separatorn `"ej"`.
 * Separatorn måste ha minst ett tecken. Prova gärna med en tom sträng, alltså `""`, så ser du att det blir det exekveringsfel.
+* Om man anropar `split` *utan* separator-argument, alltså med `split()`, så är det samma sak som att anropa med en blank som separator, alltså `split(" ")`. Vi säger att *default*-separatorn är ett blanktecken.
 
 ### 2.3 Dela upp efter rader
 
@@ -262,7 +263,7 @@ Koden vi skrivit hittills har vi bara haft för att experimentera. Du kan ta bor
 
 ### 3.1 Läs in hela filen i en sträng
 
-Vi ska börja med att läsa in hela filen i en enda jättelång sträng, och splitta upp den så vi får en lista av textrader.
+Det finns flera olika sätt att läsa in en fil. I denna uppgift ska vi läsa in hela filen i en enda jättelång sträng, och sedan splitta upp den så vi får en lista av textrader.
 
 **Uppdrag:** Skriv in och kör följande kod.
 
@@ -297,7 +298,7 @@ Saker att notera om filer:
 
 ### 3.2 Skapa `years` och `co2`
 
-Nu vill vi skapa en lista `years` och en `co2` som vi kan använda för att plotta en kurva över koldioxidhalterna.
+Nu vill vi skapa en lista `years` och en lista `co2` som vi kan använda för att plotta en kurva över koldioxidhalterna.
 
 Problemet är dock att vi fått in innehållet som rader, men det är kolumnerna vi vill åt.
 
@@ -358,4 +359,119 @@ Koldioxidhalten var lite mindre än 320 ppm när man började mäta, 1958. Från
 
 ## 5. Quiz
 
-...
+### Fråga 1
+Är det någon skillnad på `"x"` och `'x'` i Python?
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+Nej det är ingen skillnad. Det betyder samma sak.
+</p>
+</details>
+
+### Fråga 2
+Vad skrivs ut av följande kod?
+```python
+str = "0.0 4.5 2.3"
+print(str.split())
+```
+
+*   `'0.0 4.5 2.3'`
+*   `[0.0, 4.5, 2.3]`
+*   `['0.0', '4.5', '2.3']`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>['0.0', '4.5', '2.3']</code>
+</p>
+</details>
+
+### Fråga 3
+Vad skrivs ut av följande kod?
+```python
+lst = [0.0, 4.3, 2.7, 4.5]]
+print(len(lst))
+```
+
+*   `3`
+*   `4`
+*   `11.5`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>4</code>
+</p>
+</details>
+
+### Fråga 4
+Vad skall man anropa för att få ut ett rutnät i en plot?
+
+*  `grid()`
+*  `square()`
+*  `net()`
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+<code>grid()</code>
+</p>
+</details>
+
+### Fråga 5
+Vad är formeln för koldioxid?
+
+*  C<sub>2</sub>O<sub>2</sub>
+*  C<sub>2</sub>O
+*  CO<sub>2</sub>
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+CO<sub>2</sub>
+</p>
+</details>
+
+### Fråga 6
+Vad mäts koldioxid i?
+
+*  procent (hundradelar)
+*  promille (tusendelar)
+*  ppm (parts per million)
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+ppm
+</p>
+</details>
+
+
+### Fråga 7
+Var görs mätningarna som ligger till grund för Keelingkurvan?
+
+*  På en ö väster om Australien
+*  På vulkanen Mauna Lua, på Hawaii
+*  På Antarktis
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p>
+På vulkanen Mauna Lua, på Hawaii. Mätningarna påbörjades av Charles Keeling.
+</p>
+</details>
