@@ -210,7 +210,7 @@ print(song[0], song[3], song[4])
 
 **Uppdrag 1.3 a** Kopiera och provkör koden ovan. Vilka element skrivs ut?
 
-Observera att man kan skriva ut flera saker med samma print-sats.
+Observera att man kan skriva ut flera saker på samma rad genom att ha flera argument i samma print-sats.
 
 **Uppdrag 1.3 b** Vad händer om man försöker accessa "utanför" listan, med ett index som är för stort? Prova att göra t.ex. `print(song[17])`. Du får ett felmeddelande med "Traceback" (talar om var felet uppstod) och "IndexError" (talar om vilken slags fel det var). Kan du förstå felmeddelandet?
 
@@ -402,7 +402,7 @@ Parametern `label=...` är ett exempel på en *namngiven<* parameter. Namngivna 
 
 ### 2.4 Skapa en egen plott
 
-**Uppdrag 2.4 a** Nu kan du lite om plottning. Skriv kod för att plotta regnmängderna (använd listan `rain` som vi skapade tidigare). Kan du göra plotten fin och informativ med etiketter på axlarna och en legend?
+**Uppdrag 2.4 a** Nu kan du lite om plottning. Skriv kod för att plotta regnmängderna (använd listan `rain` som vi skapade tidigare). Kan du göra plotten fin och informativ med etiketter på axlarna och en "legend" (så att man ser vilken kurva som är vilken)?
 
 *Tips!*
 Arbeta i små steg: gör en sak i taget och provkör koden efter varje steg så du ser att det blir rätt.
