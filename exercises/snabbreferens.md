@@ -1,5 +1,5 @@
-Cheatsheet
-===
+# Snabbreferens
+Snabbreferens för programmering med miljödata
 
 ## Filer
 
@@ -122,11 +122,11 @@ plt.savefig("min_graf.png") # Sparar plotten till min_graf.png
 ```
 
 ### Plotta linjer
-Oftast vill vi bara plotta linjer genom punkter vi anger. 
+Oftast vill vi bara plotta linjer genom punkter vi anger.
 ```python
 plt.plot(x1, y1, color="red", linewidth=0.5) # Plottar en röd linje med bredd 0.5. x1 och y1 kan vara listor eller np-arrayer av rank 1.
 plt.plot(x2, y2, color="blue", linewidth=0.7) # Gör samma som ovan fast en tjockare blå linje
-plt.legend(["linje 1", "linje 2"]) #Sätter en legend 
+plt.legend(["linje 1", "linje 2"]) #Sätter en legend
 ```
 ### Plotta stapeldiagram
 Om man vill plotta ett stapeldiagram kan man använda `plt.bar()`.
@@ -152,9 +152,9 @@ Bokeh är ett alternativ till `matplotlib` som är bättre till att göra intera
 
 Centralt i `bokeh` är `figure()`, den skapar en figur/plot som du sedan lägger till saker i och till sist visar.
 ```python
-from bokeh.plotting import figure 
+from bokeh.plotting import figure
 from bokeh.io import output_notebook, show
-plot = figure(title="Min titel", plot_height=300, plot_width=600, y_range=(-10, 15)) # Skapar en figur 
+plot = figure(title="Min titel", plot_height=300, plot_width=600, y_range=(-10, 15)) # Skapar en figur
 output_notebook() # Säger att man ska outputta figuren i notebooken
 show(plot) # Visar plotten
 ```
@@ -174,7 +174,7 @@ my_vbar = plot.vbar(x, top=y, width = 0.5) # Skapar staplar av listorna x och y
 ```
 
 ## Ipywidgets
-Ipywidgets kan användas för att skapa sliders och dropdowns vilket gör grafer interaktiva. 
+Ipywidgets kan användas för att skapa sliders och dropdowns vilket gör grafer interaktiva.
 
 ### Ipywidgets och bokeh
 Det som funkar bäst med ipywidgets är bokeh med det kan inte köras i google colab.
@@ -188,13 +188,13 @@ output_notebook()
 def update(city): # update-funktion som anropas när man väljer något nytt
     my_line.data_source.data['y'] = get_data(city) # ändrar datan för en bokeh-linje med en lista av data från get_data(city)
     push_notebook(handle=my_handle) # uppdaterar en bokeh-plot med ett visst handle
-    
+
 my_handle=show(plot, notebook_handle=True) # visar plotten och ger den ett speciellt handle
 interact(update, city=["Lund", "Malmö"]) # visar en dropdown som anropar update
 ```
 
 ### Ipywidgets och matplotlib
-Man kan också använda ipywidgets och matplotlib, men man får laggig interaktion. Detta kan dock köras i google colab. 
+Man kan också använda ipywidgets och matplotlib, men man får laggig interaktion. Detta kan dock köras i google colab.
 
 ```python
 # importera bibliotek:
@@ -209,6 +209,6 @@ def update(slope): # update-funktion för ipywidgets
     plt.ylim(-10, 10) # Sätt y-gränser
     plt.xlim(-10, 10) # Sätt x-gränser
     plt.plot(x, y) # Plotta värdena
-    
+
 interact(update, slope=(-10, 10, 0.01)) # Skapa en slider från -10 till 10 som hoppar 0.01 i varje steg.
 ```

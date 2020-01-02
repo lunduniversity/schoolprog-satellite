@@ -6,11 +6,13 @@ Här hittar du uppdrag i Python där vi använder öppen "miljö"-data, t.ex. fr
 * lär dig mer programmering och hur man kan göra beräkningar på stora datamängder
 * lär dig om olika typer av data, t.ex. mätvärden från satelliter och väderstationer och hur man kan använda dem för att förstå vad som händer i vår miljö
 
-Vi hoppas du tycker uppdragen är roliga och intressanta, och får en insikt i hur programmering kan användas för att utforska olika frågor.
+Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt i hur programmering kan användas för att utforska olika frågor.
 
 ## Vad behöver du kunna?
 
-Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så behöver du kunna enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper.
+Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper. Du kan också prova uppdragen direkt. Lösningsförslag ingår i alla uppgifterna.
+
+Om du är lärare, eller pedagog på Science Center, se vår lärarhandledning [här](handledning.md).
 
 ## Våra uppdrag
 
@@ -18,11 +20,13 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 
 |Uppdrag|Miljödata|Programmering|
 |-------|-----------|--------------|
-|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi undersöker temperaturdata från SMHI|grundläggande om listor, grundläggande om plottning, filer|
-|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi fortsätter med temperaturdata från SMHI|grundläggande om filer|
+|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi börjar undersöka temperaturdata från SMHI|grundläggande om listor, grundläggande om plottning|
+|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi fortsätter med temperaturdata från SMHI|mer om listor, grundläggande om att läsa från filer|
 |[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
 |Keelingkurvan B (TBA)|...|grundläggande om nyckel-värdetabeller|
 |[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md) (draft)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | läsa fil över internet, nyckel-värdetabeller|
+
+En snabbreferens för de Python-konstruktioner du lär dig finns [här](snabbreferens.md).
 
 ## Inspirationsuppdrag
 
