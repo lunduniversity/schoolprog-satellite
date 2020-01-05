@@ -9,3 +9,10 @@ Alternativen som valdes var:
 Anledningen till att exklusive LULUCF används är att det är [så Sverige rapporterar till FN:s klimatorgan](https://www.scb.se/contentassets/7bee1820d3d5403ea361ad5f2c4f840e/mi0107_kd_2017_ag_181212.pdf).
 
 
+
+# LICENSE
+Källa: Statistiska Centralbyrån. Datan som används i uppgiften är hämtad under Creative Commons Erkännande 4.0 Internationell [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.sv). Orginalfilerna har modifierats.
+
+# Datafiler
+- `data.txt` innehåller utsläppt för olika sektorer i Sverige.
+- `data.zip` är den zippade versionen av `data.txt`.
