@@ -407,10 +407,13 @@ Hittills har vi bara skrivit experimentkod. Du kan nu ta bort (eller kommentera 
 
 ```python
 import requests
-response = requests.get("https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt")
+response = requests.get("...")
 data = response.text
 print(data)
 ```
+
+Den URL du skall använda i stället för `...` ovan är
+https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt
 
 Om du gjort rätt fick du nu in all datan i variabeln `data` och printade ut samma sak igen.
 
@@ -479,47 +482,47 @@ Nu har vi de intressanta raderna i listan `data_rows`. Varje rad i listan är en
 
 data_rows:
 <table>
-<tr bgcolor=whitesmoke><td>"Totala ... NATIONELL ... 1990 ... 74921.1"</td></tr>
-<tr bgcolor=whitesmoke><td>"Totala ... NATIONELL ... 1991 ... 75267.7"</td></tr>
-<tr bgcolor=whitesmoke><td>"..."</td></tr>
+<tr><td>"Totala ... NATIONELL ... 1990 ... 74921.1"</td></tr>
+<tr><td>"Totala ... NATIONELL ... 1991 ... 75267.7"</td></tr>
+<tr><td>"..."</td></tr>
 </table>
 
 Nästa steg är att skapa en ny lista där varje rad i stället är uppdelad i kolumnvärden. Vi kan kalla denna lista `raw_data` (rådata). Visuellt kan vi tänka oss den nya listan så här:
 
 raw_data:
 <table>
-<tr bgcolor=whitesmoke>
+<tr>
   <td>
   <table>
-  <tr align=center bgcolor=#e6e6e6>
-    <td width=135>"Totala ..."</td>
-    <td width=135>"NATIONELL ..."</td>
-    <td width=135>"1990"</td>
-    <td width=135>"74921.1"</td>
+  <tr align=center>
+    <td width=150>"Totala ..."</td>
+    <td width=150>"NATIONELL ..."</td>
+    <td width=150>"1990"</td>
+    <td width=150>"74921.1"</td>
   </tr>
   </table>
   </td>
 </tr>
-<tr bgcolor=whitesmoke>
+<tr>
   <td>
   <table>
-  <tr align=center  bgcolor=#e6e6e6>
-    <td width=135>"Totala ..."</td>
-    <td width=135>"NATIONELL ..."</td>
-    <td width=135>"1991"</td>
-    <td width=135>"75267.7"</td>
+  <tr align=center>
+    <td width=150>"Totala ..."</td>
+    <td width=150>"NATIONELL ..."</td>
+    <td width=150>"1991"</td>
+    <td width=150>"75267.7"</td>
   </tr>
   </table>
   </td>
 </tr>
-<tr bgcolor=whitesmoke>
+<tr>
 <td>
 <table>
-<tr align=center  bgcolor=#e6e6e6>
-  <td width=135>"..."</td>
-  <td width=135>"..."</td>
-  <td width=135>"..."</td>
-  <td width=135>"..."</td>
+<tr align=center>
+  <td width=150>"..."</td>
+  <td width=150>"..."</td>
+  <td width=150>"..."</td>
+  <td width=150>"..."</td>
 </tr>
 </table>
 </td>
@@ -578,15 +581,15 @@ Nu har vi rådata med rader och kolumner i `raw_data`. Nästa steg är att skapa
 
 data_by_sector:
 <table>
-<tr bgcolor=whitesmoke>
+<tr>
   <th>nyckel</th>
   <th>värde</th>
 </tr>
-<tr bgcolor=whitesmoke>
+<tr>
   <td> "NATIONELL ..."</td>
   <td>
   <table>
-  <tr align=center bgcolor=#e6e6e6>
+  <tr align=center>
     <td width=135>74921.1</td>
     <td width=135>75267.7</td>
     <td width=135>...</td>
@@ -594,11 +597,11 @@ data_by_sector:
   </table>
   </td>
 </tr>
-<tr bgcolor=whitesmoke>
+<tr>
   <td> "ARBETSMASKINER ..."</td>
   <td>
   <table>
-  <tr align=center  bgcolor=#e6e6e6>
+  <tr align=center>
   <td width=135>3166.2</td>
   <td width=135>2973.3</td>
   <td width=135>...</td>
@@ -606,11 +609,11 @@ data_by_sector:
   </table>
   </td>
 </tr>
-<tr bgcolor=whitesmoke>
+<tr>
   <td> "..."</td>
   <td>
   <table>
-  <tr align=center  bgcolor=#e6e6e6>
+  <tr align=center>
   <td width=135>...</td>
   <td width=135>...</td>
   <td width=135>...</td>
