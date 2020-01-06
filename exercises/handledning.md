@@ -3,8 +3,8 @@ Handledning angående uppgifterna för miljödata.
 Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid Science Centers.
 
 ## Pedagogiska ideer
-* Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta.
-* Jupyter/Colab-övningarna använder oftast lite mer avancerad programmering än repl.it-övningarna, och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för vad man kan åstadkomma med programmering.
+* Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
+* Jupyter/Colab-övningarna använder oftast lite mer avancerad programmering än repl.it-övningarna, och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering, och inte nödvändigtvis full förståelse för hur programmen fungerar.
 
 ## Allmänna förberedelser
 
@@ -15,6 +15,7 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 ## Förberedelser inför en övning med elever
 
 * Skriv helst ut övningen på papper till eleverna. Då kan de använda hela skärmen för programmeringen, och de slipper krångla med att bläddra inom/mellan fönster.
+* Det bästa är att skriva ut från en Chrome-browser. För andra browsers kan det bli för stor font så att vissa kodrader klipps.
 * Eleverna ska arbeta i par - det räcker med en utskrift och en dator per par.
 
 ### Övningar med repl.it
@@ -70,6 +71,7 @@ TBA
 * Första gången man försöker skriva i ett preparerat repl.it-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
 * Irriterande popup-fönster i repl.it. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
 * Ibland försvinner plot-fönstret. Det brukar dyka upp igen om man klickar på filen (t.ex. keeling.png till vänster i fönstret.) Klicka sedan på main.py igen.
+* Ibland tappar man kontakten med repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
 * Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
 
 ### Relaterat till själva Python-programmeringen
