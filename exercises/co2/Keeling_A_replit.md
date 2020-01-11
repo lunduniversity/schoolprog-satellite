@@ -268,7 +268,7 @@ Det finns flera olika sätt att läsa in en fil. I denna uppgift ska vi läsa in
 **Uppdrag:** Skriv in och kör följande kod.
 
 ```python
-f = open("data.txt", "r") # Öppna filen
+f = open("data.txt")      # Öppna filen
 data = f.read()           # Läs in hela innehållet
 rows = data.split("\n")   # Dela upp i rader
 ```
@@ -293,7 +293,7 @@ Filen har 47039 tecken fördelade på 735 rader.
 
 Saker att notera om filer:
 
-* Funktionen `open` returnerar ett "filobjekt" som vi sparar i variabeln `f`. Argumentet `"data.txt"` är namnet på vilken fil vi vill öppna. Argumentet `"r"` betyder att vi skall läsa från filen (inte skriva till den).
+* Funktionen `open` returnerar ett "filobjekt" som vi sparar i variabeln `f`. Argumentet `"data.txt"` är namnet på vilken fil vi vill öppna.
 * Man kan göra `read` på ett filobjekt, och då får man hela innehållet i filen som en enda lång textsträng.
 
 ### 3.2 Skapa `years` och `co2`

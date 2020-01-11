@@ -13,13 +13,13 @@ Givet är en `.txt` fil som ni själva kan öppna och kolla på. Denna fil inneh
 Tips
 </summary>
 <p>
-Använd <code>with open("data.txt", "r") as f:</code> och <code>data=f.read()</code> för att få hela filen som en sträng. Används sedan <code>data.split("\n")</code> för att dela upp filen vid varje rad.
+Använd <code>with open("data.txt") as f:</code> och <code>data=f.read()</code> för att få hela filen som en sträng. Används sedan <code>data.split("\n")</code> för att dela upp filen vid varje rad.
 </p>
 </details>
 
 <details><summary markdown="span">Lösning</summary>
 <p>
-<pre><code>with open("data.txt", "r") as f:
+<pre><code>with open("data.txt") as f:
     data=f.read()
 data = data.split("\n")
 years=[]
@@ -56,7 +56,7 @@ Skriv ytterligare en <code>plt.plot()</code> direkt efter den första fast med t
 
 <details><summary markdown="span">Lösning</summary>
 <p>
-<pre><code>with open("data.txt", "r") as f:
+<pre><code>with open("data.txt") as f:
     data=f.read()
 data = data.split("\n")
 years=[]
@@ -115,7 +115,7 @@ Du kan använda kod liknande den du använde för att bygga upp listorna innan, 
 <summary markdown="span">
 Lösning
 </summary>
-<p><pre>with open("data.txt", "r") as f:
+<p><pre>with open("data.txt") as f:
     data=f.read()
 data = data.split("\n")
 co2_dict = {}

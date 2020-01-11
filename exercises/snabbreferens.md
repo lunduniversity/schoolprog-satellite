@@ -7,18 +7,18 @@ Snabbreferens för programmering med miljödata
 Exempel läsa från fil. Skapar varaiabeln data och lägger allt innehåll från filen i data i form av en sträng:
 
 ```python
-with open("file_name.txt", "r") as f:    # "r" anger read-mode
+f = open("file_name.txt")
+data = f.read()                
+```
+En annan variant är följande. Här används en `with`-sats för att öppna filen. Läsning sker inuti `with`-satsen. `with`-satsen gör att filen automatiskt stängs efteråt.
+
+```python
+with open("file_name.txt") as f:
     data = f.read()                      
 ```
 
-Eller
 
-```python
-f = open("file_name.txt", "r")
-...
-...
-data = f.read()                
-```
+
 ### Skriva till fil
 Exempel skriva till fil:
 
@@ -26,13 +26,15 @@ Exempel skriva till fil:
 with open("file_name.txt", "w") as f:    # "w" anger write-mode
     f.write("Hej")                       # Skriver "Hej" till filen.
 ```
-Om filen inte finns skapas filen. Om filen redan finns kommer innehållet skrivas över. Om du istället vill appenda till en fil kan du använda
+Om filen inte finns skapas filen. Om filen redan finns kommer innehållet skrivas över. Om du istället vill lägga till saker på slutet av en existerande fil, kan du använda
 
 ```python
 with open("file_name.txt", "a") as f:    # "a" anger append-mode
     f.write("Hej")                      # Skiver "Hej" efter det som redan finns.
 
 ```
+`append` betyder att man lägger till i slutet.
+
 ## NumPy
 
 Importera NumPy:

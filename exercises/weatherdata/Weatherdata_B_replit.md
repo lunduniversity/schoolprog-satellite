@@ -60,7 +60,7 @@ Vi börjar med att experimentera lite. En fil kan ses som en lista av rader, dä
 **Uppdrag 1.3 a** Följande kod läser in filen `lund_juli_2016.txt` och lägger varje rad i en lista `data`. Testa att köra koden.
 
 ```python
-f = open("lund_juli_2016.txt", "r")
+f = open("lund_juli_2016.txt")
 data = []
 for line in f:
   data.append(line)
@@ -68,7 +68,7 @@ print(data)
 ```
 
 Observera att:
-* Första raden öppnar filen med `open`. Filen öppnas för *läsning* med parametern `"r"` (read) eftersom vi bara ska läsa från filen, och inte skriva till den.
+* Första raden öppnar filen med `open`. Det gör att vi kan läsa in data från filen.
 * Vi kan loopa över raderna i filen med en for-sats.
 * Vi skapar listan genom att börja med att göra en tom lista och sedan `append`:a varje rad till listan inuti loopen.
 
@@ -111,7 +111,7 @@ Nu vet du både hur man läser in filer och hur man omvandlar strängar till flo
 <summary markdown="span">
 Lösning
 </summary>
-<p><pre><code>f = open("lund_juli_2016.txt", "r")
+<p><pre><code>f = open("lund_juli_2016.txt")
 data2016 = []
 for line in f:
   data2016.append(float(line))
@@ -126,12 +126,12 @@ print(data2016)</code></pre>
 <summary markdown="span">
 Lösning
 </summary>
-<p><pre><code>f = open("lund_juli_2017.txt", "r")
+<p><pre><code>f = open("lund_juli_2017.txt")
 data2017 = []
 for line in f:
   data2017.append(float(line))
 print(data2017)
-</code></pre><pre><code>f = open("lund_juli_2018.txt", "r")
+</code></pre><pre><code>f = open("lund_juli_2018.txt")
 data2018 = []
 for line in f:
   data2018.append(float(line))
@@ -201,7 +201,7 @@ def read_temps(filename):
 Lösning
 </summary>
 <p><pre><code>def read_temps(filename):
-  f = open(filename, "r")
+  f = open(filename)
   data = []
   for line in f:
     data.append(float(line))
@@ -415,23 +415,6 @@ Svar
 
 ### Fråga 3
 
-Vilken rad kod öppnar filen `text.txt` i läsläge?
-
-* `f = open("text.txt", "r")`
-* `f = open("text.txt", "w")`
-* `f = open("text.txt", "l")`
-
-<details>
-<summary markdown="span">
-Svar
-</summary>
-<p>
-<code>f = open("text.txt", "r")</code>
-</p>
-</details>
-
-### Fråga 4
-
 Vad skall man skriva för att omvandla strängen `"4.2"` till ett decimaltal?
 
 * `round("4.2")`
@@ -447,7 +430,7 @@ Svar
 </p>
 </details>
 
-### Fråga 5
+### Fråga 4
 
 Vilket fel får vi om vi anropar `float("Gott nytt år")`
 
@@ -464,7 +447,7 @@ Svar
 </p>
 </details>
 
-### Fråga 6
+### Fråga 5
 
 Vad skriver följande program ut?
 
@@ -486,7 +469,7 @@ Svar
 </p>
 </details>
 
-### Fråga 7
+### Fråga 6
 
 Vad betyder det att man refaktoriserar ett program?
 
@@ -502,7 +485,7 @@ Svar
 </p>
 </details>
 
-### Fråga 8
+### Fråga 7
 
 Vad skriver följande program ut?
 
@@ -522,7 +505,7 @@ Svar
 </p>
 </details>
 
-### Fråga 9
+### Fråga 8
 
 Vilken av följande somrar var varmast i Sverige?
 
@@ -539,7 +522,7 @@ Svar
 </p>
 </details>
 
-### Fråga 10
+### Fråga 9
 
 Vad skriver följande program ut?
 
