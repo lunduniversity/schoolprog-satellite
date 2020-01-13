@@ -233,15 +233,13 @@ Svar
 </p>
 </details>
 
-## 6. Jämförelse mellan listor och arrayer (extrauppgift)
+## 6. Jämförelse mellan listor och arrayer
 
 Du kan nu rensa bort tidigare kod.
 
-### 6.1 Addera två listor
-
 Som vi nämnt är listor inte lika smidiga som arrayer för matematiska operationer.
 
-**Uppdrag 6.1 a:** Vad skulle hänt om du hade försökt addera två listor i stället för två arrayer? Prova följande kod:
+**Uppdrag 6 a:** Vad skulle hänt om du hade försökt addera två listor i stället för två arrayer? Prova följande kod:
 
 ```python
 a = [1, 2, 3]
@@ -268,7 +266,7 @@ for i in range(len(a)):
 print(c)
 ```
 
-**Uppdrag 6.1 b:** Skapa en lista [1, 3, 5] och en annan lista [10, 11, 12] och addera dem genom att skriva en loop, som i exemplet ovan. Resultatet borde bli en lista [11, 14, 17].
+**Uppdrag 6 b:** Skapa en lista [1, 3, 5] och en annan lista [10, 11, 12] och addera dem genom att skriva en loop, som i exemplet ovan. Resultatet borde bli en lista [11, 14, 17].
 
 
 <details>
@@ -286,7 +284,7 @@ print(c)</code></pre>
 
 Vi kan inte multiplicera två listor - då får vi ett fel. Men vi kan faktiskt multiplicera en lista med en konstant! Vad kan det betyda?
 
-**Uppdrag 6.1 c:** Provkör koden nedan. Vad blir resultatet?
+**Uppdrag 6 c:** Provkör koden nedan. Vad blir resultatet?
 
 ```python
 print(a*3)
@@ -296,13 +294,13 @@ Vi ser att det blir en ny lista som repeteras 3 gånger i följd. `a*3` blir all
 
 Men man kan ju undra vilken nytta man kan ha av detta? En sak vi kan göra är att skapa en lista av samma värde på ett enkelt sätt.
 
-**Uppdrag 6.1 d:** Provkör koden nedan. Vad blir resultatet?
+**Uppdrag 6 d:** Provkör koden nedan. Vad blir resultatet?
 
 ```python
 print([1]*10)
 ```
 
-Vi ser att vi får en lista med 10 ettor. Detta hade vi kunnat utnyttja i uppgift 6.1.b genom att skriva
+Vi ser att vi får en lista med 10 ettor. Detta hade vi kunnat utnyttja i uppdrag 6b genom att skriva
 
 ```python
 c = [0]*3
@@ -313,7 +311,7 @@ i stället för
 c = [0, 0, 0]
 ```
 
-### 6.2 Effektivitet hos numpy
+## 7. Effektivitet hos numpy (extrauppgift)
 
 Vi har nämnt tidigare att numpy arrayer är mycket mer effektiva än listor.
 
@@ -353,13 +351,13 @@ Några saker att observera om koden:
 * Uttrycket `[0]*size` ger en lista av nollor som är `size` lång.
 * Funktionen `range(size)` ger en lista [0, 1, 2, ... size-1]. Funktionen `np.arange(size)` fungerar på motsvarande sätt, men för arrayer.
 
-**Uppdrag 6.2:** Provkör koden ovan. Hur mycket snabbare är arrayer än listor? Kör gärna några gånger, för resultaten kan variera väldigt mycket. Du bör dock kunna se att arrayer oftast är mycket snabbare än listor.
+**Uppdrag 7:** Provkör koden ovan. Hur mycket snabbare är arrayer än listor? Kör gärna några gånger, för resultaten kan variera väldigt mycket. Du bör dock kunna se att arrayer oftast är mycket snabbare än listor.
 
 En anledning till att resultaten varierar mycket är att datorn gör många andra saker samtidigt som den kör ditt program. Din laptop kör t.ex. typiskt mail, webbrowser och kalender samtidigt, och dessutom många program som har med datorns operativ-system att göra. Om du kör på repl.it så kör du egentligen på en server där många olika användare kör sina repl.it-program samtidigt.
 
 <!-- Egentligen är förklaringen mycket mer komplicerad med cache-misses, etc., etc., men det blir för mycket att gå in på här... --->
 
-## 7. Quiz
+## 8. Quiz
 
 ### Fråga 1
 
