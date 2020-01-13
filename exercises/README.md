@@ -25,7 +25,7 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 |[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
 |Keelingkurvan B (TBA)|...|grundläggande om nyckel-värdetabeller|
 |[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | nyckel-värdetabeller, list slices, läsa fil över internet|
-|[NumPy A](numpy__intro/numpy_A_replit.md)|Introduktion till paketet NumPy | numpy, array, plotta 2D-bilder|
+|[NumPy A](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy | numpy, array, plotta 2D-bilder|
 |[Torkan A](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit| numpy, array, plotta 2D-bilder|
 
 En snabbreferens för de Python-konstruktioner du lär dig finns [här](snabbreferens.md).
