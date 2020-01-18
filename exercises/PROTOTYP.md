@@ -1,6 +1,11 @@
-# Obearbetade uppdrag
+# Obearbetade prototyp-uppdrag
 
-Följande uppdrag är ursprungliga varianter av uppdragen, men obearbetade med avseende på pedagogik. De går betydligt snabbare fram än de bearbetade uppdragen, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dessa också. En del av dem kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder. Om du kör på Google Colab behöver du vara inloggad på Google för att kunna köra koden. Vilka uppdrag (eller delar av dem) som finns i bearbetad form anges i tabellen nedan.
+Följande uppdrag är prototyp-varianter av uppdragen, men obearbetade med avseende på pedagogik. De går betydligt snabbare fram än de bearbetade uppdragen, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dessa också. Vilka uppdrag (eller delar av dem) som finns i bearbetad form anges i tabellen nedan.
+
+## Programmeringsplattform
+
+Vi använder online-plattformar för Python som repl.it och google colab, så du behöver inte installera något på din dator.
+En del av uppdragen kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder. Om du kör på Google Colab behöver du vara inloggad på Google för att kunna köra koden.
 
 |Uppdrag|Beskrivning|Python-begrepp|Google Colab/Binder|Bearbetning finns|
 |-------|-----------|--------------|-------------------|-----------------|

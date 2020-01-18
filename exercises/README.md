@@ -12,29 +12,28 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 
 Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper. Du kan också prova uppdragen direkt. Lösningsförslag ingår i alla uppgifterna.
 
-Om du är lärare, eller pedagog på Science Center, se vår lärarhandledning [här](handledning.md).
+Har du handledning så kan du göra uppdragen utan förkunskaper i programmering.
+
+Om du är lärare, eller pedagog på ett Science Center, se vår lärarhandledning [här](handledning.md).
 
 ## Våra uppdrag
 
-Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. De använder repl.it som Python-plattform.
+Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. Vi använder online-plattformen *repl.it* (https://repl.it/languages/python3) för programmeringen, så du behöver inte installera något på din dator.
 
-|Uppdrag|Miljödata|Programmering|
-|-------|-----------|--------------|
-|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi börjar undersöka temperaturdata från SMHI|grundläggande om listor, grundläggande om plottning|
-|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi fortsätter med temperaturdata från SMHI|mer om listor, grundläggande om att läsa från filer|
-|[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii|splitta sträng, läsa in textrader från fil, göra om till kolumnlistor av decimaltal, plotta kurvor|
-|Keelingkurvan B (TBA)|...|grundläggande om nyckel-värdetabeller|
-|[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige | nyckel-värdetabeller, list slices, läsa fil över internet|
-|[NumPy A](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy | numpy, array, plotta 2D-bilder|
-|[Torkan A](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit| numpy, array, plotta 2D-bilder|
+|Uppdrag|Miljödata och innehåll|Du behöver kunna|Du lär dig om|
+|-------|---------|----------------|-------------|
+|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi plottar temperatur och regn och beräknar medelvärden. |variabler, print|listor, plot, loop|
+|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi plottar temperaturdata för juli från SMHI (Lund och några andra orter), och jämför olika år. Vi läser in från enkla filer och plottar kurvor.|listor, plot|range, filer, loop, append|
+|[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii. Vi läser in från fil med många kolumner och plottar kurvor.|listor, plot, filer|split, float|
+|Keelingkurvan B (TBA)|...|listor, plot|nyckel-värdetabeller|
+|[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige. Vi läser in från internet och plottar stapeldiagram. |listor, plot| nyckel-värdetabeller, slice, requests, bar|
+|[NumPy A](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy. Vi plottar data som 2D-bilder. |listor, plot| numpy, array, imshow|
+|[Torkan A](drought/README.md)|Vi undersöker hur torkan sommaren 2018 kan ses från satellit. Vi läser in från numpy-filer och plottar 2D med olika färgskalor.|numpy, array, imshow|NpzFile, colormap|
 
 En snabbreferens för de Python-konstruktioner du lär dig finns [här](snabbreferens.md).
 
 
 
-## Programmeringsplattform
-
-Vi använder online-plattformar för Python som repl.it och google colab, så du behöver inte installera något på din dator.
 
 ## Fler uppdrag
 
