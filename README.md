@@ -1,8 +1,6 @@
 # schoolprog-satellite
-Programmeringsövningar med satellitdata för högstadium och gymnasium.
-
-# Övningarna
-Övningarna finns preliminärt tillgängliga [här](exercises/README.md).
+Programmeringsövningar med satellitdata och annan miljödata för högstadium och gymnasium.
+Övningarna finns [här](exercises/README.md).
 
 # För utvecklare
 

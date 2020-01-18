@@ -30,21 +30,12 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 
 En snabbreferens för de Python-konstruktioner du lär dig finns [här](snabbreferens.md).
 
-## Inspirationsuppdrag
 
-Följande uppdrag kan användas som inspiration. En del av dem täcker samma områden som ovan, men de går betydligt snabbare fram, och programmeringen kan vara lite svår att hänga med på för nybörjare. Men det finns lösningar i uppgifterna, så du kan försöka dig på dem också. En del av dem kan köras i vanlig Python-miljö, som repl.it. En del körs som s.k. Jupyter notebooks, med antingen Google Colab eller Binder. Om du kör på Google Colab behöver du vara inloggad på Google för att kunna köra koden.
-
-|Uppdrag|Beskrivning|Python-begrepp|Google Colab/Binder|
-|-------|-----------|--------------|------------|
-|[Väderdata](weatherdata/README.md)|Hur har temperaturen förändrats de senaste 50 åren? Vi undersöker data från SMHI|filer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/weatherdata/Weatherdata.ipynb)|
-|[Väderdata 2](weatherdata2/README.md)|Fortsättning på Väderdata. Vi plottar interaktiva grafer med hjälp av biblioteket Bokeh|filer, bokeh, binder|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/weatherdata2/weatherdata_2_matplotlib.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lunduniversity/schoolprog-satellite/master?filepath=exercises%2Fweatherdata2%2FWeatherdata_2.ipynb)|
-|[Keelingkurvan](co2/README.md)|Undersök hur koldioxidnivån har förändrats sedan 50-talet|filer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2/Keelingkurvan.ipynb)|
-|[Introduktion NumPy](numpy_intro/README.md)|Introduktion till paketet NumPy. Testar på att skapa och använda arrayer|numpy arrayer|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/numpy_intro/Introduktion_NumPy.ipynb)|
-|[Torkan](drought/README.md)|Undersök hur torkan sommaren 2018 kan ses från satellit|numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought/Bokskogen.ipynb)|
-|[Torkan 2](drought2/README.md)|Forsättning av Torkan. Vi undersöker fler mått på torka| numpy arrayer, matplotlib|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/drought2/Torkan_2.ipynb)|
-|[CO2-utsläpp i Sverige](co2_emission_sweden/README.md)|Undersök hur utsläppen för olika sektorer i Sverige ser ut med hjälp av ett stapeldiagram|filer, matplotlib, numpy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2_emission_sweden/co2_sweden.ipynb)|
-|[CO2-utsläpp per capita](co2_per_capita/README.md)|Undersök hur utsläppen per capita har förändrats i Sverige sen 1990.|filer, matplotlib, numpy|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2_per_capita/co2_sweden_per_capita.ipynb)|
 
 ## Programmeringsplattform
 
 Vi använder online-plattformar för Python som repl.it och google colab, så du behöver inte installera något på din dator.
+
+## Fler uppdrag
+
+Vi utvecklar fler uppdrag efter hand, och ett antal prototyp-uppdrag som ännu inte bearbetats pedagogiskt finns [här](PROTOTYP.md).
