@@ -1,25 +1,100 @@
 # Snabbreferens
 Snabbreferens för programmering med miljödata
 
-## Filer
+## 1. Mer om listor och nyckel-värdetabeller, etc.
+### 1.1 Några funktioner på listor
+```python
+lst = [1, 7, 4]
+s = sum(lst)  # Ger summan av elementen i listan (12)
+n = len(lst)  # Ger antalet element i listan (3)
+m = max(lst)  # Ger största elementet i listan (7)
+lst.append(7) # Lägg till elementet 7 sist i listan.
+              # Nu är lst = [1, 7, 4, 7]
+lst.remove(7) # Ta bort första förekomsten av 7
+              # Nu är lst = [1, 4, 7]
+```
 
-### Läsa från fil
-Exempel läsa från fil. Skapar varaiabeln data och lägger allt innehåll från filen i data i form av en sträng:
+### 1.2 Ranges
+* `range(n)` ger en sekvens av heltal som börjar på 0 och slutar på n-1
+* `range(m, n)` ger en sekvens som börjar på m och slutar på n-1.
+* Vi kan göra om en `range` till en lista med funktionen `list`
+```python
+lst1 = list(range(5))    # Ger [0, 1, 2, 3, 4]
+lst2 = list(range(2, 5)) # Ger [2, 3, 4]
+```
+
+### 1.3 Splittra upp sträng till lista
+```python
+s = "några ord i en sträng"
+w = s.split(" ") # Ger listan ["några", "ord", "i", "en", "sträng"]
+```
+
+### 1.4 List slices
+`lst[start:stop]` ger en bit av listan, där första elementet är `start` och sista är `stop-1`. Negativa index räknar från slutet (`-1` är sista elementet). Utelämnas `start` motsvarar det `start=0`. Utelämnast `stop` motsvarar det `stop=-1`.
+```python
+lst = [0, 10, 20, 30, 40, 50, 60, 70]
+lst[2:5] # Ger [20, 30, 40]
+lst[:5]  # Ger [0, 10, 20, 30, 40]
+lst[2:]  # Ger [20, 30, 40, 50, 60, 70]
+lst[:]   # Ger en kopia på listan
+lst[1:]  # Ger [10, 20, 30, 40, 50, 60, 70]
+lst[:-1] # Ger [0, 10, 20, 30, 40, 50, 60]
+```
+
+lst[start:stop:steg] ger en bit av listan från `start` till `stop-1`, med steglängd `steg`. Om `steg` utelämnas mostvarar det `steg=1`. Om `steg` är negativ skapas en lista från höger till vänster.
 
 ```python
-f = open("file_name.txt")
-data = f.read()                
+lst = [0, 10, 20, 30, 40, 50, 60, 70]
+lst[::2]   # Ger [0, 20, 40, 60]
+lst[1::2]  # Ger [10, 30, 50, 70]
+lst[::-1]  # Ger [70, 60, 50, 40, 30, 20, 10, 0]
 ```
-En annan variant är följande. Här används en `with`-sats för att öppna filen. Läsning sker inuti `with`-satsen. `with`-satsen gör att filen automatiskt stängs efteråt.
+
+### 1.5 Mer om nyckel-värdetabeller
+
+En nyckel-värdetabell är en tabell av nyckel-värdepar (`key:value`). Man kan slå upp värdet för en nyckel. Man kan ta ut alla nycklarna till en lista.
+```python
+t = {1:3, 5:4, 8:3}
+t[5] # Slår upp värdet för nyckel 5 (ger 4)
+lst = list(t.keys()) # Tar ut alla nycklarna och gör om till lista
+     # Nu är lst=[1, 5, 8]
+```
+
+### 1.6 Avrundning
+```python
+x = 10/3
+xr = round(x, 2) # Ger x avrundat till två decimaler
+```
+
+## 2. Filer
+
+### 2.1 Läsa från fil
+Exempel läsa från fil. Skapar varaiabeln `data` och lägger allt innehåll från filen i data i form av en sträng. Därefter splittas innehållet upp till en lista.
+
+```python
+f = open("file_name.txt") # Öppna filen
+data = f.read()  # Lägg hela filinnehållet i en sträng "data"
+lines = data.split("\n")  # Omvandla till lista av rader
+```            
+
+En annan variant är att loopa över den öppnade filen. Man får en rad per varv:
+
+```python
+f = open("file_name.txt") # Öppna filen
+lines = []
+for line in f:
+  lines.append(line)
+```            
+
+En tredje variant använder en `with`-sats för att öppna filen. Läsning sker inuti `with`-satsen. `with`-satsen gör att filen automatiskt stängs efteråt.
 
 ```python
 with open("file_name.txt") as f:
-    data = f.read()                      
+    data = f.read()
+    ...                     
 ```
 
-
-
-### Skriva till fil
+### 2.2 Skriva till fil
 Exempel skriva till fil:
 
 ```python
@@ -33,17 +108,36 @@ with open("file_name.txt", "a") as f:    # "a" anger append-mode
     f.write("Hej")                      # Skiver "Hej" efter det som redan finns.
 
 ```
-`append` betyder att man lägger till i slutet.
+"Append" betyder att man lägger till i slutet.
 
-## NumPy
+## 3. Hämta data över internet
+
+Biblioteket `requests` kan användas för att hämta en fil över internet.
+
+Importera requests:
+
+```python
+import requests
+```
+Hämta fil över internet
+```python
+response = requests.get("https://...")
+... = response.text
+```
+
+* `get` ger ett svar med info om filen
+* Filens innehåll finns i svarets `text` som en lång textsträng.
+
+
+## 4. NumPy
 
 Importera NumPy:
 
 ```python
 import numpy as np
 ```
-### Skapa arrayer
-Skapa en array av rank 1:
+### 4.1 Skapa numpy arrayer
+Skapa en 1-dimensionell array:
 ```python
 a = np.array([1,2,3]) # [1,2,3] kan ersättas med variabelnamn för en lista.
 ```
@@ -59,12 +153,12 @@ Skapa en array fylld av ettor:
 ones = np.ones(n) # Skapar en array med n st ettor.
 ```
 
-Skapa en array av rank 2:
+Skapa en 2-dimensionell array:
 ```python
-a = np.array([[1,2],[3,4]]) # skapar en 2x2 matris
+a = np.array([[1,2,3],[4,5,6],[7,8,9]]) # skapar en 3x3 matris
 ```
 
-Skapa en zeros/ones med högre rank:
+Skapa en zeros/ones med högre dimension. Obs! De dubbla parenteserna behövs för att det är en tupel `(2,3)` som är argumentet till funktionen `zeros`.
 ```python
 zeros2 = np.zeros((2,3)) # Skapar en matris med 2 rader och 3 kolumner, fylld med nollor.
 ```
@@ -80,7 +174,7 @@ Skapa array med ett visst antal punkter mellan start och stop. Start och stop ko
 a = np.linspace(start, stop, antal) #  antal = antal inklusive start och stop
 ```
 
-### Operationer
+### 4.2 Numpy-operationer
 
 Utföra operationer så som +, -, * och / elementvis:
 
@@ -89,16 +183,16 @@ a = np.array([1,2,3])
 b = np.array([4,5,6])
 c = a+b # == array([5,7,9])
 ```
-Kan även till exempel plusa med konstant eller ta kvadraten av arrayen elementvis:
+Kan även till exempel addera konstant eller ta kvadraten av arrayen elementvis:
 
 ```python
 a = np.array([1,2,3])
 c = a**2 # == array([1,4,9])
 ```
 
-### Funktioner
+### 4.3 Numpy-funktioner
 
-Köra sinus funktionen elementvis på arrayen:
+Köra sinus-funktionen elementvis på arrayen:
 
 ```python
 a = np.array([30,60,90])
@@ -106,111 +200,72 @@ np.sin(a) # == array([0.5, 0.8660254, 1.0])
 ```
 Finns väldigt många matematiska funktioner som används på liknande sätt, [se här.](https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.math.html)
 
-## Matplotlib.pyplot
+## 5. Matplotlib.pyplot
 Det finns otroligt många funktioner i `matplotlib` och vi kommer inte kunna täcka allt här. För ytterligare information: se dessa [tutorials](https://matplotlib.org/3.1.0/tutorials/index.html).
 
-### Allämnt om figurer
+Importera Matplotlib:
+
+```python
+import matplotlib.pyplot as plt
+```
+
+### 5.1 Allmänt om figurer
 Du kan modifiera din figur på många sätt.
 ```python
 plt.figure(figsize(10, 10)) # Skapar ny figure av storlek 10*10 inches
-plt.ylim(0, 10) # Gör så att plotfönstret är mellan 0 och 10 på yaxeln
+plt.ylim(0, 10) # Gör så att plotfönstret är mellan 0 och 10 på y-axeln
 plt.xlim(0, 10) # Gör motsvarande för x-axeln
-plt.xlabel("x-axel (s)") # Sätter text på x-axeln
-plt.ylabel("y-axeln (m)") # Sätter text på y-axeln
-plt.title("Min fina graf") # Sätter en titel   
+plt.xlabel("x-axel (s)")    # Sätter text på x-axeln
+plt.ylabel("y-axeln (m)")   # Sätter text på y-axeln
+plt.title("Min fina graf")  # Sätter en titel   
 plt.grid(True) # Gör så att man får ett rutnär i plotten
-plt.show() # Visar plotten
+plt.show()                  # Visar plotten
 plt.savefig("min_graf.png") # Sparar plotten till min_graf.png
+plt.close() # Stänger figuren så att en ny figur kan skapas
 ```
 
-### Plotta linjer
-Oftast vill vi bara plotta linjer genom punkter vi anger.
-```python
-plt.plot(x1, y1, color="red", linewidth=0.5) # Plottar en röd linje med bredd 0.5. x1 och y1 kan vara listor eller np-arrayer av rank 1.
-plt.plot(x2, y2, color="blue", linewidth=0.7) # Gör samma som ovan fast en tjockare blå linje
-plt.legend(["linje 1", "linje 2"]) #Sätter en legend
-```
-### Plotta stapeldiagram
-Om man vill plotta ett stapeldiagram kan man använda `plt.bar()`.
+### 5.2 Plotta linjer
+Plotta en linje genom punkter vi anger med `x` och `y`:
 
 ```python
-bar = plt.bar(x=x, height=heights, width=width, bottom=bottoms) # Lägger till ett antal staplar. Informationen sparas i bar
-plt.legend(bar[0], "mina staplar") # Lägger till en legend
+plt.plot(x, y) # x och y kan vara listor eller np-arrayer av rank 1.
 ```
 
-### Plotta bilder
-Om du har en array av rank 2 du vill plotta kan du använda `plt.imshow()`.
+Vi kan sätta extra argument i plot-anropet
 
 ```python
-plt.imshow(picture, cmap='PiYG') # Plottar arrayen picture som en bild med colormap 'PiYG'
+plt.plot(x, y, marker="o")     # En liten rund markering för varje datapunkt
+plt.plot(x, y, color="r")      # Röd linje ("b" för blå)
+plt.plot(x, y, linestyle="--") # Streckad linje ("-" för heldragen)
+plt.plot(x, y, "or--")         # Kortform för ovanstående
+plt.plot(x, y, linewidth=0.5)  # Linjebredd 0.5
+plt.plot(x, y, label="min linje") # Sätt etikett
+plt.legend()            # Lägg till "legend" med etiketter
+```
+
+Plott av två kurvor. Typiska anrop:
+
+```python
+plt.plot(x1, y1, "ro-", label="linje 1")
+plt.plot(x2, y2, "bo-", label="linje 2")
+plt.legend()
+```
+
+För mer information om vilka möjligheter som finns för format-argumentet (i stil med `"ro-"`), se https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html, sektionen *Notes*.
+
+### 5.3 Plotta stapeldiagram
+Om man vill plotta ett stapeldiagram i stället för en kurva kan man använda `plt.bar`.
+
+```python
+bar = plt.bar(x, heights, width=width, bottom=bottoms, label="mina staplar") # Lägger till ett antal staplar. Informationen sparas i bar
+plt.legend() # Lägger till en legend
+```
+
+### 5.4 Plotta bilder
+Om du har en 2D array du vill plotta kan du använda `plt.imshow()`.
+
+```python
+plt.imshow(picture, cmap="PiYG") # Plottar arrayen picture som en bild med colormap "PiYG"
 plt.clim(-1.0, 1.0) # Sätter ändpunkterna för colormappen
-plt.colorbar(label='min färgskala') # Skapar en colorbar med en label
-```
-
-## Bokeh
-Bokeh är ett alternativ till `matplotlib` som är bättre till att göra interaktiva uppgifter. Åter igen kommer vi inte kunna ta med allt här. För mer information om bokeh, se [här](https://bokeh.pydata.org/en/latest/docs/user_guide.html).
-
-### Skapa en figur
-
-Centralt i `bokeh` är `figure()`, den skapar en figur/plot som du sedan lägger till saker i och till sist visar.
-```python
-from bokeh.plotting import figure
-from bokeh.io import output_notebook, show
-plot = figure(title="Min titel", plot_height=300, plot_width=600, y_range=(-10, 15)) # Skapar en figur
-output_notebook() # Säger att man ska outputta figuren i notebooken
-show(plot) # Visar plotten
-```
-
-### Plotta linjer
-Att plotta linjer är ganska likt i bokeh som i matplotlib.
-
-```python
-my_line = plot.line(x, y) # Skapar en linje med listorna x och y
-```
-
-### Plotta stapeldiagram
-Även stapeldiagram är ganska likt matplotlib.
-
-```python
-my_vbar = plot.vbar(x, top=y, width = 0.5) # Skapar staplar av listorna x och y
-```
-
-## Ipywidgets
-Ipywidgets kan användas för att skapa sliders och dropdowns vilket gör grafer interaktiva.
-
-### Ipywidgets och bokeh
-Det som funkar bäst med ipywidgets är bokeh med det kan inte köras i google colab.
-```python
-#importera bibliotek:
-from ipywidgets import interact
-from bokeh.io import push_notebook, show, output_notebook
-from bokeh.plotting import figure
-output_notebook()
-
-def update(city): # update-funktion som anropas när man väljer något nytt
-    my_line.data_source.data['y'] = get_data(city) # ändrar datan för en bokeh-linje med en lista av data från get_data(city)
-    push_notebook(handle=my_handle) # uppdaterar en bokeh-plot med ett visst handle
-
-my_handle=show(plot, notebook_handle=True) # visar plotten och ger den ett speciellt handle
-interact(update, city=["Lund", "Malmö"]) # visar en dropdown som anropar update
-```
-
-### Ipywidgets och matplotlib
-Man kan också använda ipywidgets och matplotlib, men man får laggig interaktion. Detta kan dock köras i google colab.
-
-```python
-# importera bibliotek:
-from ipywidgets import interact
-import matplotlib.pyplot as plt
-import numpy as np
-
-def update(slope): # update-funktion för ipywidgets
-    plt.figure(figsize=(12, 7)) # Skapa en ny figur
-    x = np.linspace(-10, 10, 1000) # Skapa x-värden
-    y = x * slope # Beräkna y-värden för en linje med lutning slope
-    plt.ylim(-10, 10) # Sätt y-gränser
-    plt.xlim(-10, 10) # Sätt x-gränser
-    plt.plot(x, y) # Plotta värdena
-
-interact(update, slope=(-10, 10, 0.01)) # Skapa en slider från -10 till 10 som hoppar 0.01 i varje steg.
+plt.colorbar(label="min etikett") # Skapar en colorbar med en label
 ```

@@ -30,7 +30,11 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 |[NumPy A](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy. Vi plottar data som 2D-bilder. |listor, plot| numpy, array, imshow|
 |[Torkan A](drought/README.md)|Vi undersöker hur torkan sommaren 2018 kan ses från satellit. Vi läser in från numpy-filer och plottar 2D med olika färgskalor.|numpy, array, imshow|NpzFile, colormap|
 
-En snabbreferens för de Python-konstruktioner du lär dig finns [här](snabbreferens.md).
+## Snabbreferenser
+Här finns snabbreferenser för Python-konstruktioner:
+* [Grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
+* [Bibliotek vi använder i dessa uppgifter](snabbreferens.md) (filer, internet requests, numpy, matplotlib, bokeh, ipywidgets)
+
 
 
 
