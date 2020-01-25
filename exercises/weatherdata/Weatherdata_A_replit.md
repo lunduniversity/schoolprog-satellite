@@ -5,12 +5,12 @@ I detta uppdrag ska vi lära oss om listor och plottning i Python och använda d
 
 Denna uppgift är tänkt att köras i Python 3 på *repl.it*. Följ denna länk: [https://repl.it/languages/python3](https://repl.it/languages/python3).
 
-## 1 Listor
+## 1. Listor
 Vi börjar med några uppdrag för att se hur listor fungerar i Python.
 ### 1.1 Skapa en lista och skriv ut den
 En lista är en sekvens av värden. I koden nedan skapas en lista som sedan skrivs ut.
 
-**Uppdrag 1.1 a** Kopiera koden nedan och provkör den på *repl.it*.
+**Uppdrag 1.1 a:** Kopiera koden nedan och provkör den på *repl.it*.
 
 ```python
 temps = [14.1, 13.5, 17.5, 16.2, 18.9, 11.3]
@@ -35,7 +35,7 @@ När vi programmerar i denna uppgift så kommer vi att skapa ytterligare två li
 
 (Vi använder ofta engelska namn i programmen eftersom namn i program normalt inte får innehålla svenska tecken som `å`, `ä` och `ö`.)
 
-**Uppdrag 1.1 b** Lägg till kod som skapar en lista `days` med värdena för dagarna i tabellen (3, 7, 10, ...) och som sedan skriver ut listan, på liknande sätt som i förra exemplet. Provkör koden för att se att den fungerar.
+**Uppdrag 1.1 b:** Lägg till kod som skapar en lista `days` med värdena för dagarna i tabellen (3, 7, 10, ...) och som sedan skriver ut listan, på liknande sätt som i förra exemplet. Provkör koden för att se att den fungerar.
 
 Om du inte vet hur du skall göra så finns lösningen här.
 <details>
@@ -49,7 +49,7 @@ print(days)
 </details>
 
 \
-**Uppdrag 1.1 c** Lägg till kod som på liknande sätt skapar en lista `rain` med värdena för regnmängderna i tabellen. Anropa också `print` som tidigare så att du kan se att den nya listan har rätt värden.
+**Uppdrag 1.1 c:** Lägg till kod som på liknande sätt skapar en lista `rain` med värdena för regnmängderna i tabellen. Anropa också `print` som tidigare så att du kan se att den nya listan har rätt värden.
 
 <details>
 <summary markdown="span">
@@ -71,13 +71,13 @@ print(temps) # Denna print-sats kommer att köras
 # print(rain) Men denna är en kommentar och körs inte
 ```
 
-**Uppdrag 1.1 d** Kommentera bort några av print-satserna i din kod. (Kanske vill du dock ha kvar någon av print-satserna för att se att någonting händer när du kör programmet.)
+**Uppdrag 1.1 d:** Kommentera bort några av print-satserna i din kod. (Kanske vill du dock ha kvar någon av print-satserna för att se att någonting händer när du kör programmet.)
 
 
 ### 1.2 Beräkna medeltemperatur med `sum` och `len`
 Det finns en inbyggd funktion `sum(list)` som kan summera elementen i en lista. Det finns också en inbyggd funktion `len(list)` som ger längden på listan. ("len" står för "length".)
 
-**Uppdrag 1.2 a** Följande kod räknar ut summan av temperaturerna och längden på listan och skriver ut värdena. Kopiera och provkör koden. Vad blir resultatet?
+**Uppdrag 1.2 a:** Följande kod räknar ut summan av temperaturerna och längden på listan och skriver ut värdena. Kopiera och provkör koden. Vad blir resultatet?
 ```python
 s = sum(temps)    # beräkna summa
 print(s)          # skriv ut
@@ -87,7 +87,7 @@ print(n)          # skriv ut
 
 Som du ser blir summan inte exakt 91.5, utan visas med många decimaler. Hur kan det vara så? Jo, det beror på att tal representeras binärt i datorn, dvs med nollor och ettor. Många decimaltal kan inte representeras exakt med binära tal, så omvandlingen ger avrundningsfel.
 
-**Uppdrag 1.2 b** För att få en finare utskrift kan vi använda funktionen `round(v, d)` som avrundar ett värde `v` till `d` decimaler. Prova följande exempel:
+**Uppdrag 1.2 b:** För att få en finare utskrift kan vi använda funktionen `round(v, d)` som avrundar ett värde `v` till `d` decimaler. Prova följande exempel:
 
 
 ```python
@@ -98,7 +98,7 @@ print(rounded)              # skriv ut
 
 Koden ovan kommer först att räkna ut 1/3, sedan avrunda till 2 decimaler (med `round`) och sedan skriva ut resultatet (med `print`).
 
-**Uppdrag 1.2 c** Om vi vill kan vi skriva allt som en enda sats i stället. Prova att ändra koden till följande sats. Vi har ersatt varje variabel med dess definition:
+**Uppdrag 1.2 c:** Om vi vill kan vi skriva allt som en enda sats i stället. Prova att ändra koden till följande sats. Vi har ersatt varje variabel med dess definition:
 
 ```python
 print(round(1/3, 2))
@@ -106,7 +106,7 @@ print(round(1/3, 2))
 
 Vi kan observera att när en funktion anropas, så beräknas först argumenten till funktionen. Därför kommer först 1/3 att beräknas, sedan `round` att anropas, och sist kommer `print` att anropas (med resultatet från `round`).
 
-**Uppdrag 1.2 d** Skriv liknande kod (med en eller flera rader, vilket du vill) så att summan av temperaturerna skrivs ut avrundat till en decimal.
+**Uppdrag 1.2 d:** Skriv liknande kod (med en eller flera rader, vilket du vill) så att summan av temperaturerna skrivs ut avrundat till en decimal.
 
 <details>
 <summary markdown="span">
@@ -125,7 +125,7 @@ print(rounded)</code></pre>
 </details>
 
 \
-**Uppdrag 1.2 e** Nu när vi vet hur man räknar ut summan och längden av en lista så kan vi lätt räkna ut medeltemperaturen för värdena i `temps`. Skriv kod som räknar ut medeltemperaturen och skriver ut resultatet, avrundat till en decimal.
+**Uppdrag 1.2 e:** Nu när vi vet hur man räknar ut summan och längden av en lista så kan vi lätt räkna ut medeltemperaturen för värdena i `temps`. Skriv kod som räknar ut medeltemperaturen och skriver ut resultatet, avrundat till en decimal.
 
 *Tips!*  Du kan skriva koden så att du gör varje sak i tur och ordning och sparar varje delresultat i en variabel:
 
@@ -158,7 +158,7 @@ Eller som en enda rad:
 \
 Observera att om man skriver allt på samma rad kan det ibland bli svårläst, även om koden blir kortare. Det kan vara bra att dela upp en stor beräkning i delar och sätta namn på de viktiga delarna. Då blir koden mer lättläst.
 
-**Uppdrag 1.2 f** Ändra din kod så att du använder två rader: en där du räknar ut medelvärdet av temperaturerna, och en där du avrundar och skriver ut. Något i följande stil:
+**Uppdrag 1.2 f:** Ändra din kod så att du använder två rader: en där du räknar ut medelvärdet av temperaturerna, och en där du avrundar och skriver ut. Något i följande stil:
 
 ```python
 average_temp = ...
@@ -179,7 +179,7 @@ print(round(average_temp, 1))</code>
 </details>
 
 \
-**Uppdrag 1.2 g** Lägg till liknande kod för att räkna ut medelvärdet av regnmängderna.
+**Uppdrag 1.2 g:** Lägg till liknande kod för att räkna ut medelvärdet av regnmängderna.
 
 <details>
 <summary markdown="span">
@@ -194,7 +194,7 @@ print(round(average_rain, 1))</code>
 
 
 \
-**Uppdrag 1.2 h** Snygga till ditt program så att du bara har kvar koden för att räkna ut `days`, `temps`, `rain`, `average_temp` och `average_rain`. Övrig kod kan tas bort eller kommenteras bort.
+**Uppdrag 1.2 h:** Snygga till ditt program så att du bara har kvar koden för att räkna ut `days`, `temps`, `rain`, `average_temp` och `average_rain`. Övrig kod kan tas bort eller kommenteras bort.
 
 ### 1.3 Accessa list-element
 
@@ -208,13 +208,13 @@ song = ["glad", "såsom", "fågeln", "i", "morgonstunden"]
 print(song[0], song[3], song[4])
 ```
 
-**Uppdrag 1.3 a** Kopiera och provkör koden ovan. Vilka element skrivs ut?
+**Uppdrag 1.3 a:** Kopiera och provkör koden ovan. Vilka element skrivs ut?
 
 Observera att man kan skriva ut flera saker på samma rad genom att ha flera argument i samma print-sats.
 
-**Uppdrag 1.3 b** Vad händer om man försöker accessa "utanför" listan, med ett index som är för stort? Prova att göra t.ex. `print(song[17])`. Du får ett felmeddelande med "Traceback" (talar om var felet uppstod) och "IndexError" (talar om vilken slags fel det var). Kan du förstå felmeddelandet?
+**Uppdrag 1.3 b:** Vad händer om man försöker accessa "utanför" listan, med ett index som är för stort? Prova att göra t.ex. `print(song[17])`. Du får ett felmeddelande med "Traceback" (talar om var felet uppstod) och "IndexError" (talar om vilken slags fel det var). Kan du förstå felmeddelandet?
 
-**Uppdrag 1.3 c** Skriv kod som skriver ut första, andra och tredje elementet i listan `rain`.
+**Uppdrag 1.3 c:** Skriv kod som skriver ut första, andra och tredje elementet i listan `rain`.
 
 <details>
 <summary markdown="span">
@@ -225,7 +225,7 @@ Lösning
 </details>
 
 \
-**Uppdrag 1.3 d** Skriv kod som räknar ut medelvärdet av de tre första elementen i `rain`.
+**Uppdrag 1.3 d:** Skriv kod som räknar ut medelvärdet av de tre första elementen i `rain`.
 
 *Tips!* Gör detta genom att lägga ihop de tre värdena och dividera med tre. Kalla detta värde t.ex. `avg3`. Därefter avrundar du och skriver ut resultatet.
 
@@ -242,7 +242,7 @@ print(round(avg3, 1))
 
 ### 1.4 Loopa över listor
 
-**Uppdrag 1.4 a** En `for` sats kan loopa över elementen i en lista. Provkör följande kod som skriver ut alla orden i listan `song`:
+**Uppdrag 1.4 a:** En `for` sats kan loopa över elementen i en lista. Provkör följande kod som skriver ut alla orden i listan `song`:
 
 ```python
 for word in song:
@@ -255,9 +255,9 @@ Saker att observera:
 * Variabeln `word` kallas *loopvariabel*. För varje varv får `word` nästa värde i listan.
 * Satsen `print(word)` skriver ut värdet.
 
-**Uppdrag 1.4 b** Du kan använda ett annat namn på loopvariabeln om du vill. Prova att ändra namnet från `word` till `w` och kör koden för att kontrollera att den gör samma sak som tidigare.
+**Uppdrag 1.4 b:** Du kan använda ett annat namn på loopvariabeln om du vill. Prova att ändra namnet från `word` till `w` och kör koden för att kontrollera att den gör samma sak som tidigare.
 
-**Uppdrag 1.4 c** Skriv kod som skriver en liknande loop, och som skriver ut alla regnmängderna i listan `rain`. Här kan det passa att kalla loopvariabeln t.ex. `r`.
+**Uppdrag 1.4 c:** Skriv kod som skriver en liknande loop, och som skriver ut alla regnmängderna i listan `rain`. Här kan det passa att kalla loopvariabeln t.ex. `r`.
 <details>
 <summary markdown="span">
 Lösning
@@ -268,7 +268,7 @@ Lösning
 </details>
 
 \
-**Uppdrag 1.4 d** För att loopa ett visst antal gånger används ofta  en `for` loop med en `range`. Provkör följande exempel.
+**Uppdrag 1.4 d:** För att loopa ett visst antal gånger används ofta  en `for` loop med en `range`. Provkör följande exempel.
 ```python
 for i in range(4):
   print("värdet är", i)
@@ -279,7 +279,7 @@ Observera att:
 *  Loopen gör 4 varv.
 *  Loopvariabeln `i` får värdena 0, 1, 2, 3 i tur och ordning
 
-**Uppdrag 1.4 e** Vi ska nu loopa på ett liknande sätt över `rain`. För att veta hur många varv vi skall loopa använder vi `len`. Provkör följande kod:
+**Uppdrag 1.4 e:** Vi ska nu loopa på ett liknande sätt över `rain`. För att veta hur många varv vi skall loopa använder vi `len`. Provkör följande kod:
 
 ```python
 for i in range(len(rain)):
@@ -289,7 +289,7 @@ for i in range(len(rain)):
 Det här verkar ju bara vara ett krångligare sätt att göra samma sak som vi gjorde i uppdraget 1.4 c. Men vi ska strax se att vi har mer nytta av loopvariabeln `i`.
 
 
-**Uppdrag 1.4 f** Ändra koden så att även dagen och temperaturen skrivs ut i loopen. Till exempel ska de två första raderna bli:
+**Uppdrag 1.4 f:** Ändra koden så att även dagen och temperaturen skrivs ut i loopen. Till exempel ska de två första raderna bli:
 
     3 14.1 0
     7 13.5 0.2
@@ -304,7 +304,7 @@ Lösning
 </details>
 
 \
-**Uppdrag 1.4 g** Ändra koden så att du lägger till begriplig text, t.ex. så att de första två raderna blir
+**Uppdrag 1.4 g:** Ändra koden så att du lägger till begriplig text, t.ex. så att de första två raderna blir
 
     Den 3 juni var temperaturen 14.1 grader och det regnade 0 mm.
     Den 7 juni var temperaturen 13.5 grader och det regnade 0.2 mm.
@@ -319,16 +319,16 @@ Lösning
 </details>
 
 \
-**Uppdrag 1.4 h** I följande uppgifter behöver du ha kvar koden som räknar ut `days`, `temps` och `rain`. Övrig kod kan tas bort eller kommenteras bort.
+**Uppdrag 1.4 h:** I följande uppgifter behöver du ha kvar koden som räknar ut `days`, `temps` och `rain`. Övrig kod kan tas bort eller kommenteras bort.
 
-## 2 Plottning
+## 2. Plottning
 Nu skall vi titta på hur plottning fungerar i Python.
 
 ### 2.1 Plotta en kurva
 
 Vi börjar med att plotta en temperaturkurva med dagar på x-axeln och temperaturer på y-axeln.
 
-**Uppdrag 2.1 a** Vi använder biblioteket `matplotlib` för att plotta. Provkör följande kod:
+**Uppdrag 2.1:** Vi använder biblioteket `matplotlib` för att plotta. Provkör följande kod:
 ```python
 import matplotlib.pyplot as plt
 
@@ -349,7 +349,7 @@ Till exempel är följande anrop felaktigt
 
 eftersom listan av x-värden är kortare än temperaturlistan `temps`.
 
-**Uppdrag 2.2 a**
+**Uppdrag 2.2:**
 *  Provkör det felaktiga anropet ovan för att se att du får ett felmeddelande.
 *  Felmeddelandet innehåller mycket information, men längst ner hittar du en förklaring av felet (`ValueError: ...`). Kan du förstå förklaringen?
 *  Kan du ändra koden så att du blir av med felmeddelandet? (*Tips!* Ändra listan med x-värden så att den har lika många element som `temps`.)
@@ -371,7 +371,7 @@ Det finns många olika möjligheter att göra plotten finare och mer informativ.
 
 Det vore också bra att sätta en prick för varje mätvärde, eftersom många dagar saknar mätvärde. (T.ex. inleds mätvärden med värden från den 3:e och 7:e juni i exemplet.)
 
-**Uppdrag 2.3 a** Prova koden nedan för att se hur man får med denna information.
+**Uppdrag 2.3 a:** Prova koden nedan för att se hur man får med denna information.
 
 ```python
 plt.plot(days, temps, "o-", label="temperaturer i juni")
@@ -388,7 +388,7 @@ Förklaring:
 *  parametern `label=...` i plot-anropet sätter en etikett (label) på kurvan. Denna etikett skrivs ut om man anropar `legend`
 *  parametern `o-` i plot-anropet ger ett "format" för kurvan, och säger att det skall vara en prick för varje mätvärde och linjer emellan. Det finns många andra "format" att välja på. T.ex. kommer `r+--` att rita en röd kurva med ett plus-tecken för varje mätvärde och streckade linjer emellan.
 
-**Uppdrag 2.3 b** Kopiera koden för plottningen i föregående uppdrag och experimentera med andra värden för format, label, xlabel och ylabel. Kan du få en grön kurva med streckade linjer?
+**Uppdrag 2.3 b:** Kopiera koden för plottningen i föregående uppdrag och experimentera med andra värden för format, label, xlabel och ylabel. Kan du få en grön kurva med streckade linjer?
 
 ##### Detaljer om format (hoppa över om du vill)
 
@@ -398,11 +398,11 @@ Om du är intresserad av fler exempel på vilka format som kan användas i plot-
 
 Format-parametern är ett exempel på en *valfri* parameter. Den har ett standardvärde som används om man inte anger parametern. Standardvärdet för format-parametern är `b-` (blå linje).
 
-Parametern `label=...` är ett exempel på en *namngiven<* parameter. Namngivna parametrar måste komma i slutet på anropet (efter icke-namngivna) och ordningen mellan dem spelar ingen roll. De är praktiska att använda när en funktion har väldigt många valfria parametrar (vilket `plot` har).
+Parametern `label=...` är ett exempel på en *namngiven* parameter. Namngivna parametrar måste komma i slutet på anropet (efter icke-namngivna) och ordningen mellan dem spelar ingen roll. De är praktiska att använda när en funktion har väldigt många valfria parametrar (vilket `plot` har).
 
 ### 2.4 Skapa en egen plott
 
-**Uppdrag 2.4 a** Nu kan du lite om plottning. Skriv kod för att plotta regnmängderna (använd listan `rain` som vi skapade tidigare). Kan du göra plotten fin och informativ med etiketter på axlarna och en "legend" (så att man ser vilken kurva som är vilken)?
+**Uppdrag 2.4:** Nu kan du lite om plottning. Skriv kod för att plotta regnmängderna (använd listan `rain` som vi skapade tidigare). Kan du göra plotten fin och informativ med etiketter på axlarna och en "legend" (så att man ser vilken kurva som är vilken)?
 
 *Tips!*
 Arbeta i små steg: gör en sak i taget och provkör koden efter varje steg så du ser att det blir rätt.
@@ -435,7 +435,7 @@ plt.savefig("regnkurva.png")
 
 Vi kan lägga flera kurvor i samma diagram.
 
-**Uppdrag 2.5 a** Genom att göra flera anrop till `plot` kan vi skapa ett diagram med flera kurvor. Ändra din kod så att du visar både regnmängden och temperaturen i samma diagram. Kan du göra ett fint informativt diagram med olika färg på kurvorna? Vad skall du skriva för etikett på y-axeln?
+**Uppdrag 2.5:** Genom att göra flera anrop till `plot` kan vi skapa ett diagram med flera kurvor. Ändra din kod så att du visar både regnmängden och temperaturen i samma diagram. Kan du göra ett fint informativt diagram med olika färg på kurvorna? Vad skall du skriva för etikett på y-axeln?
 
 <details>
 <summary markdown="span">
@@ -452,7 +452,7 @@ plt.savefig("regnochtemp.png")
 </pre></code></p>
 </details>
 
-## 3 Quiz
+## 3. Quiz
 
 ### Fråga 1
 Vilka av dessa är en lista i python?
@@ -602,7 +602,7 @@ Svar
 Vad kommer det att stå på x-axeln i plotten som genereras av följande kod?
 
 ```python
-x = [1, 2 3]
+x = [1, 2, 3]
 y = [1, 4, 9]
 plt.plot(x, y)
 plt.xlabel("mina fina x-värden")

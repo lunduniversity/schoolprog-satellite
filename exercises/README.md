@@ -33,7 +33,7 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 ## Snabbreferenser
 Här finns snabbreferenser för Python-konstruktioner:
 * [Grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
-* [Bibliotek vi använder i dessa uppgifter](snabbreferens.md) (filer, internet requests, numpy, matplotlib, bokeh, ipywidgets)
+* [Bibliotek vi använder i dessa uppgifter](snabbreferens.md) (filer, internet requests, numpy, matplotlib)
 
 
 

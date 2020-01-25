@@ -73,7 +73,7 @@ Svar
 
 Det kan saknas värden för vissa månader. Kanske var mätutrustningen sönder, eller stördes av ett lokalt vulkanutbrott.
 
-Ett saknat värde i kolumn 4 representeras som talet `99.99`. Titta på juni 1958. Kan du se det saknade värdet?
+Ett saknat värde i kolumn 4 representeras som talet `-99.99`. Titta på juni 1958. Kan du se det saknade värdet?
 
 För att lösa problemet med saknade värden kan man räkna ut vad värdet *borde* ha varit. Det gör man genom att använda de riktiga uppmätta värdena på båda sidor om det saknade värdet. Detta kallas att man *interpolerar*.
 
@@ -128,7 +128,7 @@ Elementen i listan är "Hej", "svejs", "i", "lingonskogen!".
 
 Några saker att notera:
 
-* Strängar i Python kan skrivas antingen med dubbelfnuttar eller enkelfnuttar. Så `"hej"` och `´hej´` betyder samma sak.
+* Strängar i Python kan skrivas antingen med dubbelfnuttar eller enkelfnuttar. Så `"hej"` och `'hej'` betyder samma sak.
 * Strängen splittades upp efter blanktecken, och blanktecknen kom inte med i den resulterande listan.
 
 ### 2.2 Dela upp med annan separator
@@ -394,7 +394,7 @@ Svar
 ### Fråga 3
 Vad skrivs ut av följande kod?
 ```python
-lst = [0.0, 4.3, 2.7, 4.5]]
+lst = [0.0, 4.3, 2.7, 4.5]
 print(len(lst))
 ```
 
