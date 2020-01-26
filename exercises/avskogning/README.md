@@ -5,16 +5,23 @@ Avskogning är ett stort problem för miljön. Avskogning kan leda till förlust
 
 # Notebooken består av följande delar:
 
-    Vad är fjärranalys
+    1. Vad är fjärranalys
 
-    Vad är en satellitbild
+    2. Vad är en satellitbild
 
-    Hur kan man använda sig av satellitbilder för att bevaka vegetationen
+    3. Hur kan man använda sig av satellitbilder för att bevaka vegetationen
 
-    Övningar med data från Landsat satelliter
-    4.1. Beräkna Vegetations-Index (NDVI)
-    4.2. Plotta satellitbilder
-    4.3. Beräkna histogram för Vegetations-Index
-    4.4. Skapa plott med statistik
+    4. Övningar med data från Landsat satelliter
+        4.1. Beräkna Vegetations-Index (NDVI)
+        4.2. Plotta satellitbilder
+        4.3. Beräkna histogram för Vegetations-Index
+        4.4. Skapa plott med statistik
 
-    Övning: Hjälp forskaren
+    5. Övning: Hjälp forskaren
+
+
+# Satellitdata
+Övningarna kommer att använda satellitbilder från Landsat-satelliter (Landsat 5, Landsat 7 & Landsat 8). Den första Landsat satelliten sattes i bruk 1972. I det här tillfället, kommer satellitbilder från 1984, 1992, 2001 och 2019 användas. Landsat-satelliter har egenskapen att de har försätt forskare med den längsta tidserien av satellitdata. Ombord Landsat finns sensorer som mäter strålning i olika våglängder. Bl.a. :
+
+Rött Band: 630 - 690 nm
+Nära Infrarött Band: 770 - 900 nm
