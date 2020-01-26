@@ -24,9 +24,16 @@ lst2 = list(range(2, 5)) # Ger [2, 3, 4]
 ```
 
 ### 1.3 Splittra upp sträng till lista
+Splittra upp efter whitespace (blanka, tabbar, etc.)
 ```python
 s = "några ord i en sträng"
-w = s.split(" ") # Ger listan ["några", "ord", "i", "en", "sträng"]
+words = s.split() # Ger listan ["några", "ord", "i", "en", "sträng"]
+```
+
+Splittra upp efter rader (newline etc.)
+```python
+s = "några\nrader\nmed\nnewline\nmellan\nsig"
+rows = s.splitlines() # Ger listan ["några", "rader", "med", "newline", "mellan", "sig"]
 ```
 
 ### 1.4 List slices
@@ -69,6 +76,7 @@ xr = round(x, 2) # Ger x avrundat till två decimaler
 ## 2. Filer
 
 ### 2.1 Läsa från fil
+<!--
 Exempel läsa från fil. Skapar varaiabeln `data` och lägger allt innehåll från filen i data i form av en sträng. Därefter splittas innehållet upp till en lista.
 
 ```python
@@ -78,6 +86,7 @@ lines = data.split("\n")  # Omvandla till lista av rader
 ```            
 
 En annan variant är att loopa över den öppnade filen. Man får en rad per varv:
+-->
 
 ```python
 f = open("file_name.txt") # Öppna filen
@@ -86,12 +95,13 @@ for line in f:
   lines.append(line)
 ```            
 
-En tredje variant använder en `with`-sats för att öppna filen. Läsning sker inuti `with`-satsen. `with`-satsen gör att filen automatiskt stängs efteråt.
+En annan variant använder en `with`-sats för att öppna filen. Läsning sker inuti `with`-satsen. `with`-satsen gör att filen automatiskt stängs efteråt.
 
 ```python
 with open("file_name.txt") as f:
-    data = f.read()
-    ...                     
+  lines = []
+  for line in f:
+    lines.append(line)                     
 ```
 
 ### 2.2 Skriva till fil

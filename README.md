@@ -1,8 +1,7 @@
-# schoolprog-satellite
-Programmeringsövningar med satellitdata och annan miljödata för högstadium och gymnasium.
-Övningarna finns [här](exercises/README.md).
+# Våra övningar
+[Programmeringsövningar med satellitdata och annan miljödata](exercises/README.md) för högstadium och gymnasium.
 
-# För utvecklare
+## För utvecklare
 
 * Projektbeskrivning, uppdragsideer, etc. finns på [Google Drive](https://drive.google.com/drive/folders/1svwmHStMxmkm5pGE-U4PO6GWMpGCyXYH)
 * Lägg alla (stora) datafiler i följande sido-repo: https://github.com/lunduniversity/schoolprog-satellite-data
@@ -15,7 +14,7 @@ Programmeringsövningar med satellitdata och annan miljödata för högstadium o
     * lösningar
 * Filerna `requirements.txt` och `postBuild` är config-filer för [binder](https://gke.mybinder.org/) som används i Väderdata 2.
 
-# License
+## License
 * Copyright &copy; 2019-2020. Dept. of Computer Science at Lund University, Lund, Sweden.
 * This work is licensed under a
 Creative Commons Attribution 4.0 International License ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)).

@@ -2,12 +2,6 @@
 
 I denna uppgift ska vi börja utforska Keelingkurvan som beskriver koldioxidhalten i atmosfären. Mätningarna påbörjades av forskaren Charles Keeling och har utförts sedan 1958 på vulkanen Mauna Loa på Hawaii. Observationerna på Mauna Loa var de första att tyda på att koldioxidhalten ökar i vår atmosfär.
 
-I uppgiften kommer vi att lära oss följande om Python-programmering:
-
-* göra om strängar till listor med `split`
-* läsa in datafiler
-* mer om plottning
-
 Gå till följande exempel på repl.it där vi förberett datafilen: [https://repl.it/@TeodorBucht1729/Keelingkurvan](https://repl.it/@TeodorBucht1729/Keelingkurvan)
 
 ## 1. Titta på datafilen
@@ -98,7 +92,7 @@ När vi programmerar kommer vi att använda de interpolerade koldioxidvärdena.
 
 Kolumn 6 visar ett trendvärde som vi skall titta på i en senare uppgift. Kolumn 7 visar hur många dagar koldioxidhalten mättes under en månad (-1 betyder att uppgiften saknas).
 
-## 2. Programmera med textsträngar
+## 2. Dela upp textsträngar
 
 Datafilen består egentligen bara av rader med text. Vi behöver nu lära oss lite mer programmering så att vi kan plocka ut värdena i filen och använda dem i en plott.
 
@@ -130,82 +124,12 @@ Några saker att notera:
 
 * Strängar i Python kan skrivas antingen med dubbelfnuttar eller enkelfnuttar. Så `"hej"` och `'hej'` betyder samma sak.
 * Strängen splittades upp efter blanktecken, och blanktecknen kom inte med i den resulterande listan.
+* Om strängen innehåller tabb-tecken eller andra "whitespace-tecken" (t.ex. ny rad), så behandlas de likadant som blanktecken.
 
-### 2.2 Dela upp med annan separator
 
-Hittills har vi delat upp strängar efter blanktecken. Men om vi anger ett argument till `split` kan vi separera (dela upp) strängen på andra sätt.
+### 2.2 Splitta upp en sträng med tal
 
-**Uppdrag:** Provkör följande kod. Hur delas strängen upp nu? Prova att ändra separatorn `"j"` till en annan sträng och kör programmet igen.
-
-```python
-str = "Hej svejs i lingonskogen!"
-lst = str.split("j")
-print(lst)
-```
-
-(Det kanske inte är så användbart att separera just på `"j"` i detta fall. Vi gör det bara för att se hur `split` fungerar.)
-
-<details>
-<summary markdown="span">
-Svar
-</summary>
-<p>
-Nu delas strängen upp till en lista med följande element: "He", " sve", "s i lingonskogen!".
-</p>
-</details>
-
-Några saker att notera:
-
-* Separatorn kommer inte själv med i listan.
-* Separatorn kan bestå av flera tecken. Prova t.ex. med separatorn `"ej"`.
-* Separatorn måste ha minst ett tecken. Prova gärna med en tom sträng, alltså `""`, så ser du att det blir det exekveringsfel.
-* Om man anropar `split` *utan* separator-argument, alltså med `split()`, så är det samma sak som att anropa med en blank som separator, alltså `split(" ")`. Vi säger att *default*-separatorn är ett blanktecken.
-
-### 2.3 Dela upp efter rader
-
-En textfil består av flera rader text. Men vad är en "rad" egentligen? I filen skiljs rader åt med ett särskilt tecken *newline* som skrivs som `"\n"`. Vi kan skapa en sträng med flera rader genom att använda `"\n"`.
-
-**Uppdrag:** Provkör följande kod. Vad skrivs ut?
-
-```python
-str = "Hej svejs!\nHur är läget?\nSjälv mår jag fint!"
-print(str)
-```
-<details>
-<summary markdown="span">
-Svar
-</summary>
-<p>
-Det skrivs ut tre rader. Varje "\n" ger en ny rad i utskriften.
-</p>
-</details>
-
-**Uppdrag:** Dela upp strängen i en delsträng per rad genom att använda `split` med separatorn `"\n"`. Du kan fylla i nedanstående skelett för att lösa problemet:
-
-```python
-str = "Hej svejs!\nHur är läget?\nSjälv mår jag fint!"
-lines = #FYLL I DIN KOD HÄR
-print(lines)
-```
-
-Om du gjort rätt så skrivs följande ut:
-
-```python
-['Hej svejs!', 'Hur är läget?', 'Själv mår jag fint!']
-```
-
-<details>
-<summary markdown="span">
-Lösning
-</summary>
-<p><pre><code>lines = str.split("\n")
-</code></pre>
-</p>
-</details>
-
-### 2.4 Dela upp en sträng med tal
-
-Nu vet vi det mesta vi behöver för att kunna läsa in en datafil och splitta upp resultatet till listor.
+Nu vet vi hur man delar upp en sträng med hjälp av split, och får en lista av de ingående orden.
 
 Men datafilen har ju tal i sig. Vad händer om vi delar upp en sträng med tal?
 
@@ -222,13 +146,13 @@ print(lst)
 Svar
 </summary>
 <p>
-Resultatet blir en lista med elementen "1.2", "17.56", "0.33".
+Resultatet blir en lista med strängarna "1.2", "17.56", "0.33".
 </p>
 </details>
 
-Vi kan notera att elementen är *strängar*, alltså sekvenser av tecken. För att vi skall kunna använda dem som decimaltal behöver de först omvandlas till decimaltal.
+Vi kan notera att elementen är *strängar*, alltså sekvenser av tecken. För att vi skall kunna använda dem som decimaltal behöver de först omvandlas.
 
-### 2.5 Omvandla en sträng till decimaltal med `float`
+### 2.3 Omvandla en sträng till decimaltal med `float`
 
 Om vi har en sträng, t.ex. `"1.2"`, så kan vi omvandla den till ett decimaltal (en float) genom att skriva `float("1.2")`
 
@@ -255,29 +179,29 @@ Saker att notera:
 
 ## 3. Läsa in datafilen
 
-Nu kan vi äntligen läsa in datafilen. Vårt mål är att representera datan som två listor: en lista `years` som innehåller åren på decimalform (värdena i kolumn 3), och en lista `co2` som innehåller de interpolerade koldioxidvärdena (kolumn 5).
+Nu kan vi läsa in datafilen. Vårt mål är att representera datan som två listor: en lista `years` som innehåller åren på decimalform (värdena i kolumn 3), och en lista `co2` som innehåller de interpolerade koldioxidvärdena (kolumn 5).
 
 Vi skall göra detta i några steg.
 
 Koden vi skrivit hittills har vi bara haft för att experimentera. Du kan ta bort den, eller kommentera bort den genom att skriva en "brädgård", `#`, först på varje kodrad.
 
-### 3.1 Läs in hela filen i en sträng
+### 3.1 Läs in filen
 
-Det finns flera olika sätt att läsa in en fil. I denna uppgift ska vi läsa in hela filen i en enda jättelång sträng, och sedan splitta upp den så vi får en lista av textrader.
+Läs in filen till en lista `lines` genom att först öppna filen och sedan loopa över dess rader. I varje varv i loopen lägger vi till den aktuella raden till `lines`.
 
 **Uppdrag:** Skriv in och kör följande kod.
 
 ```python
 f = open("data.txt")      # Öppna filen
-data = f.read()           # Läs in hela innehållet
-rows = data.split("\n")   # Dela upp i rader
+lines = []                # Skapa en tom lista "lines"
+for line in f:            # För varje rad i filen,
+  lines.append(line)          # lägg till raden till lines
 ```
 
-För att veta att något faktiskt hände när vi körde koden ovan kan vi ta reda på hur många tecken som finns i datan och hur många rader det blev:
+För att veta att något faktiskt hände när vi körde koden ovan kan vi ta reda på hur många rader det blev:
 
 ```python
-print(len(data))
-print(len(rows))
+print(len(lines))
 ```
 
 Vad fick du för resultat?
@@ -287,14 +211,9 @@ Vad fick du för resultat?
 Svar
 </summary>
 <p>
-Filen har 47039 tecken fördelade på 735 rader.
+Filen har 735 rader.
 </p>
 </details>
-
-Saker att notera om filer:
-
-* Funktionen `open` returnerar ett "filobjekt" som vi sparar i variabeln `f`. Argumentet `"data.txt"` är namnet på vilken fil vi vill öppna.
-* Man kan göra `read` på ett filobjekt, och då får man hela innehållet i filen som en enda lång textsträng.
 
 ### 3.2 Skapa `years` och `co2`
 
@@ -309,8 +228,8 @@ Vi löser problemet med en `for`-loop som går igenom alla raderna. Inuti `for`l
 ```python
 years = [] # Skapa tom lista för years
 co2 = []   # Skapa tom lista för co2
-for row in rows:  # Gå igenom alla rader
-  splitted = row.split()          # Splitta upp raden
+for line in lines:  # Gå igenom alla rader
+  splitted = line.split()          # Splitta upp raden
   years.append(float(splitted[2]))# Lägg till 3:e talet till years
   co2.append(float(splitted[4]))  # Lägg till 5:e talet till co2
 ```
@@ -327,9 +246,32 @@ print(len(co2))
 </p>
 </details>
 
-Saker att notera:
-* För att kunna lägga till element skapade vi först två tomma listor, innan for-loopen.
-* Vi la till element till en lista med funktionen `append` ("append" betyder "lägg till sist").
+<!--
+### 3.3 Förenkla koden (frivilligt)
+
+Egentligen var det onödigt att skapa listan `lines`. Vi kan förenkla koden genom att ta bort `lines`-variabeln och i stället skapa `years` och `co2` direkt när vi läser in raderna från filen.
+
+**Uppdrag:** Förenkla din kod enligt ovan. Skriv ut längden på `years` och `co2` för att kontrollera att din kod verkar göra samma sak som tidigare.
+
+<details>
+<summary markdown="span">
+Svar
+</summary>
+<p><pre><code>f = open("data.txt") # Öppna filen
+years = []                         # Skapa tom lista "years"
+co2 = []                           # Skapa tom lista "co2"
+for line in f:                     # För varje rad i filen,
+  splitted = line.split()            # Splitta upp raden
+  years.append(float(splitted[2]))   # Lägg till 3:e talet till years
+  co2.append(float(splitted[4]))     # Lägg till 5:e talet till co2
+print(len(years))
+print(len(co2))
+</code></pre>
+</p>
+</details>
+
+*Observera!* Det är inte givet att koden utan `lines` är bättre än den med `lines`. På sätt och vis kan koden med `lines` uppfattas som lite enklare eftersom man hanterar ett problem i taget.
+-->
 
 ## 4. Plotta
 
@@ -374,7 +316,7 @@ Nej det är ingen skillnad. Det betyder samma sak.
 ### Fråga 2
 Vad skrivs ut av följande kod?
 ```python
-str = "0.0 4.5 2.3"
+str = "0.0  4.5  2.3"
 print(str.split())
 ```
 
@@ -444,7 +386,7 @@ CO<sub>2</sub>
 </details>
 
 ### Fråga 6
-Vad mäts koldioxid i?
+Vad brukar man mäta koldioxid i?
 
 *  procent (hundradelar)
 *  promille (tusendelar)

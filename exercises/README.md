@@ -10,11 +10,11 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 
 ## Vad behöver du kunna?
 
-Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. Titta [här](prerequisites.md) för att se om du har lagom förkunskaper. Du kan också prova uppdragen direkt. Lösningsförslag ingår i alla uppgifterna.
+Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. [Titta här för att se om du har lagom förkunskaper](prerequisites.md). Du kan också prova uppdragen direkt. Lösningsförslag ingår i alla uppgifterna.
 
 Har du handledning så kan du göra uppdragen utan förkunskaper i programmering.
 
-Om du är lärare, eller pedagog på ett Science Center, se vår lärarhandledning [här](handledning.md).
+Om du är lärare, eller pedagog på ett Science Center, [se vår lärarhandledning](handledning.md).
 
 ## Våra uppdrag
 
@@ -32,13 +32,10 @@ Följande uppdrag är tänkta att användas för skolelever i högstadiet och p�
 
 ## Snabbreferenser
 Här finns snabbreferenser för Python-konstruktioner:
-* [Grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
-* [Bibliotek vi använder i dessa uppgifter](snabbreferens.md) (filer, internet requests, numpy, matplotlib)
-
-
-
+* [Snabbreferens för grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
+* [Snabbreferens för bibliotek vi använder i uppgifterna](snabbreferens.md) (filer, internet requests, numpy, matplotlib)
 
 
 ## Fler uppdrag
 
-Vi utvecklar fler uppdrag efter hand, och ett antal prototyp-uppdrag som ännu inte bearbetats pedagogiskt finns [här](PROTOTYP.md).
+Vi utvecklar fler uppdrag efter hand, och vi har [ett antal prototyp-uppdrag](PROTOTYP.md) som ännu inte bearbetats pedagogiskt.
