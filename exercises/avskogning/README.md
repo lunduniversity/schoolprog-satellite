@@ -20,8 +20,12 @@ Avskogning är ett stort problem för miljön. Avskogning kan leda till förlust
     5. Övning: Hjälp forskaren
 
 
-# Satellitdata
+# Data
 Övningarna kommer att använda satellitbilder från Landsat-satelliter (Landsat 5, Landsat 7 & Landsat 8). Den första Landsat satelliten sattes i bruk 1972. I det här tillfället, kommer satellitbilder från 1984, 1992, 2001 och 2019 användas. Landsat-satelliter har egenskapen att de har försätt forskare med den längsta tidserien av satellitdata. Ombord Landsat finns sensorer som mäter strålning i olika våglängder. Bl.a. :
 
 Rött Band: 630 - 690 nm
 Nära Infrarött Band: 770 - 900 nm
+
+
+# Tillgång till övningen
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/avskogning/avskogning.ipynb)
