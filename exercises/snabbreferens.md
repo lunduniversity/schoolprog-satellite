@@ -36,6 +36,12 @@ s = "några\nrader\nmed\nnewline\nmellan\nsig"
 rows = s.splitlines() # Ger listan ["några", "rader", "med", "newline", "mellan", "sig"]
 ```
 
+Splittra upp sträng efter specifikt tecken
+```python
+s = "sträng med tabb-separerade kolumner\t 13\t 14.2"
+cols = s.split("\t") # Ger listan ["sträng med tabb-separerade kolumner", " 13", " 14.2"]
+```
+
 ### 1.4 List slices
 `lst[start:stop]` ger en bit av listan, där första elementet är `start` och sista är `stop-1`. Negativa index räknar från slutet (`-1` är sista elementet). Utelämnas `start` motsvarar det `start=0`. Utelämnast `stop` motsvarar det `stop=-1`.
 ```python
@@ -132,7 +138,8 @@ import requests
 Hämta fil över internet
 ```python
 response = requests.get("https://...")
-... = response.text
+data = response.text      # Hämta data som en lång sträng
+lines = data.splitlines() # Gör om till lista av rader
 ```
 
 * `get` ger ett svar med info om filen

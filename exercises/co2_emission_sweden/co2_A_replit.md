@@ -1,21 +1,16 @@
 # CO<sub>2</sub>-utsläpp i Sverige
 I denna uppgift ska vi börja titta på statistik från statistiska centralbyrån ([SCB](https://www.scb.se/)) om CO<sub>2</sub>-utsläpp i Sverige.
 
-I uppgiften kommer vi att lära oss följande om Python-programmering:
-* Läsa in textfiler över internet
-* Använda nyckel-värdetabeller
-* Använda slice-notation för att ta ut del av lista
-
 För att programmera, gå till https://repl.it/languages/python3
 
-## 1 Titta på datafilen
+## 1. Titta på datafilen
 
 Vi skall använda oss av en modifierad datafil från SCB som vi lagt här:
 https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt
 
 ### 1.1 Surfa till datafilen
 
-**Uppdrag 1.1** Börja med att surfa till adressen ovan för att se hur datan ser ut. Notera att:
+**Uppdrag 1.1:** Börja med att surfa till adressen ovan för att se hur datan ser ut. Notera att:
 * Filen har fyra kolumner. Detta kan vara lite svårt att se, för kolumnerna skiljs åt med *tabb*-tecken, som ser likadana ut som blanka. Men när vi programmerar kommer vi att se att det är skillnad.
 * I första kolumnen står det `Totala Växthusgaser (kt CO2-ekv.)` på varje rad.
 * I andra kolumnen står namnet på en *sektor*, dvs en kategori av utsläpp. T.ex. `NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)` eller `ARBETSMASKINER, TOTALT`.
@@ -31,7 +26,7 @@ Olika växthusgaser, t.ex. metan och koldioxid, har olika mycket växthuseffekt.
 
 Mätvärdet längst till höger på varje rad räknas i "kt CO2-ekv", alltså kiloton koldioxid-ekvivalenter. (Ett kiloton är 1000 ton.)
 
-**Uppdrag 1.2** Kan du lista ut från filen hur många kiloton koldioxid-ekvivalenter som släpptes ut från sektorn `ARBETSMASKINER, TOTALT` under år 2002?
+**Uppdrag 1.2:** Kan du lista ut från filen hur många kiloton koldioxid-ekvivalenter som släpptes ut från sektorn `ARBETSMASKINER, TOTALT` under år 2002?
 
 <details>
 <summary markdown="span">
@@ -55,7 +50,7 @@ Sektorn som heter `NATIONELL TOTAL ...` är summan av alla de andra sektorerna. 
 * lösningsmedel och övrig produktanvändning
 * uppvärmning av bostäder och lokaler
 
-**Uppdrag 1.3** Vad kan man tänka sig för exempel på utsläpp från de olika sektorerna? Försök hitta ett exempel för varje sektor.
+**Uppdrag 1.3:** Vad kan man tänka sig för exempel på utsläpp från de olika sektorerna? Försök hitta ett exempel för varje sektor.
 
 *Tips* Läs om sektorerna här: http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/
 
@@ -82,7 +77,7 @@ Några exempel:
 \
 En sektor som *inte* är med i vår statistik-fil är "LULUCF". Det är en engelsk förkortning för "markanvändning, förändrad markanvändning och skogsbruk". Här har Sverige *negativa* utsläpp, dvs mer och mer koldioxid binds på olika sätt, till exempel på grund av att skogen växer.
 
-## 2 Python Dictionaries (nyckel-värdetabeller)
+## 2. Python Dictionaries (nyckel-värdetabeller)
 
 För att programmera denna uppgift behöver vi veta lite om en datastruktur som kallas *dictionaries*, eller *nyckel-värdetabell* på svenska. (Kallas ibland också *map* eller *lexikon*.)
 
@@ -130,7 +125,7 @@ Visuellt kan vi tänka oss en nyckel-värdetabell så här:
 | "lingon"  | "röd"|
 
 
-**Uppdrag 2.1** Kör följande kod som skapar en nyckel-värdetabell `color` där vi kan slå upp färgen på olika saker.
+**Uppdrag 2.1:** Kör följande kod som skapar en nyckel-värdetabell `color` där vi kan slå upp färgen på olika saker.
 
 ```python
 color = {
@@ -187,7 +182,7 @@ en squash är grön
 
 ### 2.2 Skapa en egen nyckel-värdetabell
 
-**Uppdrag 2.2** Skapa en nyckel-värdetabell `capital` (huvudstad) som mappar länder till huvudstäder. Om vi till exempel accessar `capital["Sverige"]` så skall resultatet bli `"Stockholm"`.
+**Uppdrag 2.2:** Skapa en nyckel-värdetabell `capital` (huvudstad) som mappar länder till huvudstäder. Om vi till exempel accessar `capital["Sverige"]` så skall resultatet bli `"Stockholm"`.
 
 Som hjälp får du detta kodskelett (byt ut `...` mot rätt sak).
 
@@ -220,7 +215,7 @@ print(capital["Sverige"])
 
 Vad händer om vi försöker slå upp värdet för en nyckel som inte finns med i tabellen?
 
-**Uppdrag 2.3** Slå upp ett land som inte finns med i tabellen. T.ex. `capital["Island"]`. Vilket fel får du?
+**Uppdrag 2.3:** Slå upp ett land som inte finns med i tabellen. T.ex. `capital["Island"]`. Vilket fel får du?
 
 <details>
 <summary markdown="span">
@@ -249,18 +244,28 @@ Vid ett senare tillfälle kan vi nu lägga till exempelvis
 color["blåbär"] = "blå"
 ```
 
-**Uppdrag 2.4** Skriv kod för att lägga till fler länder, som t.ex. Island i din tabell `capital`. Prova att din kod fungerar genom att skriva ut några av de städer du lagt till. Till exempel:
+**Uppdrag 2.4:** Skriv kod för att lägga till fler länder, som t.ex. Island i din tabell `capital`. Prova att din kod fungerar genom att skriva ut några av de städer du lagt till. Till exempel:
 ```python
 print(capital["Island"])
 ```
 
-## 3 List slices
+### 2.5 Typen `dict`
+
+En nyckel-värdetabell i Python kallas ofta helt enkelt `dict` som förkortning för *dictionary*. Vi kan också se att typen för en nyckel-värdetabell är `dict` genom att skriva ut den på följande sätt:
+
+```python
+print(type(capital))
+```
+
+
+
+## 3. List slices
 
 Hittills har vi bara programmerat med hela listor. Men ibland vill man kunna kopiera ut en *del* av en lista, en så kallad *slice*. Det kan man göra med notationen `lista[start:stop]`.
 
 ### 3.1 Enkla slices
 
-**Uppdrag 3.1 a** Kör följande kod som skapar en lista och kopierar ut några av elementen till en ny lista:
+**Uppdrag 3.1 a:** Kör följande kod som skapar en lista och kopierar ut några av elementen till en ny lista:
 
 ```python
 lista = ["hej", "på", "dej", "du", "glade"]
@@ -273,7 +278,7 @@ Att observera:
 * Slicens sista element är `2`. Argumentet `3` är alltså elementet *efter* det sista elementet i slicen.
 * Vi får en ny lista som motsvarar slicen, och den ursprungliga listan ändras inte.
 
-**Uppdrag 3.1 b** Använd slice-notationen för att skriva ut följande listor:
+**Uppdrag 3.1 b:** Använd slice-notationen för att skriva ut följande listor:
 * `["hej", "på", "dej"]`
 * `["du", "glade"]`
 
@@ -293,13 +298,13 @@ print(lista[3:5])
 
 Om vi vill skapa en slice från listans början, så kan vi utelämna `start`-argumentet.
 
-**Uppdrag 3.2 a** Prova att skriva ut `["hej", "på", "dej"]` genom att köra följande kod:
+**Uppdrag 3.2 a:** Prova att skriva ut `["hej", "på", "dej"]` genom att köra följande kod:
 
 ```python
 print(lista[:3])  # Samma sak som lista[0:3]
 ```
 
-**Uppdrag 3.2 b** Skriv liknande kod som skriver ut `["hej", "på", "dej", "du"]`.
+**Uppdrag 3.2 b:** Skriv liknande kod som skriver ut `["hej", "på", "dej", "du"]`.
 
 <details>
 <summary markdown="span">
@@ -312,13 +317,13 @@ Lösning
 
 På liknande sätt kan du utelämna `stop`-argumentet och därmed ta ut slutet av en lista.
 
-**Uppdrag 3.2 c** Prova att skriva ut `["du", "glade"]` genom att köra följande kod:
+**Uppdrag 3.2 c:** Prova att skriva ut `["du", "glade"]` genom att köra följande kod:
 
 ```python
 print(lista[3:])  # Samma sak som lista[3:5]
 ```
 
-**Uppdrag 3.2 d** Skriv liknande kod som skriver ut `["på", "dej", "du", "glade"]`. Dvs, alla element ska med utom det första.
+**Uppdrag 3.2 d:** Skriv liknande kod som skriver ut `["på", "dej", "du", "glade"]`. Dvs, alla element ska med utom det första.
 
 <details>
 <summary markdown="span">
@@ -329,7 +334,7 @@ Lösning
 </p>
 </details>  
 
-**Uppdrag 3.2 e** Vilken lista får du med uttrycket `lista[:]`? Alltså där både start och stopp-index har utelämnats?
+**Uppdrag 3.2 e:** Vilken lista får du med uttrycket `lista[:]`? Alltså där både start och stopp-index har utelämnats?
 
 <details>
 <summary markdown="span">
@@ -343,7 +348,7 @@ Svar
 ### 3.3 Listor/Slices med negativa index
 Man kan ange ett negativt index för en lista. Då räknas positionen bakifrån i stället för framifrån. T.ex. betyder `lista[-1]` det sista elementet i listan, `lista[-2]` det näst sista, osv.
 
-**Uppdrag 3.3 a** Skriv kod som skriver ut det tredje sista elementet i `lista`.
+**Uppdrag 3.3 a:** Skriv kod som skriver ut det tredje sista elementet i `lista`.
 
 <details>
 <summary markdown="span">
@@ -356,7 +361,7 @@ Lösning
 
 Negativa index kan användas också för start och stopp-index i en slice. T.ex. betyder `lista[1:-1]` att man får en ny lista utan både första och sista elementet i `lista`.
 
-**Uppdrag 3.3 b** Skriv kod som skriver ut `["dej", "du"]` med hjälp av ett positivt start-index och ett negativt stopp-index.
+**Uppdrag 3.3 b:** Skriv kod som skriver ut `["dej", "du"]` med hjälp av ett positivt start-index och ett negativt stopp-index.
 
 <details>
 <summary markdown="span">
@@ -371,7 +376,7 @@ Lösning
 
 Genom att skriva `lista[start:stop:steg]` kan vi ta en slice som tar med t.ex. vartannat eller vart tredje element i listan. Till exempel kommer `lista[::2]` att ge en ny lista med bara vartannat element.
 
-**Uppdrag 3.4** Skriv kod som skriver ut vart tredje element av `lista`
+**Uppdrag 3.4:** Skriv kod som skriver ut vart tredje element av `lista`
 
 <details>
 <summary markdown="span">
@@ -386,7 +391,7 @@ Lösning
 
 Om man anger ett negativt steg så får man elementen i baklänges ordning. Till exempel kan vi få vartannat element i baklänges ordning med `lista[::-2]`
 
-**Uppdrag 3.5** Vilken lista får du om du skriver `lista[::-1]`?
+**Uppdrag 3.5:** Vilken lista får du om du skriver `lista[::-1]`?
 
 <details>
 <summary markdown="span">
@@ -397,13 +402,13 @@ Lösning
 </details>
 
 
-## 4 Hämta data över internet
+## 4. Hämta data över internet
 
 Hittills har vi bara skrivit experimentkod. Du kan nu ta bort (eller kommentera bort) denna kod. Nu ska vi läsa in filen vi tittade på tidigare.
 
 ### 4.1 Hämta filen över internet
 
-**Uppdrag 4.1** Vi ska börja med att hämta filen från internet med hjälp av biblioteket `requests` som kan göra anrop över "http-protokollet" (det kommunikationsprotokoll som används för att hämta webbsidor). Kör följande kod:
+**Uppdrag 4.1:** Vi ska börja med att hämta filen från internet med hjälp av biblioteket `requests` som kan göra anrop över "http-protokollet" (det kommunikationsprotokoll som används för att hämta webbsidor). Kör följande kod:
 
 ```python
 import requests
@@ -426,14 +431,17 @@ Du kan nu kommentera bort anropet `print(data)`.
 
 ### 4.2 Splitta upp raderna
 
-Nästa steg är att splitta upp datan i en lista med rader, med funktionen `split`. Kom ihåg att rader är separerade med "newline" som skrivs som `\n`. Vi kan alltså skapa listan med rader genom följande kod:
+Nästa steg är att splitta upp datan i en lista med rader. Det kan vi göra med funktionen `splitlines()`:
+
+<!--Kom ihåg att rader är separerade med "newline" som skrivs som `\n`. Vi kan alltså skapa listan med rader genom följande kod:
+-->
 
 ```python
-rows = data.split("\n")
+lines = data.splitlines()
 ```
 
 
-**Uppdrag 4.2** Splitta nu upp datan i rader med koden ovan. Hur många rader blev det?
+**Uppdrag 4.2:** Splitta nu upp datan i rader med koden ovan. Hur många rader blev det?
 
 *Tips!* Använd `print` och `len` för att ta reda på antalet rader.
 
@@ -441,14 +449,14 @@ rows = data.split("\n")
 <summary markdown="span">
 Lösning
 </summary>
-<p><pre><code>rows = data.split("\n")
-print(len(rows))
+<p><pre><code>lines = data.splitlines()
+print(len(lines))
 </pre></code>
 Det blir 281 rader.
 </p>
 </details>
 
-Vi har nu en lista `rows` som motsvarar filen. Hur ska vi kunna plotta datan? Vi behöver göra flera steg:
+Vi har nu en lista `lines` som motsvarar filen. Hur ska vi kunna plotta datan? Vi behöver göra flera steg:
 * Vi behöver skala bort rubrikraden.
 * Vi behöver dela in varje återstående rad i kolumner.
 * Vi skulle vilja skapa en nyckelvärde-tabell från sektor till lista av mätvärden
@@ -460,7 +468,7 @@ Vi ska nu göra varje sak i tur och ordning.
 
 Första raden i filen är ju en rubrikrad. Den vill vi inte ha med när vi ska göra beräkningar på datan.
 
-**Uppdrag 4.3** Skapa en ny lista `data_rows` som är likadan som `rows`, men som inte har med första raden.
+**Uppdrag 4.3:** Skapa en ny lista `data_lines` som är likadan som `lines`, men som inte har med första raden.
 
 *Tips!* Använd en slice som tar med alla rader utom den första.
 
@@ -468,19 +476,19 @@ Första raden i filen är ju en rubrikrad. Den vill vi inte ha med när vi ska g
 <summary markdown="span">
 Lösning
 </summary>
-<p><pre><code>data_rows = rows[1:]
+<p><pre><code>data_lines = lines[1:]
 </pre></code>
 </p>
 </details>
 
-Om du vill försäkra dig om att du programmerat rätt så kan du skriva ut t.ex. `data_rows[0]` så att du ser att första raden inte är rubrikraden.
+Om du vill försäkra dig om att du programmerat rätt så kan du skriva ut t.ex. `data_lines[0]` så att du ser att första raden inte är rubrikraden.
 
 
 ### 4.4 Dela upp varje rad i kolumner
 
-Nu har vi de intressanta raderna i listan `data_rows`. Varje rad i listan är en textsträng. Visuellt kan vi tänka oss `data_rows` så här:
+Nu har vi de intressanta raderna i listan `data_lines`. Varje rad i listan är en textsträng. Visuellt kan vi tänka oss `data_lines` så här:
 
-data_rows:
+data_lines:
 <table>
 <tr><td>"Totala ... NATIONELL ... 1990 ... 74921.1"</td></tr>
 <tr><td>"Totala ... NATIONELL ... 1991 ... 75267.7"</td></tr>
@@ -531,7 +539,7 @@ raw_data:
 
 Detta blir alltså en lista av rader där varje rad är en lista av kolumnvärden.
 
-Vi kan skapa den nya listan `raw_data` genom att gå igenom `data_rows` med en `for`-loop och lägga till ett element för varje rad. Elementet skall vara en lista av kolumnvärden som vi kan få genom att splitta raden efter tabb-tecken. Tabb-tecken skrivs som `\t` när man programmerar. Vi kan alltså få listan genom att göra `split("\t")` på raden.
+Vi kan skapa den nya listan `raw_data` genom att gå igenom `data_lines` med en `for`-loop och lägga till ett element för varje rad. Elementet skall vara en lista av kolumnvärden som vi kan få genom att splitta raden efter tabb-tecken. Tabb-tecken skrivs som `\t` när man programmerar. Vi kan få listan genom att göra `split("\t")` på raden.
 
 Här är koden för att skapa `raw_data`:
 
@@ -539,15 +547,15 @@ Här är koden för att skapa `raw_data`:
 # Skapa lista av rådata, med en lista per rad
 # Splitta på tabbar för att få de 4 elementen per rad
 raw_data = []
-for row in data_rows:
-  raw_data.append(row.split("\t"))
+for line in data_lines:
+  raw_data.append(line.split("\t"))
 ```
 
-**Uppdrag 4.4 a** Kör koden ovan för att skapa listan `raw_data`.
+**Uppdrag 4.4 a:** Kör koden ovan för att skapa listan `raw_data`.
 
 Vad vi fått nu är en lista av listor enligt figuren ovan: varje element i `raw_data` är i sig en lista med fyra element, ett för varje kolumn.
 
-**Uppdrag 4.4 b** För att förstå strukturen på `raw_data`, prova att skriva ut första raden med `print(raw_data[0])`. Du ser att raden består av en lista med fyra värden.
+**Uppdrag 4.4 b:** För att förstå strukturen på `raw_data`, prova att skriva ut första raden med `print(raw_data[0])`. Du ser att raden består av en lista med fyra värden.
 
 Hur kan vi skriva ut ett av de fyra värdena? Vi kan till exempel skriva ut det fjärde värdet så här:
 
@@ -564,7 +572,7 @@ print(raw_data[0][3])
 
 Här beräknas först `raw_data[0]`, och resultatet är en lista. Sedan indexeras denna lista med `[3]` och resultatet är det fjärde värdet i listan. Sist skrivs detta värde ut.
 
-**Uppdrag 4.4 c** Skriv ut det tredje värdet på den första raden i `raw_data` (alltså året).
+**Uppdrag 4.4 c:** Skriv ut det tredje värdet på den första raden i `raw_data` (alltså året).
 
 <details>
 <summary markdown="span">
@@ -634,17 +642,17 @@ Här är koden för att skapa `data_by_sector`:
 ```python
 # Skapa en nyckel-värdetabell från sektor (kolumn 2) till lista med mätvärden (kolumn 4)
 data_by_sector = {}
-for row in raw_data:
+for line in raw_data:
   # extrahera sektorn (kolumn 2)
-  sector = row[1]
+  sector = line[1]
   # om sektorn inte redan finns i nyckel-värdetabellen, så skapa en tom lista för sektorn
   if (sector not in data_by_sector):
     data_by_sector[sector] = []
   # Lägg till mätvärdet till rätt sektor
-  data_by_sector[sector].append(float(row[3]))
+  data_by_sector[sector].append(float(line[3]))
 ```
 
-**Uppdrag 4.5** Lägg till koden för att skapa `data_by_sector`, och prova att slå upp en sektor, t.ex. `"ARBETSMASKINER, TOTALT"`. Du bör få ut en lista av mätvärden.
+**Uppdrag 4.5:** Lägg till koden för att skapa `data_by_sector`, och prova att slå upp en sektor, t.ex. `"ARBETSMASKINER, TOTALT"`. Du bör få ut en lista av mätvärden.
 
 <details>
 <summary markdown="span">
@@ -655,7 +663,7 @@ Lösning
 </p>
 </details>
 
-## 5 Plotta
+## 5. Plotta
 
 Nu ska vi plotta värdena för de olika sektorerna.
 
@@ -665,7 +673,7 @@ Vi börjar med att plotta de totala utsläppen, alltså sektorn `NATIONELL TOTAL
 
 På x-axeln vill vi ha åren (1990-2017), och på y-axeln de totala utsläppen för respektive år.
 
-**Uppdrag 5.1 a** Skapa en lista `years` för värdena på x-axeln. *Tips!* Skapa en `range` och gör om den till en lista med `list`.
+**Uppdrag 5.1 a:** Skapa en lista `years` för värdena på x-axeln. *Tips!* Skapa en `range` och gör om den till en lista med `list`.
 
 <details>
 <summary markdown="span">
@@ -676,7 +684,7 @@ Lösning
 </p>
 </details>
 
-**Uppdrag 5.1 b** Plotta de totala utsläppen till en fil `totalco2.png`.
+**Uppdrag 5.1 b:** Plotta de totala utsläppen till en fil `totalco2.png`.
 
 *Tips!* Du behöver:
 * importera plot-biblioteket
@@ -696,17 +704,17 @@ plt.savefig("totalco2.png")
 </p>
 </details>
 
-**Uppdrag 5.1 c** För att du ska kunna tolka kurvan bättre kan du lägga till följande anrop:
+**Uppdrag 5.1 c:** För att du ska kunna tolka kurvan bättre kan du lägga till följande anrop:
 
 ```python
-plt.grid(True)
+plt.grid()
 plt.ylim(0, 100000)
 ```
 Observera att
 * `grid` slår på ett rutnät i diagrammet, så att vi lättare kan läsa av värdena
 * `ylim` anger gränserna för y-axeln. Genom att låta y-axeln börja på 0 ser vi lättare hur mycket utsläppen har minskat eller ökat.
 
-**Uppdrag 5.1 d** Läs av i diagrammet: Hur mycket har vi släppt ut som mest? Vilket år var det? Hur mycket släppte vi ut 2017?
+**Uppdrag 5.1 d:** Läs av i diagrammet: Hur mycket har vi släppt ut som mest? Vilket år var det? Hur mycket släppte vi ut 2017?
 
 <details>
 <summary markdown="span">
@@ -716,7 +724,7 @@ Svar
 </p>
 </details>
 
-**Uppdrag 5.1 e** Kurvan visar ju bara utsläpp inom Sverige. Vilka andra utsläpp kan man tänka sig att Sveriges befolkning orsakar?
+**Uppdrag 5.1 e:** Kurvan visar ju bara utsläpp inom Sverige. Vilka andra utsläpp kan man tänka sig att Sveriges befolkning orsakar?
 
 <details>
 <summary markdown="span">
@@ -735,18 +743,18 @@ Svar
 
 I stället för att plotta en kurva kan vi plotta ett stapeldiagram. Vi använder då anropet `bar` (stapel) i stället för `plot`.
 
-**Uppdrag 5.2** Prova att plotta totala utsläppen som ett stapeldiagram i stället för en kurva.
+**Uppdrag 5.2:** Prova att plotta totala utsläppen som ett stapeldiagram i stället för en kurva.
 
 
 ### 5.3 Plotta sektor för sektor
 
-**Uppdrag 5.3 a** Vi ska nu göra en ny plot. Lägg till anropet `plt.close()` efter förra plottens `savefig`, så att nästa diagram inte störs av den tidigare plotten.
+**Uppdrag 5.3 a:** Vi ska nu göra en ny plot. Lägg till anropet `plt.close()` efter förra plottens `savefig`, så att nästa diagram inte störs av den tidigare plotten.
 
 Vi skulle nu vilja plotta alla sektorerna i samma diagram.
 
 Vi börjar med att skapa en lista `sectors` av alla sektorer *utom* den med totala utsläppen:
 
-**Uppdrag 5.3 b** Kör följande kod:
+**Uppdrag 5.3 b:** Kör följande kod:
 
 ```python
 sectors = list(data_by_sector.keys())
@@ -761,7 +769,7 @@ Nästa steg är att plotta ett stapeldiagram med en stapel per år (som tidigare
 
 Vi gör detta genom att loopa över sektorerna och plotta varje sektor ovanför den förra. Vi håller reda på var i höjdled nästa sektor ska plottas genom en lista `bottoms`.
 
-**Uppdrag 5.3 c** Kör följande kod för att plotta ett initialt stapeldiagram över alla sektorerna:
+**Uppdrag 5.3 c:** Kör följande kod för att plotta ett initialt stapeldiagram över alla sektorerna:
 
 ```python
 import numpy as np
@@ -779,7 +787,7 @@ Vi har använt numpy-listor för `bottoms`-värdena i stället för vanliga list
 
 Plotten vi får ut ser ju tjusig ut - anropen till `bar` ger automatiskt olika färg på alla delstaplarna! Men legenden kommer rakt ovanpå plotten, och dessutom med sektorerna i baklänges ordning jämfört med plotten.
 
-**Uppdrag 5.3 d** Gör en snyggare plot genom att ändra koden till följande:
+**Uppdrag 5.3 d:** Gör en snyggare plot genom att ändra koden till följande:
 
 ```python
 import numpy as np
@@ -791,19 +799,19 @@ for sector in sectors:
     bar = plt.bar(years, data_by_sector[sector], bottom=bottoms, label=sector)
     bars.append(bar) # Spara resultatet
     bottoms = np.array(data_by_sector[sector]) + bottoms
-plt.grid(True)
 plt.legend(handles=bars[::-1]) # Baklänges ordning
-plt.ylim(0, 110000) # Gör mer plats för legenden
+plt.ylim(0, 110000)  # Gör mer plats för legenden
+plt.grid()           # Lägg till ett rutnär
 plt.savefig("sektorco2.png")
 ```
 
 Det vi gjort här är att:
-* Vi sparar resultatet av varje anrop till `bar` i en variabel. Dessa samlas upp i en lista `bars`. Listan kan vi vända baklänges och använda i anropet till `legend`. Då får vi ut legenden i rätt ordning.
 * Vi anropar `figure` med en större storlek på plotten (15 x 10 tum). Då blir legenden relativt sett mindre, och får bättre plats.
+* Vi sparar resultatet av varje anrop till `bar` i en variabel. Dessa samlas upp i en lista `bars`. Listan kan vi vända baklänges och använda i anropet till `legend`. Då får vi ut legenden i rätt ordning.
 * Vi anropar `ylim` med ett lite större värde, så blir hela plotten relativt sett lite lägre, och det blir mer plats till legenden.
 * Vi har lagt till en `grid` för att lättare kunna läsa av diagrammet.
 
-**Uppdrag 5.3 e** Titta på det genererade diagrammet. Hur har de olika sektorerna förändrats sedan 1990? Vilken har minskat mest? Finns det någon sektor som har ökat de senaste åren? Varför tror du sektorerna har ökat eller minskat? Finns det någon sektor som är stor och som borde kunna minska?
+**Uppdrag 5.3 e:** Titta på det genererade diagrammet. Hur har de olika sektorerna förändrats sedan 1990? Vilken har minskat mest? Finns det någon sektor som har ökat de senaste åren? Varför tror du sektorerna har ökat eller minskat? Finns det någon sektor som är stor och som borde kunna minska?
 
 *Tips!* Du hittar mer information här: http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/
 

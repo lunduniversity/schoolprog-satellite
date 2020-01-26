@@ -477,7 +477,7 @@ Vad gäller om frisk växtlighet?
 Svar
 </summary>
 <p>
-den reflekterar grönt och infrarött ljus, men absorberar rött ljus
+den reflekterar grönt och nära-infrarött ljus, men absorberar rött ljus
 </p>
 </details>
 
