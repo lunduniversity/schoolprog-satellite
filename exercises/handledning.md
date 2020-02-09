@@ -4,7 +4,7 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 
 ## Pedagogiska ideer
 * Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
-* Jupyter/Colab-övningarna använder oftast lite mer avancerad programmering än repl.it-övningarna, och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering, och inte nödvändigtvis full förståelse för hur programmen fungerar.
+* Jupyter/Colab-övningarna använder oftast en del färdiga funktioner och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering. Man lär sig också lite programmering, men de färdiga funktionerna förklaras inte.
 
 ## Allmänna förberedelser
 
@@ -14,22 +14,21 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 
 ## Förberedelser inför en övning med elever
 
-* Skriv helst ut övningen på papper till eleverna. Då kan de använda hela skärmen för programmeringen, och de slipper krångla med att bläddra inom/mellan fönster.
-* Det bästa är att skriva ut från en Chrome-browser. För andra browsers kan det bli för stor font så att vissa kodrader klipps.
-* Eleverna ska arbeta i par - det räcker med en utskrift och en dator per par.
-
 ### Övningar med repl.it
 
-* En fördel med att ha övningen på papper är att eleverna inte kan fälla ut lösningarna då.
-* Om man har övningen online i ett fönster kan man kopiera kodsnuttar till repl.it. Det kan i och för sig kännas praktiskt, men är man nybörjare på programmering så kan det vara bättre att skriva in all kod själv. Det kanske tar lite längre tid, men då lär man sig Python bättre.
-* Om du vill, skriv ut ett eget exemplar där du fällt ut alla lösningarna som du kan tjuvkika på vid behov.
-* På Science Center, starta datorerna och skapa ett fönster med repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på repl.it, så det behövs ingen inloggning.
-* I skolan har nog varje elev sin egen dator, och det är enklast att de själva browsar till rätt plats på repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
+* **Skriv helst ut övningen på papper till eleverna.**
+  * Med övningen på en utskrift kan eleverna använda hela skärmen för programmering. Annars behöver de ett fönster för uppgiften och ett för programmeringen.
+  * Skriv helst ut från en Chrome-browser. För andra browsers kan det bli för stor font så att vissa kodrader klipps.
+  * Eleverna ska arbeta i par - det räcker med en utskrift och en dator per par.
+  * Med övningen på papper lockas eleverna inte att tjuvtitta på lösningarna som finns i utfällbara flikar.
+  * Med övningen på papper måste eleverna skriva in all kod själv i programmeringsfönstret (i stället för att göra copy-paste), och de lär sig då mer.
+
+* **På Science Center, starta datorerna i förväg** och skapa ett fönster med repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på repl.it, så det behövs ingen inloggning.
+* **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
 
 ### Övningar med Jupyter/Colab
 
 * För att köra Jupyter/Colab behöver man vara inloggad med personligt konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
-* Om man försöker browsa till en Jupyter/Colab-övning utan att vara inloggad kan man få felmeddelande 400.
 
 ## Själva övningen
 
@@ -54,7 +53,7 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 
 ### Övningar med Jupyter/Colab
 
-TBA
+För Kolcykeln, ta gärna upp ditt eget fönster på en projektor, och gå igenom de inledande mer teoretiska avsnitten tillsammans. När själva programmeringen börjar kan du låta dem börja arbeta själva (två och två).
 
 ## Några typiska problem och frågor som eleverna kan ha
 
@@ -73,6 +72,10 @@ TBA
 * Ibland försvinner plot-fönstret. Det brukar dyka upp igen om man klickar på filen (t.ex. keeling.png till vänster i fönstret.) Klicka sedan på main.py igen.
 * Ibland tappar man kontakten med repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
 * Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
+
+### Relaterat till Google Colab
+* Om man inte förstår vad som är fel kan man prova att starta om genom att använda menyn `Runtime -> Restart and run all...`. När man experimenterar med koden kan man t.ex. ha råkat skriva kod som har förstört någon tidigare variabel. Genom att köra om från början kommer man ifrån sådana fel.
+* Observera att koden kanske inte har körts i den ordning kodrutorna står i dokumentet. Numren till vänster på kodrutorna visar i vilken ordning koden har körts.
 
 ### Relaterat till själva Python-programmeringen
 

@@ -18,17 +18,18 @@ Om du är lärare, eller pedagog på ett Science Center, [se vår lärarhandledn
 
 ## Våra uppdrag
 
-Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. Vi använder online-plattformen *repl.it* (https://repl.it/languages/python3) för programmeringen, så du behöver inte installera något på din dator.
+Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. Vi använder online-plattformarna *repl.it* (https://repl.it/languages/python3) och *Google Colab* för programmeringen, så du behöver inte installera något på din dator. För Google Colab behöver du dock ett Google-konto för att kunna köra uppgifterna.
 
 |Uppdrag|Miljödata och innehåll|Du behöver kunna|Du lär dig om|
 |-------|---------|----------------|-------------|
-|[Väderdata A](weatherdata/Weatherdata_A_replit.md)|Vi plottar temperatur och regn och beräknar medelvärden. |variabler, print|listor, plot, loop|
-|[Väderdata B](weatherdata/Weatherdata_B_replit.md)|Vi plottar temperaturdata för juli från SMHI (Lund och några andra orter), och jämför olika år. Vi läser in från enkla filer och plottar kurvor.|listor, plot|range, filer, loop, append|
-|[Keelingkurvan A](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii. Vi läser in från fil med många kolumner och plottar kurvor.|listor, plot, filer|split, float|
-|Keelingkurvan B (TBA)|...|listor, plot|nyckel-värdetabeller|
-|[CO2 i Sverige A](co2_emission_sweden/co2_A_replit.md)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige. Vi läser in från internet och plottar stapeldiagram. |listor, plot| nyckel-värdetabeller, slice, requests, bar|
-|[NumPy A](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy. Vi plottar data som 2D-bilder. |listor, plot| numpy, array, imshow|
-|[Torkan A](drought/README.md)|Vi undersöker hur torkan sommaren 2018 kan ses från satellit. Vi läser in från numpy-filer och plottar 2D med olika färgskalor.|numpy, array, imshow|NpzFile, colormap|
+|[Väderdata A (repl.it)](weatherdata/Weatherdata_A_replit.md)|Vi plottar temperatur och regn och beräknar medelvärden. |variabler, print|listor, plot, loop|
+|[Väderdata B (repl.it)](weatherdata/Weatherdata_B_replit.md)|Vi plottar temperaturdata för juli från SMHI (Lund och några andra orter), och jämför olika år. Vi läser in från enkla filer och plottar kurvor.|listor, plot|range, filer, loop, append|
+|Kolcykeln[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)|Vi undersöker data från forskningsstationen ICOS Hyltemossa i Skåne. Vi lär oss om kolcykeln med källor och sänkor. Vi läser in data från csv-filer, organiserar data i tabeller med index, och plottar data i interaktiva diagram.|inga förkunskapskrav|tabeller, index|
+|[Keelingkurvan A (repl.it)](co2/Keeling_A_replit.md)|Vi undersöker koldioxid-data från Hawaii. Vi läser in från fil med många kolumner och plottar kurvor.|listor, plot, filer|split, float|
+|Keelingkurvan B (repl.it)(TBA)|...|listor, plot|nyckel-värdetabeller|
+|[CO2 i Sverige A (repl.it)](co2_emission_sweden/co2_A_replit.md)|Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige. Vi läser in från internet och plottar stapeldiagram. |listor, plot| nyckel-värdetabeller, slice, requests, bar|
+|[NumPy A (repl.it)](numpy_intro/numpy_A_replit.md)|Introduktion till paketet NumPy. Vi plottar data som 2D-bilder. |listor, plot| numpy, array, imshow|
+|[Torkan A (repl.it)](drought/README.md)|Vi undersöker hur torkan sommaren 2018 kan ses från satellit. Vi läser in från numpy-filer och plottar 2D med olika färgskalor.|numpy, array, imshow|NpzFile, colormap|
 
 ## Snabbreferenser
 Här finns snabbreferenser för Python-konstruktioner:
