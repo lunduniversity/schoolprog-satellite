@@ -10,7 +10,7 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 
 * Se till att du har lite egen programmeringsbakgrund i Python, se råd [här](prerequisites.md).
 
-* Kör själv igenom den uppgift du vill att eleverna ska lösa. Lösningarna finns som utvikbara flikar i uppgiften.
+* Kör själv igenom den uppgift du vill att eleverna ska lösa. För repl.it-uppgifterna finns lösningarna finns som utvikbara flikar i uppgiften.
 
 ## Förberedelser inför en övning med elever
 
@@ -26,9 +26,9 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 * **På Science Center, starta datorerna i förväg** och skapa ett fönster med repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på repl.it, så det behövs ingen inloggning.
 * **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
 
-### Övningar med Jupyter/Colab
+### Övningar med Jupyter notebooks i Colab
 
-* För att köra Jupyter/Colab behöver man vara inloggad med personligt konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
+* För att köra Colab behöver man vara inloggad med personligt konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
 
 ## Själva övningen
 
@@ -51,9 +51,9 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
     * Förklara att en variabel är som en låda som kan innehålla ett värde. Vi kan kalla den vad vi vill.
 * Förklara och visa att programmet körs när man trycker på Run.
 
-### Övningar med Jupyter/Colab
+### Övningar med Jupyter notebooks i Colab
 
-För Kolcykeln, ta gärna upp ditt eget fönster på en projektor, och gå igenom de inledande mer teoretiska avsnitten tillsammans. När själva programmeringen börjar kan du låta dem börja arbeta själva (två och två).
+För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor, och gå igenom de inledande mer teoretiska avsnitten tillsammans. När själva programmeringen börjar kan du låta dem börja arbeta själva (två och två).
 
 ## Några typiska problem och frågor som eleverna kan ha
 
@@ -74,8 +74,9 @@ För Kolcykeln, ta gärna upp ditt eget fönster på en projektor, och gå igeno
 * Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
 
 ### Relaterat till Google Colab
-* Om man inte förstår vad som är fel kan man prova att starta om genom att använda menyn `Runtime -> Restart and run all...`. När man experimenterar med koden kan man t.ex. ha råkat skriva kod som har förstört någon tidigare variabel. Genom att köra om från början kommer man ifrån sådana fel.
-* Observera att koden kanske inte har körts i den ordning kodrutorna står i dokumentet. Numren till vänster på kodrutorna visar i vilken ordning koden har körts.
+* Om meny-alternativen för att köra kod är grå så måste man först trycka på `Connect`-knappen uppe till höger.
+* Om något har gått fel och man tycker att allt ser rätt ut, och man inte förstår vad problemet är, så kan man prova att starta om genom att använda menyn `Runtime -> Restart and run all...`. Detta kan hjälpa speciellt när man kört kodrutorna i oordning, eller när man har experimenterat och råkat förstöra någon variabel som räknats ut tidigare. Genom att köra om från början kommer man ifrån sådana fel.
+* Numren till vänster på kodrutorna visar i vilken ordning de har körts.
 
 ### Relaterat till själva Python-programmeringen
 
@@ -87,7 +88,7 @@ För Kolcykeln, ta gärna upp ditt eget fönster på en projektor, och gå igeno
 
 * Använder vanliga parenteser i stället för hakparenteser för listor. Rätt mycket av Väderdata A kan fungera ändå (det blir s.k. “tupler” i stället för listor). Men tupler kan inte ändras, så i uppgift Väderdata B, när man gör “append” på en lista, så fungerar det inte med tupler.
 
-* Indentering av loopar. Speciellt för elever/personer som sett annan programmering med krullparenteser så kan det vara lite förvirrande att det räcker att indentera satserna inne i loopen.
+* Indentering av loopar. Speciellt för elever/personer som sett annan programmering med krullparenteser så kan det vara lite ovant och därför förvirrande att det räcker att indentera satserna inne i loopen.
 
 ## Data till uppgifterna
 För de flesta av uppdragen har vi preparerat datan så att den ska vara lättare att använda i programmeringen.
