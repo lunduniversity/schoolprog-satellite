@@ -10,7 +10,7 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 
 ## Vad behöver du kunna?
 
-Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. [Titta här för att se om du har lagom förkunskaper](prerequisites.md). Du kan också prova uppdragen direkt. Lösningsförslag ingår i alla uppgifterna.
+Om du ska göra uppdragen på egen hand (utan handledning av en lärare), så är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. [Titta här för att se om du har lagom förkunskaper](prerequisites.md). Du kan också prova uppdragen direkt. Lösningsförslag ingår i de flesta av uppgifterna.
 
 Har du handledning så kan du göra uppdragen utan förkunskaper i programmering.
 
@@ -20,7 +20,7 @@ Om du är lärare, eller pedagog på ett Science Center, [se vår lärarhandledn
 
 Följande uppdrag är tänkta att användas för skolelever i högstadiet och på gymnasiet. Vi använder online-plattformarna *repl.it* (https://repl.it/languages/python3) och *Google Colab* för programmeringen, så du behöver inte installera något på din dator. För Google Colab behöver du dock ett Google-konto för att kunna köra uppgifterna.
 
-Uppgifterna kan göras i den ordning de är listade, men det går också bra att ta dem i en annan ordning - se förkunskapskraven.
+Uppgifterna kan göras i den ordning de är listade, men det går också bra att ta dem i en annan ordning - se tabellen för vad man behöver kunna för olika uppgifter.
 
 |Uppdrag|Miljödata och innehåll|Programmeringsbegrepp du behöver kunna|Programmeringsbegrepp du lär dig om|Bibliotek som används|
 |-------|---------|----------------|-------------|---------------|
