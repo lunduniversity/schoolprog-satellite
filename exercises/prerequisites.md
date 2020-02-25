@@ -24,7 +24,7 @@ def plot():
         y.append(power(value, 3))
     plt.plot(x, y)
     plt.show()
-    
+
 plot()
 ```
 
@@ -36,6 +36,7 @@ Om du aldrig har programmerat tidigare, eller vill repetera lite, så kan du kö
 *  [Avlusning](https://lunduniversity.github.io/schoolprog/exercises/debugging). Lite grunder om felsökning vilket är mycket viktigt när man programmerar.
 *  [Plotta funktioner](https://lunduniversity.github.io/schoolprog/exercises/plot/). Du lär dig grunder om plottning.
 
+<!--
 ## Svårighetsordning för uppdragen
 Många av uppdragen bygger på varandra och vissa uppdrag förutsätter att ni har lärt er begrepp från tidigare uppdrag. Ordningen vi rekommenderar är därför:
 
@@ -49,4 +50,4 @@ Många av uppdragen bygger på varandra och vissa uppdrag förutsätter att ni h
 8. CO2-utsläpp per capita
 
 Notera att detta bara är en rekommendation och att ni kan göra dem i en annorlunda ordning.
-
+-->

@@ -90,6 +90,14 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 
 * Indentering av loopar. Speciellt för elever/personer som sett annan programmering med krullparenteser så kan det vara lite ovant och därför förvirrande att det räcker att indentera satserna inne i loopen.
 
+## Andra frågor och svar
+
+### Vilken typ av dator kan man använda?
+Det bör fungera med Mac, Windows, Linux eller Chromebook.
+
+### Kan man använda iPad?
+Nej, tyvärr inget vidare (februari 2020). Du kan köra program, men det är mycket svårt att redigera dem, beroende på att det inte fungerar att göra välj/klippa/klistra i kodfönstren, vare sig i repl.it eller colab.
+
 ## Data till uppgifterna
 För de flesta av uppdragen har vi preparerat datan så att den ska vara lättare att använda i programmeringen.
 
