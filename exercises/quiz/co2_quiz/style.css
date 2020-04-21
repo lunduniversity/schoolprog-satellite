@@ -72,18 +72,7 @@ input{
   color: white;
 }
 
-#feedback{
-  visibility: hidden;
-  background: green;
-  padding: 10px 20px 10px 20px;
-  width: 400px;
-  border-radius: 20px;
-  float: right;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  color: white;
-}
+
 
 
 #gif {
