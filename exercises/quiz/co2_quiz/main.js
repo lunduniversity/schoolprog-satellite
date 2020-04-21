@@ -97,7 +97,6 @@ function check(){
   document.getElementById("message").innerHTML = messages[range];
   document.getElementById("number_correct").innerHTML = correct + "/6 rätta svar";
   document.getElementById("gif").src = gifs[range];
-  document.getElementById("feedback").style.visibility = "visible";
 
   //Jump to location:
   var elmnt = document.getElementById("after_submit");
@@ -146,41 +145,3 @@ function init(){
 }
 
 
-/*
-#Create a list of feedbacks per option for every question:
-q1_feedback = ['\033[1;93m'+'Ungefär 0.04% av Jordens Atmosfär består av Koldioxid (CO\u2082).'+'\033[1;93m',
-               '\033[1;93m'+'Ungefär 20.95%'+' av Jordens Atmosfär består av Syre (O\u2082).'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt!\nUngefär 78% av Jordens Atmosfär består av Kväve (N\u2082). '+'\033[1;96m',
-               '\033[1;93m'+'Ungefär 0.93% av Jordens Atmosfär består av Argon (Ar)'+'\033[1;93m']
-
-q2_feedback = ['\033[1;96m'+'Korrekt! N\u2082O frigörs bl.a. från kvävegödslad åkermark.'+'\033[1;96m',
-               '\033[1;96m'+'Korrekt! CO\u2082 frigörs bl.a. av förbränning av fossila bränslen.'+'\033[1;96m',
-               '\033[1;93m'+'O\u2082 är inte en växthusgas. Alla levande organismer behöver O\u2082 för att andas.'+'\033[1;93m',
-               '\033[1;93m'+'N\u2082 är inte en växthusgas. N\u2082 är den vanligaste gasen i jordens atmosfär.'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt! CH\u2084 frigörs bl.a. från djurs matsmältningsprocess.'+'\033[1;96m']
-
-q3_feedback = ['\033[1;96m'+'Korrekt! Träd och vegetation tar upp CO\u2082 under fotosyntes.'+'\033[1;96m',
-               '\033[1;93m'+'Under oceanisk respiration släpps CO\u2082 ut från oceanerna.'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt! Träd och vegetation tar upp CO\u2082 under fotosyntes.'+'\033[1;96m',
-               '\033[1;93m'+'Färre träd leder till minskat upptag av CO\u2082 för fotosyntes.'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt! När havets växter fotosyntetiserar, tar de upp CO\u2082.'+'\033[1;96m',
-               '\033[1;93m'+'När växter andas släpper de ut CO\u2082.'+'\033[1;93m']
-
-q4_feedback = ['\033[1;96m'+'Korrekt! Skogsbränder ansvarar för större utsläpp av CO\u2082.'+'\033[1;96m',
-               '\033[1;96m'+'Korrekt! Vid volkanutbrott frigörs stora mängder CO\u2082 till atmosfären.'+'\033[1;96m',
-               '\033[1;96m'+'Korrekt! När döda kvistar & löv förrutnar släpps CO\u2082 ut till atmosfären.'+'\033[1;96m',
-               '\033[1;93m'+'Mer skog betyder mer växter som tar upp CO\u2082.'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt! Vid förbränning av fossila bränlsen släpps CO\u2082 ut till atmosfären.'+'\033[1;96m',
-               '\033[1;93m'+'Vid gödselhantering släpps metan (CH\u2084) och Lustgas ut (N\u2082O).'+'\033[1;93m']
-
-q5_feedback = ['\033[1;96m'+'Korrekt!\nUnder vintertid ackumuleras CO\u2082.\nSom efterföljnad, mäts de högsta CO\u2082-värdena under början på våren.'+'\033[1;96m',
-               '\033[1;93m'+'Under sommaren ökar fotosyntesen och mer CO\u2082 tas upp från atmosfären.\nPå det viset går den totala koncentrationen av CO₂ i Atmosfären ner.'+'\033[1;93m',
-               '\033[1;93m'+'Under hösten börjar växter fotosyntetisera mindre och mindre CO\u2082 tas upp.\nDen totala koncentrationen av CO₂ i Atmosfären börjar gå upp.'+'\033[1;93m',
-               '\033[1;93m'+'Under vintertid minskar fotosyntesen drastiskt och mindre CO\u2082 tas upp.\nDen totala koncentrationen av CO₂ i Atmosfären går upp.'+'\033[1;93m']
-
-q6_feedback = ['\033[1;93m'+'Djurhållning ansvarar för större ustläpp av växthusgaser.'+'\033[1;93m',
-               '\033[1;93m'+'Förbränning av fossila bränslen ansvarar för större ustläpp av CO\u2082.'+'\033[1;93m',
-               '\033[1;93m'+'Skogsbränder ansvarar för större utsläpp av CO\u2082.'+'\033[1;93m',
-               '\033[1;96m'+'Korrekt!\nUnder våren & sommaren tas mer CO\u2082 upp från växter p.g.a. fotosyntes.\nSom efterföljnad, mäts de lägsta CO₂-värdena under början på hösten.'+'\033[1;96m']
-
-*/
