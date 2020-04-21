@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>CO2 Quiz</title>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src="main.js"></script>
+
+</head>
+
+<body>
+
+<!-- Quiz title -->
+<h1>Hur bra koll har du på kol?</h1>
+
+<!-- Quiz form -->
+<form id ="quiz" name="quiz">
+
+  <!-- Question 1 -->
+  <p><font color="firebrick">1. Vilken gas har den högsta koncentrationen i Jordens atmosfär?</font></p>
+  <input type="radio" id="co2" name="q1" value="co2">
+  <label for="co2">Koldioxid (<b>CO<sub>2</sub></b>)</label><br>
+  <input type="radio" id="o2" name="q1" value="o2">
+  <label for="o2">Syre (<b>O<sub>2</sub></b>)</label><br>
+  <input type="radio" id="n2" name="q1" value="n2">
+  <label for="n2">Kväve (<b>N<sub>2</sub></b>)</label><br>
+  <input type="radio" id="ar" name="q1" value="ar">
+  <label for="ar">Argon (<b>Ar</b>)</label><br><br>
+
+  <!-- Question 2 -->
+  <p><font color="firebrick">2. Vilka av följande gaser är växthusgaser? <i>(3 rätta svar)</i></font></p>
+  <input type="checkbox" id="q2_n2o" name="q2" value="n2o">
+  <label for="q2_n2o">Lustgas (<b>N<sub>2</sub>O</b>)</label><br>
+  <input type="checkbox" id="q2_co2" name="q2" value="co2">
+  <label for="q2_co2">Koldioxid (<b>CO<sub>2</sub></b>)</label><br>
+  <input type="checkbox" id="q2_o2" name="q2" value="o2">
+  <label for="q2_o2">Syre (<b>O<sub>2</sub></b>)</label><br>
+  <input type="checkbox" id="q2_n2" name="q2" value="n2">
+  <label for="q2_n2">Kväve (<b>N<sub>2</sub></b>)</label><br>
+  <input type="checkbox" id="q2_ch4" name="q2" value="ch4">
+  <label for="q2_ch4">Metan (<b>CH<sub>4</sub></b>)</label><br><br>
+
+  <!-- Question 3 -->
+  <p><font color="firebrick">3. Välj vilka av följande är koldioxidsänkor <i>(3 rätta svar)</i>:</font></p>
+  <input type="checkbox" id="q3_vegetation" name="q3" value="vegetation">
+  <label for="q3_vegetation">Träd & vegetation</label><br>
+  <input type="checkbox" id="q3_oceanic_respiration" name="q3" value="oceanic_respiration">
+  <label for="q3_oceanic_respiration">Oceanisk Respiration</label><br>
+  <input type="checkbox" id="q3_reforestation" name="q3" value="reforestation">
+  <label for="q3_reforestation">Återplantering av Skog</label><br>
+  <input type="checkbox" id="q3_deforestation" name="q3" value="deforestation">
+  <label for="q3_deforestation">Avskogning</label><br>
+  <input type="checkbox" id="q3_oceanic_photosynthesis" name="q3" value="oceanic_photosynthesis">
+  <label for="q3_oceanic_photosynthesis">Oceanisk Fotosyntes</label><br>
+  <input type="checkbox" id="q3_vegetation_respiration" name="q3" value="vegetation_respiration">
+  <label for="q3_vegetation_respiration">Växt-respiration</label><br><br>
+
+  <!-- Question 4 -->
+  <p><font color="firebrick">4. Välj vilka av följande är koldioxidkällor <i>(4 rätta svar)</i>:</font></p>
+  <input type="checkbox" id="q4_forest_fires" name="q4" value="forest_fires">
+  <label for="q4_forest_fires">Skogsbränder</label><br>
+  <input type="checkbox" id="q4_volcanoes" name="q4" value="volcanoes">
+  <label for="q4_volcanoes">Vulkaner</label><br>
+  <input type="checkbox" id="q4_animal_plant_decay" name="q4" value="animal_plant_decay">
+  <label for="q4_animal_plant_decay">Djur- och Växtförfall</label><br>
+  <input type="checkbox" id="q4_reforestation" name="q4" value="reforestation">
+  <label for="q4_reforestation">Återplantering av Skog</label><br>
+  <input type="checkbox" id="q4_burning_fossil_fuels" name="q4" value="burning_fossil_fuels">
+  <label for="q4_burning_fossil_fuels">Användning av Fossila Bränslen</label><br>
+  <input type="checkbox" id="q4_manure" name="q4" value="manure">
+  <label for="q4_manure">Gödselhantering</label><br><br>
+
+  <!-- Question 5 -->
+  <p><font color="firebrick">5. Under vilken årstid uppmärksammas den högsta koncentrationen av CO<sub>2</sub> i atmosfären på Jordens norra halvklot?</font></p>
+  <input type="radio" id="spring" name="q5" value="spring">
+  <label for="spring">Vår</label><br>
+  <input type="radio" id="summer" name="q5" value="summer">
+  <label for="summer">Sommar</label><br>
+  <input type="radio" id="fall" name="q5" value="fall">
+  <label for="fall">Höst</label><br>
+  <input type="radio" id="winter" name="q5" value="winter">
+  <label for="winter">Vinter</label><br><br>
+
+  <!-- Question 6 -->
+  <p><font color="firebrick">6. Vilken process är ansvarig för förekomsten av lägre CO<sub>2</sub>-koncentrationer under hösten på Jordens norra halvklot?</font></p>
+  <input type="radio" id="animal_husbandry" name="q6" value="animal_husbandry">
+  <label for="animal_husbandry">Djurhållning</label><br>
+  <input type="radio" id="fossil_fuels" name="q6" value="fossil_fuels">
+  <label for="fossil_fuels">Användning av Fossila Bränslen</label><br>
+  <input type="radio" id="forest_fires" name="q6" value="forest_fires">
+  <label for="forest_fires">Skogsbränder</label><br>
+  <input type="radio" id="photosynthesis" name="q6" value="photosynthesis">
+  <label for="photosynthesis">Fotosyntes</label><br><br>
+
+  <!-- Execution button -->
+  <input type="button" id="exe_button" value="Visa resultat" onclick="check();">
+
+  <!-- Restart button -->
+  <input type="button" id="restart_button" value="Försök igen" onclick="init();">
+
+</form>
+
+<div id="after_submit">
+<p id="number_correct"></p>
+<p id="message"></p>
+<img id="gif">
+</div>
+
+
+<div id="feedback">
+  <h1>Kort förklaring</h1>
+  <div id="feedback_q1">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 1:</font></p>
+    <p id="fb_q1_a"></p>
+    <p id="fb_q1_b"></p>
+    <p id="fb_q1_c"></p>
+    <p id="fb_q1_d"></p>
+  </div>
+  <div id="feedback_q2">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 2:</font></p>
+    <p id="fb_q2_a"></p>
+    <p id="fb_q2_b"></p>
+    <p id="fb_q2_c"></p>
+    <p id="fb_q2_d"></p>
+    <p id="fb_q2_e"></p>
+  </div>
+  <div id="feedback_q3">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 3:</font></p>
+    <p id="fb_q3_a"></p>
+    <p id="fb_q3_b"></p>
+    <p id="fb_q3_c"></p>
+    <p id="fb_q3_d"></p>
+    <p id="fb_q3_e"></p>
+  </div>
+  <div id="feedback_q4">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 4:</font></p>
+    <p id="fb_q4_a"></p>
+    <p id="fb_q4_b"></p>
+    <p id="fb_q4_c"></p>
+    <p id="fb_q4_d"></p>
+    <p id="fb_q4_e"></p>
+    <p id="fb_q4_f"></p>
+  </div>
+  <div id="feedback_q5">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 5:</font></p>
+    <p id="fb_q5_a"></p>
+    <p id="fb_q5_b"></p>
+    <p id="fb_q5_c"></p>
+    <p id="fb_q5_d"></p>
+  </div>
+  <div id="feedback_q6">
+    <p><font color="white">Förklaring till svarsalternativ på fråga 6:</font></p>
+    <p id="fb_q6_a"></p>
+    <p id="fb_q6_b"></p>
+    <p id="fb_q6_a_c"></p>
+    <p id="fb_q6_d"></p>
+  </div>
+</div>
+
+
+</body>
+
+</html>
