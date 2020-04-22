@@ -15,5 +15,5 @@ Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln 
 Övningen använder data från ICOS Hyltemossa mätstation.
 
 # Tillgång till övningen
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_svb.ipynb)
 
