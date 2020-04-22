@@ -50,15 +50,15 @@ function check(){
   }
 
   //Check answers (checkboxes):
-  if (question2a && question2b && question2e){
+  if (question2a && question2b && question2e && !question2c && !question2d){
     correct++;
   }
 
-  if (question3a && question3c && question3e){
+  if (question3a && question3c && question3e && !question3b && !question3d && !question3f){
     correct++;
   }
 
-  if (question4a && question4b && question4c && question4e){
+  if (question4a && question4b && question4c && question4e && !question4d && !question4f){
     correct++;
   }
 
@@ -113,23 +113,23 @@ function check(){
 
   //Create list to store feedback for all options in question 4:
   var fb_ls_q4 = ['Korrekt! Skogsbränder ansvarar för större utsläpp av CO\u2082.',
-                  'Korrekt! Vid volkanutbrott frigörs stora mängder CO\u2082 till atmosfären.',
-                  'Korrekt! När döda kvistar & löv förrutnar släpps CO\u2082 ut till atmosfären.',
+                  'Korrekt! Vid vulkanutbrott frigörs stora mängder CO\u2082 till atmosfären.',
+                  'Korrekt! När döda kvistar & löv förruttnar släpps CO\u2082 ut till atmosfären.',
                   'Mer skog betyder mer växter som tar upp CO\u2082.',
                   'Korrekt! Förbränning av fossila bränlsen frigör CO\u2082.',
-                  'Vid gödselhantering släpps metan (CH\u2084) och Lustgas ut (N\u2082O).'];
+                  'Vid gödselhantering släpps metan (CH\u2084) och lustgas ut (N\u2082O).'];
 
   //Create list to store feedback for all options in question 5:
   var fb_ls_q5 = ['Korrekt! Under vintertid ackumuleras CO\u2082,så på början av våren mäts de högsta CO\u2082-värdena.',
                   'Under sommaren ökar fotosyntesen och mer CO\u2082 tas upp från atmosfären.',
-                  'Under hösten fotosyntetisera växter mindre och mindre CO\u2082 tas upp.',
+                  'Under hösten fotosyntetiserar växter mindre och mindre CO\u2082 tas upp.',
                   'Under vintertid minskar fotosyntesen drastiskt och mindre CO\u2082 tas upp.'];
 
   //Create list to store feedback for all options in question 6:
-  var fb_ls_q6 = ['Djurhållning ansvarar för större ustläpp av växthusgaser.',
-                  'Förbränning av fossila bränslen ansvarar för större ustläpp av CO\u2082.',
+  var fb_ls_q6 = ['Djurhållning ansvarar för större utsläpp av växthusgaser.',
+                  'Förbränning av fossila bränslen ansvarar för större utsläpp av CO\u2082.',
                   'Skogsbränder ansvarar för större utsläpp av CO\u2082.',
-                  'Korrekt! Under våren & sommaren tas mer CO\u2082 upp från växter p.g.a. fotosyntes. Som efterföljnad, mäts de lägsta CO₂-värdena under början på hösten.'];
+                  'Korrekt! Under våren & sommaren tas mer CO\u2082 upp från växter p.g.a. fotosyntes. På grund av detta mäts de lägsta CO\u2082-värdena under början på hösten.'];
 
   //Create list with ids of correct answers:
   var corr_ls = ["fb_q1c", "fb_q2a", "fb_q2b", "fb_q2e",
