@@ -1,19 +1,21 @@
 # Kolcykeln - Programmeringsövningar med koldioxid-data
 
-Det är svårt att beräkna statistik över flera tusentals värden med papper och penna. Dessutom ökar möjligheten av misstag i beräkningarna. Programmering ger oss möjligheten att utföra beräkningar över många värden snabbt och med större säkerhet. Syftet med följande övningar är att få erfarenhet över hur enkelt den typen av beräkningar går att utföra med användning av Python. Ett flertal övningar har tagits fram för att beskriva enklare principer inom Python-programmering. Övningarna beskriver oftast problem som är relaterade till kolets kretslopp (kolcykeln), dvs hur kol tas upp eller släpps ut mellan delar av ett ekosystem.
+Denna Jupyter Notebook fokuserar sig på kolcykeln och på dagliga samt årliga förändringar av koncentrationer och upptag av koldioxid. Övningarna beskriver oftast problem som är relaterade till kolets kretslopp (kolcykeln), dvs hur kol tas upp eller släpps ut mellan delar av ett ekosystem. Övningarna beskriver oftast problem som är relaterade till kolets kretslopp (kolcykeln), dvs hur kol tas upp eller släpps ut mellan delar av ett ekosystem.
 
-Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln och på dagliga samt årliga förändringar av koncentrationer och upptag av koldioxid. Programmeringsmässigt berörs följande koncept:
+Programmeringsmässigt berörs följande koncept:
 
-    - Läsa in data från csv-filer
-    - Organisera data i tabeller
-    - Extrahera data från tabeller med hjälp av index
-    - Beräkna statistik över värden i tabeller
-    - Plotta data i interaktiva eller statiska diagram
+    - Interagera med interaktiv karta
+    - Interagera med interaktiva diagram
+
+Syftet med notebooken är inte att lära sig programmera utan snarare skaffa djupare förståelse över hur kolcykeln fungerar och vad påverkar mätningar av växthusgaser.
 
 
 # Data
-Övningen använder data från ICOS Hyltemossa mätstation.
+Övningen använder data från [ICOS Svartberget mätstation](https://www.icos-sweden.se/station_svartberget.html).
+* Copyright © 2019-2020 ICOS ERIC
 
 # Tillgång till övningen
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_svb.ipynb)
+
+
 
