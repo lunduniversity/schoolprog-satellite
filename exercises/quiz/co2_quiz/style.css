@@ -3,15 +3,19 @@ body {
 }
 
 h1{
-  margin-left: 45px;
-  color: #00004d;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  color: #D2691E;
 }
 
 #quiz {
   margin-left: 10px;
   background: #d6e3fa;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 20px 10px 20px;
-  width: 400px;
+  width: 720px;
   border-radius: 20px;
   //float: left;
 }
@@ -30,7 +34,7 @@ input{
   font-size: 16px;
   transition-duration: .5s;
   margin-top: 15px;
-  margin-left: 70px;
+  margin-left: 230px;
 }
 
 #exe_button:hover {
@@ -62,16 +66,16 @@ input{
 #after_submit{
   visibility: hidden;
   background: #ff5459;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 20px 10px 20px;
   width: 400px;
   border-radius: 20px;
-  float: left;
-  margin-left: 10px;
+  //float: left;
   margin-top: 10px;
   font-size: 25px;
   color: white;
 }
-
 
 
 
@@ -80,4 +84,17 @@ input{
   width: 375px;
   height: 245px;
   align-self: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+label[name="feedback"] {
+  visibility: hidden;
+  margin-left: 10px;
+  //color: orange;
 }
