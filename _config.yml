@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+theme: minima
+title: Välkommen till programmering med Miljödata!
+description: Här får du lära dig programmera och hur man kan använda programmering för att undersöka data från vår miljö...
+google_analytics: UA-166127929-2
