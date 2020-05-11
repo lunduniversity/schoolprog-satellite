@@ -1,12 +1,12 @@
 # CO<sub>2</sub>-utsläpp i Sverige
 I denna uppgift ska vi börja titta på statistik från statistiska centralbyrån ([SCB](https://www.scb.se/)) om CO<sub>2</sub>-utsläpp i Sverige.
 
-För att programmera, gå till https://repl.it/languages/python3
+För att programmera, gå till [https://repl.it/languages/python3](https://repl.it/languages/python3)
 
 ## 1. Titta på datafilen
 
 Vi skall använda oss av en modifierad datafil från SCB som vi lagt här:
-https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt
+[https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt](https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt)
 
 ### 1.1 Surfa till datafilen
 
@@ -36,6 +36,7 @@ Svar
 3511.3 kiloton
 </p>
 </details>
+<p></p>
 
 ### 1.3 Vad betyder de olika sektorerna?
 
@@ -52,7 +53,7 @@ Sektorn som heter `NATIONELL TOTAL ...` är summan av alla de andra sektorerna. 
 
 **Uppdrag 1.3:** Vad kan man tänka sig för exempel på utsläpp från de olika sektorerna? Försök hitta ett exempel för varje sektor.
 
-*Tips* Läs om sektorerna här: http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/
+*Tips* Läs om sektorerna här: [http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/](http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/)
 
 <details>
 <summary markdown="span">
@@ -61,20 +62,20 @@ Svar
 <p>
 Några exempel:
 <ul>
-<li> arbetsmaskiner: utsläpp från diesel-driven grävmaskin
-<li> avfall: metan från soptipp
-<li> el och fjärrvärme: utsläpp från kolkraftverk
-<li> industri: utsläpp vid tillverkning av stål
-<li> inrikes transporter: utsläpp från personbil
-<li> utrikes transporter: båt som avgår från Sverige och där bränslet köpts i Sverige
-<li> jordbruk: metan från kor som rapar och fiser
-<li> lösningsmedel och övrig produktanvändning: läckage från kylsystem
-<li> uppvärmning av bostäder och lokaler: hus med oljepanna
+<li> arbetsmaskiner: utsläpp från diesel-driven grävmaskin</li>
+<li> avfall: metan från soptipp</li>
+<li> el och fjärrvärme: utsläpp från kolkraftverk</li>
+<li> industri: utsläpp vid tillverkning av stål</li>
+<li> inrikes transporter: utsläpp från personbil</li>
+<li> utrikes transporter: båt som avgår från Sverige och där bränslet köpts i Sverige</li>
+<li> jordbruk: metan från kor som rapar och fiser</li>
+<li> lösningsmedel och övrig produktanvändning: läckage från kylsystem</li>
+<li> uppvärmning av bostäder och lokaler: hus med oljepanna</li>
 </ul>
 </p>
 </details>
+<p></p>
 
-\
 En sektor som *inte* är med i vår statistik-fil är "LULUCF". Det är en engelsk förkortning för "markanvändning, förändrad markanvändning och skogsbruk". Här har Sverige *negativa* utsläpp, dvs mer och mer koldioxid binds på olika sätt, till exempel på grund av att skogen växer.
 
 ## 2. Python Dictionaries (nyckel-värdetabeller)
@@ -150,7 +151,7 @@ Svar
 grön
 </p>
 </details>
-
+<p></p>
 
 Att notera:
 * Varje element i tabellen har en *nyckel*, t.ex. `"päron"` och ett *värde*, t.ex. `"grön"`. Man skriver kolon mellan nyckeln och värdet.
@@ -207,9 +208,10 @@ Lösning
   "Finland": "Helsingfors"
 }
 print(capital["Sverige"])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 ### 2.3 Felaktig nyckel
 
@@ -224,7 +226,7 @@ Svar
 <p>Man får felet <code>KeyError</code>. Alltså att man använt en nyckel som inte finns med i tabellen.
 </p>
 </details>
-
+<p></p>
 
 ### 2.4 Skapa en nyckel-värdetabell successivt
 
@@ -290,9 +292,10 @@ Lösning
 </summary>
 <p><pre><code>print(lista[0:3])
 print(lista[3:5])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 ### 3.2 Slices från början eller slutet
 
@@ -311,9 +314,10 @@ print(lista[:3])  # Samma sak som lista[0:3]
 Lösning
 </summary>
 <p><pre><code>print(lista[:4])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 På liknande sätt kan du utelämna `stop`-argumentet och därmed ta ut slutet av en lista.
 
@@ -330,9 +334,10 @@ print(lista[3:])  # Samma sak som lista[3:5]
 Lösning
 </summary>
 <p><pre><code>print(lista[1:])
-</pre></code>
+</code></pre>
 </p>
 </details>  
+<p></p>
 
 **Uppdrag 3.2 e:** Vilken lista får du med uttrycket `lista[:]`? Alltså där både start och stopp-index har utelämnats?
 
@@ -343,6 +348,7 @@ Svar
 <p>Du får en slice med alla elementen. Alltså en kopia av listan.
 </p>
 </details>  
+<p></p>
 
 
 ### 3.3 Listor/Slices med negativa index
@@ -355,9 +361,10 @@ Man kan ange ett negativt index för en lista. Då räknas positionen bakifrån 
 Lösning
 </summary>
 <p><pre><code>print(lista[-3])
-</pre></code>
+</code></pre>
 </p>
 </details>  
+<p></p>
 
 Negativa index kan användas också för start och stopp-index i en slice. T.ex. betyder `lista[1:-1]` att man får en ny lista utan både första och sista elementet i `lista`.
 
@@ -368,9 +375,10 @@ Negativa index kan användas också för start och stopp-index i en slice. T.ex.
 Lösning
 </summary>
 <p><pre><code>print(lista[2:-1])
-</pre></code>
+</code></pre>
 </p>
 </details>  
+<p></p>
 
 ### 3.4 Slices med steg
 
@@ -383,9 +391,10 @@ Genom att skriva `lista[start:stop:steg]` kan vi ta en slice som tar med t.ex. v
 Lösning
 </summary>
 <p><pre><code>print(lista[::3])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 ### 3.5 Vänd på en lista med negativt steg
 
@@ -400,6 +409,7 @@ Lösning
 <p>Du får samma lista men i baklänges ordning.
 </p>
 </details>
+<p></p>
 
 
 ## 4. Hämta data över internet
@@ -418,7 +428,7 @@ print(data)
 ```
 
 Den URL du skall använda i stället för `...` ovan är
-https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt
+[https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt](https://raw.githubusercontent.com/lunduniversity/schoolprog-satellite/master/exercises/co2_emission_sweden/data.txt)
 
 Om du gjort rätt fick du nu in all datan i variabeln `data` och printade ut samma sak igen.
 
@@ -451,10 +461,11 @@ Lösning
 </summary>
 <p><pre><code>lines = data.splitlines()
 print(len(lines))
-</pre></code>
+</code></pre>
 Det blir 281 rader.
 </p>
 </details>
+<p></p>
 
 Vi har nu en lista `lines` som motsvarar filen. Hur ska vi kunna plotta datan? Vi behöver göra flera steg:
 * Vi behöver skala bort rubrikraden.
@@ -477,9 +488,10 @@ Första raden i filen är ju en rubrikrad. Den vill vi inte ha med när vi ska g
 Lösning
 </summary>
 <p><pre><code>data_lines = lines[1:]
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 Om du vill försäkra dig om att du programmerat rätt så kan du skriva ut t.ex. `data_lines[0]` så att du ser att första raden inte är rubrikraden.
 
@@ -579,9 +591,10 @@ Här beräknas först `raw_data[0]`, och resultatet är en lista. Sedan indexera
 Lösning
 </summary>
 <p><pre><code>print(raw_data[0][2])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 ### 4.5 Skapa en nyckel-värdetabell
 
@@ -659,9 +672,10 @@ for line in raw_data:
 Lösning
 </summary>
 <p><pre><code>print(data_by_sector["ARBETSMASKINER, TOTALT"])
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 ## 5. Plotta
 
@@ -680,9 +694,10 @@ På x-axeln vill vi ha åren (1990-2017), och på y-axeln de totala utsläppen f
 Lösning
 </summary>
 <p><pre><code>years = list(range(1990, 2018))
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 **Uppdrag 5.1 b:** Plotta de totala utsläppen till en fil `totalco2.png`.
 
@@ -700,9 +715,10 @@ Lösning
 y = data_by_sector["NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)"]
 plt.plot(years, y)
 plt.savefig("totalco2.png")
-</pre></code>
+</code></pre>
 </p>
 </details>
+<p></p>
 
 **Uppdrag 5.1 c:** För att du ska kunna tolka kurvan bättre kan du lägga till följande anrop:
 
@@ -723,6 +739,7 @@ Svar
 <p>År 1996 släppte vi ut som mest, strax över 80000 kiloton. År 2017 hade utsläppen sjunkit till strax över 60000 kiloton.
 </p>
 </details>
+<p></p>
 
 **Uppdrag 5.1 e:** Kurvan visar ju bara utsläpp inom Sverige. Vilka andra utsläpp kan man tänka sig att Sveriges befolkning orsakar?
 
@@ -737,6 +754,7 @@ Svar
 </ul>
 </p>
 </details>
+<p></p>
 
 
 ### 5.2 Plotta ett stapeldiagram
@@ -813,7 +831,7 @@ Det vi gjort här är att:
 
 **Uppdrag 5.3 e:** Titta på det genererade diagrammet. Hur har de olika sektorerna förändrats sedan 1990? Vilken har minskat mest? Finns det någon sektor som har ökat de senaste åren? Varför tror du sektorerna har ökat eller minskat? Finns det någon sektor som är stor och som borde kunna minska?
 
-*Tips!* Du hittar mer information här: http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/
+*Tips!* Du hittar mer information här: [http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/](http://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/)
 
 <details>
 <summary markdown="span">
@@ -823,3 +841,4 @@ Svar
 <p>Vi kan se att utsläppen från utrikes transporter har ökat. Det är dock svårt att bedöma hur mycket av detta som beror på att mängden transporter har ökat. En del av ökningen kan bero på att det har blivit billigare att tanka i Sverige och att fartyg hellre tankar här än i andra närliggande länder som Danmark.</p>
 <p>Utsläpp från industrin är fortfarande stora. Forskning pågår för att hitta industriella processer som ger lägre utsläpp, men det tar tid att ta fram nya processer. Se, t.ex. <a href="https://www.naturvardsverket.se/Miljoarbete-i-samhallet/Miljoarbete-i-Sverige/Uppdelat-efter-omrade/Klimat/Klimatneutralt-Sverige/Industri/">https://www.naturvardsverket.se/Miljoarbete-i-samhallet/Miljoarbete-i-Sverige/Uppdelat-efter-omrade/Klimat/Klimatneutralt-Sverige/Industri/</a>
 </details>
+<p></p>

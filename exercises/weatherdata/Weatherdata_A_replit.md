@@ -47,8 +47,8 @@ print("Dagarna är:")
 print(days)
 </code></pre></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.1 c:** Lägg till kod som på liknande sätt skapar en lista `rain` med värdena för regnmängderna i tabellen. Anropa också `print` som tidigare så att du kan se att den nya listan har rätt värden.
 
 <details>
@@ -62,8 +62,8 @@ print(rain)
 </code></pre>
 </p>
 </details>
+<p></p>
 
-\
 I fortsättningen kommer vi att använda variablerna `days`, `temps` och `rain`, så behåll koden som räknar ut dem. Print-satserna har vi bara haft för att kontrollera att rätt sak räknas ut, så de behövs inte längre. Du kan antingen ta bort dem, eller *kommentera* bort dem: I Python används brädgård (`#`) för att ange att resten av raden är en kommentar. Till exempel:
 
 ```python
@@ -123,8 +123,8 @@ rounded = round(s, 1)
 print(rounded)</code></pre>
 </p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.2 e:** Nu när vi vet hur man räknar ut summan och längden av en lista så kan vi lätt räkna ut medeltemperaturen för värdena i `temps`. Skriv kod som räknar ut medeltemperaturen och skriver ut resultatet, avrundat till en decimal.
 
 *Tips!*  Du kan skriva koden så att du gör varje sak i tur och ordning och sparar varje delresultat i en variabel:
@@ -154,8 +154,8 @@ Eller som en enda rad:
 <pre><code>print(round(sum(temps)/len(temps),1))</code></pre>
 </p>
 </details>
+<p></p>
 
-\
 Observera att om man skriver allt på samma rad kan det ibland bli svårläst, även om koden blir kortare. Det kan vara bra att dela upp en stor beräkning i delar och sätta namn på de viktiga delarna. Då blir koden mer lättläst.
 
 **Uppdrag 1.2 f:** Ändra din kod så att du använder två rader: en där du räknar ut medelvärdet av temperaturerna, och en där du avrundar och skriver ut. Något i följande stil:
@@ -177,8 +177,8 @@ print(round(average_temp, 1))</code>
 </pre>
 </p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.2 g:** Lägg till liknande kod för att räkna ut medelvärdet av regnmängderna.
 
 <details>
@@ -191,9 +191,9 @@ print(round(average_rain, 1))</code>
 </pre>
 </p>
 </details>
+<p></p>
 
 
-\
 **Uppdrag 1.2 h:** Snygga till ditt program så att du bara har kvar koden för att räkna ut `days`, `temps`, `rain`, `average_temp` och `average_rain`. Övrig kod kan tas bort eller kommenteras bort.
 
 ### 1.3 Accessa list-element
@@ -223,8 +223,8 @@ Lösning
 <p><pre><code>print(rain[0], rain[1], rain[2])
 </code></pre></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.3 d:** Skriv kod som räknar ut medelvärdet av de tre första elementen i `rain`.
 
 *Tips!* Gör detta genom att lägga ihop de tre värdena och dividera med tre. Kalla detta värde t.ex. `avg3`. Därefter avrundar du och skriver ut resultatet.
@@ -239,6 +239,7 @@ Lösning
 print(round(avg3, 1))
 </code></pre></p>
 </details>
+<p></p>
 
 ### 1.4 Loopa över listor
 
@@ -266,8 +267,8 @@ Lösning
   print(r)
 </code></pre></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.4 d:** För att loopa ett visst antal gånger används ofta  en `for` loop med en `range`. Provkör följande exempel.
 ```python
 for i in range(4):
@@ -302,8 +303,8 @@ Lösning
   print(days[i], temps[i], rain[i])
 </code></pre></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.4 g:** Ändra koden så att du lägger till begriplig text, t.ex. så att de första två raderna blir
 
     Den 3 juni var temperaturen 14.1 grader och det regnade 0 mm.
@@ -317,8 +318,8 @@ Lösning
   print("Den", days[i], "juni var temperaturen", temps[i], "grader och det regnade", rain[i], "mm.")
 </code></pre></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.4 h:** I följande uppgifter behöver du ha kvar koden som räknar ut `days`, `temps` och `rain`. Övrig kod kan tas bort eller kommenteras bort.
 
 ## 2. Plottning
@@ -361,8 +362,9 @@ Lösning
 <p>
 I felmeddelandet kan man se att första listan har längden 3, medan den andra har längden 6. För att bli av med felmeddelandet kan man ändra första listan så att den också får 6 element. Till exempel:
 <pre><code>plt.plot([3, 7, 10, 11, 14, 17], temps)
-</pre></code></p>
+</code></pre></p>
 </details>
+<p></p>
 
 ### 2.3 Gör en mer informativ plott
 Det finns många olika möjligheter att göra plotten finare och mer informativ. Vi borde till exempel skriva ut
@@ -392,7 +394,7 @@ Förklaring:
 
 ##### Detaljer om format (hoppa över om du vill)
 
-Om du är intresserad av fler exempel på vilka format som kan användas i plot-anrop kan du titta i den officiella handledningen för pyplot: https://matplotlib.org/tutorials/introductory/pyplot.html. Om du vill se alla möjligheter för format så hittar du det i dokumentationen för plot-funktionen: https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html, se sektionen <i>Notes</i>.
+Om du är intresserad av fler exempel på vilka format som kan användas i plot-anrop kan du titta i den officiella handledningen för pyplot: [https://matplotlib.org/tutorials/introductory/pyplot.html](https://matplotlib.org/tutorials/introductory/pyplot.html). Om du vill se alla möjligheter för format så hittar du det i dokumentationen för plot-funktionen: [https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html), se sektionen <i>Notes</i>.
 
 ##### Detaljer om valfria och namngivna parametrar (hoppa över om du vill)
 
@@ -430,6 +432,7 @@ plt.savefig("regnkurva.png")
 </code></pre>
 </p>
 </details>
+<p></p>
 
 ### 2.5 Plotta flera kurvor
 
@@ -449,8 +452,9 @@ plt.xlabel("dag")
 plt.ylabel("mm eller grader")
 plt.legend()
 plt.savefig("regnochtemp.png")
-</pre></code></p>
+</code></pre></p>
 </details>
+<p></p>
 
 ## 3. Quiz
 
@@ -468,6 +472,7 @@ Svar
 <code>[0, 1, 7]</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 2
 Vad skriver man för att få längden på en lista som kallas `data`?
@@ -483,6 +488,7 @@ Svar
 <code>len(data)</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 3
 
@@ -501,6 +507,7 @@ Svar
 <code>9</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 4
 
@@ -519,6 +526,7 @@ Svar
 <code>på</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 5
 Vilket fel får man när följande kod körs:
@@ -538,6 +546,7 @@ Svar
 <code>IndexError: list index out of range</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 6
 
@@ -560,6 +569,7 @@ dig</code>
 </pre>
 </p>
 </details>
+<p></p>
 
 ### Fråga 7
 
@@ -581,6 +591,7 @@ på</code>
 </pre>
 </p>
 </details>
+<p></p>
 
 ### Fråga 8
 Vad behöver man skriva tidigare i koden för att kunna göra följande anrop: `plt.plot(...)`?
@@ -596,6 +607,7 @@ Svar
 <code>import matplotlib.pyplot as plt</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 9
 
@@ -617,6 +629,7 @@ Svar
 <code>mina fina x-värden</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 10
 Vad behöver man skriva senare i koden för att diagrammet som skapas med `plt.plot(...)` skall sparas i en fil med namnet `file.png`?
@@ -632,3 +645,4 @@ Svar
 <code>plt.savefig("file.png")</code>
 </p>
 </details>
+<p></p>

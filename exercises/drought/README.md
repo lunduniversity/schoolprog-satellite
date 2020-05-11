@@ -65,7 +65,7 @@ För att bedöma vilka pixlar som innehåller frisk vegetation används *NDVI* -
     NDVI = ---------
            NIR + Red
 
-Formeln ger alltid ett värde mellan -1 och 1.  Ju högre värde, desto friskare och tätare vegetation. Här är exempel på typiska värden från olika typer av terräng (enligt https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index):
+Formeln ger alltid ett värde mellan -1 och 1.  Ju högre värde, desto friskare och tätare vegetation. Här är exempel på typiska värden från olika typer av terräng (enligt [https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index](https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index)):
 
 |Terräng|Typiskt ndvi|
 |:------|:-----------|
@@ -97,6 +97,7 @@ print(ndvi)
 </code></pre>
 </p>
 </details>
+<p></p>
 
 <details>
 <summary markdown="span">
@@ -106,6 +107,7 @@ Svar
 Resultatet är cirka 0.43 och vi kan gissa att det rör sig om skog eller annan tät vegetation.
 </p>
 </details>
+<p></p>
 
 **Uppdrag 1.2 b:** Skriv Pythonkod för att i stället beräkna NDVI för hela matrisen av pixlar i exemplet ovan. Vilka olika typer av terräng verkar finnas i området?
 
@@ -136,6 +138,7 @@ print(ndvi)
 </code></pre>
 </p>
 </details>
+<p></p>
 
 <details>
 <summary markdown="span">
@@ -145,12 +148,13 @@ Svar
 Vi ser att det finns värden inom flera olika intervall, och att det mesta är vegetation. Några områden har värden över 0.4 och är kanske skog. Andra områden har lite lägre värden och är kanske gräs eller någon form av odling.
 </p>
 </details>
+<p></p>
 
 
 För att läsa mer om NDVI se
-* https://sv.wikipedia.org/wiki/NDVI
-* https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale
-* https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php
+* [https://sv.wikipedia.org/wiki/NDVI](https://sv.wikipedia.org/wiki/NDVI)
+* [https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index#Rationale)
+* [https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php](https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php)
 
 ### 1.3 Enkel plottning av NDVI
 
@@ -174,6 +178,7 @@ plt.savefig(ndvi.png)
 </code></pre>
 </p>
 </details>
+<p></p>
 
 Troligen tycker du inte att färgerna passar så bra. De pixlar med mest och friskast vegetation blir alldeles gula. Vi skulle vilja använda färger som passar bättre för NDVI.
 
@@ -195,6 +200,7 @@ Svar
 <p>Den mörkaste blå används för det lägsta värdet i ndvi-matrisen, dvs ungefär -0.07. Den gulaste gula används för det högsta värdet i ndvi-matrisen, dvs ungefär 0.48.
 </p>
 </details>
+<p></p>
 
 Ser du att färgskalan matchas mot de värden vi råkar ha i ndvi-matrisen? Dvs det högsta värdet i matrisen matchas mot gulaste gul, och det lägsta mot mörkaste blå.
 
@@ -217,6 +223,7 @@ Svar
 <p>Plotten använder inte längre hela färgskalan. Detta är bra eftersom vi då skulle kunna jämföra den med andra plottar, som visar andra ndvi-matriser.
 </p>
 </details>
+<p></p>
 
 Vi har löst en del problem nu, men inte alla. Vi skulle vilja ha en bättre färgskala.
 
@@ -242,8 +249,9 @@ Svar
 <p>Förhoppningsvis tycker du att figuren är lättare att förstå nu. Ju mörkare grön, desto högre ndvi-värde, och alltså friskare och tätare växtlighet. Barmark blir nära vit. Vatten blir rosa.
 </p>
 </details>
+<p></p>
 
-Det finns information om matplotlibs färgskalor här: https://matplotlib.org/examples/color/colormaps_reference.html
+Det finns information om matplotlibs färgskalor här: [https://matplotlib.org/examples/color/colormaps_reference.html](https://matplotlib.org/examples/color/colormaps_reference.html)
 
 Om du vill kan du experimentera med fler färgskalor, eller vänta tills lite senare när du tittar på hela satellitbilder.
 
@@ -252,7 +260,7 @@ Om du vill kan du experimentera med fler färgskalor, eller vänta tills lite se
 
 Nu ska vi titta på data för hela naturområdet som nämndes i början (Bokskogen i Skåne).
 
-Klicka på följande länk https://repl.it/@OscarWiklund96/Bokskogen för att få tillgång till satellit-datan som används i denna uppgift. Man kan även ladda ner datan från GitHub på https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen.
+Klicka på följande länk [https://repl.it/@OscarWiklund96/Bokskogen](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Man kan även ladda ner datan från GitHub på [https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 I mappen Bokskogen ligger det tre filer som heter `data_15.npz`, `data_17.npz` och `data_18.npz`. Varje fil innehåller satellit-data från en dag i första halvan i augusti, men från olika år (2015, 2017 och 2018). Filerna är lagrade på numpy-format (`.npz`) som lätt kan läsas in till datastrukturer i Python.
 
@@ -283,6 +291,7 @@ Svar
 <p>Om du gör <pre><code>print(list(bands15.keys()))</code></pre>
 ser du att nycklarna är <code>"red"</code> och <code>"nir"</code> (nir = near-infrared)</p>
 </details>
+<p></p>
 
 Vi ser att nycklarna är frekvensband, som `"red"` och `"nir"`. För varje nyckel finns en numpy-array som innehåller en matris med ljusintensiteter. Matrisen ser ut ungefär som i exemplet vi såg i 1.1, men är mycket större.
 
@@ -300,6 +309,7 @@ Svar
 nir15 = bands15["nir"]</code></pre>
 </p>
 </details>
+<p></p>
 
 Vi har nu delat upp datan för de båda banden var för sig. För att få en känsla av vad det faktiskt är för data vi har att göra med skulle vi kunna testa plotta dem.
 
@@ -315,6 +325,7 @@ Lösning
 plt.savefig("red15.png")</code></pre>
 </p>
 </details>
+<p></p>
 
 Plotten visar en bild över Bokskogen med närliggande åkrar och sjöar. Bilderna består endast av ljus från röda respektive nära-infraröda bandet, vilket gör att det blir svårt att se vad de föreställer.
 
@@ -345,6 +356,7 @@ Lösning
 <pre><code>ndvi15 = (nir15-red15)/(nir15+red15)</code></pre>
 </p>
 </details>
+<p></p>
 
 **Uppdrag 2 e:** Plotta `ndvi15` på liknande sätt som du gjorde i 1.4 och 1.5. Glöm inte att
 * använda en bra färgskala, som `"PiYG"`
@@ -363,6 +375,7 @@ plt.savefig("ndvi15.png")
 </code></pre>
 </p>
 </details>
+<p></p>
 
 **Uppdrag 2 f:** Vad visar bilden? Kan du urskilja olika sorters terräng? Kan du se vilka bönder som inte har skördat sina åkrar än?
 
@@ -373,6 +386,7 @@ Svar
 <p>Ett fyrkantigt grönt område tyder på att det är en åkerlapp. En vitare åker tyder på att det finns låg växtlighet och att åkern troligtvis är skördad. Vita områden tyder på bebyggelse som hus och vägar. Till höger i bilden ser vi en flygplats (Sturup) med sina landningsbanor. Ett antal sjöar kan ses som rosa områden. Runtomkring sjöarna finns mörkgröna områden som inte ser ut att vara åkerlappar, så vi kan gissa att det är skog.
 </p>
 </details>
+<p></p>
 
 Vi kan notera att bilden är lite pixlig. Det beror på att vi dragit ner upplösningen så att filerna inte ska bli alltför stora.
 
@@ -396,8 +410,9 @@ För att kunna jämföra åren måste vi nu egentligen göra samma sak för 2017
   plt.clim(-1.0, 1.0)
   plt.colorbar(label="NDVI")
   plt.savefig(save_name)
-  plt.close()</code></pre>
+  plt.close()</code></pre></p>
 </details>
+<p></p>
 
 
 Nu när du har en smidig funktion för att plotta NDVI kan du enkelt göra detta för alla tre år.
@@ -409,13 +424,15 @@ Nu när du har en smidig funktion för att plotta NDVI kan du enkelt göra detta
 <pre><code>plot_ndvi("bokskogen/data_15.npz", "bok15.png")
 plot_ndvi("bokskogen/data_17.npz", "bok17.png")
 plot_ndvi("bokskogen/data_18.npz", "bok18.png")
-</code></pre>
+</code></pre></p>
 </details>
+<p></p>
 
 <details><summary markdown="span">Svar</summary>
 <p>
 Torkan 2018 hade sin påverkan på växtligheten. Om du tittar på åkrarna ser du att växtligheten inte är i närheten av de tidigare åren. Det ser ut som att många bönder blev tvungna att skörda de grödor som klarade sig mycket tidigare på grund av torkan. Man kan även se på själva skogen att växtligheten har sjunkit då den inte framstår som lika grön.
 </details>
+<p></p>
 
 **Uppdrag 3 c: (extra-uppgift)**  Modifiera funktionen `plot_ndvi()` så att du kan ange en titel för figuren och plotta figurerna igen fast med beskrivande titlar.
 
@@ -435,6 +452,7 @@ Svar
 pixlar
 </p>
 </details>
+<p></p>
 
 ### Fråga 2
 Ett frekvensband motsvarar ett
@@ -450,6 +468,7 @@ Svar
 en färg
 </p>
 </details>
+<p></p>
 
 ### Fråga 3
 Infrarött ljus har
@@ -465,6 +484,7 @@ Svar
 lägre frekvenser än det synliga spektret
 </p>
 </details>
+<p></p>
 
 ### Fråga 4
 Vad gäller om frisk växtlighet?
@@ -480,6 +500,7 @@ Svar
 den reflekterar grönt och nära-infrarött ljus, men absorberar rött ljus
 </p>
 </details>
+<p></p>
 
 ### Fråga 5
 Vilka värden används för att räkna ut NDVI (Normalized Difference Vegetation Index)?
@@ -495,3 +516,4 @@ Svar
 rött och nära-infrarött ljus
 </p>
 </details>
+<p></p>

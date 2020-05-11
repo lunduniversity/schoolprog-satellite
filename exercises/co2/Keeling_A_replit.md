@@ -26,6 +26,7 @@ Svar
 Mars 1958
 </p>
 </details>
+<p></p>
 
 ### 1.3 Året på decimalform
 
@@ -41,7 +42,7 @@ Svar
 Vi får ut 1959.0424657534247. Detta stämmer bra med raden som börjar med värdena 1959 och 1. Det tredje värdet på raden är 1959.042.
 </p>
 </details>
-
+<p></p>
 När vi programmerar kommer vi att använda dessa decimalformvärden.
 
 ### 1.4 Koldioxidhalten
@@ -62,6 +63,7 @@ Svar
 315.62
 </p>
 </details>
+<p></p>
 
 ### 1.5 Interpolerade koldioxidvärden
 
@@ -83,6 +85,7 @@ Svar
 317.10
 </p>
 </details>
+<p></p>
 
 Ser du förresten att det interpolerade värdet *inte* ligger precis mitt emellan värdena före och efter? Ett smartare sätt har använts för att räkna ut värdet, där man har tagit hänsyn till många värden runt det saknade värdet.
 
@@ -119,6 +122,7 @@ Svar
 Elementen i listan är "Hej", "svejs", "i", "lingonskogen!".
 </p>
 </details>
+<p></p>
 
 Några saker att notera:
 
@@ -149,6 +153,7 @@ Svar
 Resultatet blir en lista med strängarna "1.2", "17.56", "0.33".
 </p>
 </details>
+<p></p>
 
 Vi kan notera att elementen är *strängar*, alltså sekvenser av tecken. För att vi skall kunna använda dem som decimaltal behöver de först omvandlas.
 
@@ -172,6 +177,7 @@ print(tal+2)
 </code></pre>
 </p>
 </details>
+<p></p>
 
 Saker att notera:
 
@@ -214,6 +220,7 @@ Svar
 Filen har 735 rader.
 </p>
 </details>
+<p></p>
 
 ### 3.2 Skapa `years` och `co2`
 
@@ -245,6 +252,7 @@ print(len(co2))
 </code></pre>
 </p>
 </details>
+<p></p>
 
 <!--
 ### 3.3 Förenkla koden (frivilligt)
@@ -298,6 +306,7 @@ Svar
 Koldioxidhalten var lite mindre än 320 ppm när man började mäta, 1958. Från kurvan ser det ut som att den första gången gick över 400 ppm cirka år 2014. Vi ser också att kurvan är helt över 400 ppm cirka år 2016.
 </p>
 </details>
+<p></p>
 
 ## 5. Quiz
 
@@ -312,6 +321,7 @@ Svar
 Nej det är ingen skillnad. Det betyder samma sak.
 </p>
 </details>
+<p></p>
 
 ### Fråga 2
 Vad skrivs ut av följande kod?
@@ -332,6 +342,7 @@ Svar
 <code>['0.0', '4.5', '2.3']</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 3
 Vad skrivs ut av följande kod?
@@ -345,6 +356,8 @@ print(len(lst))
 *   `11.5`
 
 <details>
+<p></p>
+
 <summary markdown="span">
 Svar
 </summary>
@@ -352,6 +365,7 @@ Svar
 <code>4</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 4
 Vad skall man anropa för att få ut ett rutnät i en plot?
@@ -368,6 +382,7 @@ Svar
 <code>grid()</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 5
 Vad är formeln för koldioxid?
@@ -384,6 +399,7 @@ Svar
 CO<sub>2</sub>
 </p>
 </details>
+<p></p>
 
 ### Fråga 6
 Vad brukar man mäta koldioxid i?
@@ -400,6 +416,7 @@ Svar
 ppm
 </p>
 </details>
+<p></p>
 
 
 ### Fråga 7
@@ -417,3 +434,4 @@ Svar
 På vulkanen Mauna Lua, på Hawaii. Mätningarna påbörjades av Charles Keeling.
 </p>
 </details>
+<p></p>

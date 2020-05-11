@@ -7,7 +7,7 @@ När vi skall hantera stora datamängder, som t.ex. satellitbilder, så behöver
 
 Listor är däremot bra när antalet element ändrar sig medan programmet kör. T.ex. om vi läser in data och inte vet hur stor listan kommer att bli. Att lägga till ett element i en lista är en snabb operation. När vi använder arrayer måste vi veta från början hur stor arrayen skall vara.
 
-Denna uppgift är tänkt att köras på https://repl.it/languages/python3
+Denna uppgift är tänkt att köras på [https://repl.it/languages/python3](https://repl.it/languages/python3)
 
 ## 1. Din första NumPy array
 I sin enklaste form är arrayer väldigt lika vanliga listor. För att använda arrayer måste vi importera NumPy-biblioteket:
@@ -34,6 +34,7 @@ x = np.array([1,2,3,4,5])
 print(x)</code></pre>
 </p>
 </details>
+<p></p>
 
 Observera att en array skrivs ut på liknande sätt som en lista, men utan komma-tecken mellan värdena.
 
@@ -51,6 +52,7 @@ Lösning
 Alternativt kan vi skriva
 <pre><code>print(x[-1])</code></pre></p>
 </details>
+<p></p>
 
 ## 2. Plotta kurva med NumPy
 
@@ -67,14 +69,14 @@ import numpy as np
 x = np.array([1, 2, 3, 4, 5])
 y = np.array([1, 4, 9, 16, 25])
 plt.plot(x,y)
-plt.savefig("test.png")</code></pre>
+plt.savefig("test.png")</code></pre></p>
 </details>
-
+<p></p>
 
 
 ## 3. Fler-dimensionell array
 
-Du kan nu ta bort eller kommentera bort koden du skrivit hittills, eller starta ett nytt fönster för https://repl.it/languages/python3.
+Du kan nu ta bort eller kommentera bort koden du skrivit hittills, eller starta ett nytt fönster för [https://repl.it/languages/python3](https://repl.it/languages/python3).
 
 En trevlig sak med arrayer är att de kan ha flera *dimensioner*. En 1-dimensionell array motsvarar en lista av värden. En 2-dimensionell array motsvarar ett rutnät av värden, eller en lista av listor. En 3-dimensionell array motsvarar en lista av listor av listor, osv.
 
@@ -121,9 +123,9 @@ m = np.array(
    [1, 0, 0, 0, 1],
    [1, 0, 0, 0, 1]])
 plt.imshow(m)
-plt.savefig("matrix.png")</code></pre>
+plt.savefig("matrix.png")</code></pre></p>
 </details>
-
+<p></p>
 
 ## 4. Fler sätt att skapa arrayer
 
@@ -152,6 +154,7 @@ print(a)
 print(b)</code></pre>
 </p>
 </details>
+<p></p>
 
 Observera att elementen blir decimaltal. Det går att skapa heltal i stället genom att ange ett extra argument `dtype=int` till `zeros` eller `ones`.
 
@@ -195,6 +198,7 @@ Svar
 <p>Vi får en array <code>[5 7 9]</code> som resultat. Varje element i resultatet är summan av motsvarande element i de två adderade arrayerna.
 </p>
 </details>
+<p></p>
 
 **Uppdrag 5 b:** Prova andra operationer än `+`. Vilket resultat får du om du gör `*`, `\` eller `-` i stället?
 
@@ -213,6 +217,7 @@ Svar
 <p>Vi får en array <code>[6 7 8]</code> som resultat. Varje element i <code>npa</code> har ökats med 5.
 </p>
 </details>
+<p></p>
 
 **Uppdrag 5 d:** Prova att multiplicera `npa`med en konstant i stället. Vilket resultat får du?
 
@@ -232,6 +237,7 @@ Svar
 <p>Det blir ett <code>ValueError</code>. I felmeddelandet står det att formen ("shape") på de två operanderna inte passar.
 </p>
 </details>
+<p></p>
 
 ## 6. Jämförelse mellan listor och arrayer
 
@@ -254,6 +260,7 @@ Svar
 <p>Resultatet blir en ny lista med 6 element (a-elementen följt av b-elementen).
 </p>
 </details>
+<p></p>
 
 Observera att addition för listor inte är matematisk addition, utan i stället *konkatenering* ("hopkedjning"). Det samma gäller strängar. T.ex. blir `"abc" + "def"` en ny sträng `"abcdef"`.
 
@@ -281,6 +288,7 @@ for i in range(len(a)):
 print(c)</code></pre>
 </p>
 </details>
+<p></p>
 
 Vi kan inte multiplicera två listor - då får vi ett fel. Men vi kan faktiskt multiplicera en lista med en konstant! Vad kan det betyda?
 
@@ -374,6 +382,7 @@ Svar
 <p>a) och b) är korrekta, men c) är fel. Man kan inte ändra storleken på en array. Det kan man däremot med en lista. Man kan t.ex. lägga till ett element i en lista med funktionen <code>append</code>, vilket är en snabb operation. Om man gör <code>append</code> på en array så ändras inte arrayen, utan man får en ny array som är större och där elementen i den gamla har kopierats till den nya. Detta kan ta lång tid om arrayen är stor.
 </p>
 </details>
+<p></p>
 
 ### Fråga 2
 
@@ -391,6 +400,7 @@ Svar
 Först skapas listan [1, 4, 7]. Sedan skapas en array från denna lista.
 </p>
 </details>
+<p></p>
 
 ### Fråga 3
 
@@ -407,6 +417,7 @@ Svar
 <p><pre><code>plt.imshow(...)</code></pre>
 </p>
 </details>
+<p></p>
 
 ### Fråga 4
 
@@ -423,6 +434,7 @@ Svar
 <p>En array <code>[2. 2. 2.]</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 5
 
@@ -439,3 +451,4 @@ Svar
 <p>En lista <code>[1, 1, 1, 1, 1, 1]</code>
 </p>
 </details>
+<p></p>

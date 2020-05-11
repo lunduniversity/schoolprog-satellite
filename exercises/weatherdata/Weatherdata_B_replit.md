@@ -9,7 +9,7 @@ I uppgiften kommer vi att lära oss hur man läser in data från filer.
 
 ### 1.1 Titta på filerna
 
-Gå till följande exempel på repl.it där vi förberett datafiler från SMHI: https://repl.it/@OscarWiklund96/Vaderdata-A
+Gå till följande exempel på repl.it där vi förberett datafiler från SMHI: [https://repl.it/@OscarWiklund96/Vaderdata-A](https://repl.it/@OscarWiklund96/Vaderdata-A)
 
 Filerna syns till vänster i fönstret, under *Files*. Det finns tre filer: `lund_juli_2016.txt`, `lund_juli_2017.txt` och `lund_juli_2018.txt`.
 
@@ -23,12 +23,13 @@ Svar
 </summary>
 <p>
 <ul>
-  <li>14 juli 2016: 16.0 grader
-  <li>14 juli 2017: 15.2 grader
-  <li>14 juli 2018: 19.2 grader.
+  <li>14 juli 2016: 16.0 grader</li>
+  <li>14 juli 2017: 15.2 grader</li>
+  <li>14 juli 2018: 19.2 grader</li>
 </ul>
 </p>
 </details>
+<p></p>
 
 ### 1.2 Värm upp med lite listor
 
@@ -98,6 +99,7 @@ Lösning
 <p>
 Man får ett fel <code>ValueError: could not convert string to float</code></p>
 </details>
+<p></p>
 
 ### 1.5 Läs in filen till en lista av floats
 
@@ -118,8 +120,8 @@ for line in f:
 print(data2016)</code></pre>
 </p>
 </details>
+<p></p>
 
-\
 **Uppdrag 1.5 b** Lägg till liknande kod som skapar motsvarande listor `data2017` och `data2018`.
 
 <details>
@@ -139,7 +141,7 @@ print(data2018)
 </code></pre>
 </p>
 </details>
-
+<p></p>
 
 
 ## 2 Refaktorisering
@@ -209,8 +211,8 @@ Lösning
 </code></pre>
 </p>
 </details>
+<p></p>
 
-\
 **Uppdrag 2.1 c** Lägg till anropen (nedanför funktionsdefinitionen) och skriv ut listorna så att du kan se att du får samma resultat som tidigare.
 
 Om du får samma resultat som tidigare har du *refaktoriserat* koden - du har gjort koden tydligare och bättre, men utan att ändra vad som räknas ut.
@@ -249,6 +251,7 @@ Svar
 <p>Det blir <code>[1, 2, 3]</code>
 </p>
 </details>
+<p></p>
 
 Observera:
 * Med `range(a, b)` får vi ett intervall som börjar på `a` och där `b` är det första värdet *efter* intervallet.
@@ -263,8 +266,8 @@ Lösning
 <pre><code>days = list(range(1, 32))
 </pre></code></p>
 </details>
+<p></p>
 
-\
 Nu har vi allt vi behöver för att kunna plotta våra temperaturer.
 
 ## 4 Plotta temperaturer
@@ -291,8 +294,8 @@ plt.ylabel("medeltemperatur")
 plt.savefig("juli.png")
 </pre></code></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 4 b**: Lägg till lämpliga etiketter på x- och y-axeln, om du inte redan har gjort det. (Använd funktionerna `xlabel` och `ylabel`.)
 
 
@@ -321,21 +324,21 @@ plt.legend()
 plt.savefig("juli.png")
 </pre></code></p>
 </details>
+<p></p>
 
-\
 **Uppdrag 4 d** Titta på kurvorna och fundera på hur de skiljer sig åt. Var det varmt eller kallt dessa somrar? Tänk på att värdet för varje dag motsvarar medeltemperaturen för *hela det dygnet* (både dag och natt). Vilket år var varmast? Vilket år var kallast? Kommer du ihåg vad du gjorde de olika somrarna och hur vädret var?
 
-En tidningsrubrik i augusti 2018 var "Värmeböljan 2018 saknar motsvarighet i historien". Här kan du läsa om vad SMHI skriver om olika år och årstider, inklusive de tre somrarna: https://www.smhi.se/klimat/klimatet-da-och-nu/arets-vader
+En tidningsrubrik i augusti 2018 var "Värmeböljan 2018 saknar motsvarighet i historien". Här kan du läsa om vad SMHI skriver om olika år och årstider, inklusive de tre somrarna: [https://www.smhi.se/klimat/klimatet-da-och-nu/arets-vader](https://www.smhi.se/klimat/klimatet-da-och-nu/arets-vader)
 
 ## 5 Titta på en annan ort i Sverige
 
 Lund ligger långt söderut i Sverige. Hur ser det ut på andra orter?
 
-**Uppdrag 5 a** Surfa till https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/smhi/julydir. Här finns filer med dygnsmedeltemperaturer under juli för många orter i Sverige, för åren 2016, 2017 och 2018. Känner du igen några ortnamn?
+**Uppdrag 5 a** Surfa till [https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/smhi/julydir](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/smhi/julydir). Här finns filer med dygnsmedeltemperaturer under juli för många orter i Sverige, för åren 2016, 2017 och 2018. Känner du igen några ortnamn?
 
 (Alla SMHIs stationer är inte med i denna lista. Endast de som har fullständig data för juli under alla tre åren är med.)
 
-Om du vill se var en viss station är kan du titta på SMHI:s karta: https://www.smhi.se/vadret/vadret-i-sverige/observationer. Kanske vill du titta på Tarfala som är en väderstation vid Kebnekajses fot?
+Om du vill se var en viss station är kan du titta på SMHI:s karta: [https://www.smhi.se/vadret/vadret-i-sverige/observationer](https://www.smhi.se/vadret/vadret-i-sverige/observationer). Kanske vill du titta på Tarfala som är en väderstation vid Kebnekajses fot?
 
 **Uppdrag 5 b** Välj två olika orter och kopiera 2018 års värden till repl.it. Du kan kopiera en fil genom att:
 * Skapa en ny fil till vänster i repl.it-fönstret (klicka på ikonen `Add file` vid *Files*).
@@ -375,7 +378,7 @@ Lösning
   return sum(lst)/len(lst)
 </pre></code></p>
 </details>
-
+<p></p>
 
 ## 7 Quiz
 
@@ -395,6 +398,7 @@ Svar
 <code>lista = []</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 2
 
@@ -412,6 +416,7 @@ Svar
 <code>lista.append(7)</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 3
 
@@ -429,6 +434,7 @@ Svar
 <code>float("4.2")</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 4
 
@@ -446,6 +452,7 @@ Svar
 <code>ValueError: could not convert string to float</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 5
 
@@ -468,6 +475,7 @@ Svar
 <p>3
 </p>
 </details>
+<p></p>
 
 ### Fråga 6
 
@@ -484,6 +492,7 @@ Svar
 <p>Man förbättrar koden, men utan att ändra vad den räknar ut.
 </p>
 </details>
+<p></p>
 
 ### Fråga 7
 
@@ -504,6 +513,7 @@ Svar
 <p><code>[3, 4, 5]</code>
 </p>
 </details>
+<p></p>
 
 ### Fråga 8
 
@@ -521,6 +531,7 @@ Svar
 <p>2018
 </p>
 </details>
+<p></p>
 
 ### Fråga 9
 
@@ -537,3 +548,4 @@ Svar
 <p><code>33</code>
 </p>
 </details>
+<p></p>
