@@ -430,7 +430,7 @@ plot_ndvi("bokskogen/data_18.npz", "bok18.png")
 
 <details><summary markdown="span">Svar</summary>
 <p>
-Torkan 2018 hade sin påverkan på växtligheten. Om du tittar på åkrarna ser du att växtligheten inte är i närheten av de tidigare åren. Det ser ut som att många bönder blev tvungna att skörda de grödor som klarade sig mycket tidigare på grund av torkan. Man kan även se på själva skogen att växtligheten har sjunkit då den inte framstår som lika grön.
+Torkan 2018 hade sin påverkan på växtligheten. Om du tittar på åkrarna ser du att växtligheten inte är i närheten av de tidigare åren. Det ser ut som att många bönder blev tvungna att skörda de grödor som klarade sig mycket tidigare på grund av torkan. Man kan även se på själva skogen att växtligheten har sjunkit då den inte framstår som lika grön.</p>
 </details>
 <p></p>
 

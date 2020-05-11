@@ -264,7 +264,7 @@ Lösning
 </summary>
 <p>
 <pre><code>days = list(range(1, 32))
-</pre></code></p>
+</code></pre></p>
 </details>
 <p></p>
 
@@ -292,7 +292,7 @@ plt.plot(days, data2016)
 plt.xlabel("dag i juli")
 plt.ylabel("medeltemperatur")
 plt.savefig("juli.png")
-</pre></code></p>
+</code></pre></p>
 </details>
 <p></p>
 
@@ -322,7 +322,7 @@ plt.xlabel("dag i juli")
 plt.ylabel("medeltemperatur")
 plt.legend()
 plt.savefig("juli.png")
-</pre></code></p>
+</code></pre></p>
 </details>
 <p></p>
 
@@ -376,7 +376,7 @@ Lösning
 <p>
 <pre><code>def medel(lst):
   return sum(lst)/len(lst)
-</pre></code></p>
+</code></pre></p>
 </details>
 <p></p>
 
