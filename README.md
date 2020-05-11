@@ -1,7 +1,11 @@
 # Våra övningar
-[Programmeringsövningar med satellitdata och annan miljödata](exercises/README.md) för högstadium och gymnasium.
+[Programmeringsövningar med satellitdata och annan miljödata](https://lunduniversity.github.io/schoolprog-satellite/) för högstadium och gymnasium.
 
 ## För utvecklare
+
+* Övningarna kan ses direkt på github på [exercises/README.md](exercises/README.md).
+
+* Webb-siten är gjord med github pages och ligger på https://lunduniversity.github.io/schoolprog-satellite/
 
 * Projektbeskrivning, uppdragsideer, etc. finns på [Google Drive](https://drive.google.com/drive/folders/1svwmHStMxmkm5pGE-U4PO6GWMpGCyXYH)
 * Lägg alla (stora) datafiler i följande sido-repo: https://github.com/lunduniversity/schoolprog-satellite-data
