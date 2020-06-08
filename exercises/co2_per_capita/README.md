@@ -1,5 +1,5 @@
 # CO2-utsläpp per capita
-Denna uppgift är en fortsättniningsuppgift på [CO2-utsläpp i Sverige](https://github.com/lunduniversity/schoolprog-satellite/tree/master/exercises/co2-utsl%C3%A4pp_sverige). I uppgiften plottas Sveriges utsläpp per capita och detta jämförs med det totala utsläppet. Man får också träna på att själva söka upp, läsa in och formatera data.
+Denna uppgift är en fortsättniningsuppgift på [CO2-utsläpp i Sverige](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/co2_emission_sweden). I uppgiften plottas Sveriges utsläpp per capita och detta jämförs med det totala utsläppet. Man får också träna på att själva söka upp, läsa in och formatera data.
 
 För att köra i Colab, tryck här: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2_per_capita/co2_sweden_per_capita.ipynb)
 
