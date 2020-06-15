@@ -17,7 +17,7 @@ Följande miljödata berörs:
 
 # Kör uppgiften i Colab 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/regional_greenhouse_emissions/UPPG_CO2-ekvivalenter.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/regional_greenhouse_emissions/UPPG_CO2_ekvivalenter.ipynb)
 
 # Data
 All data kommer från SMHI och kan hämtas från: [http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi](http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi)
