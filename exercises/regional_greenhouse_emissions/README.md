@@ -16,4 +16,4 @@ Följande miljödata berörs:
   - Begreppet koldioxidekvivalent och att olika växthusgaser påverkar olika mycket
 
 # Data
-All data kommer från SMHI och kan hämtas från: (http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi)[http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi]
+All data kommer från SMHI och kan hämtas från: [http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi](http://www.airviro.smhi.se/cgi-bin/RUS/apub.html_rusreport.cgi)
