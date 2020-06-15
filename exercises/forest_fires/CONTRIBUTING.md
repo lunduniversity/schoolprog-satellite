@@ -1,0 +1,1 @@
+gdalopen.py kan användas för att ta fram .npz filer som innehåller det röda bandet och NIR-bandet. Fungerar för sentinel 2 bilder hämtade från copernicus. Filen läggs i .SAFE mappen och behöver modifieras för att beskära rätt del av bilden innan den körs.
