@@ -15,6 +15,8 @@ Följande naturorienterandekoncept berörs:
 
 # Kör uppgiften i Colab
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/lake/Lake.ipynb)
+
 # Data
 
 Satellitbilderna är tagna av Sentinel-2 och är hämtade från [https://scihub.copernicus.eu](https://scihub.copernicus.eu). De har sedan bearbetats för att bli mer lättanvända. De bearbetade filerna finns på följande sido-repo [https://github.com/lunduniversity/schoolprog-satellite-data](https://github.com/lunduniversity/schoolprog-satellite-data/blob/master/lake/lake.npz).
