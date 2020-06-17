@@ -39,6 +39,5 @@ Följande miljödata berörs:
 
 # Kör inspirationsuppgiften i Colab 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/regional_greenhouse_emissions/fargkarta-vaxthusgasutslapp.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/regional_greenhouse_emissions/fargkarta-vaxthusgasutslapp.ipynb)
 
