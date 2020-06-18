@@ -27,7 +27,7 @@ class RadioQuestion(QuestionInterface):
     #create question widget
     question_out = widgets.Output(layout=Layout(width='auto'))
     with question_out:
-      print(self.prompt)
+      print('Fråga', str(self.num) + ':', self.prompt)
     alts_widget = self._create_radio_widget()
     return widgets.VBox([question_out, alts_widget])
     
@@ -35,13 +35,19 @@ class RadioQuestion(QuestionInterface):
     # check if the chosen alternatives are correct, also output feedback
     correct = True
     alt, feedback_out = self.alt_widget.children
+    color_backgroud = '\u001b[48;5;2m'
+    color_text = '\u001b[38;5;250m'
+    color_reset = '\u001b[0m'
     if alt.value == None:
       return False
-    with feedback_out:
-      clear_output()
-      print(self.feedback[alt.value])
     if alt.value != self.answer[0]:
       correct = False
+      color_backgroud = '\u001b[48;5;1m'
+    with feedback_out:
+      clear_output()
+      print(color_backgroud + color_text + self.feedback[alt.value] + color_reset)
+    print(self.feedback[alt.value])
+    
     return correct
   
   def reset_question(self) -> None:
@@ -59,9 +65,11 @@ class RadioQuestion(QuestionInterface):
       disabled = False,
       indent = False,
       align = 'center',
-      value = None
-    )
-    quest_box = widgets.HBox([alternatives, widgets.Output()])
+      value = None)
+    quest_box = widgets.HBox([alternatives, widgets.Output()], 
+                             layout=widgets.Layout(align_items='center', 
+                                                   display='inline-flex',
+                                                   flex_flow='row wrap'))
     self.alt_widget = quest_box
     return quest_box
 
@@ -79,7 +87,7 @@ class CheckboxQuestion(QuestionInterface):
     #create question widget
     question_out = widgets.Output(layout=Layout(width='auto'))
     with question_out:
-      print(self.prompt)
+      print('Fråga', str(self.num) + ':', self.prompt)
     alts_widget = self._create_checkbox_widget()
     return widgets.VBox([question_out, alts_widget])
     
@@ -87,16 +95,20 @@ class CheckboxQuestion(QuestionInterface):
     # check if the chosen alternatives are correct, also output feedback
     correct = True
     nbr_chosen = 0
+    color_text = '\u001b[38;5;250m'
+    color_reset = '\u001b[0m'
     for i, alt in enumerate(self.alt_widget):
+      color_background = '\u001b[48;5;2m'
       chosen = alt.children[0].value
       feedback_out = alt.children[1]
       with feedback_out:
         clear_output()
         if chosen:
           nbr_chosen += 1
-          print(self.feedback[self.options[i]])
           if self.options[i] not in self.answer:
-              correct = False
+            correct = False
+            color_background = '\u001b[48;5;1m'
+          print(color_background + color_text + self.feedback[self.options[i]] + color_reset)
     if nbr_chosen < len(self.answer):
       correct = False
     return correct
@@ -108,7 +120,7 @@ class CheckboxQuestion(QuestionInterface):
       with feedback_out:
         clear_output()
   
-  def _create_checkbox_widget(self) -> widgets.HBox:
+  def _create_checkbox_widget(self) -> widgets.VBox:
     # create a checkbox widget and set value of self.alt_widget
     checkboxes = []
     for i, opt in enumerate(self.options):
@@ -117,9 +129,12 @@ class CheckboxQuestion(QuestionInterface):
                         description=opt,
                         disabled=False,
                         indent=False)
-      checkboxes.append(widgets.HBox([chkbox, widgets.Output()]))
+      checkboxes.append(widgets.HBox([chkbox, widgets.Output()],
+                                     layout=widgets.Layout(display='inline-flex',
+                                                           flex_flow='row wrap')))
     self.alt_widget = checkboxes
     return widgets.VBox(checkboxes,
+                        indent=False,
                         layout=Layout(display='flex', 
                                       flex_flow='column', 
                                       align_items='stretch', 
