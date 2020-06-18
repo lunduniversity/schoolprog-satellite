@@ -1,0 +1,59 @@
+[{"question":"Hur räknar man ut NDVI?",
+
+"answer":["(nir-red)/(nir+red)"],
+
+"feedback":{"(red+nir)/(red-nir)": "Nästan! NDVI bygger på att man vill normalisera skillnaden \n mellan NIR bandet och det röda bandet. Därför måste nir+red vara i nämnaren. \n Man vill även att vegetation ska ha ett positivt index \n så därför har man nir-red i täljaren istället.", 
+"(red-nir)/(red+nir)": "Nästan! Men eftersom man vill att vegetation ska ha ett positivt index \n väljer man att ha (nir-red) i täljaren.", 
+"(nir-red)/(nir+red)": "Korrekt! (nir-red) i täljaren gör att växtlighet \n får ett positivt värde som sedan normaliseras.", 
+"(nir+red)/(nir-red)": "Nästan! NDVI bygger på att man vill normalisera skillnaden \n mellan NIR bandet och det röda bandet. \n Därför måste nir+red vara i nämnaren, \n och nir-red i täljaren."},
+
+"options": ["(red+nir)/(red-nir)", "(red-nir)/(red+nir)", "(nir-red)/(nir+red)", "(nir+red)/(nir-red)"]},
+
+
+{"question":"Om en pixel motsvarar 900 m^2. Hur många meter motsvarar då sidan av en pixel?",
+
+"answer":["30 m"],
+
+"feedback":{"10 m": "Fel, 10^2 är 100 m^2", 
+"30 m": "Rätt, 30^2 är 900 m^2", 
+"90 m": "Fel, 90 m^2 är 8100 m^2", 
+"450 m": "Fel, 450 m^2 är 202500 m^2"},
+"options": ["10 m", "30 m", "90 m", "450 m"]},
+
+
+{"question":"Vilka av följande geometriska former är ingen polygon?",
+
+"answer":["Pyramid","Cirkel"],
+
+"feedback":{"Triangel": "Fel! En triangel räknas som en polygon", 
+"Pyramid": "Rätt! En Pyramid är tredimensionell", 
+"Parallellogram": "Fel! En parallellogram räknas som en polygon", 
+"Pentagon": "Fel! En pentagon räknas som en polygon",
+"Cirkel": "Rätt! En cirkel har inga hörn"},
+"options": ["Triangel", "Pyramid", "Parallellogram", "Pentagon", "Cirkel"]},
+
+
+
+{"question":"Vilket NDVI har jord ungefär?",
+
+"answer":["-0,1 - 0,1"],
+
+"feedback":{"0,2 - 0,3": "Fel! 0,2 - 0,3 brukar betyda vegetation", 
+"-0,3 - -0,2": "Fel! Negativt NDVI under -0.1 brukar betyda vatten", 
+"-0,1 - 0,1": "Rätt! Jord, asfalt och andra landområden \n utan växtlighet brukar få ett NDVI-värde runt 0", 
+"0,3 - 0,5": "Fel! Ju högre NDVI värde desto mer växtlighet"},
+
+"options": ["0,2 - 0,3", "-0,3 - -0,2", "-0,1 - 0,1", "0,3 - 0,5"]},
+
+{"question":"Vilka alternativ är korrekta och förklarar varför vatten oftast har ett negativt NDVI??",
+
+"answer":["Vatten absorberar mer NIR-ljus än rött ljus","Vatten reflekterar mer rött ljus än NIR"],
+
+"feedback":{"Vatten absorberar mer NIR-ljus än rött ljus": "Korrekt! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt.", 
+"Vatten reflekterar mer NIR-ljus än rött ljus": "Fel! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt. ", 
+"Vatten reflekterar mer rött ljus än NIR": "Korrekt! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt.", 
+"Vatten absorberar mer rött ljus än NIR": "Fel! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt."},
+
+"options": ["Vatten absorberar mer NIR-ljus än rött ljus", "Vatten reflekterar mer NIR-ljus än rött ljus", "Vatten reflekterar mer rött ljus än NIR", "Vatten absorberar mer rött ljus än NIR"]}
+
+]
