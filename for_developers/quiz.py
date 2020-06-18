@@ -46,7 +46,6 @@ class RadioQuestion(QuestionInterface):
     with feedback_out:
       clear_output()
       print(color_backgroud + color_text + self.feedback[alt.value] + color_reset)
-    print(self.feedback[alt.value])
     
     return correct
   
