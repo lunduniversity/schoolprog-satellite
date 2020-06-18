@@ -1,7 +1,7 @@
 [{
   "question": "list = [5,6,7,8,9,10] \nprint(list[::2]) \nVad skriver koden ovan ut?",
   "answer": ["[5,7,9]"],
-  "options": ["[6,8,10]","[5,7,9]","[5,6]","[9,10"],
+  "options": ["[6,8,10]","[5,7,9]","[5,6]","[9,10]"],
   "feedback": {
     "[6,8,10]": "Nästan, list[::2] innebär att vi läser varannat värde i listan.",
     "[5,7,9]":"Helt rätt!",
