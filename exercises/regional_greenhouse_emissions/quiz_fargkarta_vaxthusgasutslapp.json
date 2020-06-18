@@ -1,0 +1,26 @@
+[{"question": "Vilken av dessa kommuner släpper ut mer 2017 än 1990?",
+
+"answer":["Luleå"],
+
+"feedback":{
+  "Luleå": "Rätt, utsläppen har ökat med ungefär 25%",
+  "Malmö": "Fel, utsläppen har minskat med ungefär 25%.",
+  "Örnsköldsvik": "Fel, utsläppen har halverats ungefär"},
+
+"options": ["Luleå", "Malmö", "Örnsköldsvik"]},
+
+{"question": "Vilken huvudsektor står för det största totala utsläppet i Sverige 2017?",
+
+"answer":["Transporter"],
+
+"feedback":{
+  "El och fjärrvärme": "Fel, denna sektor släpper ut ungefär hälften så mycket som\ndet största alternativet",
+  "Arbetsmaskiner": "Fel, arbetsmaskiner står för ungefär 6% av Sveriges utsläpp",
+  "Jordbruk": "Fel, denna sektor släpper ut ungefär hälften så mycket som\ndet största alternativet",
+  "Transporter": "Rätt! Transporter släpper ut mest av sektorerna. Sektorn\n'Industri (energi och processer)' är väldigt nära, men Transporter\när större och står för ungefär 30% av sveriges utsläpp.",
+  "Produktanvändning (inkl. lösningsmedel)": "Denna sektor står för en väldigt liten del av utsläppen."
+},
+
+"options": ["El och fjärrvärme", "Arbetsmaskiner", "Jordbruk", "Transporter", "Produktanvändning (inkl. lösningsmedel)"]}
+
+]
