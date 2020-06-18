@@ -1,0 +1,69 @@
+[{
+  "question": "list = [5,6,7,8,9,10] \nprint(list[::2]) \nVad skriver koden ovan ut?",
+  "answer": ["[5,7,9]"],
+  "options": ["[6,8,10]","[5,7,9]","[5,6]","[9,10"],
+  "feedback": {
+    "[6,8,10]": "Nästan, list[::2] innebär att vi läser varannat värde i listan.",
+    "[5,7,9]":"Helt rätt!",
+    "[5,6]": "Inte riktigt, list[::2] innebär att vi läser varannat värde i listan.",
+    "[9,10]":"Fel, list[::2] innebär att vi läser varannat värde i listan."
+    }
+  },{
+  "question": "list = [[1,2,3],[4,5,6],[7,8,9]] \nprint(list[2][1]) \nVad skriver koden ovan ut?",
+  "answer": ["8"],
+  "options": ["4","2","8","7"],
+  "feedback": {
+    "4":"Nästan, Tänk på att första platsen i en lista är på index 0 i Python.",
+    "2":"Fel, list[2][1] betyder att vi ska ta listan på plats 2 och sen värdet på plats 1 i listan.",
+    "8":"Korrekt!, 2an motsvarar den sista listan och 1an motsvarar det andra värdet.",
+    "7":"Inte riktigt, tänk på att första platsen i en lista motsvarar index 0."
+    }
+  },{
+  "question": "Hur mycket koldioxid motsvarar 3 kg metan?",
+  "answer": ["75 kg"],
+  "options": ["3 kg","25 kg","50 kg","75 kg"],
+  "feedback": {
+    "3 kg":"Fel, metan har större påverkan på uppvärmningen än koldioxid.",
+    "25 kg":"Nästan, 1 kg metan motsvarar 25 kg koldioxid.",
+    "50 kg":"Nästan, 2 kg metan motsvarar 50 kg koldioxid",
+    "75 kg":"Korrekt! Metan har 25 gånger större påverkan på uppvärmningen än koldioxid."
+    }
+  },{
+  "question": "list = [1,2,3,4,5,6,7,8,9,10] \nVilka av alternativen skriver ut talet 9?",
+  "answer": ["print(list[8])","print(list[-2])","print(list[::8][1])","print(list[8:9])"],
+  "options": ["print(list[9])","print(list[8])","print(list[-2])","print(list[::8][1])",
+    "print(list[::8])","print(list[8:9])"],
+  "feedback": {
+    "print(list[9])":"Fel, på grund av att listor indexeras från 0 kommer det skrivas ut 10",
+    "print(list[8])":"Korrekt!",
+    "print(list[-2])":"Korrekt! list[-2] innebär att vi tar det näst sista elementet.",
+    "print(list[::8][1])":"Korrekt! [::8] ger en ny lista [1,9] som vi sedar tar 9 ifrån.",
+    "print(list[::8])":"Nästan, [::8] Kommer ge en ny lista [1,9] då vi hoppar 8 steg.",
+    "print(list[8:9])":"Korrekt!, vi kommer få en lista som bara innehåller talet 9."
+    }
+  },{
+  "question": "list = [3,8,10,16] \nVilken kod skriver ut listan baklänges?",
+  "answer": ["print(list[::-1])","print(list[3::-1])"],
+  "options": ["print(list[-1::])","print(list[::-1])","print(list[3:-1:])","print(list[3:0:-1])","print(list[3::-1])"],
+  "feedback": {
+    "print(list[-1::])":"Fel, skriver endast ut talet 16.",
+    "print(list[::-1])":"Korrekt, -1 i steglängd gör att vi skriver ut listan baklänges.",
+    "print(list[3:-1:])":"Fel, detta betyder att vi börjar och slutar på sista värdet.",
+    "print(list[3:0:-1])":"Nästan, men vi missar talet 3 då vi sätter index 0 som stop värde.",
+    "print(list[3::-1])":"Korrekt!, vi börjar på sista värdet och går baklänges."
+     }
+  },{
+  "question": "Varför har vissa kommuner mer metanutsläpp?",
+  "answer": ["Mycket jordbruk"],
+  "options": ["Mycket industri","Mycket jordbruk","Större befolkning","Mycket trafik"],
+  "feedback": {
+    "Mycket industri":"Fel, industrier släpper främst ut koldioxid",
+    "Mycket jordbruk":"Korrekt, jordbruk och boskapshållning är en av de metangas källorna.",
+    "Större befolkning":"Fel, större befolkning innebär oftast högre koldioxidutsläpp.",
+    "Mycket trafik":"Fel, Bilar och andra fordon släpper främst ut koldioxid."
+    }
+  }
+
+]
+
+
