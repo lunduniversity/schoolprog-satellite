@@ -1,0 +1,51 @@
+[{
+  "question": "Vilka tre färger behövs för att skapa en färgbild i en dator?",
+  "answer":["Röd", "Blå", "Grön"],
+  "feedback":{
+    "Röd": "Rätt",
+    "Lila": "Nej, lila används inte i en färgbild utan kan skapas\nsom en blandning av andra färger.",
+    "Blå": "Rätt",
+    "Grön": "Rätt",
+    "Gul": "Bra gissning, gul är ju en av de tre grundfärgerna.\nMan använder dock en annan färg i datorer.",
+    "Vit": "Nej, vit är en blandning av alla färger. I en svartvit bild hade man dock använt vit som färg."
+  },
+  "options": ["Röd", "Lila", "Blå", "Grön", "Gul", "Vit"]
+},
+{
+  "question": "Vad skrivs ut av koden nedan?\n t = (1, 2, 3, 4)\n d, a, b, c = t\n print(a, c, b, d)\n",
+  "answer":["2 4 3 1"],
+  "feedback":{
+    "1 2 3 4": "Inte riktigt, ordningen kommer ha ändrats.",
+    "2 3 1 4": "Inte riktigt rätt ordning",
+    "2 4 3 1": "Rätt!",
+    "4 3 1 2": "Inte rätt, följden borde börja på 2 eftersom variabeln a blir det."
+  },
+  "options": ["1 2 3 4", "2 3 1 4", "2 4 3 1", "4 3 1 2"]
+},
+{
+  "question": "Hur stort är en hektar? (2 rätta svar)",
+  "answer":["10000 m^2", "0.01 km^2"],
+  "feedback":{
+    "100000 m^2": "Inte riktigt, 100 * 100 m är en hektar.",
+    "100 m^2": "Inte riktigt, 100 * 100 m är en hektar.",
+    "10000 m^2": "Rätt!",
+    "1000 m^2": "Inte riktigt, 100 * 100 m är en hektar.",
+    "0.01 km^2": "Rätt!",
+    "0.1 km^2": "Inte riktigt, 0.1 * 0.1 km är en hektar."
+  },
+  "options": ["100 m^2", "10000 m^2", "0.01 km^2", "0.1 km^2"]
+},
+{
+  "question": "Vilka tal skrivs ut av koden nedan?\n a = [(1, 3), (4, 3), (7, -5), (-5, -2), (4, 10)]\n while len(a) > 1:\n   x, y = a.pop()\n   print(max(y, x))\n",
+  "answer":["10 -2 7 4"],
+  "feedback":{
+    "3 3 -5 -5 10": "Inte riktigt. Vad händer när man gör max(y, x)?",
+    "10 -2 7 4": "Rätt!",
+    "1 4 7 -5": "Inte riktigt. Vad händer när man gör max(y, x)?",
+    "4 -5 -5 4": "Inte riktigt. Vilket element tas ut när man gör a.pop()?",
+    "3 4 7 -2 10": "Inte riktigt. Kolla på while-satsen, när slutar den?",
+    "10 -5 7 4 3": "Inte riktigt. Kolla på while-satsen, när slutar den?",
+    "3 4 7 10": "Inte riktigt. Vilket element tas ut när man gör a.pop()?"
+  },
+  "options": ["3 3 -5 -5 10", "10 -2 7 4", "1 4 7 -5", "4 -5 -5 4", "3 4 7 -2 10", "10 -5 7 4 3", "3 4 7 10"]
+}]
