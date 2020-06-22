@@ -2,10 +2,10 @@
 
 "answer":["(nir-red)/(nir+red)"],
 
-"feedback":{"(red+nir)/(red-nir)": "Nästan! NDVI bygger på att man vill normalisera skillnaden \n mellan NIR bandet och det röda bandet. Därför måste nir+red vara i nämnaren. \n Man vill även att vegetation ska ha ett positivt index \n så därför har man nir-red i täljaren istället.", 
-"(red-nir)/(red+nir)": "Nästan! Men eftersom man vill att vegetation ska ha ett positivt index \n väljer man att ha (nir-red) i täljaren.", 
-"(nir-red)/(nir+red)": "Korrekt! (nir-red) i täljaren gör att växtlighet \n får ett positivt värde som sedan normaliseras.", 
-"(nir+red)/(nir-red)": "Nästan! NDVI bygger på att man vill normalisera skillnaden \n mellan NIR bandet och det röda bandet. \n Därför måste nir+red vara i nämnaren, \n och nir-red i täljaren."},
+"feedback":{"(red+nir)/(red-nir)": "Nästan! NDVI bygger på att man vill normalisera skillnaden\nmellan NIR bandet och det röda bandet. Därför måste nir+red vara i nämnaren.\nMan vill även att vegetation ska ha ett positivt index\nså därför har man nir-red i täljaren istället.", 
+"(red-nir)/(red+nir)": "Nästan! Men eftersom man vill att vegetation ska ha ett positivt index\nväljer man att ha (nir-red) i täljaren.", 
+"(nir-red)/(nir+red)": "Korrekt! (nir-red) i täljaren gör att växtlighet\nfår ett positivt värde som sedan normaliseras.", 
+"(nir+red)/(nir-red)": "Nästan! NDVI bygger på att man vill normalisera skillnaden\nmellan NIR bandet och det röda bandet.\nDärför måste nir+red vara i nämnaren, och nir-red i täljaren."},
 
 "options": ["(red+nir)/(red-nir)", "(red-nir)/(red+nir)", "(nir-red)/(nir+red)", "(nir+red)/(nir-red)"]},
 
@@ -40,7 +40,7 @@
 
 "feedback":{"0,2 - 0,3": "Fel! 0,2 - 0,3 brukar betyda vegetation", 
 "-0,3 - -0,2": "Fel! Negativt NDVI under -0.1 brukar betyda vatten", 
-"-0,1 - 0,1": "Rätt! Jord, asfalt och andra landområden \n utan växtlighet brukar få ett NDVI-värde runt 0", 
+"-0,1 - 0,1": "Rätt! Jord, asfalt och andra landområden\nutan växtlighet brukar få ett NDVI-värde runt 0", 
 "0,3 - 0,5": "Fel! Ju högre NDVI värde desto mer växtlighet"},
 
 "options": ["0,2 - 0,3", "-0,3 - -0,2", "-0,1 - 0,1", "0,3 - 0,5"]},
@@ -49,10 +49,10 @@
 
 "answer":["Vatten absorberar mer NIR-ljus än rött ljus","Vatten reflekterar mer rött ljus än NIR"],
 
-"feedback":{"Vatten absorberar mer NIR-ljus än rött ljus": "Korrekt! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt.", 
-"Vatten reflekterar mer NIR-ljus än rött ljus": "Fel! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt. ", 
-"Vatten reflekterar mer rött ljus än NIR": "Korrekt! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt.", 
-"Vatten absorberar mer rött ljus än NIR": "Fel! Det är det reflekterade ljuset som når satelliten. \n Eftersom vatten absorberar mer NIR än rött, \n kommer därför mer rött ljus nå satelliten, \n indexet blir därmed negativt."},
+"feedback":{"Vatten absorberar mer NIR-ljus än rött ljus": "Korrekt! Det är det reflekterade ljuset som når satelliten.\nEftersom vatten absorberar mer NIR än rött,\nkommer därför mer rött ljus nå satelliten,\nindexet blir därmed negativt.", 
+"Vatten reflekterar mer NIR-ljus än rött ljus": "Fel! Det är det reflekterade ljuset som når satelliten.\nEftersom vatten absorberar mer NIR än rött,\nkommer därför mer rött ljus nå satelliten,\nindexet blir därmed negativt. ", 
+"Vatten reflekterar mer rött ljus än NIR": "Korrekt! Det är det reflekterade ljuset som når satelliten.\nEftersom vatten absorberar mer NIR än rött,\nkommer därför mer rött ljus nå satelliten,\nindexet blir därmed negativt.", 
+"Vatten absorberar mer rött ljus än NIR": "Fel! Det är det reflekterade ljuset som når satelliten.\nEftersom vatten absorberar mer NIR än rött,\nkommer därför mer rött ljus nå satelliten,\nindexet blir därmed negativt."},
 
 "options": ["Vatten absorberar mer NIR-ljus än rött ljus", "Vatten reflekterar mer NIR-ljus än rött ljus", "Vatten reflekterar mer rött ljus än NIR", "Vatten absorberar mer rött ljus än NIR"]}
 
