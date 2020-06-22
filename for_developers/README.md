@@ -94,3 +94,5 @@ I vissa uppgifter står en beskrivning i `README`, det är för uppgifterna som 
 Den data som används i uppgifterna finns antingen i samma mapp som uppgiften eller motsvarande map i schoolprog-satellite-data repot (för större filer). Ifall filerna är större än några MB har vi lagt dem på Drive för att snabbare kunna hämta in dem till Colab (ca 70MB/s från Drive till Colab). Den enda uppgiften vi gör detta för är Torkan 2. Där ligger datan i 2019-Rymden/Torkan 2018/sentinel2_sw_scania.tar.gz.
 
 För Väderdata har data hämtats från SMHI. Scripten för detta finns i katalogen `smhidata`.
+
+För växthusgasutsläpp (regional emissions) har geometridata hämtats från lantmäteriet på https://www.lantmateriet.se/sv/Kartor-och-geografisk-information/geodataprodukter/produktlista/sverigekartor/ och konverterats till geojson format med `lantmateriet_data_to_geojson.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/for_developers/lantmateriet_data_to_geojson.ipynb).
