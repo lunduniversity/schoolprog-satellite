@@ -21,7 +21,7 @@
 "options": ["10 m", "30 m", "90 m", "450 m"]},
 
 
-{"question":"Vilka av följande geometriska former är ingen polygon?",
+{"question":"Vilka av följande geometriska former är ingen polygon? (Två rätta alternativ)",
 
 "answer":["Pyramid","Cirkel"],
 
@@ -45,7 +45,7 @@
 
 "options": ["0,2 - 0,3", "-0,3 - -0,2", "-0,1 - 0,1", "0,3 - 0,5"]},
 
-{"question":"Vilka alternativ är korrekta och förklarar varför vatten oftast har ett negativt NDVI??",
+{"question":"Vilka alternativ är korrekta och förklarar varför vatten oftast har ett negativt NDVI? (Två rätta alternativ)",
 
 "answer":["Vatten absorberar mer NIR-ljus än rött ljus","Vatten reflekterar mer rött ljus än NIR"],
 
