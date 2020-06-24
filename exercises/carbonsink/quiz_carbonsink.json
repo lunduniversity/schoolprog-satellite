@@ -1,0 +1,59 @@
+[
+{"question":"Vilket av följande alternativ kan både vara en kolkälla och en kolsänka?",
+
+"answer":["Skogsavverkning"],
+
+"feedback":{"Skogsavverkning": "Korrekt, det beror på vilken produkt träet ska användas till",
+"Skogsplantering": "Fel, skogsplantering brukar räknas som en kolsänka",
+"Grönsaksodling": "Fel, jordbruk brukar räknas som en kolkälla",
+"Skogsbrand": "Fel, skogsbränder brukar räknas som källor till utsläpp"},
+
+"options": ["Skogsavverkning", "Skogsplantering", "Grönsaksodling", "Skogsbrand"]},
+
+
+{"question":"Vilka uttryck är TRUE om x=10 och y=0? (tre rätta alternativ)",
+
+"answer":["x>y","x>y or x<5","y>x or x==10"],
+
+"feedback":{"x>y": "Korrekt!",
+"x>y and x<5": "Fel, x är inte mindre än 5",
+"x>y or x<5": "Korrekt!",
+"y>x or x==10": "Korrekt!"},
+
+"options": ["x>y", "x>y and x<5", "x>y or x<5", "y>x or x==10"]},
+
+
+{"question":"Vilken effekt hade stormen Gudrun på avverkningen av skog?",
+
+"answer":["Avverkningen ökade"],
+
+"feedback":{"Avverkningen minskade": "Fel, fyra årsavverkningar skog blåste ned",
+"Avverkningen ökade": "Korrekt! Fyra årsavverkningar skog blåste ned",
+"Avverkningen påverkades inte": "Fel, fyra årsavverkningar skog blåste ned"},
+
+"options": ["Avverkningen minskade", "Avverkningen ökade", "Avverkningen påverkades inte"]},
+
+
+{"question":"Vilken kolpool är skogens största källa till CO2?",
+
+"answer":["Torv"],
+
+"feedback":{"Dött organiskt material": "Inte riktigt, \n dött organiskt material \n är skogens näst största källa till kolutsläpp",
+"Torv": "Korrekt!",
+"Mineraljord": "Fel, Mineraljord brukar räknas som en kolsänka",
+"Övriga utsläpp (bränder och gödsling mm.)": "Inte riktigt, övriga utsläpp \n är skogens tredje största källa till kolutsläpp"},
+
+"options": ["Dött organiskt material", "Torv", "Mineraljord", "Övriga utsläpp (bränder och gödsling mm.)"]},
+
+{"question":"Vad skriver koden ut?\n\n x=[1,2,3,4,5]\n for i in x:\n   if i>=3 and i<=5\n     x.append(i+3)\n print(x)\n",
+"answer":["[1,2,3,4,5,6,7,8]"],
+
+"feedback":{"[1,2,3,4,5,8,9,10]": "Fel, kolla närmre hur if-satsen är sammansatt", 
+"[1,2,3,6,4,7,5,8]": "Fel, kolla närmre hur if-satsen är sammansatt", 
+"[1,2,3,4,5,6,7,8]": "Korrekt!", 
+"[1,2,3,6,9,12,15]": "Fel, kolla närmre hur if-satsen är sammansatt"},
+
+"options": ["[1,2,3,4,5,8,9,10]", "[1,2,3,6,4,7,5,8]", "[1,2,3,4,5,6,7,8]", "[1,2,3,6,9,12,15]"]}
+
+
+]
