@@ -1,0 +1,28 @@
+[{
+  "question": "Vad kommer följande kod printa?\n\n a = [2,5,1,7]\n a.sort()\n print(a)\n",
+  "answer":["[1,2,5,7]"],
+  "feedback":{
+    "[7,5,2,1]": "Nej, listan sorteras i ökande ordning.",
+    "[2,5,1,7]": "Nej, listan kommer sorteras.",
+    "[1,2,5,7]": "Rätt"
+  },
+  "options": ["[7,5,2,1]", "[2,5,1,7]", "[1,2,5,7]"]
+},
+{
+  "question": "Vad är bra för ett inkluderande samhälle?",
+  "answer":["Högt valdeltagande"],
+  "feedback":{
+    "Högt valdeltagande": "Rätt, då är det indirekt fler som är med och bestämmer",
+    "Lågt valdeltagande": "Nej, om valdeltagandet är lågt representerar inte\nbeslutsmakten folkets vilja lika bra. Olika grupper kan vara\nolika benägna att rösta, så då kan valresultatet förskjutas."
+  },
+  "options": ["Högt valdeltagande", "Lågt valdeltagande"]
+},
+{
+  "question": "Klurig! Vad kommer följande kod printa?\n\n print(\"knä\" > \"knäckebröd\")\n",
+  "answer":["False"],
+  "feedback":{
+    "True": "Inte riktigt, \"knä\" är före \"knäckebröd\" i bokstavsordning.\nKolla i en ordbok om du har en sådan!",
+    "False": "Rätt! \"knä\" är före \"knäckebröd\" i bokstavsordning.\nKolla i en ordbok om du har en sådan!"
+  },
+  "options": ["True", "False"]
+}]
