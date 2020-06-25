@@ -85,7 +85,7 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 
 * Försöker göra variabelnamn med svenska tecken och blanktecken. Det fungerar inte. T.ex funkar inte:
 ```python
-	vår fina sång = [“hej”, “tomtegubbar”, “slå”, “i”, “glasen”]
+	vår fina sång = ["hej", "tomtegubbar", "slå", "i", "glasen"]
 ```
 (Det går bra med svenska tecken och blanktecken i strängar, men inte i variabelnamn.)
 
