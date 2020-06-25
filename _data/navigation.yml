@@ -1,0 +1,13 @@
+
+# Site navigation links
+- title: Hem
+  url: /
+
+- title: Information om uppgifter
+  url: /exercises/README.html
+
+- title: Våra uppgifter
+  url: /exercises/README.html
+
+- title: Handledning
+  url: /exercises/handledning.html

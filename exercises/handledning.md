@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Handledning
 Handledning angående uppgifterna för miljödata.
 Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid Science Centers.

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Skolprogrammering: miljödata-uppdrag
 
 Välkommen till programmeringens värld!
