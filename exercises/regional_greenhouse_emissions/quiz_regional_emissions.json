@@ -29,7 +29,7 @@
     "75 kg":"Korrekt! Metan har 25 gånger större påverkan på uppvärmningen än koldioxid."
     }
   },{
-  "question": "list = [1,2,3,4,5,6,7,8,9,10] \nVilka av alternativen skriver ut talet 9?",
+  "question": "list = [1,2,3,4,5,6,7,8,9,10] \nVilka av alternativen skriver ut talet 9? (4 rätta svar)",
   "answer": ["print(list[8])","print(list[-2])","print(list[::8][1])","print(list[8:9])"],
   "options": ["print(list[9])","print(list[8])","print(list[-2])","print(list[::8][1])",
     "print(list[::8])","print(list[8:9])"],
@@ -42,7 +42,7 @@
     "print(list[8:9])":"Korrekt!, vi kommer få en lista som bara innehåller talet 9."
     }
   },{
-  "question": "list = [3,8,10,16] \nVilken kod skriver ut listan baklänges?",
+  "question": "list = [3,8,10,16] \nVilken kod skriver ut listan baklänges? (2 rätta svar)",
   "answer": ["print(list[::-1])","print(list[3::-1])"],
   "options": ["print(list[-1::])","print(list[::-1])","print(list[3:-1:])","print(list[3:0:-1])","print(list[3::-1])"],
   "feedback": {
