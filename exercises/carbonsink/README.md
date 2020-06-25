@@ -20,4 +20,4 @@ Programmeringsmässigt är tanken att man ska få grunderna till for-loopar och 
 
 
 # Kör uppgiften i Colab
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/forest_fires/Skogsbrand.ipynb)
