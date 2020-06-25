@@ -16,13 +16,42 @@ html,body {
   font-family: Helvetica;
 }
 
+/* Remove theme specific backslash before headlines */
+#main-content h1::before{
+  padding-right: 0.3em;
+  margin-left: -0.5em;
+  content: "";
+}
+
 #main-content h2 {
   font-family: Helvetica;
 }
+
+#main-content h2::before{
+  padding-right: 0.3em;
+  margin-left: -0.5em;
+  content: "";
+}
+
 #main-content h3 {
   font-family: Helvetica;
 }
 
+#main-content h3::before{
+  padding-right: 0.3em;
+  margin-left: -0.5em;
+  content: "";
+}
+
+#main-content h4 {
+  font-family: Helvetica;
+}
+
+#main-content h5::before{
+  padding-right: 0.3em;
+  margin-left: -0.5em;
+  content: "";
+}
 
 
 /* Styling and placing of the navigation bar */
