@@ -106,3 +106,19 @@ Vi har hittat ett par buggar och problem som inte lyckats lösas.
 Om ett alternativ i en flervalsfråga innehåller ett `<` slängs texten efter det här tecknet, såvida `<` inte ligger precis i slutet av alternativtexten. Vi tror att det tolkas som början av en html-tag någonstans, men är inte säkra på var/varför. Som en workaround kan man byta ut `<` mot `>`.
 
 Ett problem som dykt upp ibland på vissa datorer är att när man laddar ett quiz så kommer inte frågetexten till alla frågor med. Det saknas text till olika frågor varje gång man laddar quizzet, vi har inte lyckats ta reda på var i koden eller exakt under vilka omständigheter detta uppstår.
+
+## GitHub pages
+
+### Webbläsare
+Hemsidan har testats och fungerar bra i följande webbläsare 2020-06-25: Google Chrome, Microsoft Edge, Safari, Firefox, Opera.
+
+### Filstruktur
+/\_data innehåller för tillfället endast navigation.yml som styr navigationsmenyn. Om di vill ha fler flikar i menyn så är det navigation.yml som ska ändras.
+
+/\_includes innehåller bilder som används på hemsidan och html moduler för exempelvis navigationbar och footer. Alla moduler bör ligga här.
+
+/\_layouts innehåller alla layouts. För tillfället finns endast default layouten som används på alla sidor.
+
+assets/css/style.css innehåller all css för hemsidan. Filen importar all css från det valda jekyll temat som grund och kan sedan ändras genom att lägga till nya css regler som skriver över temats.
+
+Gemfile används för lokal utveckling av hemsidan (vilket i princip är ett måste då du annars behöver pusha kod för att se dina ändringar).
