@@ -1,0 +1,110 @@
+[
+  {
+    "question": "Varf\u00f6r blev utsl\u00e4ppen l\u00e4gre 1945?",
+    "options": [
+      "K\u00e4rnkraften uppfanns och togs i bruk",
+      "Vindkraften uppfanns och togs i bruk",
+      "Spanska sjukan",
+      "Andra v\u00e4rdldskriget"
+    ],
+    "feedback": {
+      "K\u00e4rnkraften uppfanns och togs i bruk": "Fel, det f\u00f6rsta kr\u00e4nkraftverket kom i bruk f\u00f6rst 1954",
+      "Vindkraften uppfanns och togs i bruk": "Fel, vindkraft har funnits l\u00e4ngre",
+      "Spanska sjukan": "Fel, Spanska sjukan d\u00f6dade ca 5% av v\u00e4rldens befolkning mellan 1918-1920",
+      "Andra v\u00e4rdldskriget": "R\u00e4tt, kriget medf\u00f6rde en ekonomisk kris vilket s\u00e4nkte de totala utsl\u00e4ppen"
+    },
+    "answer": [
+      "Andra v\u00e4rdldskriget"
+    ]
+  },
+  {
+    "question": "Vilket land sl\u00e4ppte ut mest koldioxid 2014?",
+    "options": [
+      "USA",
+      "Qatar",
+      "Kina",
+      "Indien"
+    ],
+    "feedback": {
+      "USA": "Fel, USA sl\u00e4ppte ut n\u00e4st mest",
+      "Qatar": "Fel, de sl\u00e4ppte ut mest per capita",
+      "Kina": "R\u00e4tt! Det st\u00e4mmer!",
+      "Indien": "Fel, Indien sl\u00e4pper ut mer f\u00f6r varje \u00e5r, men \u00e4r inte i toppen \u00e4n"
+    },
+    "answer": [
+      "Kina"
+    ]
+  },
+  {
+    "question": "Vilket land har sl\u00e4ppt ut mest koldioxid totalt sen m\u00e4tningarna b\u00f6rjade 1800?",
+    "options": [
+      "USA",
+      "Qatar",
+      "Kina",
+      "Indien"
+    ],
+    "feedback": {
+      "USA": "Korrekt, USA har sl\u00e4ppt ut mycket under en l\u00e4ngre period \u00e4n exempelvis Kina",
+      "Qatar": "Fel, Qatar sl\u00e4pper ut mycket om man r\u00e4knar per capita",
+      "Kina": "Fel, Kina industrialliserades senare \u00e4n USA",
+      "Indien": "Fel, Indien har sl\u00e4ppt ut mindre \u00e4n b\u00e5de USA och Kina"
+    },
+    "answer": [
+      "USA"
+    ]
+  },
+  {
+    "question": "Vilket land sl\u00e4ppte ut mest koldioxid \u00e5r 1880?",
+    "options": [
+      "USA",
+      "Storbritannien",
+      "Tyskland",
+      "Ryssland"
+    ],
+    "feedback": {
+      "USA": "Fel, USA gick om Storbritannien ca \u00e5r 1887",
+      "Storbritannien": "R\u00e4tt! Storbritannien var den st\u00f6rsta eknomin \u00e5r 1880",
+      "Tyskland": "Fel, Tyskland var en stor ekonomi men inte st\u00f6rst",
+      "Ryssland": "Fel, Ryssland hade inte kommit ig\u00e5ng ordentligt \u00e4n"
+    },
+    "answer": [
+      "Storbritannien"
+    ]
+  },
+  {
+    "question": "Hur mycket sl\u00e4pper v\u00e4rdlens befolkning ut i genomsnitt per capita?",
+    "options": [
+      "4,5 ton",
+      "1,5 ton",
+      "16,5 ton",
+      "6 ton"
+    ],
+    "feedback": {
+      "4,5 ton": "Korrekt!",
+      "1,5 ton": "Fel, tyv\u00e4rr sl\u00e4pper vi ut mer",
+      "16,5 ton": "Fel, detta motsvarar USA's utsl\u00e4pp per capita",
+      "6 ton": "Fel, vi sl\u00e4pper ut lite mindre faktiskt"
+    },
+    "answer": [
+      "4,5 ton"
+    ]
+  },
+  {
+    "question": "Vilken v\u00e4rldsdel ser ut att ha l\u00e4gst utsl\u00e4pp per capita?",
+    "options": [
+      "Europa",
+      "Amerika",
+      "Afrika",
+      "Asien"
+    ],
+    "feedback": {
+      "Europa": "Fel, majoriteten av de europeiska l\u00e4nderna sl\u00e4pper ut ganska mycket",
+      "Amerika": "Fel, vissa l\u00e4nder i amerika sl\u00e4pper ut v\u00e4dligt mycket medan andra sl\u00e4pper ut mindre",
+      "Afrika": "R\u00e4tt! Afrika sl\u00e4pper ut minst per capita, vissa l\u00e4nder sl\u00e4pper till och med ut mindre \u00e4n 0,1 ton per capita",
+      "Asien": "Fel, m\u00e5nga asiatiska l\u00e4nder tillh\u00f6r v\u00e4rdlens st\u00f6rsta ekonomier"
+    },
+    "answer": [
+      "Afrika"
+    ]
+  }
+]
