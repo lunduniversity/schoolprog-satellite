@@ -47,3 +47,4 @@ Här finns snabbreferenser för Python-konstruktioner:
 ## Fler uppdrag
 
 Vi utvecklar fler uppdrag efter hand, och vi har [ett antal prototyp-uppdrag](PROTOTYP.md) som ännu inte bearbetats pedagogiskt.
+Under juni 2020 skapades även [fler uppdrag](JUNE2020.md), som inte heller är bearbetade än.
