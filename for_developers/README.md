@@ -95,8 +95,6 @@ Den data som används i uppgifterna finns antingen i samma mapp som uppgiften el
 
 För Väderdata har data hämtats från SMHI. Scripten för detta finns i katalogen `smhidata`.
 
-För växthusgasutsläpp (regional emissions) har geometridata hämtats från lantmäteriet på https://www.lantmateriet.se/sv/Kartor-och-geografisk-information/geodataprodukter/produktlista/sverigekartor/ och konverterats till geojson format med `lantmateriet_data_to_geojson.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/for_developers/lantmateriet_data_to_geojson.ipynb).
-
 ## Quizzar
 Quizzar kan genereras till uppgifterna i colab med hjälp av `quiz.py`. Tanken är att man laddar ner `quiz.py` och en json-fil med uppgifter till colaben. Sen kan man generera ett quiz inne i colab. Exempel på hur detta görs finns i uppgiften `regional_greenhouse_emissions`.
 

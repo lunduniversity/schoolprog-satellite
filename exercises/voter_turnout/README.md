@@ -14,4 +14,4 @@ Följande programmeringskoncept berörs:
 Övningen använder data från SCB statistikdatabasen.
 
 # Tillgång till övningen
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/valdeltagande/valdeltagande.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/voter_turnout/valdeltagande.ipynb)
