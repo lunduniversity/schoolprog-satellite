@@ -1,3 +1,3 @@
-# Import gapminder data
+# Importera data från Gapminder
 
-How to import gapminder data to plotly express
+Hur importerades datan till plotly express?
