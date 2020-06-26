@@ -1,4 +1,4 @@
-# Växthusgas utsläpp per län 
+# Växthusgasutsläpp per län 
 
 I denna uppgfit kollar vi på koldioxid och metan utsläpp för valfritt län i Sverige. Vi studerar först hur koldioxidutsläppen utsläppen har förändrats under de senare åren, antingen för hela länet eller en specifik kommun. Därefter kollar vi även på metangas utsläpp och gör en omvandling till koldioxidekvivalenter för att lättare kunna jämföra de två gasernas påverkan. I slutet av uppgiften kollar vi på alla länets kommuner samtidigt och analyserar skillnader i deras utsläpp.
 
