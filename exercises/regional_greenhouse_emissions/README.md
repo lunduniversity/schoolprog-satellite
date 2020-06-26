@@ -12,7 +12,7 @@ Programmeringsmässigt berörs följande koncept:
 
 Följande miljödata berörs:
   - Hur olika kommuners koldioxidutsläpp skiljer sig åt och vad det kan bero på
-  - Hur olika kommuners metangas-utsläpp skiljer sig åt och vad det kan bero på
+  - Hur olika kommuners metanutsläpp skiljer sig åt och vad det kan bero på
   - Begreppet koldioxidekvivalent och att olika växthusgaser påverkar olika mycket
 
 # Kör uppgiften i Colab 
@@ -33,8 +33,8 @@ Programmeringsmässigt berörs följande koncept:
   - Visualisera data med färgskalor
 
 Följande miljödata berörs:
-  - Hur olika kommuners växthusgas-utsläpp skiljer sig åt och vad det kan bero på
-  - Hur växthusgas-utsläpp har förändrats över tid i Sverige
+  - Hur olika kommuners växthusgasutsläpp skiljer sig åt och vad det kan bero på
+  - Hur växthusgasutsläpp har förändrats över tid i Sverige
   - Vilka sektorer som står för olika utsläpp i olika kommuner
 
 # Kör inspirationsuppgiften i Colab 
