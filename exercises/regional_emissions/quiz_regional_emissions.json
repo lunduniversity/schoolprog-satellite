@@ -1,5 +1,5 @@
 [{
-  "question": "list = [5,6,7,8,9,10] \nprint(list[::2]) \nVad skriver koden ovan ut?",
+  "question": "Vad skriver koden nedan ut?\n\n list = [5,6,7,8,9,10]\n print(list[::2])\n",
   "answer": ["[5,7,9]"],
   "options": ["[6,8,10]","[5,7,9]","[5,6]","[9,10]"],
   "feedback": {
@@ -9,7 +9,7 @@
     "[9,10]":"Fel, list[::2] innebär att vi läser varannat värde i listan."
     }
   },{
-  "question": "list = [[1,2,3],[4,5,6],[7,8,9]] \nprint(list[2][1]) \nVad skriver koden ovan ut?",
+  "question": "Vad skriver koden nedan ut?\n\n list = [[1,2,3],[4,5,6],[7,8,9]]\n print(list[2][1])\n",
   "answer": ["8"],
   "options": ["4","2","8","7"],
   "feedback": {
@@ -29,7 +29,7 @@
     "75 kg":"Korrekt! Metan har 25 gånger större påverkan på uppvärmningen än koldioxid."
     }
   },{
-  "question": "list = [1,2,3,4,5,6,7,8,9,10] \nVilka av alternativen skriver ut talet 9? (4 rätta svar)",
+  "question": "Vilka av alternativen skriver ut talet 9? (4 rätta svar)\n\n list = [1,2,3,4,5,6,7,8,9,10]\n",
   "answer": ["print(list[8])","print(list[-2])","print(list[::8][1])","print(list[8:9])"],
   "options": ["print(list[9])","print(list[8])","print(list[-2])","print(list[::8][1])",
     "print(list[::8])","print(list[8:9])"],
@@ -42,7 +42,7 @@
     "print(list[8:9])":"Korrekt!, vi kommer få en lista som bara innehåller talet 9."
     }
   },{
-  "question": "list = [3,8,10,16] \nVilken kod skriver ut listan baklänges? (2 rätta svar)",
+  "question": "Vilken kod skriver ut listan baklänges? (2 rätta svar)\n\n list = [3,8,10,16]\n",
   "answer": ["print(list[::-1])","print(list[3::-1])"],
   "options": ["print(list[-1::])","print(list[::-1])","print(list[3:-1:])","print(list[3:0:-1])","print(list[3::-1])"],
   "feedback": {
