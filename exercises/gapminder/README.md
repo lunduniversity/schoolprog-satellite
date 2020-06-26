@@ -6,7 +6,7 @@ Programmeringsmässigt berörs följande koncept:
   - Tilldela värden till variabler
   - Visualisera data med hjälp av plotly express
 
-Följande miljödata berörs:
+Följande miljöfrågor berörs:
   - Hur olika länders utsläpp av växthusgaser (CO2) skiljer sig åt och vad det kan bero på
   - Hur växthusgasutsläpp har förändrats över tid i Världen
   - Vilka länder som står för majoriteten av världens utsläpp
