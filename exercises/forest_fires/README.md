@@ -1,10 +1,10 @@
 # Skogsbränder
 
-I denna uppgift studerar vi satellitbilder tagna över områden som har drabbats hårt av skogsbränder. Vi kollar på skogsbranden i Kårböle som var en av många bränder i Sverige under 2018 och skogsbranden på Kangaroo island som var en av flera bränder som härjade i Australien i årskiftet 2019/2020. Genom att kolla på bilder innan och efter bränderna försöker vi uppskatta hur stor yta som blev drabbad genom att ringa in området med polygoner. 
+I denna uppgift studerar vi satellitbilder tagna över områden som har drabbats hårt av skogsbränder. Vi kollar på skogsbranden i Kårböle som var en av många bränder i Sverige under 2018 och skogsbranden på Kangaroo island som var en av flera bränder som härjade i Australien i årskiftet 2019/2020. Genom att kolla på bilder innan och efter bränderna försöker vi uppskatta hur stor yta som blev drabbad genom att ringa in området med polygoner.
 
 Programmeringsmässigt berörs följande koncept:
   - Plotta bilder utifrån matriser av pixelvärden.
-  - Polygoner 
+  - Polygoner
   - Små funktioner
 
 Följande naturorienterandekoncept berörs:
@@ -14,7 +14,7 @@ Följande naturorienterandekoncept berörs:
 
 # Kör uppgiften i Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/forest_fires/Skogsbrand.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/forest_fires/skogsbrander.ipynb)
 
 # Data
 

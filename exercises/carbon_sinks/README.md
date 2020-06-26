@@ -5,8 +5,8 @@ Datan innehåller de årliga nettoupptagen/utsläppen uppdelade i 6 kolpooler so
 - döda träd och växter (dött organiskt material)
 - jordar (mineraljord)
 - träprodukter
-- torvmarker, m.m. (organogen jord) 
-- Övriga utsläpp (bränder och gödsling mm) 
+- torvmarker, m.m. (organogen jord)
+- Övriga utsläpp (bränder och gödsling mm)
 
 Till att börja med får man dela upp kolpoolerna med avseende på om de kan räknas som kolsänkor eller kolkällor. Sedan skapas två cirkeldiagram, ett för kolsänkorna och ett för kolkällorna. Slutligen får man undersöka varje kolpool var för sig i en graf och får några tillhörande frågor att besvara.
 
@@ -14,5 +14,4 @@ Programmeringsmässigt är tanken att man ska få grunderna till for-loopar och 
 
 
 # Kör uppgiften i Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/carbonsink/carbonsink.ipynb)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/carbon_sinks/kolkallor.ipynb)
