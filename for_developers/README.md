@@ -100,6 +100,24 @@ För växthusgasutsläpp (regional emissions) har geometridata hämtats från la
 ## Quizzar
 Quizzar kan genereras till uppgifterna i colab med hjälp av `quiz.py`. Tanken är att man laddar ner `quiz.py` och en json-fil med uppgifter till colaben. Sen kan man generera ett quiz inne i colab. Exempel på hur detta görs finns i uppgiften `regional_greenhouse_emissions`.
 
+### Quiz format
+Antingen kan quizzet skrivas direkt som en json-fil. Se någon av de andra quizzen för exakt format. Det finns även en fil `jsonparser.py` som tar en txt-fil och gör om den till en json-fil med rätt format. txt-filen ska då vara på samma format som `example_quiz.txt`. Frågor är separerade från varandra med dubbla semikolon. Varje fråge-objekt inleds med frågan följt av ett semikolon. Svarsalternativen kommer sedan på formatet alternativ:feedback:True/False. Svarsalternativen skiljs även dem åt med ett semikolon. Litet exempel:
+
+Question1?;
+alternativ:feedback:True;
+alternativ2:feedback:False;
+alternativ3:feedback:False
+;;
+Question2?;
+alternativ:feedback:False;
+alternativ2:feedback:True;
+alternativ3:feedback:True
+
+Fråga 2 kommer här bli en multiple choice fråga då det finns mer än ett rätt alternativ.
+För större exempel se `example_quiz.txt`.
+`jsonparser.py` tar en fil som heter `quiz.txt` och genererar `quiz.json`. (Eller editera `jsonparser.py` så den använder andra filnamn.)
+
+
 ### Buggar och problem
 Vi har hittat ett par buggar och problem som inte lyckats lösas.
 

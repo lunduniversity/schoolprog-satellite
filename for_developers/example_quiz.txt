@@ -1,0 +1,35 @@
+Varför blev utsläppen lägre 1945?;
+Kärnkraften uppfanns och togs i bruk:Fel, det första kränkraftverket kom i bruk först 1954:False;
+Vindkraften uppfanns och togs i bruk:Fel, vindkraft har funnits längre:False;
+Spanska sjukan: Fel, Spanska sjukan dödade ca 5% av världens befolkning mellan 1918-1920:False;
+Andra värdldskriget: Rätt, kriget medförde en ekonomisk kris vilket sänkte de totala utsläppen:True
+;;
+Vilket land släppte ut mest koldioxid 2014?;
+USA: Fel, USA släppte ut näst mest:False;
+Qatar: Fel, de släppte ut mest per capita:False;
+Kina: Rätt! Det stämmer!:True;
+Indien: Fel, Indien släpper ut mer för varje år, men är inte i toppen än:False
+;;
+Vilket land har släppt ut mest koldioxid totalt sen mätningarna började 1800?;
+USA: Korrekt, USA har släppt ut mycket under en längre period än exempelvis Kina:True;
+Qatar: Fel, Qatar släpper ut mycket om man räknar per capita:False;
+Kina: Fel, Kina industrialliserades senare än USA:False;
+Indien: Fel, Indien har släppt ut mindre än både USA och Kina:False
+;;
+Vilket land släppte ut mest koldioxid år 1880?;
+USA:Fel, USA gick om Storbritannien ca år 1887:False;
+Storbritannien:Rätt! Storbritannien var den största eknomin år 1880:True;
+Tyskland: Fel, Tyskland var en stor ekonomi men inte störst:False;
+Ryssland: Fel, Ryssland hade inte kommit igång ordentligt än:False
+;;
+Hur mycket släpper värdlens befolkning ut i genomsnitt per capita?;
+4,5 ton: Korrekt!:True;
+1,5 ton: Fel, tyvärr släpper vi ut mer:False;
+16,5 ton: Fel, detta motsvarar USA's utsläpp per capita:False;
+6 ton: Fel, vi släpper ut lite mindre faktiskt:False
+;;
+Vilken världsdel ser ut att ha lägst utsläpp per capita?;
+Europa: Fel, majoriteten av de europeiska länderna släpper ut ganska mycket:False;
+Amerika: Fel, vissa länder i amerika släpper ut vädligt mycket medan andra släpper ut mindre:False;
+Afrika: Rätt! Afrika släpper ut minst per capita, vissa länder släpper till och med ut mindre än 0,1 ton per capita:True;
+Asien: Fel, många asiatiska länder tillhör värdlens största ekonomier:False 
