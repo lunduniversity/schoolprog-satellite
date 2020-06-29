@@ -1,23 +1,5 @@
 [
   {
-    "question": "Varf\u00f6r blev utsl\u00e4ppen l\u00e4gre 1945?",
-    "options": [
-      "K\u00e4rnkraften uppfanns och togs i bruk",
-      "Vindkraften uppfanns och togs i bruk",
-      "Spanska sjukan",
-      "Andra v\u00e4rdldskriget"
-    ],
-    "feedback": {
-      "K\u00e4rnkraften uppfanns och togs i bruk": "Fel, det f\u00f6rsta kr\u00e4nkraftverket kom i bruk f\u00f6rst 1954",
-      "Vindkraften uppfanns och togs i bruk": "Fel, vindkraft har funnits l\u00e4ngre",
-      "Spanska sjukan": "Fel, Spanska sjukan d\u00f6dade ca 5% av v\u00e4rldens befolkning mellan 1918-1920",
-      "Andra v\u00e4rdldskriget": "R\u00e4tt, kriget medf\u00f6rde en ekonomisk kris vilket s\u00e4nkte de totala utsl\u00e4ppen"
-    },
-    "answer": [
-      "Andra v\u00e4rdldskriget"
-    ]
-  },
-  {
     "question": "Vilket land sl\u00e4ppte ut mest koldioxid 2014?",
     "options": [
       "USA",
