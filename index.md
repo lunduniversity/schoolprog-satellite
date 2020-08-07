@@ -2,20 +2,21 @@
 layout: default
 ---
 
-# Välkommen till våra övningar
+# LU Miljödataprogrammering
+Programmeringsövningar med satellitdata och annan miljödata för högstadium och gymnasium. Utvecklat i samarbete mellan Lunds universitet (LU), ICOS ERIC och  Vattenhallen Science Center.
 
-Här hittar du vårt [övningsmaterial](exercises/README.md).
+Du programmerar i Python. Inga programmeringsförkunskaper krävs. Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen.
 
-Prova gärna också våra inspirationsövningar:
+## Inspirationsövningar
+Prova gärna vår aktivitetspresentation [Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present) där du får programmera lite grann, får insikter om koldioxidcyklen och koldioxidutsläpp och kan göra en rolig quiz! Direktlänkar:
 
-  * [Keelingkurvan - inspirationsaktivitet](exercises/co2/keeling_inspiration.md)
-  * [Kolcykeln - inspirationsaktivitet](exercises/kolcykeln_enkel/kolcykeln_svb.md)
-  * [Koll på kol - quiz](exercises/quiz/co2_quiz/kollpakol.md)
+* [Keelingkurvan (colab) - inspirationsaktivitet](exercises/co2/keeling_inspiration.md)
+* [Kolcykeln (colab) - inspirationsaktivitet](exercises/kolcykeln_enkel/kolcykeln_svb.md)
+* [Koll på kol - quiz](exercises/quiz/co2_quiz/kollpakol.md)
 
-Inspirationsövningarna finns också tillgängliga från vår aktivitetspresentation [Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present).
+## Uppdrag för klassrummet
+I [uppdragsfliken](exercises/README.md) hittar du programmeringsuppdragen. Varje uppdrag tar 1-2 timmar att utföra. Direktlänkar till de tre första:
 
-## License
-* Copyright &copy; 2019-2020. Dept. of Computer Science at Lund University, Lund, Sweden.
-* Copyright © 2019-2020 ICOS ERIC
-* This work is licensed under a
-Creative Commons Attribution 4.0 International License ([CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)).
+* [Väderdata A (repl.it)](exercises/weatherdata/Weatherdata_A_replit.md)
+* [Väderdata B (repl.it)](exercises/weatherdata/Weatherdata_B_replit.md)
+* [Kolcykeln (colab)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)

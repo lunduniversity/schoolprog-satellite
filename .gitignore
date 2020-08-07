@@ -1,2 +1,7 @@
 # Mac
 .DS_Store
+
+# Generated files when testing github pages locally
+_site/
+.sass-cache/
+Gemfile.lock
