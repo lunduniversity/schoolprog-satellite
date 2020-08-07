@@ -1,19 +1,22 @@
 ---
 layout: default
 ---
-# Handledning
-Handledning angående uppgifterna för miljödata.
+# För lärare
 Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid Science Centers.
 
 ## Pedagogiska ideer
 * Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
 * Jupyter/Colab-övningarna använder oftast en del färdiga funktioner och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering. Man lär sig också lite programmering, men de färdiga funktionerna förklaras inte.
 
-## Allmänna förberedelser
+## Plattformar
 
-* Se till att du har lite egen programmeringsbakgrund i Python, se råd [här](prerequisites.md).
+**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på repl.it, men det är bättre att registrera ett konto. repl.it-övningarna använder ren python, och vill man använda en annan Python-miljö så går det fint.
 
-* Kör själv igenom den uppgift du vill att eleverna ska lösa. För repl.it-uppgifterna finns lösningarna finns som utvikbara flikar i uppgiften.
+**Colab** är en online-programmeringsmiljö för Python där man använder "Jupyter notebooks". En Jupyter notebook innehåller både text, bilder och körbara kodrutor. Det gör det enkelt att kombinera uppgifter och förklaringar med koden. För att använda Colab behöver man ett google-konto.
+
+## Hur mycket Python behöver du kunna?
+
+Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare är det bra om du kan enkel programmering i Python med variabler, tilldelningssatser, for-loopar, if-satser, funktioner, och listor. [Titta här för att se om du har lagom förkunskaper](prerequisites.md). Du kan också prova uppdragen direkt. Lösningsförslag ingår i de flesta av uppgifterna.
 
 ## Förberedelser inför en övning med elever
 
@@ -106,4 +109,6 @@ För de flesta av uppdragen har vi preparerat datan så att den ska vara lättar
 
 Ofta krävs det en hel del programmering för att hämta och förbehandla data.
 
-Information om hur vi gjort för de olika uppgifterna finns i samma katalog som uppgiften, i en fil `CONTRIBUTING.md`. T.ex. finns information om hur SMHI-datan preparerats i [weatherdata/CONTRIBUTING.md](weatherdata/CONTRIBUTING.md).
+Är du intresserad av hur vi har hämtat data och vill göra liknande egna uppgifter, se [vårt grundmaterial på github](https://github.com/lunduniversity/schoolprog-satellite) (webb-sidorna är genererade från detta grundmaterial). Då behöver du dock en hel del programmeringsvana.
+
+Information om hur vi gjort för de olika uppgifterna finns i samma katalog som uppgiften, i en fil `CONTRIBUTING.md`. T.ex. finns information om hur SMHI-datan preparerats i [weatherdata/CONTRIBUTING.md](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/weatherdata/CONTRIBUTING.md).
