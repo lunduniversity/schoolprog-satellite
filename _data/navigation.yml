@@ -1,10 +1,13 @@
 
 # Site navigation links
-- title: Hem
+- title: LU miljödataprogrammering
   url: /
 
-- title: Uppgifter
+- title: Uppdrag
   url: /exercises/README.html
 
-- title: Handledning
+- title: För lärare
   url: /exercises/handledning.html
+
+- title: Om sidan
+  url: /about.html
