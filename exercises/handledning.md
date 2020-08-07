@@ -4,15 +4,15 @@ layout: default
 # För lärare
 Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid Science Centers.
 
-## Pedagogiska ideer
-* Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
-* Jupyter/Colab-övningarna använder oftast en del färdiga funktioner och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering. Man lär sig också lite programmering, men de färdiga funktionerna förklaras inte.
-
 ## Plattformar
 
-**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på repl.it, men det är bättre att registrera ett konto. repl.it-övningarna använder ren python, och vill man använda en annan Python-miljö så går det fint.
+**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på repl.it, men det är bättre att registrera ett konto. repl.it-övningarna använder ren python, och vill man använda en annan python-miljö så går det fint.
 
 **Colab** är en online-programmeringsmiljö för Python där man använder "Jupyter notebooks". En Jupyter notebook innehåller både text, bilder och körbara kodrutor. Det gör det enkelt att kombinera uppgifter och förklaringar med koden. För att använda Colab behöver man ett google-konto.
+
+## Pedagogiska ideer
+* Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
+* Colab-övningarna använder oftast en del färdiga funktioner och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering. Man lär sig också lite programmering, men de färdiga funktionerna förklaras inte.
 
 ## Hur mycket Python behöver du kunna?
 

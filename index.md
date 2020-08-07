@@ -18,7 +18,7 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen. För Colab krävs att du har ett google-konto.
 
 ## Inspirationsövningar
-Prova gärna vår aktivitetspresentation [Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present) där du får programmera lite grann, får insikter om koldioxidcyklen och koldioxidutsläpp och kan göra en rolig quiz! Direktlänkar:
+Prova gärna vår aktivitetspresentation [Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present) där du får programmera lite grann, får insikter om koldioxidcyklen och koldioxidutsläpp och kan göra en rolig quiz! Varje aktivitet tar 10-20 minuter. Direktlänkar:
 
 * [Keelingkurvan (colab) - inspirationsaktivitet](exercises/co2/keeling_inspiration.md)
 * [Kolcykeln (colab) - inspirationsaktivitet](exercises/kolcykeln_enkel/kolcykeln_svb.md)
