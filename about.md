@@ -22,7 +22,7 @@ Projekten har finansierats av
 
 ## Copyright och licens
 
-Copyright &copy; 2018-2020. Lunds universitet och ICOS ERIC.
+Copyright &copy; 2019-2020. Lunds universitet och ICOS ERIC.
 
 Materialet är licensierat under International Creative Commons Attribution 4.0 ([CC by 4.0](https://creativecommons.org/licenses/by/4.0/)).
 Det betyder att du får dela och adaptera materialet, förutsatt att du anger källan.
