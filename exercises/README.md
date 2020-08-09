@@ -29,8 +29,3 @@ Här finns snabbreferenser för Python-konstruktioner:
 * [Snabbreferens för grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
 * [Snabbreferens för bibliotek vi använder i uppgifterna](snabbreferens.md) (filer, internet requests, numpy, matplotlib)
 -->
-
-## Fler uppdrag
-
-Vi utvecklar fler uppdrag efter hand, och vi har [ett antal prototyp-uppdrag](PROTOTYP.md) som ännu inte bearbetats pedagogiskt.
-Under juni 2020 skapades även [fler uppdrag](JUNE2020.md), som inte heller är bearbetade än.

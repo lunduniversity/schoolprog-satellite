@@ -1,7 +1,7 @@
-# Förkunskaper för uppdragen
+# Hjälp: Förkunskaper för uppdragen
 
 ## Innan du börjar med uppdragen
-Förstår du hur detta program fungerar och vad det skriver ut? I så fall har du lagom förkunskaper.
+Om du använder materialet utan handledning kan du behöva lite grundläggande förkunskaper om Python. Förstår du hur detta program fungerar och vad det skriver ut? I så fall har du lagom förkunskaper.
 
 ```python
 import matplotlib.pyplot as plt

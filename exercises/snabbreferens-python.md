@@ -1,4 +1,6 @@
-Denna snabbreferens innehåller vanliga konstruktioner för Python 3.6. För mer information, se t.ex. [The Python Tutorial](https://docs.python.org/3.6/tutorial/index.html).
+# Hjälp: Snabbreferens för Python
+
+Denna snabbreferens innehåller vanliga konstruktioner för Python 3.6. För mer information, se t.ex. den officiella dokumentationen [The Python Tutorial](https://docs.python.org/3.6/tutorial/index.html).
 
 ## Kommentarer
 ```python
