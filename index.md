@@ -30,5 +30,7 @@ I [uppdragsfliken](exercises/README.md) hittar du programmeringsuppdragen. Varje
 * [Väderdata B (repl.it)](exercises/weatherdata/Weatherdata_B_replit.md)
 * [Kolcykeln (colab)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)
 
+Behöver du hjälp med Python, se [hjälp-fliken](exercises/help.md).
+
 ## Information för lärare
 Är du pedagog (eller vill göra uppdragen på egen hand, utan handledning), se fliken [för lärare](exercises/handledning.md).

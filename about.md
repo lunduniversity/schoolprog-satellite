@@ -25,7 +25,7 @@ Projekten har finansierats av
 Copyright &copy; 2019-2020. Lunds universitet och ICOS Carbon Portal.
 
 Materialet är licensierat under International Creative Commons Attribution 4.0 ([CC by 4.0](https://creativecommons.org/licenses/by/4.0/)).
-Det betyder att du får dela och adaptera materialet, förutsatt att du anger källan.
+Det betyder att du får dela och anpassa materialet, förutsatt att du anger källan.
 
 ## Källkod och webbsidor
 
