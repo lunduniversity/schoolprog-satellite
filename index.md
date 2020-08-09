@@ -32,7 +32,7 @@ I [uppdragsfliken](exercises/README.md) hittar du programmeringsuppdragen. Varje
 
 Behöver du hjälp med Python, se [hjälp-fliken](exercises/help.md).
 
-Det finns även ett antal prototyp-uppdrag som ännu inte är bearbetade pedagogiskt, se [mer-fliken](exercises(more.md))
+Det finns även ett antal prototyp-uppdrag som ännu inte är bearbetade pedagogiskt, se [mer-fliken](exercises/more.md).
 
 ## Information för lärare
 Är du pedagog (eller vill göra uppdragen på egen hand, utan handledning), se fliken [för lärare](exercises/handledning.md).

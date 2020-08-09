@@ -65,7 +65,7 @@ För att bedöma vilka pixlar som innehåller frisk vegetation används *NDVI* -
     NDVI = ---------
            NIR + Red
 
-Formeln ger alltid ett värde mellan -1 och 1.  Ju högre värde, desto friskare och tätare vegetation. Här är exempel på typiska värden från olika typer av terräng (enligt [https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index](https://www.sentinel-hub.com/eoproducts/ndvi-normalized-difference-vegetation-index)):
+Formeln ger alltid ett värde mellan -1 och 1.  Ju högre värde, desto friskare och tätare vegetation. Här är exempel på typiska värden från olika typer av terräng (enligt [https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/](https://custom-scripts.sentinel-hub.com/landsat-8/ndvi/)):
 
 |Terräng|Typiskt ndvi|
 |:------|:-----------|
