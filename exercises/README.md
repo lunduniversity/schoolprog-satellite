@@ -23,11 +23,12 @@ Uppgifterna kan göras i den ordning de är listade, men det går också bra att
 
 <!--|Keelingkurvan B (repl.it)(TBA)<br>...|listor, plot|nyckel-värdetabeller|matplotlib|-->
 
+<!--
 ## Snabbreferenser
 Här finns snabbreferenser för Python-konstruktioner:
 * [Snabbreferens för grundläggande konstruktioner](https://lunduniversity.github.io/schoolprog/cheatsheet/python/) (variabler, typer, listor, loopar, funktioner, etc.)
 * [Snabbreferens för bibliotek vi använder i uppgifterna](snabbreferens.md) (filer, internet requests, numpy, matplotlib)
-
+-->
 
 ## Fler uppdrag
 
