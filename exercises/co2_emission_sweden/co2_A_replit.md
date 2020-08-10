@@ -750,8 +750,8 @@ Svar
 </summary>
 <p>Sverige importerar stora mängder varor som odlas eller tillverkas i andra länder, och motsvarande utsläpp är inte med. Dessutom reser vi mycket, och flyger man från andra länder är de utsläppen inte heller med i datan vi har tittat på. Ett par länkar:
 <ul>
-<li><a href="https://www.svt.se/nyheter/vetenskap/svenskars-klimatpaverkan-utomlands-allt-storre">https://www.svt.se/nyheter/vetenskap/svenskars-klimatpaverkan-utomlands-allt-storre</a>
-<li><a href="https://www.naturvardsverket.se/Nyheter-och-pressmeddelanden/Svensk-konsumtion-orsakar-stora-utslapp-i-utlandet-/">https://www.naturvardsverket.se/Nyheter-och-pressmeddelanden/Svensk-konsumtion-orsakar-stora-utslapp-i-utlandet-/</a>
+<li><a href="https://www.svt.se/nyheter/vetenskap/svenskars-klimatpaverkan-utomlands-allt-storre">https://www.svt.se/nyheter/vetenskap/svenskars-klimatpaverkan-utomlands-allt-storre</a></li>
+<li><a href="https://www.naturvardsverket.se/Nyheter-och-pressmeddelanden/Svensk-konsumtion-orsakar-stora-utslapp-i-utlandet-/">https://www.naturvardsverket.se/Nyheter-och-pressmeddelanden/Svensk-konsumtion-orsakar-stora-utslapp-i-utlandet-/</a></li>
 </ul>
 </p>
 </details>

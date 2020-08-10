@@ -217,6 +217,28 @@ Lösning
 
 Om du får samma resultat som tidigare har du *refaktoriserat* koden - du har gjort koden tydligare och bättre, men utan att ändra vad som räknas ut.
 
+<details>
+<summary markdown="span">
+Lösning
+</summary>
+<p><pre><code>def read_temps(filename):
+  f = open(filename)
+  data = []
+  for line in f:
+    data.append(float(line))
+  return data
+data2016 = read_temps("lund_juli_2016.txt")
+data2017 = read_temps("lund_juli_2017.txt")
+data2018 = read_temps("lund_juli_2018.txt")
+print(data2016)
+print(data2017)
+print(data2018)
+</code></pre>
+</p>
+</details>
+<p></p>
+
+
 ### 2.2 Städa upp i koden
 
 **Uppdrag 2.2 a** Städa upp din kod så att du tar bort eller kommenterar bort kod som inte behövs i fortsättningen. Det du behöver i fortsättningen är `data2016` `data2017` och `data2018`.

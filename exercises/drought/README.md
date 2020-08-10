@@ -6,6 +6,8 @@ I denna uppgift ska vi se hur växtlighet kan undersökas med hjälp av satellit
 
 Det kan vara svårt att se om en gran mår bra eller dåligt med blotta ögat. Men vi kommer att använda oss av fler färger än de ögat kan se för att undersöka hur växtligheten mår.
 
+Denna uppgift är tänkt att köras på [https://repl.it/languages/python3](https://repl.it/languages/python3)
+
 ## 1. Om satellitbilder
 
 ### 1.1 Pixlar och band
@@ -175,7 +177,7 @@ Lösning
 <p><pre><code>import matplotlib.pyplot as plt
 plt.ion()
 plt.imshow(ndvi)
-plt.savefig(ndvi.png)
+plt.savefig("ndvi.png")
 </code></pre>
 </p>
 </details>
@@ -215,7 +217,7 @@ plt.clim(-1.0, 1.0)
 
 `clim` står för "color limit" och talar om vilket område av värden som skall matchas mot färgskalan. Detta gör att om vi gör två olika plottar, så kommer samma färg att motsvara samma värde.
 
-**Uppdrag 1.4 b:** Lägg till anropet till `clim`. Hur ändrades plotten?
+**Uppdrag 1.4 b:** Lägg till anropet till `clim` (efter `imshow`-anropet). Hur ändrades plotten?
 
 <details>
 <summary markdown="span">

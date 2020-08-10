@@ -117,6 +117,7 @@ Lösningsförslag
 </summary>
 <p><pre><code>import matplotlib.pyplot as plt
 import numpy as np
+plt.ion()
 m = np.array(
   [[0, 1, 1, 1, 0],
    [1, 0, 0, 0, 1],
