@@ -24,8 +24,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 
 * **Skriv helst ut övningen på papper till eleverna.**
   * Med övningen på en utskrift kan eleverna använda hela skärmen för programmering. Annars behöver de ett fönster för uppgiften och ett för programmeringen.
-  * Skriv helst ut från en Chrome-browser. För andra browsers kan det bli för stor font så att vissa kodrader klipps.
-  * Eleverna ska arbeta i par - det räcker med en utskrift och en dator per par.
+  * Det rekommenderas att eleverna arbetar i par - det räcker med en utskrift och en dator per par.
   * Med övningen på papper lockas eleverna inte att tjuvtitta på lösningarna som finns i utfällbara flikar.
   * Med övningen på papper måste eleverna skriva in all kod själv i programmeringsfönstret (i stället för att göra copy-paste), och de lär sig då mer.
 
@@ -56,6 +55,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
     * Sedan skrivs värdet på x ut.
     * Förklara att en variabel är som en låda som kan innehålla ett värde. Vi kan kalla den vad vi vill.
 * Förklara och visa att programmet körs när man trycker på Run.
+* Om du vill kan ni göra första uppgifterna gemensamt. Diskutera vad man ska göra. Låt alla skriva in kod och prova. Efter en stund kan eleverna arbeta vidare mer självständigt och i sin egen takt.
 
 ### Övningar med Jupyter notebooks i Colab
 
@@ -90,7 +90,7 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 ```python
 	vår fina sång = ["hej", "tomtegubbar", "slå", "i", "glasen"]
 ```
-(Det går bra med svenska tecken och blanktecken i strängar, men inte i variabelnamn.)
+(Variabeln kan inte heta "vår fina sång": det går bra med svenska tecken och blanktecken i strängar, men inte i variabelnamn. Variabeln kan t.ex. heta "song" i stället.)
 
 * Använder vanliga parenteser i stället för hakparenteser för listor. Rätt mycket av Väderdata A kan fungera ändå (det blir s.k. “tupler” i stället för listor). Men tupler kan inte ändras, så i uppgift Väderdata B, när man gör “append” på en lista, så fungerar det inte med tupler.
 
@@ -112,3 +112,6 @@ Ofta krävs det en hel del programmering för att hämta och förbehandla data.
 Är du intresserad av hur vi har hämtat data och vill göra liknande egna uppgifter, se [vårt grundmaterial på github](https://github.com/lunduniversity/schoolprog-satellite) (webb-sidorna är genererade från detta grundmaterial). Då behöver du dock en hel del programmeringsvana.
 
 Information om hur vi gjort för de olika uppgifterna finns i samma katalog som uppgiften, i en fil `CONTRIBUTING.md`. T.ex. finns information om hur SMHI-datan preparerats i [weatherdata/CONTRIBUTING.md](https://github.com/lunduniversity/schoolprog-satellite/blob/master/exercises/weatherdata/CONTRIBUTING.md).
+
+## Workshops för lärare
+Om du jobbar på science center och har workshops för lärare (eller om du är lärare och vill introducera andra lärare), så finns det lite presentationsmaterial på [denna google-drive-mapp](https://docs.google.com/document/d/1LGNCGpyUpq5lSGsrgoX9y2ufhaO8mYUnSVOUfgjyBBs/edit?usp=sharing). Börja med att titta på dokumentet [SSC handledning](https://docs.google.com/document/d/1LGNCGpyUpq5lSGsrgoX9y2ufhaO8mYUnSVOUfgjyBBs/edit?usp=sharing).
