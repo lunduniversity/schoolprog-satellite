@@ -329,17 +329,26 @@ Nu skall vi titta på hur plottning fungerar i Python.
 
 Vi börjar med att plotta en temperaturkurva med dagar på x-axeln och temperaturer på y-axeln.
 
-**Uppdrag 2.1:** Vi använder biblioteket `matplotlib` för att plotta. Provkör följande kod:
+**Uppdrag 2.1a:** Vi använder biblioteket `matplotlib` för att plotta. Provkör följande kod:
 ```python
 import matplotlib.pyplot as plt
+plt.ion() # Sätt på interactive mode
 
 plt.plot(days, temps)
-plt.savefig("temperaturkurva.png")
 ```
 Några saker att observera:
 *   `import`-satsen ger oss access till biblioteket `matplotlib.pyplot` och låter oss använda det lite kortare namnet `plt` för det.
+*   anropet `plt.ion` står för "interactive mode on" och gör att plottar i fortsättningen visas automatiskt i ett fönster.
 *   anropet till `plt.plot`-funktionen anger att vi vill ha  `days` på x-axeln och `temps` på y-axeln.
-*  `plt.savefig()`  sparar plotten som en bild som du kan hitta under *Files* på vänster sida av repl.it-fönstret. Repl.it visar även bilden automatiskt när den sparas. I andra miljöer kan man behöva att använda `plt.show()` för att bilden ska synas.
+
+**Uppdrag 2.1b:** Prova att spara plotten till en fil genom att lägga till följande kommando efter `plot`-anropet:
+
+```python
+plt.savefig("temperaturkurva.png")
+```
+
+Att observera:
+*  `plt.savefig()`  sparar plotten som en bild som du kan hitta under *Files* på vänster sida av repl.it-fönstret. Klickar du på filen ser du samma bild som i automatiska plotten. Att spara till fil på detta sätt kan vara praktiskt speciellt om vi plottar olika bilder, eller om vi vill ladda ner bilden, t.ex. för att skriva ut den.  Klicka på `main.py` för att se koden igen.
 
 ### 2.2 Experimentera med fel vid plottning
 En viktig sak när man plottar är att listorna för x och y-värdena måste vara lika långa. Annars får man ett felmeddelande.
@@ -409,7 +418,7 @@ Parametern `label=...` är ett exempel på en *namngiven* parameter. Namngivna p
 *Tips!*
 Arbeta i små steg: gör en sak i taget och provkör koden efter varje steg så du ser att det blir rätt.
   * Anropa `plt.plot(...)` så att dagarna hamnar på x-axeln och regnmängderna på y-axeln.
-  * Anropa `plt.savefig("regnkurva.png")` för att din plot ska sparas och visas.
+  * Anropa `plt.savefig("regnkurva.png")` för att din plot ska sparas som en fil.
   * Om du har två anrop till `savefig` i ditt program bör du anropa `plt.close()` efter den första `savefig`, så att figuren rensas innan du börjar plotta nästa diagram.
   * Lägg till `o-` som parameter till `plot` för att få prickar för värdena.
   * Lägg till anrop till `plt.xlabel(...)` och `plt.ylabel(...)` för att sätta etiketter på axlarna.

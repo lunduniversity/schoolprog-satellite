@@ -291,6 +291,7 @@ Nu kan vi plotta Keelingkurvan! Vi vill ha `years` på x-axeln och `co2` på y-a
 
 ```python
 import matplotlib.pyplot as plt
+plt.ion()
 plt.plot(years, co2)
 plt.savefig("keeling.png")
 ```

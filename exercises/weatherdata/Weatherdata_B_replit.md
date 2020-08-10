@@ -278,8 +278,9 @@ Nu har vi både x-värden (`days`) och y-värden (`data2016`, `data2017` och `da
 
 Här är lite tips om du glömt detaljer om plottning.
 * Du behöver importera plot-biblioteket
+* Du kan anropa `ion`-funktionen för att sätta på interaktiv mode, så att plotter visas automatiskt.
 * Du behöver anropa `plot`-funktionen
-* Du behöver anropa `savefig`-funktionen för att spara och visa diagrammet.
+* Du kan anropa `savefig`-funktionen för att spara diagrammet som fil.
 
 <details>
 <summary markdown="span">
@@ -288,6 +289,7 @@ Lösning
 <p>
 Här är ett exempel på hur vi kan göra:
 <pre><code>import matplotlib.pyplot as plt
+plt.ion()
 plt.plot(days, data2016)
 plt.xlabel("dag i juli")
 plt.ylabel("medeltemperatur")
@@ -315,6 +317,7 @@ Lösning
 </summary>
 <p>
 <pre><code>import matplotlib.pyplot as plt
+plt.ion()
 plt.plot(days, data2016, "bo-", label="2016")
 plt.plot(days, data2017, "ro-", label="2017")
 plt.plot(days, data2018, "go-", label="2018")

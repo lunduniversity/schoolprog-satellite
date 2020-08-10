@@ -173,6 +173,7 @@ Vi ska nu gå vidare och plotta NDVI-värdena.
 Lösning
 </summary>
 <p><pre><code>import matplotlib.pyplot as plt
+plt.ion()
 plt.imshow(ndvi)
 plt.savefig(ndvi.png)
 </code></pre>
@@ -276,6 +277,7 @@ Vi ska börja med att läsa in filen `data_15.npz` som alltså innehåller data 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
+plt.ion()
 
 bands15 = np.load('bokskogen/data_15.npz')
 ```

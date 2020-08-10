@@ -220,10 +220,11 @@ Finns väldigt många matematiska funktioner som används på liknande sätt, [s
 ## 5. Matplotlib.pyplot
 Det finns otroligt många funktioner i `matplotlib` och vi kommer inte kunna täcka allt här. För ytterligare information: se dessa [tutorials](https://matplotlib.org/3.1.0/tutorials/index.html).
 
-Importera Matplotlib:
+Importera Matplotlib och sätt på interactive mode:
 
 ```python
 import matplotlib.pyplot as plt
+plt.ion()
 ```
 
 ### 5.1 Allmänt om figurer

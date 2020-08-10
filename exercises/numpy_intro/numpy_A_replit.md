@@ -66,6 +66,7 @@ Lösning
 </summary>
 <p><pre><code>import matplotlib.pyplot as plt
 import numpy as np
+plt.ion()
 x = np.array([1, 2, 3, 4, 5])
 y = np.array([1, 4, 9, 16, 25])
 plt.plot(x,y)

@@ -702,7 +702,7 @@ Lösning
 **Uppdrag 5.1 b:** Plotta de totala utsläppen till en fil `totalco2.png`.
 
 *Tips!* Du behöver:
-* importera plot-biblioteket
+* importera plot-biblioteket och slå på interactive mode
 * slå upp y-värdena i `data_by_sector`
 * anropa `plot`-funktionen
 * anropa `savefig`-funktionen för att visa och spara diagrammet
@@ -712,6 +712,7 @@ Lösning
 Lösning
 </summary>
 <p><pre><code>import matplotlib.pyplot as plt
+plt.ion()
 y = data_by_sector["NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)"]
 plt.plot(years, y)
 plt.savefig("totalco2.png")
