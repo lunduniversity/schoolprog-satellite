@@ -20,7 +20,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 
 ## Förberedelser inför en övning med elever
 
-### Övningar med repl.it
+### Förbereda övningar med repl.it
 
 * **Skriv helst ut övningen på papper till eleverna.**
   * Med övningen på en utskrift kan eleverna använda hela skärmen för programmering. Annars behöver de ett fönster för uppgiften och ett för programmeringen.
@@ -31,11 +31,11 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 * **På Science Center, starta datorerna i förväg** och skapa ett fönster med repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på repl.it, så det behövs ingen inloggning.
 * **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
 
-### Övningar med Jupyter notebooks i Colab
+### Förbereda övningar med Colab
 
 * För att köra Colab behöver man vara inloggad med personligt konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
 
-## Själva övningen
+## Att köra övningarna i elevgrupp
 
 * Låt eleverna arbeta två och två. Det är roligare, och de kan hjälpa varandra så att de inte fastnar så lätt.
 * Introduktion om det är första gången ni kör en av uppgifterna:
@@ -43,7 +43,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
     * Med programmering kan man analysera datan och förstå vad som händer i miljön.
     * Nu skall vi lära oss lite om programmering och se hur detta kan gå till.
 
-### Övningar med repl.it
+### Tips för övningar med repl.it
 
 * Innan de sätter igång, använd projektor och visa dem hur de skriver ett enkelt program i repl.it och kör det. Det kan till exempel vara följande program:
 ```python
@@ -57,13 +57,13 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 * Förklara och visa att programmet körs när man trycker på Run.
 * Om du vill kan ni göra första uppgifterna gemensamt. Diskutera vad man ska göra. Låt alla skriva in kod och prova. Efter en stund kan eleverna arbeta vidare mer självständigt och i sin egen takt.
 
-### Övningar med Jupyter notebooks i Colab
+### Tips för övningar med Colab
 
 För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor, och gå igenom de inledande mer teoretiska avsnitten tillsammans. När själva programmeringen börjar kan du låta dem börja arbeta själva (två och två).
 
 ## Några typiska problem och frågor som eleverna kan ha
 
-### Relaterat till tangentbord
+### Problem relaterade till tangentbord
 * Hittar inte hakparenteser `[]` på tangentbordet.
     * På Windows: håll nere Alt-Gr och tryck på tangent märkt med hakparentes.
     * På Mac: Håll nere Alt och tryck på vanlig parentes.
@@ -71,7 +71,7 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
     * På Windows: håll nere Alt-Gr och tryck på tangent märkt med krullparentes.
     * På Mac: Håll nere Shift-Alt och tryck på vanlig parentes.
 
-### Relaterat till repl.it
+### Problem relaterade till repl.it
 
 * Första gången man försöker skriva i ett preparerat repl.it-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
 * Irriterande popup-fönster i repl.it. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
@@ -79,12 +79,12 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 * Ibland tappar man kontakten med repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
 * Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
 
-### Relaterat till Google Colab
+### Problem relaterade till Colab
 * Om meny-alternativen för att köra kod är grå så måste man först trycka på `Connect`-knappen uppe till höger.
 * Om något har gått fel och man tycker att allt ser rätt ut, och man inte förstår vad problemet är, så kan man prova att starta om genom att använda menyn `Runtime -> Restart and run all...`. Detta kan hjälpa speciellt när man kört kodrutorna i oordning, eller när man har experimenterat och råkat förstöra någon variabel som räknats ut tidigare. Genom att köra om från början kommer man ifrån sådana fel.
 * Numren till vänster på kodrutorna visar i vilken ordning de har körts.
 
-### Relaterat till själva Python-programmeringen
+### Problem relaterade till själva Python-programmeringen
 
 * Försöker göra variabelnamn med svenska tecken och blanktecken. Det fungerar inte. T.ex funkar inte:
 ```python

@@ -9,7 +9,7 @@ Detta material är utvecklat av
 * [Institutionen för datavetenskap, Lunds universitet](https://www.lth.se/forskning/forskning-i-korthet/datavetenskap)
 * [Institutionen för naturgeografi, Lunds universitet](https://www.nateko.lu.se/sv/forskning)
 * [ICOS Carbon Portal](https://www.icos-cp.eu/icos-carbon-portal)
-* Studenter vid civilingenjörsprogrammen, Lunds universitet
+* Studenter vid Lunds universitet
 * Pedagoger på [Vattenhallen Science Center](http://www.vattenhallen.lth.se/)
 
 inom ett samarbetsprojekt med [Svenska Science Centers](https://fssc.se/), [Navet Science Center](http://www.navet.com/) och [Universeum Science Center](https://www.universeum.se/sv/).
@@ -22,7 +22,7 @@ Projekten har finansierats av
 
 ## Copyright och licens
 
-Copyright &copy; 2019-2020. Lunds universitet och ICOS Carbon Portal.
+Copyright &copy; 2019-2020. Lunds universitet, ICOS Carbon Portal och Svenska Science Centers.
 
 Materialet är licensierat under International Creative Commons Attribution 4.0 ([CC by 4.0](https://creativecommons.org/licenses/by/4.0/)).
 Det betyder att du får dela och anpassa materialet, förutsatt att du anger källan.
