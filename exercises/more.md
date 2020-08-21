@@ -3,7 +3,7 @@ layout: default
 ---
 # Mer uppdrag
 
-Vi utvecklar fler uppdrag efter hand, och vi har ett antal prototyp-uppdrag som ännu inte bearbetats pedagogiskt.
+Vi utvecklar fler uppdrag efter hand, och vi har ett antal prototypuppdrag som ännu inte bearbetats pedagogiskt.
 
 * [Uppdrag skapade juni 2019](PROTOTYP.md)
 * [Uppdrag skapade juni 2020](JUNE2020.md)

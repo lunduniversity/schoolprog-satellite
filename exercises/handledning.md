@@ -2,11 +2,11 @@
 layout: default
 ---
 # För lärare
-Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid Science Centers.
+Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt till pedagoger vid science centers.
 
 ## Plattformar
 
-**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på repl.it, men det är bättre att registrera ett konto. repl.it-övningarna använder ren python, och vill man använda en annan python-miljö så går det fint.
+**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [Repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på Repl.it, men det är bättre att registrera ett konto. Repl.it-övningarna använder ren Python, och vill man använda en annan pythonmiljö så går det fint.
 
 **Colab** är en online-programmeringsmiljö för Python där man använder "Jupyter notebooks". En Jupyter notebook innehåller både text, bilder och körbara kodrutor. Det gör det enkelt att kombinera uppgifter och förklaringar med koden. För att använda Colab behöver man ett google-konto.
 
@@ -20,7 +20,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 
 ## Förberedelser inför en övning med elever
 
-### Förbereda övningar med repl.it
+### Förbereda övningar med Repl.it
 
 * **Skriv helst ut övningen på papper till eleverna.**
   * Med övningen på en utskrift kan eleverna använda hela skärmen för programmering. Annars behöver de ett fönster för uppgiften och ett för programmeringen.
@@ -28,8 +28,8 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
   * Med övningen på papper lockas eleverna inte att tjuvtitta på lösningarna som finns i utfällbara flikar.
   * Med övningen på papper måste eleverna skriva in all kod själv i programmeringsfönstret (i stället för att göra copy-paste), och de lär sig då mer.
 
-* **På Science Center, starta datorerna i förväg** och skapa ett fönster med repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på repl.it, så det behövs ingen inloggning.
-* **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
+* **På science center, starta datorerna i förväg** och skapa ett fönster med Repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på Repl.it, så det behövs ingen inloggning.
+* **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på Repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
 
 ### Förbereda övningar med Colab
 
@@ -43,9 +43,9 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
     * Med programmering kan man analysera datan och förstå vad som händer i miljön.
     * Nu skall vi lära oss lite om programmering och se hur detta kan gå till.
 
-### Tips för övningar med repl.it
+### Tips för övningar med Repl.it
 
-* Innan de sätter igång, använd projektor och visa dem hur de skriver ett enkelt program i repl.it och kör det. Det kan till exempel vara följande program:
+* Innan de sätter igång, använd projektor och visa dem hur de skriver ett enkelt program i Repl.it och kör det. Det kan till exempel vara följande program:
 ```python
 	x = 14 + 7
 	print(x)
@@ -71,13 +71,13 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
     * På Windows: håll nere Alt-Gr och tryck på tangent märkt med krullparentes.
     * På Mac: Håll nere Shift-Alt och tryck på vanlig parentes.
 
-### Problem relaterade till repl.it
+### Problem relaterade till Repl.it
 
-* Första gången man försöker skriva i ett preparerat repl.it-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
-* Irriterande popup-fönster i repl.it. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
+* Första gången man försöker skriva i ett preparerat Repl.it-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
+* Irriterande popup-fönster i Repl.it. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
 * Ibland försvinner plot-fönstret. Det brukar dyka upp igen om man klickar på filen (t.ex. keeling.png till vänster i fönstret.) Klicka sedan på main.py igen.
-* Ibland tappar man kontakten med repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
-* Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
+* Ibland tappar man kontakten med Repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
+* Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i Repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
 
 ### Problem relaterade till Colab
 * Om meny-alternativen för att köra kod är grå så måste man först trycka på `Connect`-knappen uppe till höger.
@@ -102,7 +102,7 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 Det bör fungera med Mac, Windows, Linux eller Chromebook.
 
 ### Kan man använda iPad?
-Nej, tyvärr inget vidare (februari 2020). Du kan köra program, men det är mycket svårt att redigera dem, beroende på att det inte fungerar att göra välj/klippa/klistra i kodfönstren, vare sig i repl.it eller colab.
+Nej, tyvärr inget vidare (februari 2020). Du kan köra program, men det är mycket svårt att redigera dem, beroende på att det inte fungerar att göra välj/klippa/klistra i kodfönstren, vare sig i Repl.it eller colab.
 
 ## Data till uppgifterna
 För de flesta av uppdragen har vi preparerat datan så att den ska vara lättare att använda i programmeringen.

@@ -10,12 +10,13 @@ Här hittar du uppdrag i Python där vi använder öppen "miljö"-data, t.ex. fr
 
 * lär dig om programmering och hur man kan göra beräkningar på stora datamängder
 * lär dig om olika typer av data, t.ex. mätvärden från satelliter och väderstationer och hur man kan använda dem för att förstå vad som händer i vår miljö
+* tränar entreprenöriella förmågor genom ett aktivt lärande och verklighetsförankrade uppgifter med riktiga data
 
 Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt i hur programmering kan användas för att utforska olika frågor.
 
 ## Vad behöver du?
 
-Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen. För Colab krävs att du har ett google-konto.
+Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen. För Colab krävs att du har ett googlekonto.
 
 ## Inspirationsövningar
 Prova gärna vår aktivitetspresentation
@@ -32,7 +33,7 @@ I [uppdragsfliken](exercises/README.md) hittar du programmeringsuppdragen. Varje
 
 Behöver du hjälp med Python, se [hjälp-fliken](exercises/help.md).
 
-Det finns även ett antal prototyp-uppdrag som ännu inte är bearbetade pedagogiskt, se [mer-fliken](exercises/more.md).
+Det finns även ett antal prototypuppdrag som ännu inte är bearbetade pedagogiskt, se [mer-fliken](exercises/more.md).
 
 ## Information för lärare
 Är du pedagog (eller vill göra uppdragen på egen hand, utan handledning), se fliken [för lärare](exercises/handledning.md).
