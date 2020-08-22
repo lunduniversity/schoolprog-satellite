@@ -102,7 +102,11 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 Det bör fungera med Mac, Windows, Linux eller Chromebook.
 
 ### Kan man använda iPad?
-Nej, tyvärr inget vidare (februari 2020). Du kan köra program, men det är mycket svårt att redigera dem, beroende på att det inte fungerar att göra välj/klippa/klistra i kodfönstren, vare sig i Repl.it eller colab.
+Nej, tyvärr inget vidare. Du kan köra program, men det är mycket svårt att redigera dem utan externt tangentbord. Man behöver kunna göra välj/klipp/klistra i kodfönstren. Detta stöds inte i Repl.it och mycket dåligt i Colab (augusti 2020). Vi har testat iPad 6. Det är möjligt att det stöds något bättre på iPad pro.
+
+Vill du programmera på iPad behöver du ett externt tangentbord, t.ex. ett Logitech Slim Folio. Om du har det kan du välja text genom att gå med piltangenterna och hålla nere shift. Du kan också använda CMD-X, CMD-C, CMD-V för att klippa ut, kopiera, klistra in.
+
+Inspirationsuppgifterna i Colab går dock fint att köra på iPad. Där ändrar man mycket lite i koden, så man klarar sig utan välj/klipp/klistra.
 
 ## Data till uppgifterna
 För de flesta av uppdragen har vi preparerat datan så att den ska vara lättare att använda i programmeringen.
