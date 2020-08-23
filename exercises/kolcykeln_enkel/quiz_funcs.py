@@ -1,13 +1,13 @@
 def create_coding_quiz_question(question_num, correct_answer):
     
     #Import modules:
-    from ipywidgets import FloatText, Button, Output, HBox, Valid
+    from ipywidgets import FloatText, Button, Output, HBox, Valid, Label
     from IPython.display import clear_output
     
 
     #Create a FloatText widget:
     py_q = FloatText(value=0.01,
-                     description=str(question_num)+'.',
+                     #description=str(question_num)+'.',
                      disabled=False)
 
     #Create button widget:
@@ -73,7 +73,7 @@ def create_coding_quiz_question(question_num, correct_answer):
 
 
     #Display widget:
-    return HBox([py_q, answer_btn, feedback_out])
+    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
 ###################################################################################
 
 
@@ -89,7 +89,7 @@ def create_coding_quiz_question_true_false(question_num, correct_answer):
     #Create a Dropdown widget (with True-False options):
     py_q = Dropdown(options=['Vet inte', 'Ja', 'Nej'],
                     value='Vet inte',
-                    description=str(question_num)+'.',
+                    #description=str(question_num)+'.',
                     disabled=False)
         
         
@@ -157,7 +157,7 @@ def create_coding_quiz_question_true_false(question_num, correct_answer):
 
 
     #Display widget:
-    return HBox([py_q, answer_btn, feedback_out])
+    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
 ####################################################################################
 
 
@@ -174,7 +174,7 @@ def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answ
     #Create a Dropdown widget:
     py_q = Dropdown(options=sorted(answer_list),
                     value=sorted(answer_list)[0],
-                    description=str(question_num)+'.',
+                    #description=str(question_num)+'.',
                     disabled=False)
         
         
@@ -242,5 +242,5 @@ def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answ
 
 
     #Display widget:
-    return HBox([py_q, answer_btn, feedback_out])
+    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
 ###################################################################################
