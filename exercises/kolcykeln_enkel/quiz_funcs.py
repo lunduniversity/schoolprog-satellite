@@ -172,8 +172,8 @@ def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answ
 
         
     #Create a Dropdown widget:
-    py_q = Dropdown(options=answer_list,
-                    value=answer_list[-1],
+    py_q = Dropdown(options=sorted(answer_list),
+                    value=sorted(answer_list)[0],
                     description=str(question_num)+'.',
                     disabled=False)
         
