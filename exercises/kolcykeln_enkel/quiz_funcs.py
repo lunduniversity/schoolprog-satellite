@@ -80,7 +80,7 @@ def create_coding_quiz_question(question_num, correct_answer):
 def create_coding_quiz_question_true_false(question_num, correct_answer):
     
     #Import modules:
-    from ipywidgets import FloatText, Dropdown, Button, Output, HBox, Valid
+    from ipywidgets import FloatText, Dropdown, Button, Output, HBox, Valid, Label
     from IPython.display import clear_output
     
     
@@ -165,7 +165,7 @@ def create_coding_quiz_question_true_false(question_num, correct_answer):
 def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answer):
     
     #Import modules:
-    from ipywidgets import FloatText, Dropdown, Button, Output, HBox, Valid
+    from ipywidgets import FloatText, Dropdown, Button, Output, HBox, Valid, Label
     from IPython.display import clear_output
     
     
