@@ -14,7 +14,7 @@ def create_coding_quiz_question(question_num, correct_answer):
     answer_btn = Button(description='Kontrollera resultat',
                         disabled=False,
                         button_style='danger', # 'success', 'info', 'warning', 'danger', 'primary' or ''
-                        tooltip='Tryck p� knappen f�r att kontrollera svaret') 
+                        tooltip='Tryck på knappen för att kontrollera ditt svar') 
 
 
     #Style button:
@@ -98,7 +98,7 @@ def create_coding_quiz_question_true_false(question_num, correct_answer):
     answer_btn = Button(description='Kontrollera resultat',
                         disabled=False,
                         button_style='danger', # 'success', 'info', 'warning', 'danger', 'primary' or ''
-                        tooltip='Tryck p� knappen f�r att kontrollera svaret') 
+                        tooltip='Tryck på knappen för att kontrollera ditt svar') 
 
 
     #Style button:
@@ -183,7 +183,7 @@ def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answ
     answer_btn = Button(description='Kontrollera resultat',
                         disabled=False,
                         button_style='danger', # 'success', 'info', 'warning', 'danger', 'primary' or ''
-                        tooltip='Tryck p� knappen f�r att kontrollera svaret') 
+                        tooltip='Tryck på knappen för att kontrollera ditt svar') 
 
 
     #Style button:
