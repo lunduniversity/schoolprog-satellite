@@ -73,7 +73,7 @@ def create_coding_quiz_question(question_num, correct_answer):
 
 
     #Display widget:
-    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
+    return HBox([Label(str(question_num)+'.'), py_q, answer_btn, feedback_out])
 ###################################################################################
 
 
@@ -157,7 +157,7 @@ def create_coding_quiz_question_true_false(question_num, correct_answer):
 
 
     #Display widget:
-    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
+    return HBox([Label(str(question_num)+'.'), py_q, answer_btn, feedback_out])
 ####################################################################################
 
 
@@ -242,5 +242,5 @@ def create_coding_quiz_question_dropdown(question_num, answer_list, correct_answ
 
 
     #Display widget:
-    return HBox([HBox([Label(str(question_num)+'.'), py_q]), answer_btn, feedback_out])
+    return HBox([Label(str(question_num)+'.'), py_q, answer_btn, feedback_out])
 ###################################################################################
