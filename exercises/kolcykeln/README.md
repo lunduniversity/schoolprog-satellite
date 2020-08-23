@@ -13,7 +13,10 @@ Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln 
 
 
 # Data
-Övningen använder data från ICOS Hyltemossa mätstation.
+Övningen använder data från:
+- [ICOS Hyltemossa mätstation](https://www.icos-sweden.se/station_hyltemossa.html)
+* Copyright © 2019-2020 ICOS ERIC
+
 
 # Tillgång till övningen
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)
