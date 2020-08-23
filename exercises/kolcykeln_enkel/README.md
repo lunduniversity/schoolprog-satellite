@@ -6,6 +6,7 @@ Programmeringsmässigt berörs följande koncept:
 
     - Interagera med interaktiv karta
     - Interagera med interaktiva diagram
+    - Interagera med widgets (t.ex. dropdown listor, mm)
 
 Syftet med dessa notebooks är inte att lära sig programmera utan snarare skaffa en djupare förståelse över hur kolcykeln fungerar och vad påverkar mätningar av växthusgaser.
 
