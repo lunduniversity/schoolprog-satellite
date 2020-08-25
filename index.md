@@ -26,7 +26,7 @@ där du får programmera lite grann, får insikter om koldioxidcykeln och koldio
 |Inspirationsuppdrag|Du behöver kunna|Ingår i aktivitetspresentation|
 |:-------|----------------|-------------|
 |[Keelingkurvan, inspiration](exercises/co2/keeling_inspiration.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
-|[Kolcykeln enkel, Hyltemosse](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)|Inga förkunskaper||
+|[Kolcykeln enkel, Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)|Inga förkunskaper||
 |[Kolcykeln enkel, Svartberget](exercises/kolcykeln_enkel/kolcykeln_svb.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
 |[Quiz](exercises/quiz/co2_quiz/kollpakol.md) | Kolcykeln|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
 
