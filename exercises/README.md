@@ -17,7 +17,7 @@ Uppgifterna kan göras i den ordning de är listade, men det går också bra att
 |**[Torkan A (repl.it)](drought/README.md)**<br>Vi undersöker hur torkan sommaren 2018 kan ses från satellit (Sentinel). Vi läser in från numpy-filer, beräknar vegetationsindex och plottar 2D med olika färgskalor.|numpy, array, imshow|NpzFile, colormap|matplotlib, numpy|
 |**Avskogning [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/avskogning/avskogning.ipynb)**<br>Vi undersöker avskogning i Brasilien med hjälp av satellitbilder (Landsat). Vi plottar vegetationsindex och histogram.|inga förkunskaper|plottning, histogram|pandas, numpy, bokeh|
 |**[CO2 i Sverige A (repl.it)](co2_emission_sweden/co2_A_replit.md)**<br>Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige. Vi läser in från internet och plottar stapeldiagram. |listor, plot| nyckel-värdetabeller, slice, bar| matplotlib, requests|
-
+|**Skogsbränder[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/forest_fires/skogsbrander2.ipynb)**<br>Vi använder polygoner och NDVI för att beräkna hur stor yta som blev drabbad av skogsbränder i ett område antingen i Sverige eller Australien. |listor| funktioner, plot, listor i listor| matplotlib, numpy|
 
 
 
