@@ -28,7 +28,8 @@ där du får programmera lite grann, får insikter om koldioxidcykeln och koldio
 |[Keelingkurvan, inspiration](exercises/co2/keeling_inspiration.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
 |[Kolcykeln enkel, Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)|Inga förkunskaper||
 |[Kolcykeln enkel, Svartberget](exercises/kolcykeln_enkel/kolcykeln_svb.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
-|Utsläppskartan [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)<br>Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken sektor man tittar på.|Inga förkunskaper|
+|Gapminder [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)<br>Vi tittar på koldioxidutsläpp med data från gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|Inga förkunskaper|
+|Utsläppskartan [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)<br>Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken sektor man tittar på. |Inga förkunskaper|
 |[Quiz](exercises/quiz/co2_quiz/kollpakol.md) | Kolcykeln|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
 
 ## Uppdrag för klassrummet
