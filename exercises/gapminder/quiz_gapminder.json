@@ -28,7 +28,7 @@
     "feedback": {
       "USA": "Korrekt, USA har sl\u00e4ppt ut mycket under en l\u00e4ngre period \u00e4n exempelvis Kina",
       "Qatar": "Fel, Qatar sl\u00e4pper ut mycket om man r\u00e4knar per capita",
-      "Kina": "Fel, Kina industrialliserades senare \u00e4n USA",
+      "Kina": "Fel, Kina industrialiserades senare \u00e4n USA",
       "Indien": "Fel, Indien har sl\u00e4ppt ut mindre \u00e4n b\u00e5de USA och Kina"
     },
     "answer": [
@@ -45,7 +45,7 @@
     ],
     "feedback": {
       "USA": "Fel, USA gick om Storbritannien ca \u00e5r 1887",
-      "Storbritannien": "R\u00e4tt! Storbritannien var den st\u00f6rsta eknomin \u00e5r 1880",
+      "Storbritannien": "R\u00e4tt! Storbritannien var den st\u00f6rsta ekonomin \u00e5r 1880",
       "Tyskland": "Fel, Tyskland var en stor ekonomi men inte st\u00f6rst",
       "Ryssland": "Fel, Ryssland hade inte kommit ig\u00e5ng ordentligt \u00e4n"
     },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "question": "Hur mycket sl\u00e4pper v\u00e4rdlens befolkning ut i genomsnitt per capita?",
+    "question": "Hur mycket sl\u00e4pper v\u00e4rldens befolkning ut i genomsnitt per capita?",
     "options": [
       "4,5 ton",
       "1,5 ton",
@@ -64,7 +64,7 @@
     "feedback": {
       "4,5 ton": "Korrekt!",
       "1,5 ton": "Fel, tyv\u00e4rr sl\u00e4pper vi ut mer",
-      "16,5 ton": "Fel, detta motsvarar USA's utsl\u00e4pp per capita",
+      "16,5 ton": "Fel, detta motsvarar USAs utsl\u00e4pp per capita",
       "6 ton": "Fel, vi sl\u00e4pper ut lite mindre faktiskt"
     },
     "answer": [
@@ -81,9 +81,9 @@
     ],
     "feedback": {
       "Europa": "Fel, majoriteten av de europeiska l\u00e4nderna sl\u00e4pper ut ganska mycket",
-      "Amerika": "Fel, vissa l\u00e4nder i amerika sl\u00e4pper ut v\u00e4dligt mycket medan andra sl\u00e4pper ut mindre",
-      "Afrika": "R\u00e4tt! Afrika sl\u00e4pper ut minst per capita, vissa l\u00e4nder sl\u00e4pper till och med ut mindre \u00e4n 0,1 ton per capita",
-      "Asien": "Fel, m\u00e5nga asiatiska l\u00e4nder tillh\u00f6r v\u00e4rdlens st\u00f6rsta ekonomier"
+      "Amerika": "Fel, vissa l\u00e4nder i Amerika sl\u00e4pper ut v\u00e4ldigt mycket medan andra sl\u00e4pper ut mindre",
+      "Afrika": "R\u00e4tt! Afrika sl\u00e4pper ut minst per capita. Vissa l\u00e4nder sl\u00e4pper till och med ut mindre \u00e4n 0,1 ton per capita",
+      "Asien": "Fel, m\u00e5nga asiatiska l\u00e4nder tillh\u00f6r v\u00e4rldens st\u00f6rsta ekonomier"
     },
     "answer": [
       "Afrika"
