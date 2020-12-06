@@ -56,7 +56,7 @@
   {
     "question": "Hur mycket sl\u00e4pper v\u00e4rldens befolkning ut i genomsnitt per capita?",
     "options": [
-      "4,5 ton",
+      "5 ton",
       "1,5 ton",
       "16,5 ton",
       "6 ton"
@@ -68,7 +68,7 @@
       "6 ton": "Fel, vi sl\u00e4pper ut lite mindre faktiskt"
     },
     "answer": [
-      "4,5 ton"
+      "5 ton"
     ]
   },
   {
