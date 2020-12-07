@@ -18,30 +18,10 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 
 Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen. För Colab krävs att du har ett googlekonto.
 
-## Inspirationsövningar
-Prova gärna vår aktivitetspresentation
-[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)
-där du får programmera lite grann, får insikter om koldioxidcykeln och koldioxidutsläpp och kan göra en rolig quiz! Varje aktivitet tar 10-20 minuter.
+## Se mer info i flikarna
 
-|Inspirationsuppdrag|Du behöver kunna|Ingår i aktivitetspresentation|
-|:-------|----------------|-------------|
-|[Keelingkurvan, inspiration](exercises/co2/keeling_inspiration.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
-|[Kolcykeln enkel, Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)|Inga förkunskaper||
-|[Kolcykeln enkel, Svartberget](exercises/kolcykeln_enkel/kolcykeln_svb.md)|Inga förkunskaper|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
-|Gapminder [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)<br>Vi tittar på koldioxidutsläpp med data från gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|Inga förkunskaper|
-|Utsläppskartan [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)<br>Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken sektor man tittar på. |Inga förkunskaper|
-|[Quiz](exercises/quiz/co2_quiz/kollpakol.md) | Kolcykeln|[Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)|
-
-## Uppdrag för klassrummet
-I [uppdragsfliken](exercises/README.md) hittar du programmeringsuppdragen. Varje uppdrag tar 1-2 timmar att utföra. Direktlänkar till de tre första:
-
-* [Väderdata A (repl.it)](exercises/weatherdata/Weatherdata_A_replit.md)
-* [Väderdata B (repl.it)](exercises/weatherdata/Weatherdata_B_replit.md)
-* [Kolcykeln (colab)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)
-
-Behöver du hjälp med Python, se [hjälp-fliken](exercises/help.md).
-
-Det finns även ett antal prototypuppdrag som ännu inte är bearbetade pedagogiskt, se [mer-fliken](exercises/more.md).
-
-## Information för lärare
-Är du pedagog (eller vill göra uppdragen på egen hand, utan handledning), se fliken [för lärare](exercises/handledning.md).
+* [Inspiration](exercises/inspiration.md): 10-20 minuters uppdrag. Inga förkunskaper.
+* [Uppdrag](exercises/README.md): 1-2 timmars uppdrag som bygger på varandra.
+* [Hjälp](exercises/help.md): Snabbreferenser och andra tips.
+* [För lärare](exercises/handledning.md): För lärare i skolan och pedagoger på science centers.
+* [Mer](exercises/more.md): Prototypuppdrag som ännu inte är bearbetade pedagogiskt.

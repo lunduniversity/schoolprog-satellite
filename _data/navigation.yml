@@ -1,7 +1,10 @@
 
 # Site navigation links
-- title: LU miljödataprogrammering
+- title: Hem
   url: /
+
+- title: Inspiration
+  url: /exercises/inspiration.html
 
 - title: Uppdrag
   url: /exercises/README.html

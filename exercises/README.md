@@ -3,9 +3,9 @@ layout: default
 ---
 # Programmeringsuppdrag
 
-Uppgifterna kan göras i den ordning de är listade, men det går också bra att ta dem i en annan ordning. I tabellen ser du vilka förkunskaper du behöver, vilka programmeringsbegrepp du lär dig, och vilka programmeringsbibliotek du använder.
+Uppgifterna kan göras i den ordning de är listade, men det går också bra att ta dem i en annan ordning.
 
-
+Varje uppdrag tar 1-2 timmar att genomföra.
 
 |Uppdrag|Du behöver kunna|Begrepp du lär dig|Bibliotek du använder|
 |:-------|----------------|-------------|---------------|
