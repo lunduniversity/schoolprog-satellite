@@ -8,12 +8,14 @@ Du behöver inga förkunskaper för inspirationsuppdragen. Varje uppdrag tar 10-
 Uppdragen använder Google Colab. Du behöver ett Google-konto för att göra dem.
 
 |Inspirationsuppdrag||
-|:-------|----------------|
-|[Keelingkurvan](exercises/co2/keeling_inspiration.md)|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
-|[Kolcykeln Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)|Om kolets kretslopp och mätningar från Hyltemossa mätstation.|
-|[Kolcykeln Svartberget](exercises/kolcykeln_enkel/kolcykeln_svb.md)|Om kolets kretslopp och mätningar från Svartberget mätstation.|
-|[Gapminder](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)|Vi tittar på koldioxidutsläpp med data från Gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|
-|[Utsläppskartan](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)|Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken utsläppssektor man tittar på.|
+|:-------|:----------------|
+|**[Keelingkurvan](exercises/co2/keeling_inspiration.md)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
+|**[Kolcykeln Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)**|Om kolets kretslopp och mätningar från Hyltemossa mätstation.|
+|**[Kolcykeln Svartberget](exercises/kolcykeln_enkel/kolcykeln_svb.md)**|Om kolets kretslopp och mätningar från Svartberget mätstation.|
+|**[Gapminder](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)**|Vi tittar på koldioxidutsläpp med data från Gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|
+|**[Utsläppskartan](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)**|Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken utsläppssektor man tittar på.|
+
+<br><br>
 
 # Aktivitetspresentation
 
