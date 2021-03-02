@@ -22,4 +22,5 @@ Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln 
 <br>
 
 # Tillgång till övningen
+Klicka på länken brevid för att komma till övningen: 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)
