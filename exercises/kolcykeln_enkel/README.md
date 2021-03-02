@@ -13,8 +13,8 @@ Syftet med dessa notebooks är inte att lära sig programmera utan snarare skaff
 
 # Data
 Övningarna använder data från:
-- [ICOS Hyltemossa mätstation](https://www.icos-sweden.se/station_hyltemossa.html)
-- [ICOS Svartberget mätstation](https://www.icos-sweden.se/station_svartberget.html)
+- [ICOS Hyltemossa mätstation](https://www.icos-sweden.se/hyltemossa)
+- [ICOS Svartberget mätstation](https://www.icos-sweden.se/Svartberget)
 * Copyright © 2019-2020 ICOS ERIC
 
 
