@@ -11,6 +11,9 @@ Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln 
     - Beräkna statistik över värden i tabeller
     - Plotta data i interaktiva eller statiska diagram
 
+<br>
+<br>
+<br>
 
 # Data
 Övningen använder data från:
@@ -18,6 +21,9 @@ Denna Jupyter Notebook innehåller övningar som koncentrerar sig på kolcykeln 
   
   Copyright © 2019-2020 ICOS ERIC
 
+<br>
+<br>
+<br>
 
 # Tillgång till övningen
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)
