@@ -16,7 +16,7 @@ Vi hoppas du tycker att uppdragen är roliga och intressanta, och får en insikt
 
 ## Vad behöver du?
 
-Ingen installation av programvara krävs. Vi använder online-miljöerna *repl.it* och *Google Colab* för programmeringen. För Colab krävs att du har ett googlekonto.
+Ingen installation av programvara krävs. Vi använder online-miljöerna *replit.com* och *Google Colab* för programmeringen. För Colab krävs att du har ett googlekonto. För *replit.com* behöver du skaffa ett konto.
 
 ## Se mer info i flikarna
 
