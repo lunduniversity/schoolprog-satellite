@@ -10,6 +10,7 @@ Uppdragen använder Google Colab. Du behöver ett Google-konto för att göra de
 |Inspirationsuppdrag||
 |:-------|:----------------|
 |**[Keelingkurvan](co2/keeling_inspiration.md)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
+|**[Keelingkurvan - lätt](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2/keeling_inspiration_short.ipynb)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
 |**[Kolcykeln Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)**|Om kolets kretslopp och mätningar från Hyltemossa mätstation.|
 |**[Kolcykeln Svartberget](kolcykeln_enkel/kolcykeln_svb.md)**|Om kolets kretslopp och mätningar från Svartberget mätstation.|
 |**[Gapminder](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)**|Vi tittar på koldioxidutsläpp med data från Gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|
