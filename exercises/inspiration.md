@@ -7,7 +7,7 @@ Du behöver inga förkunskaper för inspirationsuppdragen. Varje uppdrag tar 10-
 
 Uppdragen använder Google Colab. Du behöver ett Google-konto för att göra dem.
 
-|**Inspirationsuppdrag**|**Beskrivning**|
+|**Inspirationsuppdrag**|&nbsp;**Beskrivning**|
 |:------------|:----------------|
 |**[Keelingkurvan](co2/keeling_inspiration.md)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
 |**[Keelingkurvan - lätt](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2/keeling_inspiration_short.ipynb)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958 i en lättare version.|
