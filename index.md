@@ -27,7 +27,7 @@ Ingen installation av programvara krävs. Vi använder online-miljöerna *replit
 * [Mer](exercises/more.md): Prototypuppdrag som ännu inte är bearbetade pedagogiskt.
 
 
-![Karta över Sverige där utsläppen visas i olika färger av orange](/assets/images/intro_picture.png "Bild från uppdraget utsläppskartan")
+![Karta över Sverige där utsläppen visas i olika färger av orange](assets/images/intro_picture.png "Bild från uppdraget utsläppskartan")
 
 ---
 
