@@ -7,8 +7,8 @@ Uppgifterna kan göras i den ordning de är listade, men det går också bra att
 
 Varje uppdrag tar 1-2 timmar att genomföra.
 
-|Uppdrag|Du behöver kunna|Begrepp du lär dig|Bibliotek du använder|
-|:-------|----------------|-------------|---------------|
+|**Uppdrag**|**Du behöver kunna**|**Begrepp du lär dig**|**Bibliotek du använder**|
+|:-------|----------------|-------------|------------------------------------------|
 |**[Väderdata A (replit.com)](weatherdata/Weatherdata_A_replit.md)**<br>Vi plottar temperatur och regnmängder och beräknar medelvärden. |inga förkunskaper|listor, plot, loop|matplotlib|
 |**[Väderdata B (replit.com)](weatherdata/Weatherdata_B_replit.md)**<br>Vi plottar temperaturdata för juli från SMHI (Lund och några andra orter), och jämför olika år. Vi läser in från enkla filer och plottar kurvor.|listor, plot|range, filer, loop, append|matplotlib|
 |**Kolcykeln [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln/kolcykeln.ipynb)**<br>Vi undersöker data från forskningsstationen ICOS Hyltemossa i Skåne. Vi lär oss om kolcykeln med källor och sänkor. Vi läser in data från csv-filer, organiserar data i tabeller med index, och plottar data i interaktiva diagram.|inga förkunskaper|tabeller, index|pandas, numpy, bokeh|
