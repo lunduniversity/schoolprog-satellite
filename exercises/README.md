@@ -19,7 +19,7 @@ Varje uppdrag tar 1-2 timmar att genomföra.
 |**[CO2 i Sverige A (replit.com)](co2_emission_sweden/co2_A_replit.md)**<br>Vi undersöker statistik från SCB om koldioxidutsläpp i Sverige. Vi läser in från internet och plottar stapeldiagram. |listor, plot| nyckel-värdetabeller, slice, bar| matplotlib, requests|
 |**Skogsbränder [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/forest_fires/skogsbrander2.ipynb)**<br>Vi använder polygoner och NDVI för att beräkna hur stor yta som blev drabbad av skogsbränder i ett område antingen i Sverige eller Australien. |listor| funktioner, plot, listor i listor| matplotlib, numpy|
 
-
+---
 
 <!--|Keelingkurvan B (repl.it)(TBA)<br>...|listor, plot|nyckel-värdetabeller|matplotlib|-->
 
