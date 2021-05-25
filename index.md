@@ -25,3 +25,12 @@ Ingen installation av programvara krävs. Vi använder online-miljöerna *replit
 * [Hjälp](exercises/help.md): Snabbreferenser och andra tips.
 * [För lärare](exercises/handledning.md): För lärare i skolan och pedagoger på science centers.
 * [Mer](exercises/more.md): Prototypuppdrag som ännu inte är bearbetade pedagogiskt.
+
+
+![Karta över Sverige där utsläppen visas i olika färger av orange](/assets/images/intro_picture.png "Bild från uppdraget utsläppskartan")
+
+---
+
+
+
+
