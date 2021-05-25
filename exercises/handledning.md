@@ -6,12 +6,12 @@ Denna handledning riktar sig till lärare på högstadiet och gymnasiet, samt ti
 
 ## Plattformar
 
-**Repl.it** är en online-programmeringsmiljö för flera olika språk. Vi använder [Repl.it Python3](https://repl.it/languages/python3). Man kan köra anonymt på Repl.it, men det är bättre att registrera ett konto. Repl.it-övningarna använder ren Python, och vill man använda en annan pythonmiljö så går det fint.
+**Replit.com** är en online-programmeringsmiljö för flera olika språk. Vi använder [Replit.com Python3](https://replit.com/new/python3). För att kunna använda replit.com behöver du registrera ett konto. Replit.com-övningarna använder ren Python, och vill man använda en annan pythonmiljö så går det fint.
 
 **Colab** är en online-programmeringsmiljö för Python där man använder "Jupyter notebooks". En Jupyter notebook innehåller både text, bilder och körbara kodrutor. Det gör det enkelt att kombinera uppgifter och förklaringar med koden. För att använda Colab behöver man ett google-konto.
 
 ## Pedagogiska ideer
-* Repl.it-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
+* Replit.com-övningarna är avsedda att lära ut programmering, och använda miljödata-exempel för att göra uppgifterna intressanta. Målet är att eleverna ska förstå allt programmen gör.
 * Colab-övningarna använder oftast en del färdiga funktioner och huvudmålet där är primärt att ge aha-upplevelser inom miljödata, och förståelse för *vad* man kan åstadkomma med programmering. Man lär sig också lite programmering, men de färdiga funktionerna förklaras inte.
 
 ## Hur mycket Python behöver du kunna?
@@ -20,7 +20,7 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
 
 ## Förberedelser inför en övning med elever
 
-### Förbereda övningar med Repl.it
+### Förbereda övningar med Replit.com
 
 * **Skriv helst ut övningen på papper till eleverna.**
   * Med övningen på en utskrift kan eleverna använda hela skärmen för programmering. Annars behöver de ett fönster för uppgiften och ett för programmeringen.
@@ -28,12 +28,12 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
   * Med övningen på papper lockas eleverna inte att tjuvtitta på lösningarna som finns i utfällbara flikar.
   * Med övningen på papper måste eleverna skriva in all kod själv i programmeringsfönstret (i stället för att göra copy-paste), och de lär sig då mer.
 
-* **På science center, starta datorerna i förväg** och skapa ett fönster med Repl.it på varje dator, enligt instruktioner i övningen. Det går att köra anonymt på Repl.it, så det behövs ingen inloggning.
-* **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på Repl.it, enligt instruktioner i övningen. Om eleverna skaffar eget konto så sparas deras program automatiskt.
+* **På science center, starta datorerna i förväg** och skapa ett fönster med Replit.com på varje dator, enligt instruktioner i övningen. Glöm inte att logga in, då det krävs ett konto för att kunna använda replit.com.
+* **I skolan har nog varje elev sin egen dator**, och det är enklast att de själva browsar till rätt plats på Replit.com, enligt instruktioner i övningen. Det bästa är om eleverna själva skaffar ett eget konto på replit.com.
 
 ### Förbereda övningar med Colab
 
-* För att köra Colab behöver man vara inloggad med personligt konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
+* För att köra Colab behöver man vara inloggad med personligt google-konto. Detta brukar fungera bra i skolor eftersom många skolor använder Google Gmail och alla elever/lärare har då konto.
 
 ## Att köra övningarna i elevgrupp
 
@@ -43,9 +43,9 @@ Uppdragen kan göras utan förkunskaper om man har handledning. Som handledare �
     * Med programmering kan man analysera datan och förstå vad som händer i miljön.
     * Nu skall vi lära oss lite om programmering och se hur detta kan gå till.
 
-### Tips för övningar med Repl.it
+### Tips för övningar med Replit.com
 
-* Innan de sätter igång, använd projektor och visa dem hur de skriver ett enkelt program i Repl.it och kör det. Det kan till exempel vara följande program:
+* Innan de sätter igång, använd projektor och visa dem hur de skriver ett enkelt program i Replit.com och kör det. Det kan till exempel vara följande program:
 ```python
 	x = 14 + 7
 	print(x)
@@ -71,13 +71,13 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
     * På Windows: håll nere Alt-Gr och tryck på tangent märkt med krullparentes.
     * På Mac: Håll nere Shift-Alt och tryck på vanlig parentes.
 
-### Problem relaterade till Repl.it
+### Problem relaterade till Replit.com
 
-* Första gången man försöker skriva i ett preparerat Repl.it-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
-* Irriterande popup-fönster i Repl.it. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
+* Första gången man försöker skriva i ett preparerat Replit.com-fönster “tar” det inte. Det beror på att man först ser en Read-Only-version. När man börjar skriva kod så skapas en ny kopia som man kan editera. Sedan funkar det.
+* Irriterande popup-fönster i Replit.com. Dvs s.k. “Code completion”, eller “Code intelligence”. Man kan stänga av det under Settings (kugghjulet). Tryck på kugghjulet en gång till för att stänga Settings.
 * Ibland försvinner plot-fönstret. Det brukar dyka upp igen om man klickar på filen (t.ex. keeling.png till vänster i fönstret.) Klicka sedan på main.py igen.
-* Ibland tappar man kontakten med Repl.it-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
-* Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i Repl.it för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
+* Ibland tappar man kontakten med Replit.com-servern. Man kan då behöva ladda om webbsidan. Om man kör utan inloggning tappar man dock då all kod man skrivit in.
+* Vill kunna kommentera bort flera rader på en gång. Det finns en shortcut i Replit.com för det. Med högerklick får man fram en meny med editeringskommandon och deras shortcuts. Där kan man se vad shortcut för “add line comment” och “remove line comment” är.
 
 ### Problem relaterade till Colab
 * Om meny-alternativen för att köra kod är grå så måste man först trycka på `Connect`-knappen uppe till höger.
@@ -102,7 +102,7 @@ För Kolcykeln och Avskogning, ta gärna upp ditt eget fönster på en projektor
 Det bör fungera med Mac, Windows, Linux eller Chromebook.
 
 ### Kan man använda iPad?
-Nej, tyvärr inget vidare. Du kan köra program, men det är mycket svårt att redigera dem utan externt tangentbord. Man behöver kunna göra välj/klipp/klistra i kodfönstren. Detta stöds inte i Repl.it och mycket dåligt i Colab (augusti 2020). Vi har testat iPad 6. Det är möjligt att det stöds något bättre på iPad pro.
+Nej, tyvärr inget vidare. Du kan köra program, men det är mycket svårt att redigera dem utan externt tangentbord. Man behöver kunna göra välj/klipp/klistra i kodfönstren. Detta stöds inte i Replit.com och mycket dåligt i Colab (augusti 2020). Vi har testat iPad 6. Det är möjligt att det stöds något bättre på iPad pro.
 
 Vill du programmera på iPad behöver du ett externt tangentbord, t.ex. ett Logitech Slim Folio. Om du har det kan du välja text genom att gå med piltangenterna och hålla nere shift. Du kan också använda CMD-X, CMD-C, CMD-V för att klippa ut, kopiera, klistra in.
 
