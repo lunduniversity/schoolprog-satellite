@@ -22,4 +22,4 @@ Uppdragen använder Google Colab. Du behöver ett Google-konto för att göra de
 
 Prova gärna vår aktivitetspresentation
 [Koll på kol](https://docs.google.com/presentation/d/1zIb77mNY2zLDaWUqs3IE2PvppxPZyTYJm_C_aYoWiyw/present)
-där du får programmera lite grann, får insikter om koldioxidcykeln och koldioxidutsläpp och kan göra en rolig [Quiz](quiz/co2_quiz/kollpakol.md)! Inspirationsuppdragen Keelingkurvan och Kolcykeln Svartberget ovan ingår. Hela aktiviteten tar cirka 30-40 minuter.
+där du får programmera lite grann, får insikter om koldioxidcykeln och koldioxidutsläpp och kan göra en rolig [Quiz](http://fileadmin.cs.lth.se/cs/Education/skolprog/klimatfestival/co2_quiz/)! Inspirationsuppdragen Keelingkurvan och Kolcykeln Svartberget ovan ingår. Hela aktiviteten tar cirka 30-40 minuter.
