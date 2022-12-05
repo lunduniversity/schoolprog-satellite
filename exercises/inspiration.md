@@ -12,7 +12,7 @@ Uppdragen använder Google Colab. Du behöver ett Google-konto för att göra de
 |**[Keelingkurvan](co2/keeling_inspiration.md)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958.|
 |**[Keelingkurvan - lätt](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/co2/keeling_inspiration_short.ipynb)**|Om mätningar av koldioxidhalten på Hawaii sedan 1958 i en lättare version.|
 |**[Kolcykeln Hyltemossa](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_htm.ipynb)**|Om kolets kretslopp och mätningar från Hyltemossa mätstation.|
-|**[Kolcykeln Svartberget](kolcykeln_enkel/kolcykeln_svb.md)**|Om kolets kretslopp och mätningar från Svartberget mätstation.|
+|**[Kolcykeln Svartberget](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/kolcykeln_enkel/kolcykeln_svb.ipynb)**|Om kolets kretslopp och mätningar från Svartberget mätstation.|
 |**[Gapminder](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/gapminder/gapminder2.ipynb)**|Vi tittar på koldioxidutsläpp med data från Gapminder. Vi jämför länder och olika år, och tittar även kumulativa utsläpp.|
 |**[Utsläppskartan](https://colab.research.google.com/github/lunduniversity/schoolprog-satellite/blob/master/exercises/emission_map/utslappskartan2.ipynb)**|Karta över utsläppen av växthusgaser i Sveriges kommuner. Man kan anpassa färger, vilket år, samt vilken utsläppssektor man tittar på.|
 
