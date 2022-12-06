@@ -6,7 +6,7 @@ I denna uppgift ska vi se hur växtlighet kan undersökas med hjälp av satellit
 
 Det kan vara svårt att se om en gran mår bra eller dåligt med blotta ögat. Men vi kommer att använda oss av fler färger än de ögat kan se för att undersöka hur växtligheten mår.
 
-Denna uppgift är tänkt att köras på [https://repl.it/languages/python3](https://repl.it/languages/python3)
+Denna uppgift är tänkt att köras på [https://replit.com/languages/python3](https://replit.com/languages/python3). Klicka på *create repl* för att skapa ditt enga repl.
 
 ## 1. Om satellitbilder
 
@@ -263,7 +263,7 @@ Om du vill kan du experimentera med fler färgskalor, eller vänta tills lite se
 
 Nu ska vi titta på data för hela naturområdet som nämndes i början (Bokskogen i Skåne).
 
-Klicka på följande länk [https://repl.it/@OscarWiklund96/Bokskogen](https://repl.it/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Man kan även ladda ner datan från GitHub på [https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
+Klicka på följande länk [https://replit.com/@OscarWiklund96/Bokskogen](https://replit.com/@OscarWiklund96/Bokskogen) för att få tillgång till satellit-datan som används i denna uppgift. Klicka på *fork repl*. Nu får du upp ett nytt fönster där du kan ändra namnet på din kopia, klicka sedan på *fork repl*. Man kan även ladda ner datan från GitHub på [https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen](https://github.com/lunduniversity/schoolprog-satellite-data/tree/master/drought/bokskogen).
 
 I mappen Bokskogen ligger det tre filer som heter `data_15.npz`, `data_17.npz` och `data_18.npz`. Varje fil innehåller satellit-data från en dag i första halvan i augusti, men från olika år (2015, 2017 och 2018). Filerna är lagrade på numpy-format (`.npz`) som lätt kan läsas in till datastrukturer i Python.
 
