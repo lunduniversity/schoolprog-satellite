@@ -3,14 +3,14 @@ SMHI har temperaturer och annan data från olika mätstationer i Sverige.
 
 I detta uppdrag ska vi lära oss om listor och plottning i Python och använda detta för att undersöka temperaturdata från SMHI.
 
-Denna uppgift är tänkt att köras i Python 3 på *repl.it*. Följ denna länk: [https://repl.it/languages/python3](https://repl.it/languages/python3).
+Denna uppgift är tänkt att köras i Python 3 på *replit.com*. Följ denna länk: [https://replit.com/languages/python3](https://replit.com/languages/python3) och klicka på *create repl*.
 
 ## 1. Listor
 Vi börjar med några uppdrag för att se hur listor fungerar i Python.
 ### 1.1 Skapa en lista och skriv ut den
 En lista är en sekvens av värden. I koden nedan skapas en lista som sedan skrivs ut.
 
-**Uppdrag 1.1 a:** Kopiera koden nedan och provkör den på *repl.it*.
+**Uppdrag 1.1 a:** Kopiera koden nedan och provkör den på *replit.com*.
 
 ```python
 temps = [14.1, 13.5, 17.5, 16.2, 18.9, 11.3]
