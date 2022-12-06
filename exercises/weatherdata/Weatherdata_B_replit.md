@@ -365,8 +365,8 @@ Lund ligger långt söderut i Sverige. Hur ser det ut på andra orter?
 
 Om du vill se var en viss station är kan du titta på SMHI:s karta: [https://www.smhi.se/vadret/vadret-i-sverige/observationer](https://www.smhi.se/vadret/vadret-i-sverige/observationer). Kanske vill du titta på Tarfala som är en väderstation vid Kebnekajses fot?
 
-**Uppdrag 5 b** Välj två olika orter och kopiera 2018 års värden till repl.it. Du kan kopiera en fil genom att:
-* Skapa en ny fil till vänster i repl.it-fönstret (klicka på ikonen `Add file` vid *Files*).
+**Uppdrag 5 b** Välj två olika orter och kopiera 2018 års värden till replit.com. Du kan kopiera en fil genom att:
+* Skapa en ny fil till vänster i replit-fönstret (klicka på ikonen `New file` vid *Files*).
 * Namnge filen. Du behöver inte använda samma långa namn som originalfilerna, utan ta något kortare.
 * Kopiera innehållet till den nya filen. Se till att första värdet hamnar på rad 1 och att det finns precis 31 rader i filen. (Koden vi har skrivit fungerar bara om det finns exakt ett värde på varje rad, och inga tomma rader.)
 
