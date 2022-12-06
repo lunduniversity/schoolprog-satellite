@@ -1,7 +1,7 @@
 # CO<sub>2</sub>-utsläpp i Sverige
 I denna uppgift ska vi börja titta på statistik från statistiska centralbyrån ([SCB](https://www.scb.se/)) om CO<sub>2</sub>-utsläpp i Sverige.
 
-För att programmera, gå till [https://repl.it/languages/python3](https://repl.it/languages/python3)
+För att programmera, gå till [https://replit.com/languages/python3](https://replit.com/languages/python3) och klicka på *create repl*.
 
 ## 1. Titta på datafilen
 
