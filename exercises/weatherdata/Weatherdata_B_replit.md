@@ -9,7 +9,7 @@ I uppgiften kommer vi att lära oss hur man läser in data från filer.
 
 ### 1.1 Titta på filerna
 
-Gå till följande exempel på repl.it där vi förberett datafiler från SMHI: [https://repl.it/@OscarWiklund96/Vaderdata-A](https://repl.it/@OscarWiklund96/Vaderdata-A)
+Gå till följande exempel på *replit.com* där vi förberett datafiler från SMHI: [https://replit.com/@OscarWiklund96/Vaderdata-A](https://replit.com/@OscarWiklund96/Vaderdata-A) och klicka på *fork repl*. Nu får du upp ett nytt fönster där du kan ändra namnet på din kopia, klicka sedan på *fork repl*.
 
 Filerna syns till vänster i fönstret, under *Files*. Det finns tre filer: `lund_juli_2016.txt`, `lund_juli_2017.txt` och `lund_juli_2018.txt`.
 
