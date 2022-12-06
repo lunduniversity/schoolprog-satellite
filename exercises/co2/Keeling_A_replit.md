@@ -2,7 +2,7 @@
 
 I denna uppgift ska vi börja utforska Keelingkurvan som beskriver koldioxidhalten i atmosfären. Mätningarna påbörjades av forskaren Charles Keeling och har utförts sedan 1958 på vulkanen Mauna Loa på Hawaii. Observationerna på Mauna Loa var de första att tyda på att koldioxidhalten ökar i vår atmosfär.
 
-Gå till följande exempel på repl.it där vi förberett datafilen: [https://repl.it/@TeodorBucht1729/Keelingkurvan](https://repl.it/@TeodorBucht1729/Keelingkurvan)
+Gå till följande exempel på replit.com där vi förberett datafilen: [https://replit.com/@TeodorBucht1729/Keelingkurvan](https://replit.com/@TeodorBucht1729/Keelingkurvan) och klicka på *fork repl*. Nu får du upp ett nytt fönster där du kan ändra namnet på din kopia, klicka sedan på *fork repl*.
 
 ## 1. Titta på datafilen
 
@@ -10,7 +10,7 @@ Börja med att titta på datafilen (`data.txt`).
 
 ### 1.1 Kolumner
 
-Ser du att filen har 7 kolumner? Gör fönstret lite bredare om du inte kan se det. (Till vänster om filen visar repl.it radnummer, men de är inte med i själva filen.)
+Ser du att filen har 7 kolumner? Gör fönstret lite bredare om du inte kan se det. (Till vänster om filen visar replit.com radnummer, men de är inte med i själva filen.)
 
 ### 1.2 År och månad
 
@@ -20,7 +20,7 @@ Varje rad visar en mätning. De två första kolumnerna visar år och månad fö
 
 <details>
 <summary markdown="span">
-Svar
+Svar: (Klicka för att se svaret)
 </summary>
 <p>
 Mars 1958
@@ -36,7 +36,7 @@ Den tredje kolumnen innehåller tidpunkten på decimalform, räknat i år. Varje
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 Vi får ut 1959.0424657534247. Detta stämmer bra med raden som börjar med värdena 1959 och 1. Det tredje värdet på raden är 1959.042.
@@ -57,7 +57,7 @@ Koldioxidhalten mäts i "ppm" vilket betyder "parts per million". Man mäter hur
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 315.62
@@ -79,7 +79,7 @@ Kolumn 5 visar interpolerade värden. Titta på maj, juni och juli 1958. För ma
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 317.10
@@ -116,7 +116,7 @@ print(lst)
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 Elementen i listan är "Hej", "svejs", "i", "lingonskogen!".
@@ -147,7 +147,7 @@ print(lst)
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 Resultatet blir en lista med strängarna "1.2", "17.56", "0.33".
@@ -170,7 +170,7 @@ print(tal+2)
 
 <details>
 <summary markdown="span">
-Lösning
+Lösning:
 </summary>
 <p><pre><code>tal = float("1.2")
 print(tal+2)
@@ -214,7 +214,7 @@ Vad fick du för resultat?
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 Filen har 735 rader.
@@ -244,7 +244,7 @@ För att se att något hänt när du kör koden ovan så kan du skriva ut hur l�
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 Lägg till nedanstående kod, så ser du att båda listorna har längden 735.
 <p><pre><code>print(len(years))
@@ -263,7 +263,7 @@ Egentligen var det onödigt att skapa listan `lines`. Vi kan förenkla koden gen
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p><pre><code>f = open("data.txt") # Öppna filen
 years = []                         # Skapa tom lista "years"
@@ -302,7 +302,7 @@ Hur hög var koldioxidhalten när man började mäta? Vilket år blev c02-halten
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 Koldioxidhalten var lite mindre än 320 ppm när man började mäta, 1958. Från kurvan ser det ut som att den första gången gick över 400 ppm cirka år 2014. Vi ser också att kurvan är helt över 400 ppm cirka år 2016.
 </p>
@@ -316,7 +316,7 @@ Koldioxidhalten var lite mindre än 320 ppm när man började mäta, 1958. Från
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 Nej det är ingen skillnad. Det betyder samma sak.
@@ -337,7 +337,7 @@ print(str.split())
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 <code>['0.0', '4.5', '2.3']</code>
@@ -360,7 +360,7 @@ print(len(lst))
 <p></p>
 
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 <code>4</code>
@@ -377,7 +377,7 @@ Vad skall man anropa för att få ut ett rutnät i en plot?
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 <code>grid()</code>
@@ -394,7 +394,7 @@ Vad är formeln för koldioxid?
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 CO<sub>2</sub>
@@ -411,7 +411,7 @@ Vad brukar man mäta koldioxid i?
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 ppm
@@ -429,7 +429,7 @@ Var görs mätningarna som ligger till grund för Keelingkurvan?
 
 <details>
 <summary markdown="span">
-Svar
+Svar:
 </summary>
 <p>
 På vulkanen Mauna Lua, på Hawaii. Mätningarna påbörjades av Charles Keeling.
