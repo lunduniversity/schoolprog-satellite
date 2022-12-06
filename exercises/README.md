@@ -7,6 +7,10 @@ Uppgifterna kan göras i den ordning de är listade, men det går också bra att
 
 Varje uppdrag tar 1-2 timmar att genomföra.
 
+## Vad behöver du?
+
+Ingen installation av programvara krävs. Vi använder online-miljöerna *replit.com* och *Google Colab* för programmeringen. För Colab krävs att du har ett googlekonto. För *replit.com* behöver du skaffa ett konto.
+
 |**Uppdrag**|**Du behöver kunna**|**Begrepp du lär dig**|**Bibliotek du använder**|
 |:-------|----------------|-------------|------------------------------------------|
 |**[Väderdata A (replit.com)](weatherdata/Weatherdata_A_replit.md)**<br>Vi plottar temperatur och regnmängder och beräknar medelvärden. |inga förkunskaper|listor, plot, loop|matplotlib|
