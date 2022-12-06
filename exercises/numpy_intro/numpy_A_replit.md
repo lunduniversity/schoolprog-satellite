@@ -7,7 +7,7 @@ När vi skall hantera stora datamängder, som t.ex. satellitbilder, så behöver
 
 Listor är däremot bra när antalet element ändrar sig medan programmet kör. T.ex. om vi läser in data och inte vet hur stor listan kommer att bli. Att lägga till ett element i en lista är en snabb operation. När vi använder arrayer måste vi veta från början hur stor arrayen skall vara.
 
-Denna uppgift är tänkt att köras på [https://repl.it/languages/python3](https://repl.it/languages/python3)
+Denna uppgift är tänkt att köras på [https://replit.com/languages/python3](https://replit.com/languages/python3). Klicka på *create repl* för att skapa ditt egna repl.
 
 ## 1. Din första NumPy array
 I sin enklaste form är arrayer väldigt lika vanliga listor. För att använda arrayer måste vi importera NumPy-biblioteket:
@@ -77,7 +77,7 @@ plt.savefig("test.png")</code></pre></p>
 
 ## 3. Fler-dimensionell array
 
-Du kan nu ta bort eller kommentera bort koden du skrivit hittills, eller starta ett nytt fönster för [https://repl.it/languages/python3](https://repl.it/languages/python3).
+Du kan nu ta bort eller kommentera bort koden du skrivit hittills, eller starta ett nytt fönster för [https://replit.com/languages/python3](https://replit.com/languages/python3).
 
 En trevlig sak med arrayer är att de kan ha flera *dimensioner*. En 1-dimensionell array motsvarar en lista av värden. En 2-dimensionell array motsvarar ett rutnät av värden, eller en lista av listor. En 3-dimensionell array motsvarar en lista av listor av listor, osv.
 
