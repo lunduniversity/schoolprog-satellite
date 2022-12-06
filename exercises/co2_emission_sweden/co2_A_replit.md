@@ -840,7 +840,7 @@ Svar
 </summary>
 <p>Exempelvis kan vi se att uppvärmning av bostäder och lokaler har minskat mycket sedan 1990 och är idag i princip fossilfri. Tidigare var det vanligt med oljeeldning i enskilda hus. Idag är det vanligt med el kombinerat med värmepumpar, och där elen kommer från vindkraft, vattenkraft, eller kärnkraft. Det är också vanligt med fjärrvärme där värmen kommer från mer effektiv olje- eller koleldning, eller från eldning med biobränsle eller avfall.</p>
 <p>Vi kan se att utsläppen från utrikes transporter har ökat. Det är dock svårt att bedöma hur mycket av detta som beror på att mängden transporter har ökat. En del av ökningen kan bero på att det har blivit billigare att tanka i Sverige och att fartyg hellre tankar här än i andra närliggande länder som Danmark.</p>
-<p>Utsläpp från industrin är fortfarande stora. Forskning pågår för att hitta industriella processer som ger lägre utsläpp, men det tar tid att ta fram nya processer. Se, t.ex. <a href="https://www.naturvardsverket.se/Miljoarbete-i-samhallet/Miljoarbete-i-Sverige/Uppdelat-efter-omrade/Klimat/Klimatneutralt-Sverige/Industri/">https://www.naturvardsverket.se/Miljoarbete-i-samhallet/Miljoarbete-i-Sverige/Uppdelat-efter-omrade/Klimat/Klimatneutralt-Sverige/Industri/</a>
+<p>Utsläpp från industrin är fortfarande stora. Forskning pågår för att hitta industriella processer som ger lägre utsläpp, men det tar tid att ta fram nya processer.
 </p>
 </details>
 <p></p>
