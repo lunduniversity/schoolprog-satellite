@@ -11,7 +11,7 @@ Centralt i `bokeh` är `figure()`, den skapar en figur/plot som du sedan lägger
 ```python
 from bokeh.plotting import figure
 from bokeh.io import output_notebook, show
-plot = figure(title="Min titel", plot_height=300, plot_width=600, y_range=(-10, 15)) # Skapar en figur
+plot = figure(title="Min titel", height=300, width=600, y_range=(-10, 15)) # Skapar en figur
 output_notebook() # Säger att man ska outputta figuren i notebooken
 show(plot) # Visar plotten
 ```
